@@ -1,0 +1,27 @@
+var classstats__tracker =
+[
+    [ "~stats_tracker", "classstats__tracker.html#aa50047d6b332d7421c5098c8588a43e2", null ],
+    [ "add_watcher", "classstats__tracker.html#a4675e6e261056e7dec0f5a27882aab5c", null ],
+    [ "add_watcher", "classstats__tracker.html#aa49db44ba755a3bd19aaaf662bc31099", null ],
+    [ "add_watcher", "classstats__tracker.html#a87c646df0ba7b69a2ec15f5737e36841", null ],
+    [ "clear", "classstats__tracker.html#a937dc0d90e55847eda504de1bf66d627", null ],
+    [ "deserialize", "classstats__tracker.html#ac2d2a80e08975f0723a74ebf7e3633c0", null ],
+    [ "get_events", "classstats__tracker.html#a108190aebca9711dc25e286a300f2520", null ],
+    [ "get_events", "classstats__tracker.html#a2d01f7be2e20a0b87249e500eb851e68", null ],
+    [ "notify", "classstats__tracker.html#a90747ae5dccb29b1651231a1cc5bc267", null ],
+    [ "serialize", "classstats__tracker.html#a3db752edf9734d055b63cc7846d96b89", null ],
+    [ "stat_value_changed", "classstats__tracker.html#a7308ecf66bff5cfb9fb4040d5823d01f", null ],
+    [ "transformed_set_changed", "classstats__tracker.html#a2b52819feaf6f116b6fa0f9b6258e76e", null ],
+    [ "transformed_set_changed", "classstats__tracker.html#a19a30ddd51fab47d253da0b93b94e9b5", null ],
+    [ "unwatch", "classstats__tracker.html#a4d21d0365b5e59d01ca7daae3ad67f15", null ],
+    [ "unwatch_all", "classstats__tracker.html#a0d71b5602807231a77e65043c69d9f7a", null ],
+    [ "valid_scores", "classstats__tracker.html#a8379127169d82ae424bb130fde95841e", null ],
+    [ "value_of", "classstats__tracker.html#a4bd3ef4b971753920ccd3c14c136e179", null ],
+    [ "data", "classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be", null ],
+    [ "event_transformation_states", "classstats__tracker.html#a64438d135c8b12f08c15b06fdfc1c8cc", null ],
+    [ "event_transformation_watchers", "classstats__tracker.html#aca9a812d5fbce3d5d17be51c47b4046a", null ],
+    [ "event_type_watchers", "classstats__tracker.html#a61b2716a6dbc5f06084c94f87765cc39", null ],
+    [ "initial_scores", "classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc", null ],
+    [ "stat_states", "classstats__tracker.html#a46b07ecee377f3dbfd54a4b24695a451", null ],
+    [ "stat_watchers", "classstats__tracker.html#aad166551a76a6ad932bafbd0e3a9c813", null ]
+];

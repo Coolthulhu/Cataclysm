@@ -1,0 +1,38 @@
+var classitem__location =
+[
+    [ "impl", "classitem__location_1_1impl.html", "classitem__location_1_1impl" ],
+    [ "type", "classitem__location.html#a038e108475b9fb4f9833268f5fa2888d", [
+      [ "invalid", "classitem__location.html#a038e108475b9fb4f9833268f5fa2888dafedb2d84cafe20862cb4399751a8a7e3", null ],
+      [ "character", "classitem__location.html#a038e108475b9fb4f9833268f5fa2888daa956161a69928cd130a889b88082fb6e", null ],
+      [ "map", "classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae", null ],
+      [ "vehicle", "classitem__location.html#a038e108475b9fb4f9833268f5fa2888da5a76e813d6a0a40548b91acc11557bd2", null ],
+      [ "container", "classitem__location.html#a038e108475b9fb4f9833268f5fa2888da5f0b6ebc4bea10285ba2b8a6ce78b863", null ]
+    ] ],
+    [ "item_location", "classitem__location.html#a4d1a7b5bc343f8771751142b294ef84e", null ],
+    [ "item_location", "classitem__location.html#a5a0a7b662c4bf75b0de47ac40bbe50e2", null ],
+    [ "item_location", "classitem__location.html#adf5fc16bc04ce3ee11e5d96054f97f58", null ],
+    [ "item_location", "classitem__location.html#ac47edfc278681294839d748c2cd92334", null ],
+    [ "item_location", "classitem__location.html#a94128fa517a6ed1ba6b504d14e0256c1", null ],
+    [ "describe", "classitem__location.html#abc2ca6a2e19f2a5e7e92e000117bf3d7", null ],
+    [ "deserialize", "classitem__location.html#a50e425c9b661f0359fe228c287d623ef", null ],
+    [ "get_item", "classitem__location.html#a350bb267073f30205f780b394324a32c", null ],
+    [ "get_item", "classitem__location.html#a618ae9bd37ccee538cdf6bdf9c22d719", null ],
+    [ "make_dirty", "classitem__location.html#a6cfa8632e50bae3fd3bf2b87a33e326f", null ],
+    [ "obtain", "classitem__location.html#a61b090f9b4c37858e4a7b85e9265f34d", null ],
+    [ "obtain_cost", "classitem__location.html#ac61eb40367834d791602ff3a2ca5c5a9", null ],
+    [ "operator bool", "classitem__location.html#a69d5f6ad6915ec34fcaa285638e213b9", null ],
+    [ "operator!=", "classitem__location.html#aaa18dd2f784fdf89adda3f57325dbe55", null ],
+    [ "operator*", "classitem__location.html#ad2f9cd017cd660065bba8457b608631d", null ],
+    [ "operator*", "classitem__location.html#a54814f0629249b34b360a114a39b1b1e", null ],
+    [ "operator->", "classitem__location.html#ab321255bbec2139fb5822b27886ca41e", null ],
+    [ "operator->", "classitem__location.html#a4485ce07a64c59e71cd25bcd9860f4cd", null ],
+    [ "operator==", "classitem__location.html#ab196cde795460480acc5299bae96ba5e", null ],
+    [ "parent_item", "classitem__location.html#ad2c318c46c6daaa28c9ed522ae6d13a4", null ],
+    [ "position", "classitem__location.html#a7c2a92227d0946b673eb95b0a53c766c", null ],
+    [ "remove_item", "classitem__location.html#a41e90133672d99aa1cecde670e37c23c", null ],
+    [ "serialize", "classitem__location.html#a275ba051e71a9d43c39cd4d3d103968e", null ],
+    [ "set_should_stack", "classitem__location.html#a282d636b1fb2b9be4d62123d2a4963e0", null ],
+    [ "where", "classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9", null ],
+    [ "nowhere", "classitem__location.html#ac32191753a11cc2f4aa2ad6d50e6405b", null ],
+    [ "ptr", "classitem__location.html#a62b2b94aee35409e682f16e43952b257", null ]
+];

@@ -1,0 +1,27 @@
+var npc__class_8h =
+[
+    [ "distribution", "classdistribution.html", "classdistribution" ],
+    [ "npc_class", "classnpc__class.html", "classnpc__class" ],
+    [ "CATA_SRC_NPC_CLASS_H", "npc__class_8h.html#a14dd10050d2ad3d4b5a5f6150b79c3f1", null ],
+    [ "Mutation_category_tag", "npc__class_8h.html#a495e9c5da0c6668c52c11daf368e3084", null ],
+    [ "Trait_group_tag", "npc__class_8h.html#a91c04131124dfaf7095b72616764c9e0", null ],
+    [ "NC_ARSONIST", "npc__class_8h.html#ac5b4af2a81c687fa719c00742d0c8502", null ],
+    [ "NC_BARTENDER", "npc__class_8h.html#aec89ae38fe21f9696eec540d31bb3298", null ],
+    [ "NC_BOUNTY_HUNTER", "npc__class_8h.html#a18b9d85dd2271166ab71b25569e4c5f6", null ],
+    [ "NC_COWBOY", "npc__class_8h.html#abfce8afc3705c20e69c09a836e43e3e3", null ],
+    [ "NC_CYBORG", "npc__class_8h.html#ae3f1cece1d66bfd85dc4849a34caa8df", null ],
+    [ "NC_DOCTOR", "npc__class_8h.html#a8880c973fc6e52de2c796b4a8a9e27b8", null ],
+    [ "NC_EVAC_SHOPKEEP", "npc__class_8h.html#a32d69bb3590db6546eca573b6a488aa9", null ],
+    [ "NC_HACKER", "npc__class_8h.html#acf27af057e4b7a4c9d00ce2be261b757", null ],
+    [ "NC_HALLU", "npc__class_8h.html#a83fad330f2161c0c2d273a52bd445ea8", null ],
+    [ "NC_HUNTER", "npc__class_8h.html#a0063885fdf3dc6bf855fa84004862ff6", null ],
+    [ "NC_JUNK_SHOPKEEP", "npc__class_8h.html#afd2bdbbf3171d48a0f69ac0e4cd09787", null ],
+    [ "NC_NINJA", "npc__class_8h.html#a2a1143aaf0622f95581a5c106ddad55c", null ],
+    [ "NC_NONE", "npc__class_8h.html#a7001f2ad10d03a2fbb6bf6cee4ba86f5", null ],
+    [ "NC_SCAVENGER", "npc__class_8h.html#af3a9c71005daa298b6ad72ca91d04352", null ],
+    [ "NC_SCIENTIST", "npc__class_8h.html#a136b18ee1fd3c8cd183eac162ac4d18b", null ],
+    [ "NC_SHOPKEEP", "npc__class_8h.html#a661fa3a5d890e1a7a6526e8ab43d83c6", null ],
+    [ "NC_SOLDIER", "npc__class_8h.html#a6e087c72a8866c1842627ad3a07fbcae", null ],
+    [ "NC_THUG", "npc__class_8h.html#ad973309e8d924c7e07ce25d87165f7ad", null ],
+    [ "NC_TRADER", "npc__class_8h.html#aa7e5d9dfb7060d7bb41e06671c02a063", null ]
+];

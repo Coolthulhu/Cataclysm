@@ -1,0 +1,27 @@
+var string__utils_8cpp =
+[
+    [ "char_t", "string__utils_8cpp.html#a27d0887564eb008b9c5131c0734564b9", null ],
+    [ "capitalize_letter", "string__utils_8cpp.html#a4ca22a5f94c33d5a0849e241f0065b3c", null ],
+    [ "ci_find_substr", "string__utils_8cpp.html#a28a09e850ed75e728202e1e9af42b9d9", null ],
+    [ "join", "string__utils_8cpp.html#a5fee152eaa5ff32f4670f5f34d34e36f", null ],
+    [ "lcequal", "string__utils_8cpp.html#a6a08b78c3ecd66a019d4c7669c546646", null ],
+    [ "lcmatch", "string__utils_8cpp.html#a4c18baed57a900ad66ff7272a403076b", null ],
+    [ "lcmatch", "string__utils_8cpp.html#a6da33ffe40cf01a24fbd75d557db58a4", null ],
+    [ "match_include_exclude", "string__utils_8cpp.html#a6eae1bc4c64699fac35cbcd99625727e", null ],
+    [ "replace_all", "string__utils_8cpp.html#adf69fff1e9a5471c677d36846674eaa5", null ],
+    [ "replace_city_tag", "string__utils_8cpp.html#a5a99cc337f99bf5186366cc4f548d28e", null ],
+    [ "replace_colors", "string__utils_8cpp.html#a813ac4bd0ac2745dfe41d13adf98996f", null ],
+    [ "replace_first", "string__utils_8cpp.html#a9b07e15c0eef8f333353df967108a5b2", null ],
+    [ "replace_name_tags", "string__utils_8cpp.html#a65cc8d8563c7e8eb2482b12270b0014b", null ],
+    [ "string_ends_with", "string__utils_8cpp.html#a836373abd77ef65988abf2bcbff6929a", null ],
+    [ "string_split", "string__utils_8cpp.html#a325b20c0f964a52577cd24a651d5bda7", null ],
+    [ "string_starts_with", "string__utils_8cpp.html#a2a9cb822cf98b9560d7354cc9baef3ad", null ],
+    [ "to_lower_case", "string__utils_8cpp.html#a34d7ffc8f91f1bdfed2b21d1411ad557", null ],
+    [ "to_upper_case", "string__utils_8cpp.html#a78f0928723504ed91d542c9090cd244d", null ],
+    [ "trim", "string__utils_8cpp.html#a1a32c4d3bd87256731e67936766c65ca", null ],
+    [ "trim", "string__utils_8cpp.html#a8a32021e86c038805ccec507cab74859", null ],
+    [ "trim_punctuation_marks", "string__utils_8cpp.html#aa0ffa4eb7b80a73bc602e049a82ab445", null ],
+    [ "trim_whitespaces", "string__utils_8cpp.html#a508f5edd373110b56f5a7cec67187aea", null ],
+    [ "wildcard_match", "string__utils_8cpp.html#a1d2fecc57218d4b919232bf05f5e1740", null ],
+    [ "wildcard_trim_rule", "string__utils_8cpp.html#a801218a57ea2bc3a601afb05046827ab", null ]
+];

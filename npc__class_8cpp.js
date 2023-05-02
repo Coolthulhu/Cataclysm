@@ -1,0 +1,27 @@
+var npc__class_8cpp =
+[
+    [ "apply_all_to_unassigned", "npc__class_8cpp.html#a0c4a88d8f53505083dbc1e45d787715f", null ],
+    [ "load_distribution", "npc__class_8cpp.html#ab1639ff9d281a6b39983981cedcaec36", null ],
+    [ "load_distribution", "npc__class_8cpp.html#a3bb94026737b54184854b0447cede958", null ],
+    [ "legacy_ids", "npc__class_8cpp.html#a5c9f08182d5246fdbc60d17066e96964", null ],
+    [ "NC_ARSONIST", "npc__class_8cpp.html#a0d396fbad866152565d79fdad90f5842", null ],
+    [ "NC_BARTENDER", "npc__class_8cpp.html#aab6b781032a73c774f33f4dc5a0a681c", null ],
+    [ "NC_BOUNTY_HUNTER", "npc__class_8cpp.html#a110d358438658dcee3225f9566ed3d1f", null ],
+    [ "NC_COWBOY", "npc__class_8cpp.html#ab52d87d2d1036eaba48a32943c19e373", null ],
+    [ "NC_CYBORG", "npc__class_8cpp.html#adfac5a3491e70d971ea329e5c95dd188", null ],
+    [ "NC_DOCTOR", "npc__class_8cpp.html#a729af1e31874bc67390baaca5f790e3d", null ],
+    [ "NC_EVAC_SHOPKEEP", "npc__class_8cpp.html#a285a6dc698975b538d2474b230d13957", null ],
+    [ "NC_HACKER", "npc__class_8cpp.html#a38de5ccef126a37345841b12446e95fc", null ],
+    [ "NC_HALLU", "npc__class_8cpp.html#a934d8984ebd1980a23298be096f09a05", null ],
+    [ "NC_HUNTER", "npc__class_8cpp.html#ade3c25aaef2fbbede35efe7875fe1b29", null ],
+    [ "NC_JUNK_SHOPKEEP", "npc__class_8cpp.html#a544222267e9f714884aef64fb40cd8d2", null ],
+    [ "NC_NINJA", "npc__class_8cpp.html#abbde011c5820452d06c34f6267cadf37", null ],
+    [ "NC_NONE", "npc__class_8cpp.html#a67f7976501118ef57358564d0cc58fca", null ],
+    [ "NC_SCAVENGER", "npc__class_8cpp.html#a75b962b996e6d97fb665cab8fb2485b6", null ],
+    [ "NC_SCIENTIST", "npc__class_8cpp.html#a7aaa961cf1023cb56b113b19150a8f54", null ],
+    [ "NC_SHOPKEEP", "npc__class_8cpp.html#aa3e4df3b4def836446103696bea42917", null ],
+    [ "NC_SOLDIER", "npc__class_8cpp.html#a07814f1825a3248fc2188b7af85ca0f4", null ],
+    [ "NC_THUG", "npc__class_8cpp.html#a1e90ddbb62cc1cff90c8e1d3bb3f815d", null ],
+    [ "NC_TRADER", "npc__class_8cpp.html#aa2b36003604de48ce48f4c526c26f97b", null ],
+    [ "npc_class_factory", "npc__class_8cpp.html#a3b69631a240ad5312a77e3f1623a1108", null ]
+];

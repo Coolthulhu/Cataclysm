@@ -1,0 +1,7 @@
+var structio_1_1detail_1_1has__archive__tag_3_01T_00_01typename_01enable__if__type_3_01typename_01T_f020189a2c34814894bce8b62ed27d09 =
+[
+    [ "InArchive", "structio_1_1detail_1_1has__archive__tag_3_01T_00_01typename_01enable__if__type_3_01typename_01T_f020189a2c34814894bce8b62ed27d09.html#a0cecc1b4965f95a442c6f2b7ad6de74f", null ],
+    [ "read", "structio_1_1detail_1_1has__archive__tag_3_01T_00_01typename_01enable__if__type_3_01typename_01T_f020189a2c34814894bce8b62ed27d09.html#ab746121dfb2fc7a23adf1cdd4c46b7f2", null ],
+    [ "read", "structio_1_1detail_1_1has__archive__tag_3_01T_00_01typename_01enable__if__type_3_01typename_01T_f020189a2c34814894bce8b62ed27d09.html#ac549b5179b515f11280015a04208be62", null ],
+    [ "write", "structio_1_1detail_1_1has__archive__tag_3_01T_00_01typename_01enable__if__type_3_01typename_01T_f020189a2c34814894bce8b62ed27d09.html#a48288d492d514d24ca8b478a5bc3669d", null ]
+];

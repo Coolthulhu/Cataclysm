@@ -1,0 +1,27 @@
+var structdetail_1_1basic__data =
+[
+    [ "digit_pair", "structdetail_1_1basic__data.html#af7ab3c45acfd93300e3b3ae81974e407", null ],
+    [ "background_color", "structdetail_1_1basic__data.html#a69fe2cc083fbb06c4fc8621d33d8296a", null ],
+    [ "digits", "structdetail_1_1basic__data.html#a2fb6d97a562a075e074763102a81dff4", null ],
+    [ "divtest_table_for_pow5_32", "structdetail_1_1basic__data.html#aca17a6ba7e5edfd29caebc5475258faf", null ],
+    [ "divtest_table_for_pow5_64", "structdetail_1_1basic__data.html#a1a57b11e162d06b1f096254964ac056f", null ],
+    [ "dragonbox_pow10_recovery_errors", "structdetail_1_1basic__data.html#a756b986401bb6382b0fe895d73528e72", null ],
+    [ "dragonbox_pow10_significands_128", "structdetail_1_1basic__data.html#aaf050e78e365a76c6960a8453a98ab77", null ],
+    [ "dragonbox_pow10_significands_64", "structdetail_1_1basic__data.html#a9c22af7261e69219657481d46b2e60e7", null ],
+    [ "foreground_color", "structdetail_1_1basic__data.html#a2caffb3819ce205d0ed57e787eb7708d", null ],
+    [ "grisu_pow10_exponents", "structdetail_1_1basic__data.html#abfcab4d65d5c5b93fcf562a00627e290", null ],
+    [ "grisu_pow10_significands", "structdetail_1_1basic__data.html#a8eb3c1d873ebc0c36b3d9e96f2560aae", null ],
+    [ "hex_digits", "structdetail_1_1basic__data.html#a09fefb6d32ca1f6c11998427616a2289", null ],
+    [ "left_padding_shifts", "structdetail_1_1basic__data.html#a6657fabeb25a62c40f5961e24e74be92", null ],
+    [ "log10_2_significand", "structdetail_1_1basic__data.html#afe0a8436f3d7f10de7164380656df3d9", null ],
+    [ "powers_of_10_64", "structdetail_1_1basic__data.html#af96e9577860aafd41ab25b38dc2e2097", null ],
+    [ "powers_of_5_64", "structdetail_1_1basic__data.html#aafd8306e67ebafd885adfd3190fcd231", null ],
+    [ "reset_color", "structdetail_1_1basic__data.html#aa87d193632b663559777ad25d80dc1f7", null ],
+    [ "right_padding_shifts", "structdetail_1_1basic__data.html#af6dd2b04d4a3b637005b4e3b7eb48a23", null ],
+    [ "signs", "structdetail_1_1basic__data.html#a2b8ee3f241601938c25a7eec0146044c", null ],
+    [ "wreset_color", "structdetail_1_1basic__data.html#ab4c7a53a5e914bc21e7355a75f3d6794", null ],
+    [ "zero_or_powers_of_10_32", "structdetail_1_1basic__data.html#a5f70c78e9095ae61765b6077b93524ca", null ],
+    [ "zero_or_powers_of_10_32_new", "structdetail_1_1basic__data.html#a8003a8c2f67655b439f27b90de91250b", null ],
+    [ "zero_or_powers_of_10_64", "structdetail_1_1basic__data.html#abdae1cf73d0e60afbbd77cd9af770b68", null ],
+    [ "zero_or_powers_of_10_64_new", "structdetail_1_1basic__data.html#aa7a65384d7ac9de20ad6450d6aabcda4", null ]
+];

@@ -1,0 +1,26 @@
+var structpoint =
+[
+    [ "point", "structpoint.html#ad148745923a88130e1aacb8164d66387", null ],
+    [ "point", "structpoint.html#a0dfd85db92c6f213476cc1d488c6f76f", null ],
+    [ "abs", "structpoint.html#afb447f6b720e999dcd3789b54ef2cca3", null ],
+    [ "deserialize", "structpoint.html#ab5095f929344267ef2b9506626980bce", null ],
+    [ "operator*", "structpoint.html#a5a2e85956ceded06cf6cd872cf8abad9", null ],
+    [ "operator*=", "structpoint.html#ab5e508088575f2621c38159bbc02cfe3", null ],
+    [ "operator+", "structpoint.html#a72b983bb711604f12972a0376c47df67", null ],
+    [ "operator+=", "structpoint.html#a87b901c4e9e4ffa010d8594ef4b1b995", null ],
+    [ "operator-", "structpoint.html#a5268bbced193a4ff47421c472c343648", null ],
+    [ "operator-", "structpoint.html#a1a6efb95f36bd0b962c87ba994376ade", null ],
+    [ "operator-=", "structpoint.html#a4d7fa13f9214d8ea8b9bff4e85b869ea", null ],
+    [ "operator/", "structpoint.html#a45e830060d971f5334f7643ebe3201b8", null ],
+    [ "rotate", "structpoint.html#a0ae76f3db3bb89bf0abac6cb66673ba6", null ],
+    [ "serialize", "structpoint.html#aa4a1c49f0420ac996e6f8b90650734ba", null ],
+    [ "to_string", "structpoint.html#a12434ec4f65ca6872728b278f9a51390", null ],
+    [ "operator!=", "structpoint.html#a33909e1b8b6a8fa8a75f48f0cefd3b7b", null ],
+    [ "operator*", "structpoint.html#a98ca3c98b423c74937e586c084332da6", null ],
+    [ "operator<", "structpoint.html#adc76dd3c461c0a87a9819e4805877b37", null ],
+    [ "operator<<", "structpoint.html#a9f056185a72d6d7c7bcdd1e3a295ccee", null ],
+    [ "operator==", "structpoint.html#a4fe93913f0acb2c9be50a88f8de7f41a", null ],
+    [ "dimension", "structpoint.html#a32f67d442593e2e9d252fa6d217810f4", null ],
+    [ "x", "structpoint.html#ad679b07fb69d55f5ad454d0f1f2891d5", null ],
+    [ "y", "structpoint.html#a9a82ca9504acabb1e30569f89c805471", null ]
+];

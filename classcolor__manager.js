@@ -1,0 +1,27 @@
+var classcolor__manager =
+[
+    [ "color_struct", "structcolor__manager_1_1color__struct.html", "structcolor__manager_1_1color__struct" ],
+    [ "color_manager", "classcolor__manager.html#a5ff1681a50d3edd66576b15795f5074e", null ],
+    [ "add_color", "classcolor__manager.html#a6191f2d8de592c8706e1f37985e2e262", null ],
+    [ "clear", "classcolor__manager.html#a7425c728086321d305a9f25b9530a53f", null ],
+    [ "color_to_id", "classcolor__manager.html#a2e71ec18e4ae89422145b8bb8bdf74e1", null ],
+    [ "deserialize", "classcolor__manager.html#a43e3bc9c416f14aef779feb91d772141", null ],
+    [ "finalize", "classcolor__manager.html#a8922713202d2d0dbfdfce1999ab19bc1", null ],
+    [ "get", "classcolor__manager.html#a69525b119cb42562d02a07228abb840f", null ],
+    [ "get_highlight", "classcolor__manager.html#ac15ea92ca9880bb77c61ed9f090ae376", null ],
+    [ "get_invert", "classcolor__manager.html#a88b7e1912cf75b65de89e2554879de4e", null ],
+    [ "get_name", "classcolor__manager.html#abbca7bb309521142653e6a1e3f2b1f89", null ],
+    [ "get_random", "classcolor__manager.html#ac559f71657d9062e70c562a27ebe970d", null ],
+    [ "highlight_from_names", "classcolor__manager.html#a25f7f1e0685f5f6e2056e52f6d273f6a", null ],
+    [ "id_to_name", "classcolor__manager.html#a663bd4b957844f6b7bbd0a657e2ccbd4", null ],
+    [ "load_custom", "classcolor__manager.html#aa49507b7e7073601dff0b02476eddbc1", null ],
+    [ "load_default", "classcolor__manager.html#a7aab1edd26258622d49393f44107ca8f", null ],
+    [ "name_to_color", "classcolor__manager.html#afee7c9970d9e15a30e3acd68d942b9c6", null ],
+    [ "name_to_id", "classcolor__manager.html#ad2eb8f9c2113dad599f81d6bc2f83837", null ],
+    [ "save_custom", "classcolor__manager.html#a8145269a38e94a79ff3a1738fb87be54", null ],
+    [ "serialize", "classcolor__manager.html#a6a9e59b025f94d154316cbf7c5af236a", null ],
+    [ "show_gui", "classcolor__manager.html#a0c037e78f951b90f095f6b54a037f2c1", null ],
+    [ "color_array", "classcolor__manager.html#ac70cf800235698785ec073b054f279a3", null ],
+    [ "inverted_map", "classcolor__manager.html#a3ec1b9f6a6ea69bd672e3cf9e581608a", null ],
+    [ "name_map", "classcolor__manager.html#a5b25887b9bedc9aa12eb1199556a17be", null ]
+];

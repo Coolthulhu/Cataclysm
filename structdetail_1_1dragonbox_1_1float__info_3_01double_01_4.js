@@ -1,0 +1,26 @@
+var structdetail_1_1dragonbox_1_1float__info_3_01double_01_4 =
+[
+    [ "carrier_uint", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a8c97de9832dd0d2098355f060c7b49f0", null ],
+    [ "big_divisor", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a30c5106a10f34cdfbdcf0706a8efc14e", null ],
+    [ "cache_bits", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a5555ab4b800f0d441bc6b5e5123313a2", null ],
+    [ "case_fc_lower_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a4db90dd14059192704092f58699dce4c", null ],
+    [ "case_fc_pm_half_lower_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a4a837a4ef149005a6717ecccadea58e0", null ],
+    [ "case_fc_pm_half_upper_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a82d19a7602ee273085f4024d664f991c", null ],
+    [ "case_fc_upper_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#afe707413c38350227709acaebd5ceeb2", null ],
+    [ "case_shorter_interval_left_endpoint_lower_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#ab149a60f2e983495056e4ef305350a7f", null ],
+    [ "case_shorter_interval_left_endpoint_upper_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a5f3cecdf388d00e2efd4096e283174c0", null ],
+    [ "decimal_digits", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#aaca6837a6558cc9904cbcef3c47e11a4", null ],
+    [ "divisibility_check_by_5_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#ab0088c7b2fcae365933b203167d4b6be", null ],
+    [ "exponent_bias", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a4b03e5175c0fa251f7656582adfd7c28", null ],
+    [ "exponent_bits", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#aec53ef967ca8d110ffb798ae0df88c06", null ],
+    [ "kappa", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#ae6bb8c779647b4b1ca89f9c369d3f2b3", null ],
+    [ "max_exponent", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a11517968ddaea58303b95c34877855d3", null ],
+    [ "max_k", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a862bee6ecc046e2dd1aa5b7f1d5c528b", null ],
+    [ "max_trailing_zeros", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#abf1b46edf4456e1ee5e78bb46394ec3a", null ],
+    [ "min_exponent", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a59e1a70dd2e7b46cce5dcd70922b5e54", null ],
+    [ "min_k", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a0bbe79e34c6327d5bf019fc0b2214d9a", null ],
+    [ "shorter_interval_tie_lower_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a5897dacf444527b16006bf0b295c08b1", null ],
+    [ "shorter_interval_tie_upper_threshold", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a30e5b8e48842d9b5d8a762cd0b218ccd", null ],
+    [ "significand_bits", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#a27d4d698ae5c10827bf5f2b8c316bf2d", null ],
+    [ "small_divisor", "structdetail_1_1dragonbox_1_1float__info_3_01double_01_4.html#af3564af9ccab87e8196c1647f996af2e", null ]
+];

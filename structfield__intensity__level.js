@@ -1,0 +1,26 @@
+var structfield__intensity__level =
+[
+    [ "color", "structfield__intensity__level.html#a0b6695c49116d5a491cad180fd229be6", null ],
+    [ "convection_temperature_mod", "structfield__intensity__level.html#ab7d73ec3d0758dffe0a643492ff332dc", null ],
+    [ "dangerous", "structfield__intensity__level.html#abda733d11225fc39ac3cc5e54a2cde38", null ],
+    [ "extra_radiation_max", "structfield__intensity__level.html#a87a4b44d78a29f06fc213203da2a8ec9", null ],
+    [ "extra_radiation_min", "structfield__intensity__level.html#ac8615a950b97704527acf692118301c4", null ],
+    [ "field_effects", "structfield__intensity__level.html#a6a6b107b119fe9d98c871bc0269ffd78", null ],
+    [ "intensity_upgrade_chance", "structfield__intensity__level.html#a6a50f193ea9aafd931cbec90b6746238", null ],
+    [ "intensity_upgrade_duration", "structfield__intensity__level.html#ae8e6c35ee21b880f5d26730e4a79d6ba", null ],
+    [ "light_emitted", "structfield__intensity__level.html#a5306957be6aa2ba1a3ea8c15fa2d325d", null ],
+    [ "local_light_override", "structfield__intensity__level.html#a7fca3af885b0a57fc54a585e3e331c0c", null ],
+    [ "monster_spawn_chance", "structfield__intensity__level.html#a6725f33fad83a09565dfda9edc27cb0a", null ],
+    [ "monster_spawn_count", "structfield__intensity__level.html#a202ef3ab969c4f155f50865e531331fb", null ],
+    [ "monster_spawn_group", "structfield__intensity__level.html#a59226e93443c95ff0c5316654a504b3c", null ],
+    [ "monster_spawn_radius", "structfield__intensity__level.html#a451af234539eebfc91c39725d4388594", null ],
+    [ "move_cost", "structfield__intensity__level.html#a3764ec5f4e56188534b96d7a6a305aac", null ],
+    [ "name", "structfield__intensity__level.html#a3a741f3ba59ddf78d18e2680e368b6ff", null ],
+    [ "radiation_hurt_damage_max", "structfield__intensity__level.html#a095b3eb1c6f0ef514f2f003d37245ce2", null ],
+    [ "radiation_hurt_damage_min", "structfield__intensity__level.html#a52328e93b093ada56e0f3f897e548259", null ],
+    [ "radiation_hurt_message", "structfield__intensity__level.html#a2b3f9f327817123e0f47d84cc87e7297", null ],
+    [ "scent_neutralization", "structfield__intensity__level.html#ac5bea9ad065ed028bc8847d16f7d33b6", null ],
+    [ "symbol", "structfield__intensity__level.html#a78f4cabdc0e6b7affb3ba30eee64805b", null ],
+    [ "translucency", "structfield__intensity__level.html#ab246bafaf979c7556354739793a972d8", null ],
+    [ "transparent", "structfield__intensity__level.html#a8e630a0a787a09a64e9a668d0eba3e1e", null ]
+];

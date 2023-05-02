@@ -1,0 +1,25 @@
+var classMonsterGroupManager =
+[
+    [ "t_string_set", "classMonsterGroupManager.html#af05591176571fc574fcfcdb90d70f99a", null ],
+    [ "check_group_definitions", "classMonsterGroupManager.html#a80df3234107c771968b2f4d6d1a81a78", null ],
+    [ "ClearMonsterGroups", "classMonsterGroupManager.html#a71fdfd19233e4ce2eb531ac7ba2c7dbb", null ],
+    [ "FinalizeMonsterGroups", "classMonsterGroupManager.html#a8b8d2559701544cea9b8f6eee7475c28", null ],
+    [ "GetMonsterGroup", "classMonsterGroupManager.html#a3e458588f443527cd250284b02068949", null ],
+    [ "GetMonstersFromGroup", "classMonsterGroupManager.html#a216ce6ae63f665288e81cc682bfe8f13", null ],
+    [ "GetRandomMonsterFromGroup", "classMonsterGroupManager.html#a9cccc521c1f910f907d23ffba50cd1dc", null ],
+    [ "GetResultFromGroup", "classMonsterGroupManager.html#ad16591c9153584950a7446d1678c08df", null ],
+    [ "GetUpgradedMonsterGroup", "classMonsterGroupManager.html#add6ce7274c23102a1328022e78375b24", null ],
+    [ "is_animal", "classMonsterGroupManager.html#ac5c4f820a26d260ec57d780e9cf4bd77", null ],
+    [ "IsMonsterInGroup", "classMonsterGroupManager.html#acc4506e3d4c7ee1f10b0fd26a5b073f2", null ],
+    [ "isValidMonsterGroup", "classMonsterGroupManager.html#a63d2845bca04e530ec8efb366c3725b6", null ],
+    [ "LoadMonsterBlacklist", "classMonsterGroupManager.html#ae3f4136d30116908d6f5311ac8e9afbc", null ],
+    [ "LoadMonsterGroup", "classMonsterGroupManager.html#abde0a3bd52c519ba55ae35cb5e05ba37", null ],
+    [ "LoadMonsterWhitelist", "classMonsterGroupManager.html#aea6976309b5b644525802ea6d22a6f33", null ],
+    [ "Monster2Group", "classMonsterGroupManager.html#adedba6db92d954a529972d325e10d185", null ],
+    [ "monster_is_blacklisted", "classMonsterGroupManager.html#a40b4bc56bd97ac93e91a6ed6f3e308f8", null ],
+    [ "monster_blacklist", "classMonsterGroupManager.html#a270569906a8f3d6477c5a7521062bc9e", null ],
+    [ "monster_categories_blacklist", "classMonsterGroupManager.html#a5b24e451c5f7006814286d47b9a3f5d8", null ],
+    [ "monster_categories_whitelist", "classMonsterGroupManager.html#a9dfa69b1c0cd81a0286059951fc1b64f", null ],
+    [ "monster_whitelist", "classMonsterGroupManager.html#a4e2b0fa6f6f9e18022b803cd100f8f36", null ],
+    [ "monsterGroupMap", "classMonsterGroupManager.html#a2e597cdbce74aecf8e8382926439e0b7", null ]
+];

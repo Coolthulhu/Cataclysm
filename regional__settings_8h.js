@@ -1,0 +1,27 @@
+var regional__settings_8h =
+[
+    [ "building_bin", "classbuilding__bin.html", "classbuilding__bin" ],
+    [ "city_settings", "structcity__settings.html", "structcity__settings" ],
+    [ "ter_furn_id", "structter__furn__id.html", "structter__furn__id" ],
+    [ "groundcover_extra", "structgroundcover__extra.html", "structgroundcover__extra" ],
+    [ "forest_biome_component", "structforest__biome__component.html", "structforest__biome__component" ],
+    [ "forest_biome_terrain_dependent_furniture", "structforest__biome__terrain__dependent__furniture.html", "structforest__biome__terrain__dependent__furniture" ],
+    [ "forest_biome", "structforest__biome.html", "structforest__biome" ],
+    [ "forest_mapgen_settings", "structforest__mapgen__settings.html", "structforest__mapgen__settings" ],
+    [ "forest_trail_settings", "structforest__trail__settings.html", "structforest__trail__settings" ],
+    [ "overmap_feature_flag_settings", "structovermap__feature__flag__settings.html", "structovermap__feature__flag__settings" ],
+    [ "overmap_forest_settings", "structovermap__forest__settings.html", "structovermap__forest__settings" ],
+    [ "shore_extendable_overmap_terrain_alias", "structshore__extendable__overmap__terrain__alias.html", "structshore__extendable__overmap__terrain__alias" ],
+    [ "overmap_lake_settings", "structovermap__lake__settings.html", "structovermap__lake__settings" ],
+    [ "map_extras", "structmap__extras.html", "structmap__extras" ],
+    [ "region_terrain_and_furniture_settings", "structregion__terrain__and__furniture__settings.html", "structregion__terrain__and__furniture__settings" ],
+    [ "regional_settings", "structregional__settings.html", "structregional__settings" ],
+    [ "CATA_SRC_REGIONAL_SETTINGS_H", "regional__settings_8h.html#abcf1e0f30e728ab90ab755b9d5a67927", null ],
+    [ "t_regional_settings_map", "regional__settings_8h.html#ab00383d3ac8c3083508ff8721d94e111", null ],
+    [ "t_regional_settings_map_citr", "regional__settings_8h.html#afbf8c3567a51eb0f3247b2533943786c", null ],
+    [ "apply_region_overlay", "regional__settings_8h.html#ae95537363b4c0496216e34651628b5b1", null ],
+    [ "load_region_overlay", "regional__settings_8h.html#a97a047481696c32b28320e1e12598eba", null ],
+    [ "load_region_settings", "regional__settings_8h.html#a0111ee282937eb166fd0604151e798c7", null ],
+    [ "reset_region_settings", "regional__settings_8h.html#add155c094f1833c0800f3babb273de5c", null ],
+    [ "region_settings_map", "regional__settings_8h.html#a451aac4ddcfe0f7640425c4a14d06395", null ]
+];

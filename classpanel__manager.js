@@ -1,0 +1,25 @@
+var classpanel__manager =
+[
+    [ "panel_manager", "classpanel__manager.html#a4c98debd81d71bb69da3a45de10bbb78", null ],
+    [ "~panel_manager", "classpanel__manager.html#a71a9688bcf7c4d0b9aa4eff5e6caa308", null ],
+    [ "panel_manager", "classpanel__manager.html#af881314eadb622f1e032469a3df68b27", null ],
+    [ "panel_manager", "classpanel__manager.html#a520eaa8a15686ebaba2722a169f9ba35", null ],
+    [ "deserialize", "classpanel__manager.html#a841064242dc9f4204c8e693fc9644548", null ],
+    [ "get_current_layout", "classpanel__manager.html#ac02f880a3ec80e53e685fcedab538a26", null ],
+    [ "get_current_layout_id", "classpanel__manager.html#a3f6290efcd5bca21c3cf44762bca2a91", null ],
+    [ "get_manager", "classpanel__manager.html#a1196cd08699822653246ccafd856f72c", null ],
+    [ "get_width_left", "classpanel__manager.html#a75a7f12c04e44f751aaf435b30b3abe9", null ],
+    [ "get_width_right", "classpanel__manager.html#a5e3e7db0d58a3f4ed97f94dc8ebb29fb", null ],
+    [ "init", "classpanel__manager.html#a764b62d1c22f2f708a117a3f94cbccc3", null ],
+    [ "load", "classpanel__manager.html#af968f9f61eeca5d31a1b2aa0ea7c42c4", null ],
+    [ "operator=", "classpanel__manager.html#a5d1df8cc6bcb1837c31a4488f5f48d8d", null ],
+    [ "operator=", "classpanel__manager.html#ad0e80e0ce12c833d1cfa42697b059307", null ],
+    [ "save", "classpanel__manager.html#ab031d9daecf88ae13b98bba3e34c36ae", null ],
+    [ "serialize", "classpanel__manager.html#a62dc98ef9d637a2d524f12804f6fd61a", null ],
+    [ "show_adm", "classpanel__manager.html#aa5ba7d7359e9b1005f7902ecb7e51138", null ],
+    [ "update_offsets", "classpanel__manager.html#a94ac1284873725705865f04ff1591928", null ],
+    [ "current_layout_id", "classpanel__manager.html#a7aee468ef188c1cf446cf3510af7ec00", null ],
+    [ "layouts", "classpanel__manager.html#a0cbf45338fa50cec8242da77489a6299", null ],
+    [ "width_left", "classpanel__manager.html#a0f46eadb582ad2fb0c9aa10a69651d6c", null ],
+    [ "width_right", "classpanel__manager.html#aca548342163a8b188376a7ab381fe206", null ]
+];

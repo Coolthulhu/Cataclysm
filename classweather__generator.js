@@ -1,0 +1,28 @@
+var classweather__generator =
+[
+    [ "weather_generator", "classweather__generator.html#acaa457174876d7f66b418a52860ff478", null ],
+    [ "convert_winddir", "classweather__generator.html#a5140a7d3ee15a253737e345e0f544873", null ],
+    [ "forecast_priority", "classweather__generator.html#a63c5993e80556af46e40859dc4dcba98", null ],
+    [ "get_bad_weather", "classweather__generator.html#a2d93918f67751a18fc3a223b725614ba", null ],
+    [ "get_default_weather", "classweather__generator.html#ae9a32ae47291059406dfb7fb30bba12e", null ],
+    [ "get_water_temperature", "classweather__generator.html#a520032dea85224ce2c8067427779500e", null ],
+    [ "get_weather", "classweather__generator.html#a6c0ba4e897f29b3a9e907ad5ed38396d", null ],
+    [ "get_weather", "classweather__generator.html#a46ace1d6cc59ff6f35c52510109401bb", null ],
+    [ "get_weather_conditions", "classweather__generator.html#a8bb595162b04237688d2d4d8b396da51", null ],
+    [ "get_weather_conditions", "classweather__generator.html#ae06bd22f1c3cbb02a44ecd2f14611f7b", null ],
+    [ "get_weather_temperature", "classweather__generator.html#a4e1ddcba53060d20c58fe3b00b55390c", null ],
+    [ "get_wind_direction", "classweather__generator.html#a407ff4e5d072c61fb110975da277b420", null ],
+    [ "load", "classweather__generator.html#a1c9b578b4d045f3cd443b24371417ee0", null ],
+    [ "test_weather", "classweather__generator.html#a937cfd8913597bb89b82a0434a0cfe4e", null ],
+    [ "base_acid", "classweather__generator.html#a66b0441a13bb5aaac31eaa12c26328e9", null ],
+    [ "base_humidity", "classweather__generator.html#aa48c863c065b9b03e1dc394ed36c5f51", null ],
+    [ "base_pressure", "classweather__generator.html#a2b99babf098c47e17ab7a8529faadebb", null ],
+    [ "base_wind", "classweather__generator.html#af0faca68d15d8c717b81108b01e8b730", null ],
+    [ "base_wind_distrib_peaks", "classweather__generator.html#a670cb2c4f99da7329c67d5c50f53cb4a", null ],
+    [ "base_wind_season_variation", "classweather__generator.html#ac715aeb1356b672b53590c9ac3fc512f", null ],
+    [ "current_winddir", "classweather__generator.html#a5eb2854b50dc560bc89f19ba9c5ad6b0", null ],
+    [ "season_stats", "classweather__generator.html#af39220be750b6701f594ba9c64e06a01", null ],
+    [ "temperature_daily_amplitude", "classweather__generator.html#a5300955981444e17e70f26fcff4d3fa9", null ],
+    [ "temperature_noise_amplitude", "classweather__generator.html#a243da230925476c28e78a96e7a5fa4ad", null ],
+    [ "weather_types", "classweather__generator.html#adcfd1ffe9424ba71c37f395ca3d0212b", null ]
+];

@@ -1,0 +1,36 @@
+var vehicle__use_8cpp =
+[
+    [ "change_types", "vehicle__use_8cpp.html#a8d872f8d0407d4d574214d96d44b3a17", [
+      [ "OPENCURTAINS", "vehicle__use_8cpp.html#a8d872f8d0407d4d574214d96d44b3a17a52d9b1a92da786ed4fa44841dc41ad3f", null ],
+      [ "OPENBOTH", "vehicle__use_8cpp.html#a8d872f8d0407d4d574214d96d44b3a17a44139436fa460736a86813f9101f0592", null ],
+      [ "CLOSEDOORS", "vehicle__use_8cpp.html#a8d872f8d0407d4d574214d96d44b3a17a02f444baab5e97f2ea1ae5e41838a21f", null ],
+      [ "CLOSEBOTH", "vehicle__use_8cpp.html#a8d872f8d0407d4d574214d96d44b3a17a3239621b9e0e2e6830d6f8651784d7f5", null ],
+      [ "CANCEL", "vehicle__use_8cpp.html#a8d872f8d0407d4d574214d96d44b3a17ae4842754cb17e5234637e3a85a7f3d90", null ]
+    ] ],
+    [ "handbrake", "vehicle__use_8cpp.html#af62204c610c3c22a0ca114864a5f2822", null ],
+    [ "keybind", "vehicle__use_8cpp.html#aa2ceccc4206df9156875336ef6a593de", null ],
+    [ "ACT_HOTWIRE_CAR", "vehicle__use_8cpp.html#a9ba9cd3ad30d2cfa0c96098fa98e24f2", null ],
+    [ "ACT_RELOAD", "vehicle__use_8cpp.html#a475d61c972bace437e3341103ee5e17c", null ],
+    [ "ACT_START_ENGINES", "vehicle__use_8cpp.html#ae0e6faf740eed5d3972bfbb84a03faab", null ],
+    [ "effect_harnessed", "vehicle__use_8cpp.html#a7697771dc47ecaeff36785ff20c9aa33", null ],
+    [ "effect_tied", "vehicle__use_8cpp.html#a09c667a72022d7e0ee0b851560831e04", null ],
+    [ "fault_diesel", "vehicle__use_8cpp.html#abcb3e64fc26495e989fdd151f659ab00", null ],
+    [ "fault_glowplug", "vehicle__use_8cpp.html#a39ad5e6128d1cd982830d65b95094a60", null ],
+    [ "fault_immobiliser", "vehicle__use_8cpp.html#abdff65814bacc115b63402844460a99e", null ],
+    [ "fault_pump", "vehicle__use_8cpp.html#ad9ac7089aa8c54b014320bc09cf4c3a9", null ],
+    [ "fault_starter", "vehicle__use_8cpp.html#a2ff2ed0fb01c29353047de869f04657e", null ],
+    [ "fuel_type_battery", "vehicle__use_8cpp.html#a3f2436294a28dc686156c10abab2f994", null ],
+    [ "fuel_type_muscle", "vehicle__use_8cpp.html#af54ee122fbd5cf94c6ef8bca7e67c8e8", null ],
+    [ "fuel_type_none", "vehicle__use_8cpp.html#a0f2fca171b1445ba75107afa924e30e3", null ],
+    [ "fuel_type_wind", "vehicle__use_8cpp.html#aacae8af2b949fe924016b5e370170fc8", null ],
+    [ "itype_battery", "vehicle__use_8cpp.html#ab5f267c571dc194e5b7e0b10b5136a33", null ],
+    [ "itype_detergent", "vehicle__use_8cpp.html#a94c468761d26393294e93fd61638b9b3", null ],
+    [ "itype_fungal_seeds", "vehicle__use_8cpp.html#a1dde15b62a88d05d0f3218beccaedc4e", null ],
+    [ "itype_hotplate", "vehicle__use_8cpp.html#a6341843b361543b335aaf869a0e7bb7d", null ],
+    [ "itype_marloss_seed", "vehicle__use_8cpp.html#a398ef54be46ee27b157365a389e9d4e5", null ],
+    [ "itype_water", "vehicle__use_8cpp.html#abfd8b1d23930a50d7f122f0d39538649", null ],
+    [ "itype_water_clean", "vehicle__use_8cpp.html#a04c0f30be5943072fbaecacc8a0cf848", null ],
+    [ "itype_water_purifier", "vehicle__use_8cpp.html#a23c8190c3fbddc3ba5596ce2b31d8ce6", null ],
+    [ "itype_welder", "vehicle__use_8cpp.html#af8e36ab370766d9dc7c2da5461285f61", null ],
+    [ "skill_mechanics", "vehicle__use_8cpp.html#a53a27ba882bb24158d8752e53158bf46", null ]
+];

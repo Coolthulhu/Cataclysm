@@ -1,0 +1,27 @@
+var classmod__manager =
+[
+    [ "t_mod_list", "classmod__manager.html#a8123e6d7127e5dab2bbf1580dd9a4c2c", null ],
+    [ "mod_manager", "classmod__manager.html#af66f82be33a6dc1eda6c54e68b375125", null ],
+    [ "~mod_manager", "classmod__manager.html#ab8d1bbc2972720cac68be3118ee75f9c", null ],
+    [ "add_mods", "classmod__manager.html#a8dfd4138945f787938adeb361ef43a3d", null ],
+    [ "all_mods", "classmod__manager.html#af9c997cf91ca4d63b36cab597c1f4f8c", null ],
+    [ "clear", "classmod__manager.html#a33a9b28c00a424600ab147b3ed1317fa", null ],
+    [ "get_all_sorted", "classmod__manager.html#a413053e2f5432f39e3dbb7b01d9e31da", null ],
+    [ "get_default_mods", "classmod__manager.html#a14455bce47298bd216ec4b0aa1f4dbbe", null ],
+    [ "get_mods_list_file", "classmod__manager.html#a99def069fa1a0ab61800481222de987d", null ],
+    [ "get_tree", "classmod__manager.html#a3d4c800f4b81ef183aa542852f9b9630", null ],
+    [ "load_mods_list", "classmod__manager.html#a5f14762dd800d7b4ae9e1cf5a2d81331", null ],
+    [ "load_replacement_mods", "classmod__manager.html#ae361ef5fa0d2e08ec56707547abec745", null ],
+    [ "refresh_mod_list", "classmod__manager.html#ace325fe5f25a8cf2d68e4886031afa72", null ],
+    [ "remove_invalid_mods", "classmod__manager.html#a1480d14ed4f34d3a6cee037d6f0f1ad9", null ],
+    [ "remove_mod", "classmod__manager.html#a0738092f1dd2a588748fa2ffa69a81a3", null ],
+    [ "save_mods_list", "classmod__manager.html#a0acad5b26969f9fd7fddae79826463f2", null ],
+    [ "set_default_mods", "classmod__manager.html#a712f09cbc34b98bbe029c8096ced4776", null ],
+    [ "mod_ui", "classmod__manager.html#a331b23c7b4a1e371d4c10d901e84a733", null ],
+    [ "worldfactory", "classmod__manager.html#a49bc0a851138855e2900d543cb9f9a28", null ],
+    [ "default_mods", "classmod__manager.html#ac3a0ff2c40efd79171ffff52588a9d3c", null ],
+    [ "mod_id", "classmod__manager.html#a6d152689daec4a1fb17a51b2f281b114", null ],
+    [ "mod_map", "classmod__manager.html#aa363b8addc0af807679111ddd2206777", null ],
+    [ "mod_replacements", "classmod__manager.html#a5a75ecdc16a53b03aa1359fff14af707", null ],
+    [ "tree", "classmod__manager.html#a2368371dc6be0de88f45b3c7d413a601", null ]
+];

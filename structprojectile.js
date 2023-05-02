@@ -1,0 +1,26 @@
+var structprojectile =
+[
+    [ "projectile", "structprojectile.html#a7354ca1daaaef6fd1ed0ab62ca3bf9c1", null ],
+    [ "projectile", "structprojectile.html#a6ea6c2790a30a90de6298f133eb89911", null ],
+    [ "projectile", "structprojectile.html#a133086bd062c8499f6b08877640ed86e", null ],
+    [ "~projectile", "structprojectile.html#a06144f890c4579ec8e25ebc9095a1768", null ],
+    [ "add_effect", "structprojectile.html#a05d90cbb1c83669dd7c23477c8f35963", null ],
+    [ "deserialize", "structprojectile.html#a5f4a89a8ee551d30f98cb3741ae8b9f4", null ],
+    [ "get_ammo_effects", "structprojectile.html#a6daaa295dedd65863fa4df34832b48ac", null ],
+    [ "get_custom_explosion", "structprojectile.html#a5fcd41d46e5ffb373b840ae4f66e38c0", null ],
+    [ "get_drop", "structprojectile.html#a370f9c2a4b37c7ed526f9d2fd1442328", null ],
+    [ "has_effect", "structprojectile.html#aff5ad1d0b09b8de0a516fa61063cad14", null ],
+    [ "load", "structprojectile.html#a0ee580471861f852c6cde9536879cd4f", null ],
+    [ "operator=", "structprojectile.html#a89ac71aca57acd165a7bedaba60dc2e9", null ],
+    [ "set_custom_explosion", "structprojectile.html#a3eb9cbe946d6bf2131eeae97d2d1230d", null ],
+    [ "set_drop", "structprojectile.html#a2bbf20562006058aa939aa5339860ba7", null ],
+    [ "set_drop", "structprojectile.html#a576872e2bba84e1db0478ab60e05c4e6", null ],
+    [ "unset_custom_explosion", "structprojectile.html#a00028c6a471291a6aab9d1b8d817905d", null ],
+    [ "unset_drop", "structprojectile.html#a12e250767ce929f275294bf33be2cc69", null ],
+    [ "custom_explosion", "structprojectile.html#a6b9b648da9159db525b0478795d44b7c", null ],
+    [ "drop", "structprojectile.html#a178671b77d9152b4afba75a1c8f60e7e", null ],
+    [ "impact", "structprojectile.html#a82d8f657f8cfc4e180c15bfab8ca8a6e", null ],
+    [ "proj_effects", "structprojectile.html#a84dc2756488fb96c42faac22d0dbbeed", null ],
+    [ "range", "structprojectile.html#a312bc9a78fe7a5fdefb44e3755154db3", null ],
+    [ "speed", "structprojectile.html#aa2af53bce63feecb719ef1edba54689e", null ]
+];

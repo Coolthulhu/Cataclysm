@@ -1,0 +1,27 @@
+var structweather__type =
+[
+    [ "weather_type", "structweather__type.html#a3e4658a13dc55a94e37a2d3332ac9616", null ],
+    [ "check", "structweather__type.html#a4c0bd1861eb62532f2371c2868da7970", null ],
+    [ "get_symbol", "structweather__type.html#ad6317964f63f103a218ab7cb4afbeedc", null ],
+    [ "load", "structweather__type.html#ad765347e74559afaedf3abca80dcc475", null ],
+    [ "generic_factory< weather_type >", "structweather__type.html#aee1a01633789b30d424306fc80a41965", null ],
+    [ "acidic", "structweather__type.html#aaae01bd8265eee84e7ad2f5db6e42f34", null ],
+    [ "animation", "structweather__type.html#afe588a9ce50a7bb69dd1a8053b1bafaa", null ],
+    [ "color", "structweather__type.html#adbe2f4924248017e73b8925a95b68cb5", null ],
+    [ "dangerous", "structweather__type.html#a336e5eb5dbc911a37e4d7b0dd7bfc415", null ],
+    [ "effects", "structweather__type.html#a54fbec40e14fd7f773d51fba58aa5c23", null ],
+    [ "id", "structweather__type.html#abf580217ff3b8a2b6d355709a38c95f2", null ],
+    [ "light_modifier", "structweather__type.html#a17138c6161d77434f155a62cca95efd1", null ],
+    [ "map_color", "structweather__type.html#aa71b17c1bafb890cc6a0756642a87a0d", null ],
+    [ "name", "structweather__type.html#a45c3434d18578e7839383583de59cdcd", null ],
+    [ "precip", "structweather__type.html#a61499fdc29ba6cd5b99ebf0254945c81", null ],
+    [ "rains", "structweather__type.html#a417de895446fdee540d2a39484d7563c", null ],
+    [ "ranged_penalty", "structweather__type.html#a0c976fee1bcb005a95705ccf848bb5fc", null ],
+    [ "requirements", "structweather__type.html#ab7bcbfdf7a9dcba35ce7edb15b19a167", null ],
+    [ "sight_penalty", "structweather__type.html#a0d7fdb3127be2664a6039a9b8a881fe1", null ],
+    [ "sound_attn", "structweather__type.html#af287a6a4389e297003eae84965c94720", null ],
+    [ "sound_category", "structweather__type.html#a90848ab46403b9e6e5ea1c9f9537e451", null ],
+    [ "sun_intensity", "structweather__type.html#af895bf8ea3e6f626e43c6a0aa7e66fca", null ],
+    [ "symbol", "structweather__type.html#a191e9db5a290b4834ddb61bed0e2874c", null ],
+    [ "was_loaded", "structweather__type.html#a7e59f83e24098be8dd39f6cfb756d87d", null ]
+];

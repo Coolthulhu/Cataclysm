@@ -1,0 +1,27 @@
+var cata__utility_8h =
+[
+    [ "pair_greater_cmp_first", "structpair__greater__cmp__first.html", "structpair__greater__cmp__first" ],
+    [ "null_deleter", "structnull__deleter.html", "structnull__deleter" ],
+    [ "list_circularizer< T >", "classlist__circularizer.html", "classlist__circularizer" ],
+    [ "on_out_of_scope", "classon__out__of__scope.html", "classon__out__of__scope" ],
+    [ "restore_on_out_of_scope< T >", "classrestore__on__out__of__scope.html", "classrestore__on__out__of__scope" ],
+    [ "CATA_SRC_CATA_UTILITY_H", "cata__utility_8h.html#a8f25a0f27f0a96dd11a5fce99c420969", null ],
+    [ "bound_mod_to_vals", "cata__utility_8h.html#a83338e5cfd99aac60a46f68a518b1bc2", null ],
+    [ "clamp", "cata__utility_8h.html#ad22b4a043b6eb4c2c06f87f83b720b15", null ],
+    [ "clamp_to_width", "cata__utility_8h.html#a7932fbdf57e169d07e4e745365262393", null ],
+    [ "clamp_to_width", "cata__utility_8h.html#af1fdd27f531841ea8ab1bf12c500cb8f", null ],
+    [ "divide_round_up", "cata__utility_8h.html#a9312e12ba19546023c021438a29b8830", null ],
+    [ "erase_if", "cata__utility_8h.html#ad7f4be1b8ffc52a0be18e72d041241af", null ],
+    [ "fast_floor", "cata__utility_8h.html#a9ac61d2d90ee98566572b241750e8246", null ],
+    [ "get_holiday_from_time", "cata__utility_8h.html#a31aabb59d1a4a9771394b9b7902265be", null ],
+    [ "isBetween", "cata__utility_8h.html#aacdf27156d98b65ffe95503a510df4f5", null ],
+    [ "lerp", "cata__utility_8h.html#ae9132dc8c0ea42f2d015053c30730de1", null ],
+    [ "lerp_clamped", "cata__utility_8h.html#a0f6310f33fb6c6c666dca553b8395c7c", null ],
+    [ "logarithmic", "cata__utility_8h.html#a1dabdd2cede5afc6bec5c63bfdadf13d", null ],
+    [ "logarithmic_range", "cata__utility_8h.html#a6a85dc6d2ab7bcb093e77d20fcf171d6", null ],
+    [ "modulo", "cata__utility_8h.html#aa6f470a02d08b2537d7ac06d3cabaf45", null ],
+    [ "multi_lerp", "cata__utility_8h.html#ac49c7bae3c3ac926a5501ffb127c1e97", null ],
+    [ "normal_cdf", "cata__utility_8h.html#aedad91155e8b8c3f459bd5c588b80dd0", null ],
+    [ "obscure_message", "cata__utility_8h.html#aef9839561ee9641f7ba15ac9fe4f40c1", null ],
+    [ "round_up", "cata__utility_8h.html#a9dbcecb703a6e1111a0552177b6bf9fc", null ]
+];

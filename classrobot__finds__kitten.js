@@ -1,0 +1,35 @@
+var classrobot__finds__kitten =
+[
+    [ "ui_state", "classrobot__finds__kitten.html#a45c31759b053178313fc5bd0ea6037a6", [
+      [ "instructions", "classrobot__finds__kitten.html#a45c31759b053178313fc5bd0ea6037a6acbde2df6a7c89370edc449dc5705d30c", null ],
+      [ "main", "classrobot__finds__kitten.html#a45c31759b053178313fc5bd0ea6037a6afad58de7366495db4650cfefac2fcd61", null ],
+      [ "invalid_input", "classrobot__finds__kitten.html#a45c31759b053178313fc5bd0ea6037a6a1080ed39e08a161dc545804658700e33", null ],
+      [ "bogus_message", "classrobot__finds__kitten.html#a45c31759b053178313fc5bd0ea6037a6a6d3daae302484a6419bd1174d93bcd95", null ],
+      [ "end_animation", "classrobot__finds__kitten.html#a45c31759b053178313fc5bd0ea6037a6af41fcc89ecb84426cb97cfdd61fb21e6", null ],
+      [ "exit", "classrobot__finds__kitten.html#a45c31759b053178313fc5bd0ea6037a6af24f62eeb789199b9b2e467df3b1876b", null ]
+    ] ],
+    [ "robot_finds_kitten", "classrobot__finds__kitten.html#a6b0d894d037be0a2ff91f184c76ce151", null ],
+    [ "draw_kitten", "classrobot__finds__kitten.html#acb852ce029f3bf97f41e9c982515d4cf", null ],
+    [ "draw_robot", "classrobot__finds__kitten.html#a3f1772b2f568f7e7143f1e2cce1afc8d", null ],
+    [ "getmessage", "classrobot__finds__kitten.html#a79db224812c661bff487eb39b640bdeb", null ],
+    [ "process_input", "classrobot__finds__kitten.html#a5e531c773defc8a1e4d2104345833127", null ],
+    [ "show", "classrobot__finds__kitten.html#a15f48d070e2b4222d407d123e6f0caea", null ],
+    [ "bkatwin", "classrobot__finds__kitten.html#a9bb35fc46e6ce113ed2f38b51b51ebb5", null ],
+    [ "bogus", "classrobot__finds__kitten.html#a52250d37326b9b60443f234cbe30b755", null ],
+    [ "bogus_message_idx", "classrobot__finds__kitten.html#a3c6c786f2468c3c23d084bb10f7df560", null ],
+    [ "bogus_messages", "classrobot__finds__kitten.html#aecdb28cb230b0b00e36a3ae278ef5259", null ],
+    [ "current_ui_state", "classrobot__finds__kitten.html#a184870d8c583f5cca363cd51b62bbba7", null ],
+    [ "empty", "classrobot__finds__kitten.html#a884267fb53fb5774784c910acaa60506", null ],
+    [ "end_animation_frame", "classrobot__finds__kitten.html#a0eaa3adcdf106a67b01d235a15144272", null ],
+    [ "end_animation_last_input_left_or_up", "classrobot__finds__kitten.html#aadd731d2247b886f20bfa7d026e185f2", null ],
+    [ "kitten", "classrobot__finds__kitten.html#a2ec3cf2977508663b03e3da09a036175", null ],
+    [ "num_end_animation_frames", "classrobot__finds__kitten.html#a7c7df3218c3ff531513927d6d15f45b6", null ],
+    [ "numbogus", "classrobot__finds__kitten.html#a2c332163b70879d94543d1875e1c5364", null ],
+    [ "nummessages", "classrobot__finds__kitten.html#a26611cef2b05ee8ae097fa56b24364f2", null ],
+    [ "ret", "classrobot__finds__kitten.html#aaeeeb05e294afe1bd3aa2dfa0f3a3927", null ],
+    [ "rfkCOLS", "classrobot__finds__kitten.html#a3a76e6486f6f745d7dfef592a236ecaa", null ],
+    [ "rfkLINES", "classrobot__finds__kitten.html#aa19984ae080ac897a7ff8d55636967fe", null ],
+    [ "rfkscreen", "classrobot__finds__kitten.html#a83aa5e2e2d9b99e4bdc7a58acddad513", null ],
+    [ "robot", "classrobot__finds__kitten.html#a0d782a2fab8a33ba0a447bf09aaa9a3e", null ],
+    [ "w", "classrobot__finds__kitten.html#ac3d6eefa05a87e9b39c1a01cd282ab1c", null ]
+];

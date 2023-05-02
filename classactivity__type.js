@@ -1,0 +1,27 @@
+var classactivity__type =
+[
+    [ "based_on", "classactivity__type.html#a01147d9db2d1bf7fb13335f8a6c5670a", null ],
+    [ "call_do_turn", "classactivity__type.html#a3f83e1a21e15b9a36bb2ffe9c1c96b90", null ],
+    [ "call_finish", "classactivity__type.html#a96a74ec754eb8c2f48873a26429e6173", null ],
+    [ "check_consistency", "classactivity__type.html#a2c563452c891e4ab53db0be7bf169fd4", null ],
+    [ "id", "classactivity__type.html#aae0a285413865bd43a36f97eff757437", null ],
+    [ "load", "classactivity__type.html#a0810c752a17c32ead29bfcfeca768c08", null ],
+    [ "multi_activity", "classactivity__type.html#aa5ac16650391c20842e0f091df5c3e05", null ],
+    [ "no_resume", "classactivity__type.html#a31c383e5dc81ad4df044ea97b7766224", null ],
+    [ "reset", "classactivity__type.html#a4ba4766a422156ce7b2fc7487f783a99", null ],
+    [ "rooted", "classactivity__type.html#a8c7737b83f50f87dbc1e0c4a920f8834", null ],
+    [ "stop_phrase", "classactivity__type.html#ad92938fe43dae0b166b017a0d4afde61", null ],
+    [ "suspendable", "classactivity__type.html#a54a8507ca430b5e4673d376790928459", null ],
+    [ "valid_auto_needs", "classactivity__type.html#a11aacfbd78191ccc9556a6dbb23e1efb", null ],
+    [ "verb", "classactivity__type.html#a895de2408ed81a8aaa60df8e2e64265e", null ],
+    [ "will_refuel_fires", "classactivity__type.html#a28ce4287c06b4b532a5231f8fdef4da8", null ],
+    [ "auto_needs", "classactivity__type.html#a25bd30a6d62a032791353c72fa349bb6", null ],
+    [ "based_on_", "classactivity__type.html#aec24eaa563774761b523b97bbd1a7e42", null ],
+    [ "id_", "classactivity__type.html#a30f219985982de9f6b162793ab759ca3", null ],
+    [ "multi_activity_", "classactivity__type.html#a0dc8e0722cfc90ecb75639f4c459a4f0", null ],
+    [ "no_resume_", "classactivity__type.html#ac5a08c3a2e1f7fb63a064e65f974d3dc", null ],
+    [ "refuel_fires", "classactivity__type.html#a0e10a476390007e7a7d9364cb4beb863", null ],
+    [ "rooted_", "classactivity__type.html#ab0d3ca4180b4222391bed6dc1c350046", null ],
+    [ "suspendable_", "classactivity__type.html#a381f72f72b5a22e260e965294b08ea96", null ],
+    [ "verb_", "classactivity__type.html#ab20867ecde3033c25266deac3c992bbf", null ]
+];

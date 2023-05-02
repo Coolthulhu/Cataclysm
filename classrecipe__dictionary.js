@@ -1,0 +1,25 @@
+var classrecipe__dictionary =
+[
+    [ "all_autolearn", "classrecipe__dictionary.html#a3ba3163fa7098ae76be6b22f19b9d1ba", null ],
+    [ "all_blueprints", "classrecipe__dictionary.html#adf65ef185fb52b409b9d72c3537355a6", null ],
+    [ "begin", "classrecipe__dictionary.html#a4ef6b881ec69698511cab4bec344d7bd", null ],
+    [ "delete_if", "classrecipe__dictionary.html#ad49f5c9ba2c66330d4ad3daf00c2b781", null ],
+    [ "end", "classrecipe__dictionary.html#aa2a104bbbaebfa68db8a30bfca9712c9", null ],
+    [ "finalize", "classrecipe__dictionary.html#ad5e10f23ae1e68737a623dcca14d56ef", null ],
+    [ "finalize_internal", "classrecipe__dictionary.html#a23e924cce688d42d2c540f135b01987a", null ],
+    [ "find_items_on_loops", "classrecipe__dictionary.html#a842b4f187c25f5305d38430868266526", null ],
+    [ "get_uncraft", "classrecipe__dictionary.html#a93af439fed4b5043d9709235e0cea03e", null ],
+    [ "is_item_on_loop", "classrecipe__dictionary.html#a5f22263eae1314377f1c64ff6d6400fe", null ],
+    [ "load", "classrecipe__dictionary.html#aeb257c2c00a331d26c134065f0afcec6", null ],
+    [ "load_recipe", "classrecipe__dictionary.html#a704e88f15078b1b02fe7b6cad7d0bfab", null ],
+    [ "load_uncraft", "classrecipe__dictionary.html#a6b4a7eb6cc79e90023099ffee5e6fc45", null ],
+    [ "reset", "classrecipe__dictionary.html#ae8a411b40fc9a812a5bb6053b232a863", null ],
+    [ "size", "classrecipe__dictionary.html#a3212bd9bc89e6fd471e914a615b3b1aa", null ],
+    [ "Item_factory", "classrecipe__dictionary.html#a0327027cb6b02370da223bb60fb3ba60", null ],
+    [ "autolearn", "classrecipe__dictionary.html#a896d4331d7d1a8e228bd3c21afe5584b", null ],
+    [ "blueprints", "classrecipe__dictionary.html#a59217bb3c16430212409a23282f3666a", null ],
+    [ "items_on_loops", "classrecipe__dictionary.html#aa915b4db5d46ad2f63245b2dd3d28cfd", null ],
+    [ "recipe_id", "classrecipe__dictionary.html#ad288eccf5581cea2d7dfc982c8c1069c", null ],
+    [ "recipes", "classrecipe__dictionary.html#a901c2ebf1ac5b39f12986da3ea7e023a", null ],
+    [ "uncraft", "classrecipe__dictionary.html#a977f03247775526e965b64dc314007e4", null ]
+];

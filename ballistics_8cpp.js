@@ -1,0 +1,26 @@
+var ballistics_8cpp =
+[
+    [ "blood_trail_len", "ballistics_8cpp.html#af96b03314ba7a36b8a04b9ee5bacb7f9", null ],
+    [ "drop_or_embed_projectile", "ballistics_8cpp.html#a2ed3afd8aecc72079ebd5b8697380e8f", null ],
+    [ "flag_LIQUID", "ballistics_8cpp.html#a4d46ec656f4868fa3b493812e72e8509", null ],
+    [ "hit_chance", "ballistics_8cpp.html#ad0ad7f6e4c593e68012655f0befed8cf", null ],
+    [ "projectile_attack", "ballistics_8cpp.html#aeded5f16540ef8f873a7d9eb5edca240", null ],
+    [ "projectile_attack_roll", "ballistics_8cpp.html#acb706f9463b8dfb5ddc91164229d3652", null ],
+    [ "ammo_effect_ACT_ON_RANGED_HIT", "ballistics_8cpp.html#a4832c47fe321946202cd17b211b27862", null ],
+    [ "ammo_effect_BOUNCE", "ballistics_8cpp.html#a2e2f893aee74eb40d2c1609963133838", null ],
+    [ "ammo_effect_BURST", "ballistics_8cpp.html#a336ae362f6bd28ffde9cd73ccf9be4ae", null ],
+    [ "ammo_effect_DRAW_AS_LINE", "ballistics_8cpp.html#a3c10ef3536e0c4bafb18f90b2724ca43", null ],
+    [ "ammo_effect_HEAVY_HIT", "ballistics_8cpp.html#a56ca2e5cfeec3ed46b11661ab0d4a51d", null ],
+    [ "ammo_effect_JET", "ballistics_8cpp.html#a2a355bb60105bcf97e1250fa0b7cf6f7", null ],
+    [ "ammo_effect_MUZZLE_SMOKE", "ballistics_8cpp.html#a2739202289b5cb7583d55e7b87463b9f", null ],
+    [ "ammo_effect_NO_EMBED", "ballistics_8cpp.html#a8f6e1a41d7fec5aac1acdc98363c8cc4", null ],
+    [ "ammo_effect_NO_ITEM_DAMAGE", "ballistics_8cpp.html#aa3f58e0db88c98c686cbce467d25fd94", null ],
+    [ "ammo_effect_NO_OVERSHOOT", "ballistics_8cpp.html#a2aa953c727f71553252f83fe6cf2abc4", null ],
+    [ "ammo_effect_NO_PENETRATE_OBSTACLES", "ballistics_8cpp.html#adc47249c6989863b6c7c908e7b838a64", null ],
+    [ "ammo_effect_NULL_SOURCE", "ballistics_8cpp.html#ae11c331309488008babe909acd123c43", null ],
+    [ "ammo_effect_SHATTER_SELF", "ballistics_8cpp.html#a7037269f2b6a941bc0e3f2e659450f32", null ],
+    [ "ammo_effect_STREAM", "ballistics_8cpp.html#a5798690cf3c1b127970600d1ba56de3e", null ],
+    [ "ammo_effect_STREAM_BIG", "ballistics_8cpp.html#a791d5a0a90a0aef2508e4f07c333a455", null ],
+    [ "ammo_effect_TANGLE", "ballistics_8cpp.html#aa629b07204a26cf4e57eabe425b3d5c4", null ],
+    [ "effect_bounced", "ballistics_8cpp.html#aa3f7307ad230ecea38f95a4ff0b8ee05", null ]
+];

@@ -1,0 +1,25 @@
+var mapsharing_8h =
+[
+    [ "CATA_SRC_MAPSHARING_H", "mapsharing_8h.html#a5f59979f6a70c7e2c2503fd73c967b71", null ],
+    [ "addAdmin", "mapsharing_8h.html#a77a25d8b951390c8f157e594e1e2993c", null ],
+    [ "addDebugger", "mapsharing_8h.html#a10bef27752c93b2f9bbaae8ebbe56f8e", null ],
+    [ "getUsername", "mapsharing_8h.html#a8a50f106fc949b3c3bf2d3fdc0e623bd", null ],
+    [ "isAdmin", "mapsharing_8h.html#a7c7d2aa50494b958ab1fc6610d9e3f89", null ],
+    [ "isCompetitive", "mapsharing_8h.html#abc8cbc08fc74df46650275de89abb982", null ],
+    [ "isDebugger", "mapsharing_8h.html#a726c3ba96c7390ca6a9c699b3a1d43a8", null ],
+    [ "isSharing", "mapsharing_8h.html#a92b7c404c47f8fdfb48e7f0e25adbd51", null ],
+    [ "isWorldmenu", "mapsharing_8h.html#adb9446c966773acd3a7e7c1e5f96ad4a", null ],
+    [ "setAdmins", "mapsharing_8h.html#a2692c9706e3b570977768a2c9715671f", null ],
+    [ "setCompetitive", "mapsharing_8h.html#a8ad768942ad5f10fbcedace890b765c1", null ],
+    [ "setDebuggers", "mapsharing_8h.html#aeba15c60ce93d910b8f0ff7ed96c1662", null ],
+    [ "setDefaults", "mapsharing_8h.html#abfdff999a8130fffe4c038e1b6a62fa1", null ],
+    [ "setSharing", "mapsharing_8h.html#a72f458a2583a74c94e7851c729b29119", null ],
+    [ "setUsername", "mapsharing_8h.html#ac64ca2f2e91ca8aba49a309174449459", null ],
+    [ "setWorldmenu", "mapsharing_8h.html#a0f03303c8148c96ca736357af2e60cf4", null ],
+    [ "admins", "mapsharing_8h.html#a90106525654c7319b0e6f37a86df7117", null ],
+    [ "competitive", "mapsharing_8h.html#a771e136faa9b82cc35b97bfd6d4c5bd1", null ],
+    [ "debuggers", "mapsharing_8h.html#a40a19c1d5b8b623c4461b33f239d61d3", null ],
+    [ "sharing", "mapsharing_8h.html#ad5033bc82d85ce58dc40513ea59f8a38", null ],
+    [ "username", "mapsharing_8h.html#a4ff7fee9fc8e5b1f6a509fdc7e317965", null ],
+    [ "worldmenu", "mapsharing_8h.html#acdba2884091b708c8189bc76337e1c3a", null ]
+];

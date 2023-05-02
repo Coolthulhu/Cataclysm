@@ -1,0 +1,25 @@
+var classmap__memory =
+[
+    [ "coord_pair", "structmap__memory_1_1coord__pair.html", "structmap__memory_1_1coord__pair" ],
+    [ "map_memory", "classmap__memory.html#aec1e83dc40578f56af76fa6c4ea7bdcc", null ],
+    [ "allocate_submap", "classmap__memory.html#ab2beba6bc89115b354f091c2b73d370d", null ],
+    [ "clear_cache", "classmap__memory.html#a0448165513bfe794e21bb06ae4b1babe", null ],
+    [ "clear_memorized_tile", "classmap__memory.html#a4696746c0f92fefab1cfd2da4c7ba95d", null ],
+    [ "fetch_submap", "classmap__memory.html#a1852f850a5d996c3985dc291746698d8", null ],
+    [ "find_submap", "classmap__memory.html#a0331080ab72e8adbe183547323094db8", null ],
+    [ "get_submap", "classmap__memory.html#a8fa92ec84354ef5838488eae75f6a898", null ],
+    [ "get_symbol", "classmap__memory.html#a0f164392cbe243d69c5e1deb4f65e2bc", null ],
+    [ "get_tile", "classmap__memory.html#a04194838c02b48cf791420e76dd1b417", null ],
+    [ "has_memory_for_autodrive", "classmap__memory.html#a2d9bff444d37eb99aca401e0ac676afc", null ],
+    [ "load", "classmap__memory.html#a1585b7e7c6b4686f31de0e33d1d04166", null ],
+    [ "load_legacy", "classmap__memory.html#a6dc64627e5416a305980a6bcca0c94d3", null ],
+    [ "load_submap", "classmap__memory.html#a2546ffba689ab845f1eb5d7fa1c5a230", null ],
+    [ "memorize_symbol", "classmap__memory.html#af7fb38d5cc2542eccd8bebe574c47dd0", null ],
+    [ "memorize_tile", "classmap__memory.html#ae033a828a3030328fffbca06074adb31", null ],
+    [ "prepare_region", "classmap__memory.html#a8949e290bb2cfd3af6b080dc2772cce7", null ],
+    [ "save", "classmap__memory.html#aabe52120211be6b7491535dc7d38c27b", null ],
+    [ "cache_pos", "classmap__memory.html#ac3feb716ab0128c88a07d9206a582351", null ],
+    [ "cache_size", "classmap__memory.html#a92c06b8ae4ad031b75fc1f44eac3db35", null ],
+    [ "cached", "classmap__memory.html#aa40068961c9c9167282125022f170366", null ],
+    [ "submaps", "classmap__memory.html#aaf2c4ff2097b4db43249597c8043b180", null ]
+];

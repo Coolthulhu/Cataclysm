@@ -1,0 +1,9 @@
+var structpoint__traits_3_01Point_00_01std_1_1enable__if__t_3_01std_1_1is__same_3_01Point_00_01point528353c3cee28f3149e3be39b58e8b4a =
+[
+    [ "x", "structpoint__traits_3_01Point_00_01std_1_1enable__if__t_3_01std_1_1is__same_3_01Point_00_01point528353c3cee28f3149e3be39b58e8b4a.html#acf889fb42d96a8261ccd66ff97445439", null ],
+    [ "x", "structpoint__traits_3_01Point_00_01std_1_1enable__if__t_3_01std_1_1is__same_3_01Point_00_01point528353c3cee28f3149e3be39b58e8b4a.html#a1c2cc5b61f025237cda9bc73f88f0718", null ],
+    [ "y", "structpoint__traits_3_01Point_00_01std_1_1enable__if__t_3_01std_1_1is__same_3_01Point_00_01point528353c3cee28f3149e3be39b58e8b4a.html#a1b520e7ce82f144f90f8e2fad54168ee", null ],
+    [ "y", "structpoint__traits_3_01Point_00_01std_1_1enable__if__t_3_01std_1_1is__same_3_01Point_00_01point528353c3cee28f3149e3be39b58e8b4a.html#a2f74b7e39abdc157b27083977570e91e", null ],
+    [ "z", "structpoint__traits_3_01Point_00_01std_1_1enable__if__t_3_01std_1_1is__same_3_01Point_00_01point528353c3cee28f3149e3be39b58e8b4a.html#a53a24aa28525cd1b96c37650ec0f0d29", null ],
+    [ "z", "structpoint__traits_3_01Point_00_01std_1_1enable__if__t_3_01std_1_1is__same_3_01Point_00_01point528353c3cee28f3149e3be39b58e8b4a.html#a6e3a33242e02b87189ad5d0563c34984", null ]
+];

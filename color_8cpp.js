@@ -1,0 +1,25 @@
+var color_8cpp =
+[
+    [ "bgcolor_from_string", "color_8cpp.html#ad929efa027d1dffc115bf4f7e5f07aff", null ],
+    [ "color_from_string", "color_8cpp.html#a9c642a659e1cb963f62f59195839a014", null ],
+    [ "colorize", "color_8cpp.html#a0f25678be1fc95cb81381a004493a4cc", null ],
+    [ "colorize", "color_8cpp.html#a344a0ef7027a02b4352ca5d204cbe96f", null ],
+    [ "cyan_background", "color_8cpp.html#a9910a5a56257b9b2232f17edaefcb27e", null ],
+    [ "draw_header", "color_8cpp.html#acaa987351cb49bb0d04e3ba9d75deba8", null ],
+    [ "get_all_colors", "color_8cpp.html#a9f25347577eb0520b52ab6cfa1b06d97", null ],
+    [ "get_color_from_tag", "color_8cpp.html#ac1d4e4a01630af04d547a510473e6674", null ],
+    [ "get_note_color", "color_8cpp.html#af600494c677628f77182e7e72db72894", null ],
+    [ "get_note_color_names", "color_8cpp.html#ae28d53ff1bc72b81e9d85e8f69e19353", null ],
+    [ "get_note_string_from_color", "color_8cpp.html#ab31e68d94854a23f45b2960291c74c57", null ],
+    [ "get_tag_from_color", "color_8cpp.html#ada4ce8f644b693ffce233ae5f94e6214", null ],
+    [ "green_background", "color_8cpp.html#a1c2605d82f0b0c01f9319ab5fe5c4767", null ],
+    [ "hilite", "color_8cpp.html#a99e42a5de98370aab8662d4423cf4a4d", null ],
+    [ "init_colors", "color_8cpp.html#a63790e021bbe6eb4ee0525657d2c8b3f", null ],
+    [ "invert_color", "color_8cpp.html#a4306eceb07389bb063f39894f4af0503", null ],
+    [ "magenta_background", "color_8cpp.html#a5d2c29ee440b5997773bf3bbb3674c5b", null ],
+    [ "red_background", "color_8cpp.html#a8c9d398d812c546baae9a55dbfd22d21", null ],
+    [ "string_from_color", "color_8cpp.html#a24e6e535a2054805b8c1ab0786e50e66", null ],
+    [ "white_background", "color_8cpp.html#a194dcccffd1f503ff4337feac229b631", null ],
+    [ "yellow_background", "color_8cpp.html#ae0ee2377027b6a971db8f3341ab8be76", null ],
+    [ "color_by_string_map", "color_8cpp.html#ad58f32c7bb54d322ba8993034123978f", null ]
+];

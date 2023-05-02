@@ -1,0 +1,28 @@
+var structammo__effect =
+[
+    [ "check", "structammo__effect.html#ac77bbae9cf28da69755f1843f113cfe8", null ],
+    [ "count", "structammo__effect.html#aa3b93a23ca8f49bc25af34b2de7792a3", null ],
+    [ "finalize", "structammo__effect.html#a71c62af43f26e8b94b48053e1bd21256", null ],
+    [ "load", "structammo__effect.html#a25d8156bef6c74f4de2fc4cf7b060a6f", null ],
+    [ "aoe_chance", "structammo__effect.html#ad0570b8430aeb1da76f2e03ea3dfc877", null ],
+    [ "aoe_check_passable", "structammo__effect.html#a3dd1aed9caf7bf1183a3f3b8a47264b7", null ],
+    [ "aoe_check_sees", "structammo__effect.html#a0985b8d057a214d18856d06a278e7614", null ],
+    [ "aoe_check_sees_radius", "structammo__effect.html#ae1b673802fa8e5ff0f54961e3e009fe8", null ],
+    [ "aoe_explosion_data", "structammo__effect.html#a23e56e5df0689bb4af613a0efb4063df", null ],
+    [ "aoe_field_type", "structammo__effect.html#a40c0c26299350c1dbd23526b155cc0fe", null ],
+    [ "aoe_field_type_name", "structammo__effect.html#a2d25dcf2f1e9d0fc22b47ca26339d534", null ],
+    [ "aoe_intensity_max", "structammo__effect.html#a121824c1f1556abe2014df12d400be5c", null ],
+    [ "aoe_intensity_min", "structammo__effect.html#ab718821f57765650351dc19134ca33ae", null ],
+    [ "aoe_radius", "structammo__effect.html#ab845785a79e07c65d0dd3909efddd386", null ],
+    [ "aoe_radius_z", "structammo__effect.html#a5df0a4e22fcdb26c2eb5c709d2b9ab22", null ],
+    [ "aoe_size", "structammo__effect.html#a7921e123ac0046f4bc8a291f78d393d3", null ],
+    [ "do_emp_blast", "structammo__effect.html#aae574e668ac868a790ffff4f8cecfd29", null ],
+    [ "do_flashbang", "structammo__effect.html#a6f4c296475af6cbe10dd9f60a3dcee09", null ],
+    [ "id", "structammo__effect.html#a3b5e910b5cdd574f6e6065cf9fc2fe2f", null ],
+    [ "trail_chance", "structammo__effect.html#aa871ecf92bc6368ff0cee3ababdd97da", null ],
+    [ "trail_field_type", "structammo__effect.html#aea6af8e496e5b4a685acd7c57bf1cf3b", null ],
+    [ "trail_field_type_name", "structammo__effect.html#aebb5a07338a39aa4312cf035a148e273", null ],
+    [ "trail_intensity_max", "structammo__effect.html#ab92e17a2f541a3a976e5024696314dce", null ],
+    [ "trail_intensity_min", "structammo__effect.html#ae129baea3fa136e1bee1fd3e52f9abbd", null ],
+    [ "was_loaded", "structammo__effect.html#aa742d891a36393ae08b81948a27ea428", null ]
+];
