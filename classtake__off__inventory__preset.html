@@ -247,12 +247,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>            <span class="keywordflow">return</span> std::string();</div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>        }</div>
-<div class="ttc" id="aclassCharacter_html_a7ee475e1cb4b23ce11cc869f34604e43"><div class="ttname"><a href="classCharacter.html#a7ee475e1cb4b23ce11cc869f34604e43">Character::can_takeoff</a></div><div class="ttdeci">ret_val&lt; bool &gt; can_takeoff(const item &amp;it, const std::list&lt; item &gt; *res=nullptr) const</div><div class="ttdoc">Check if character is capable of taking off given item.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03002">character.cpp:3002</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a7ee475e1cb4b23ce11cc869f34604e43"><div class="ttname"><a href="classCharacter.html#a7ee475e1cb4b23ce11cc869f34604e43">Character::can_takeoff</a></div><div class="ttdeci">ret_val&lt; bool &gt; can_takeoff(const item &amp;it, const std::list&lt; item &gt; *res=nullptr) const</div><div class="ttdoc">Check if character is capable of taking off given item.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03019">character.cpp:3019</a></div></div>
 <div class="ttc" id="aclassret__val_html"><div class="ttname"><a href="classret__val.html">ret_val</a></div><div class="ttdoc">The class represents a composite return value of an arbitrary function (result).</div><div class="ttdef"><b>Definition:</b> <a href="ret__val_8h_source.html#l00020">ret_val.h:21</a></div></div>
-<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
-<div class="ttc" id="astring__utils_8cpp_html_aa0ffa4eb7b80a73bc602e049a82ab445"><div class="ttname"><a href="string__utils_8cpp.html#aa0ffa4eb7b80a73bc602e049a82ab445">trim_punctuation_marks</a></div><div class="ttdeci">std::string trim_punctuation_marks(const std::string &amp;s)</div><div class="ttdoc">Removes punctuation marks from the start and the end of a string.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00218">string_utils.cpp:218</a></div></div>
+<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00098">hash_utils.h:98</a></div></div>
+<div class="ttc" id="astring__utils_8cpp_html_aa0ffa4eb7b80a73bc602e049a82ab445"><div class="ttname"><a href="string__utils_8cpp.html#aa0ffa4eb7b80a73bc602e049a82ab445">trim_punctuation_marks</a></div><div class="ttdeci">std::string trim_punctuation_marks(const std::string &amp;s)</div><div class="ttdoc">Removes punctuation marks from the start and the end of a string.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00219">string_utils.cpp:219</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l03002">Character::can_takeoff()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, and <a class="el" href="string__utils_8cpp_source.html#l00218">trim_punctuation_marks()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l03019">Character::can_takeoff()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>, <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>, and <a class="el" href="string__utils_8cpp_source.html#l00219">trim_punctuation_marks()</a>.</p>
 
 </div>
 </div>
@@ -288,9 +288,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>                                                                 {</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>            <span class="keywordflow">return</span> loc-&gt;is_armor() &amp;&amp; <a class="code hl_variable" href="classarmor__inventory__preset.html#ad4a56e543bb12e5491e6a93959d99701">p</a>.<a class="code hl_function" href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">is_worn</a>( *loc );</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>        }</div>
-<div class="ttc" id="aclassCharacter_html_a4d8d747c469431f530acb05c5f7a7f45"><div class="ttname"><a href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">Character::is_worn</a></div><div class="ttdeci">bool is_worn(const item &amp;thing) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01095">character.h:1095</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a4d8d747c469431f530acb05c5f7a7f45"><div class="ttname"><a href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">Character::is_worn</a></div><div class="ttdeci">bool is_worn(const item &amp;thing) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01099">character.h:1099</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8cpp_source.html#l06704">item::is_armor()</a>, <a class="el" href="character_8h_source.html#l01095">Character::is_worn()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>.</p>
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l06729">item::is_armor()</a>, <a class="el" href="character_8h_source.html#l01099">Character::is_worn()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>.</p>
 
 </div>
 </div>
@@ -303,7 +303,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classtake__off__inventory__preset.html">take_off_inventory_preset</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:05 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

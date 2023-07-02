@@ -123,6 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6158be310803a9edf8a3e3c1908cd544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af40f5c491c93fbef9bb797faa469546f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmattack__actor.html#af40f5c491c93fbef9bb797faa469546f">load_internal</a> (const <a class="el" href="classJsonObject.html">JsonObject</a> &amp;jo, const std::string &amp;src)=0</td></tr>
 <tr class="separator:af40f5c491c93fbef9bb797faa469546f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad06d6633562a85f97d1a92d1f3cfb4b6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmattack__actor.html#ad06d6633562a85f97d1a92d1f3cfb4b6">finalize</a> ()</td></tr>
+<tr class="separator:ad06d6633562a85f97d1a92d1f3cfb4b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -278,6 +280,38 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad06d6633562a85f97d1a92d1f3cfb4b6" name="ad06d6633562a85f97d1a92d1f3cfb4b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad06d6633562a85f97d1a92d1f3cfb4b6">&#9670;&nbsp;</a></span>finalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mattack_actor::finalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classmon__spellcasting__actor.html#aea7e912581411b2cbd7a3e99550b0d92">mon_spellcasting_actor</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="mattack__common_8h_source.html#l00035">35</a> of file <a class="el" href="mattack__common_8h_source.html">mattack_common.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{};</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l00345">MonsterGenerator::finalize_mtypes()</a>.</p>
+
+</div>
+</div>
 <a id="a662858c2da61554fbde75a7335c70b81" name="a662858c2da61554fbde75a7335c70b81"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a662858c2da61554fbde75a7335c70b81">&#9670;&nbsp;</a></span>load()</h2>
 
@@ -304,24 +338,24 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="monstergenerator_8cpp_source.html#l01053">1053</a> of file <a class="el" href="monstergenerator_8cpp_source.html">monstergenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>{</div>
-<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> strict = <a class="code hl_function" href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a>( src );</div>
-<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span> </div>
-<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>    <span class="comment">// Legacy support</span></div>
-<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;id&quot;</span> ) ) {</div>
-<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>        <span class="keywordtype">id</span> = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;type&quot;</span> );</div>
-<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>        <span class="comment">// Loading ids can&#39;t be strict at the moment, since it has to match the stored version</span></div>
-<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>        <a class="code hl_function" href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a>( jo, <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span>, <span class="keyword">false</span> );</div>
-<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    }</div>
-<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span> </div>
-<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    <a class="code hl_function" href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a>( jo, <span class="stringliteral">&quot;cooldown&quot;</span>, <a class="code hl_variable" href="classmattack__actor.html#a6326d3c7a0912070e5f3308de894d8a0">cooldown</a>, strict );</div>
-<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span> </div>
-<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>    <a class="code hl_function" href="classmattack__actor.html#af40f5c491c93fbef9bb797faa469546f">load_internal</a>( jo, src );</div>
-<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    <span class="comment">// Set was_loaded manually because we don&#39;t have generic_factory to do it for us</span></div>
-<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>    <a class="code hl_variable" href="classmattack__actor.html#add2fafdd49c323f64a4dc2d8b997b4b4">was_loaded</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>}</div>
+<p class="definition">Definition at line <a class="el" href="monstergenerator_8cpp_source.html#l01059">1059</a> of file <a class="el" href="monstergenerator_8cpp_source.html">monstergenerator.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span>{</div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> strict = <a class="code hl_function" href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a>( src );</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span> </div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>    <span class="comment">// Legacy support</span></div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>    <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;id&quot;</span> ) ) {</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>        <span class="keywordtype">id</span> = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;type&quot;</span> );</div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>        <span class="comment">// Loading ids can&#39;t be strict at the moment, since it has to match the stored version</span></div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>        <a class="code hl_function" href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a>( jo, <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span>, <span class="keyword">false</span> );</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>    }</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span> </div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span>    <a class="code hl_function" href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a>( jo, <span class="stringliteral">&quot;cooldown&quot;</span>, <a class="code hl_variable" href="classmattack__actor.html#a6326d3c7a0912070e5f3308de894d8a0">cooldown</a>, strict );</div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span> </div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>    <a class="code hl_function" href="classmattack__actor.html#af40f5c491c93fbef9bb797faa469546f">load_internal</a>( jo, src );</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>    <span class="comment">// Set was_loaded manually because we don&#39;t have generic_factory to do it for us</span></div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>    <a class="code hl_variable" href="classmattack__actor.html#add2fafdd49c323f64a4dc2d8b997b4b4">was_loaded</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>}</div>
 <div class="ttc" id="aassign_8cpp_html_ab5bcf0475efcfec70e83348a7bb79794"><div class="ttname"><a href="assign_8cpp.html#ab5bcf0475efcfec70e83348a7bb79794">assign</a></div><div class="ttdeci">bool assign(const JsonObject &amp;jo, const std::string &amp;name, bool &amp;val, bool strict)</div><div class="ttdef"><b>Definition:</b> <a href="assign_8cpp_source.html#l00016">assign.cpp:16</a></div></div>
 <div class="ttc" id="aassign_8h_html_abefce6b21ce60d9d6dc6037cf5ed5973"><div class="ttname"><a href="assign_8h.html#abefce6b21ce60d9d6dc6037cf5ed5973">is_strict_enabled</a></div><div class="ttdeci">bool is_strict_enabled(const std::string &amp;src)</div><div class="ttdoc">Check whether strict checks are enabled for given mod.</div><div class="ttdef"><b>Definition:</b> <a href="mod__manager_8cpp_source.html#l00368">mod_manager.cpp:368</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a19d83d03e3d5cc6905bcb850d80a1f05"><div class="ttname"><a href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">JsonObject::has_string</a></div><div class="ttdeci">bool has_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00473">json.cpp:473</a></div></div>
@@ -370,7 +404,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Implemented in <a class="el" href="classmattack__hardcoded__wrapper.html#a068cb102e1c8a3a27ff2cef5095d9de7">mattack_hardcoded_wrapper</a>, <a class="el" href="classleap__actor.html#a9e7d3e1cc9049a4f5890802024b496e5">leap_actor</a>, <a class="el" href="classmon__spellcasting__actor.html#aca5045e5451c7fdf309213bff87ea804">mon_spellcasting_actor</a>, <a class="el" href="classmelee__actor.html#a8c417fecf704be70e1b290da8dfb0ef3">melee_actor</a>, <a class="el" href="classbite__actor.html#a2b042d8b1c8c5e575116afd499507d39">bite_actor</a>, and <a class="el" href="classgun__actor.html#ab525fbfb15f1f6f5b8444489735faf2c">gun_actor</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01053">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01059">load()</a>.</p>
 
 </div>
 </div>
@@ -389,7 +423,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mattack__common_8h_source.html#l00027">27</a> of file <a class="el" href="mattack__common_8h_source.html">mattack_common.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01053">load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01059">load()</a>.</p>
 
 </div>
 </div>
@@ -407,7 +441,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mattack__common_8h_source.html#l00024">24</a> of file <a class="el" href="mattack__common_8h_source.html">mattack_common.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01000">MonsterGenerator::add_attack()</a>, and <a class="el" href="monstergenerator_8cpp_source.html#l01077">mtype::add_special_attack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01006">MonsterGenerator::add_attack()</a>, and <a class="el" href="monstergenerator_8cpp_source.html#l01083">mtype::add_special_attack()</a>.</p>
 
 </div>
 </div>
@@ -425,7 +459,7 @@ Protected Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="mattack__common_8h_source.html#l00025">25</a> of file <a class="el" href="mattack__common_8h_source.html">mattack_common.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01053">load()</a>, <a class="el" href="mattack__actors_8cpp_source.html#l00170">mon_spellcasting_actor::load_internal()</a>, and <a class="el" href="mattack__actors_8cpp_source.html#l00231">melee_actor::load_internal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monstergenerator_8cpp_source.html#l01059">load()</a>, <a class="el" href="mattack__actors_8cpp_source.html#l00170">mon_spellcasting_actor::load_internal()</a>, and <a class="el" href="mattack__actors_8cpp_source.html#l00235">melee_actor::load_internal()</a>.</p>
 
 </div>
 </div>
@@ -439,7 +473,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmattack__actor.html">mattack_actor</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:28 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:59 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

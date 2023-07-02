@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['r_0',['r',['../structdisass__prompt__result.html#a5d3dfc334696743c14bc7adcbb4e3f19',1,'disass_prompt_result']]],
-  ['r_1',['R',['../classtileset__loader.html#a2489c18e56fa2888d1b1dc047382f622',1,'tileset_loader']]],
+  ['r_0',['R',['../classtileset__loader.html#a2489c18e56fa2888d1b1dc047382f622',1,'tileset_loader']]],
+  ['r_1',['r',['../structdisass__prompt__result.html#a5d3dfc334696743c14bc7adcbb4e3f19',1,'disass_prompt_result']]],
   ['racing_5fterrain_5fmod_2',['racing_terrain_mod',['../veh__type_8cpp.html#aa393039637b7050f24b707107fe6b1f3',1,'veh_type.cpp']]],
   ['rad_3',['rad',['../structmaptile__soa.html#a69034b688361c90fa77b04e9707f9597',1,'maptile_soa']]],
   ['radiation_4',['radiation',['../structislot__comestible.html#a4656f297a3ea96ffb9e20a6511287ec9',1,'islot_comestible::radiation()'],['../classCharacter.html#a65f66d5d8401f12d834005a499153e9f',1,'Character::radiation()']]],

@@ -227,36 +227,36 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#a46803e26f384386f9f8061044c7373ff">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04483">4483</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04485" name="l04485"></a><span class="lineno"> 4485</span>{</div>
-<div class="line"><a id="l04486" name="l04486"></a><span class="lineno"> 4486</span>    <span class="keyword">const</span> <span class="keyword">auto</span> mods = it.<a class="code hl_function" href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">gunmods</a>();</div>
-<div class="line"><a id="l04487" name="l04487"></a><span class="lineno"> 4487</span> </div>
-<div class="line"><a id="l04488" name="l04488"></a><span class="lineno"> 4488</span>    <span class="keywordflow">if</span>( mods.empty() ) {</div>
-<div class="line"><a id="l04489" name="l04489"></a><span class="lineno"> 4489</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Doesn&#39;t appear to be modded.&quot;</span> ) );</div>
-<div class="line"><a id="l04490" name="l04490"></a><span class="lineno"> 4490</span>    }</div>
-<div class="line"><a id="l04491" name="l04491"></a><span class="lineno"> 4491</span> </div>
-<div class="line"><a id="l04492" name="l04492"></a><span class="lineno"> 4492</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> no_removables = std::all_of( mods.begin(), mods.end(), std::bind( &amp;<a class="code hl_function" href="classitem.html#a01f8af501d37d5cb4eaee8ba21270bd6">item::is_irremovable</a>,</div>
-<div class="line"><a id="l04493" name="l04493"></a><span class="lineno"> 4493</span>                                            std::placeholders::_1 ) );</div>
-<div class="line"><a id="l04494" name="l04494"></a><span class="lineno"> 4494</span> </div>
-<div class="line"><a id="l04495" name="l04495"></a><span class="lineno"> 4495</span>    <span class="keywordflow">if</span>( no_removables ) {</div>
-<div class="line"><a id="l04496" name="l04496"></a><span class="lineno"> 4496</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;None of the mods can be removed.&quot;</span> ) );</div>
-<div class="line"><a id="l04497" name="l04497"></a><span class="lineno"> 4497</span>    }</div>
-<div class="line"><a id="l04498" name="l04498"></a><span class="lineno"> 4498</span> </div>
-<div class="line"><a id="l04499" name="l04499"></a><span class="lineno"> 4499</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">is_worn</a>(</div>
-<div class="line"><a id="l04500" name="l04500"></a><span class="lineno"> 4500</span>            it ) ) { <span class="comment">// Prevent removal of shoulder straps and thereby making the gun un-wearable again.</span></div>
-<div class="line"><a id="l04501" name="l04501"></a><span class="lineno"> 4501</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Has to be taken off first.&quot;</span> ) );</div>
-<div class="line"><a id="l04502" name="l04502"></a><span class="lineno"> 4502</span>    }</div>
-<div class="line"><a id="l04503" name="l04503"></a><span class="lineno"> 4503</span> </div>
-<div class="line"><a id="l04504" name="l04504"></a><span class="lineno"> 4504</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val&lt;bool&gt;::make_success</a>();</div>
-<div class="line"><a id="l04505" name="l04505"></a><span class="lineno"> 4505</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a4d8d747c469431f530acb05c5f7a7f45"><div class="ttname"><a href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">Character::is_worn</a></div><div class="ttdeci">bool is_worn(const item &amp;thing) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01095">character.h:1095</a></div></div>
-<div class="ttc" id="aclassitem_html_a01f8af501d37d5cb4eaee8ba21270bd6"><div class="ttname"><a href="classitem.html#a01f8af501d37d5cb4eaee8ba21270bd6">item::is_irremovable</a></div><div class="ttdeci">bool is_irremovable() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06775">item.cpp:6775</a></div></div>
-<div class="ttc" id="aclassitem_html_acd78321ba4d5c09d39f1d58d20b68484"><div class="ttname"><a href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">item::gunmods</a></div><div class="ttdeci">std::vector&lt; item * &gt; gunmods()</div><div class="ttdoc">Returns all gunmods currently attached to this item (always empty if item not a gun)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07735">item.cpp:7735</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04481">4481</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04483" name="l04483"></a><span class="lineno"> 4483</span>{</div>
+<div class="line"><a id="l04484" name="l04484"></a><span class="lineno"> 4484</span>    <span class="keyword">const</span> <span class="keyword">auto</span> mods = it.<a class="code hl_function" href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">gunmods</a>();</div>
+<div class="line"><a id="l04485" name="l04485"></a><span class="lineno"> 4485</span> </div>
+<div class="line"><a id="l04486" name="l04486"></a><span class="lineno"> 4486</span>    <span class="keywordflow">if</span>( mods.empty() ) {</div>
+<div class="line"><a id="l04487" name="l04487"></a><span class="lineno"> 4487</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Doesn&#39;t appear to be modded.&quot;</span> ) );</div>
+<div class="line"><a id="l04488" name="l04488"></a><span class="lineno"> 4488</span>    }</div>
+<div class="line"><a id="l04489" name="l04489"></a><span class="lineno"> 4489</span> </div>
+<div class="line"><a id="l04490" name="l04490"></a><span class="lineno"> 4490</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> no_removables = std::all_of( mods.begin(), mods.end(), std::bind( &amp;<a class="code hl_function" href="classitem.html#a01f8af501d37d5cb4eaee8ba21270bd6">item::is_irremovable</a>,</div>
+<div class="line"><a id="l04491" name="l04491"></a><span class="lineno"> 4491</span>                                            std::placeholders::_1 ) );</div>
+<div class="line"><a id="l04492" name="l04492"></a><span class="lineno"> 4492</span> </div>
+<div class="line"><a id="l04493" name="l04493"></a><span class="lineno"> 4493</span>    <span class="keywordflow">if</span>( no_removables ) {</div>
+<div class="line"><a id="l04494" name="l04494"></a><span class="lineno"> 4494</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;None of the mods can be removed.&quot;</span> ) );</div>
+<div class="line"><a id="l04495" name="l04495"></a><span class="lineno"> 4495</span>    }</div>
+<div class="line"><a id="l04496" name="l04496"></a><span class="lineno"> 4496</span> </div>
+<div class="line"><a id="l04497" name="l04497"></a><span class="lineno"> 4497</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">is_worn</a>(</div>
+<div class="line"><a id="l04498" name="l04498"></a><span class="lineno"> 4498</span>            it ) ) { <span class="comment">// Prevent removal of shoulder straps and thereby making the gun un-wearable again.</span></div>
+<div class="line"><a id="l04499" name="l04499"></a><span class="lineno"> 4499</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val&lt;bool&gt;::make_failure</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Has to be taken off first.&quot;</span> ) );</div>
+<div class="line"><a id="l04500" name="l04500"></a><span class="lineno"> 4500</span>    }</div>
+<div class="line"><a id="l04501" name="l04501"></a><span class="lineno"> 4501</span> </div>
+<div class="line"><a id="l04502" name="l04502"></a><span class="lineno"> 4502</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val&lt;bool&gt;::make_success</a>();</div>
+<div class="line"><a id="l04503" name="l04503"></a><span class="lineno"> 4503</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a4d8d747c469431f530acb05c5f7a7f45"><div class="ttname"><a href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">Character::is_worn</a></div><div class="ttdeci">bool is_worn(const item &amp;thing) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01099">character.h:1099</a></div></div>
+<div class="ttc" id="aclassitem_html_a01f8af501d37d5cb4eaee8ba21270bd6"><div class="ttname"><a href="classitem.html#a01f8af501d37d5cb4eaee8ba21270bd6">item::is_irremovable</a></div><div class="ttdeci">bool is_irremovable() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06800">item.cpp:6800</a></div></div>
+<div class="ttc" id="aclassitem_html_acd78321ba4d5c09d39f1d58d20b68484"><div class="ttname"><a href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">item::gunmods</a></div><div class="ttdeci">std::vector&lt; item * &gt; gunmods()</div><div class="ttdoc">Returns all gunmods currently attached to this item (always empty if item not a gun)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07752">item.cpp:7752</a></div></div>
 <div class="ttc" id="aclassret__val_html_a0bbde13713bc279563fa85782599f957"><div class="ttname"><a href="classret__val.html#a0bbde13713bc279563fa85782599f957">ret_val::make_success</a></div><div class="ttdeci">static ret_val make_success(T val=default_success::value)</div><div class="ttdef"><b>Definition:</b> <a href="ret__val_8h_source.html#l00042">ret_val.h:42</a></div></div>
 <div class="ttc" id="aclassret__val_html_a415798e6fd736bd724329890cae0df4a"><div class="ttname"><a href="classret__val.html#a415798e6fd736bd724329890cae0df4a">ret_val::make_failure</a></div><div class="ttdeci">static ret_val make_failure(T val=default_failure::value)</div><div class="ttdef"><b>Definition:</b> <a href="ret__val_8h_source.html#l00046">ret_val.h:46</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="item_8cpp_source.html#l07735">item::gunmods()</a>, <a class="el" href="item_8cpp_source.html#l06775">item::is_irremovable()</a>, <a class="el" href="character_8h_source.html#l01095">Character::is_worn()</a>, <a class="el" href="ret__val_8h_source.html#l00046">ret_val&lt; T &gt;::make_failure()</a>, and <a class="el" href="ret__val_8h_source.html#l00042">ret_val&lt; T &gt;::make_success()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="item_8cpp_source.html#l07752">item::gunmods()</a>, <a class="el" href="item_8cpp_source.html#l06800">item::is_irremovable()</a>, <a class="el" href="character_8h_source.html#l01099">Character::is_worn()</a>, <a class="el" href="ret__val_8h_source.html#l00046">ret_val&lt; T &gt;::make_failure()</a>, and <a class="el" href="ret__val_8h_source.html#l00042">ret_val&lt; T &gt;::make_success()</a>.</p>
 
 </div>
 </div>
@@ -325,15 +325,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classiuse__actor.html#ae7123b9e8ee6610ef1694f0451f05624">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04512">4512</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04513" name="l04513"></a><span class="lineno"> 4513</span>{</div>
-<div class="line"><a id="l04514" name="l04514"></a><span class="lineno"> 4514</span>    <span class="keywordflow">if</span>( !my_item_type-&gt;gun ) {</div>
-<div class="line"><a id="l04515" name="l04515"></a><span class="lineno"> 4515</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Item %s has detach_gunmods_actor actor, but it&#39;s a gun.&quot;</span>, my_item_type.c_str() );</div>
-<div class="line"><a id="l04516" name="l04516"></a><span class="lineno"> 4516</span>    }</div>
-<div class="line"><a id="l04517" name="l04517"></a><span class="lineno"> 4517</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04510">4510</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04511" name="l04511"></a><span class="lineno"> 4511</span>{</div>
+<div class="line"><a id="l04512" name="l04512"></a><span class="lineno"> 4512</span>    <span class="keywordflow">if</span>( !my_item_type-&gt;gun ) {</div>
+<div class="line"><a id="l04513" name="l04513"></a><span class="lineno"> 4513</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Item %s has detach_gunmods_actor actor, but it&#39;s a gun.&quot;</span>, my_item_type.c_str() );</div>
+<div class="line"><a id="l04514" name="l04514"></a><span class="lineno"> 4514</span>    }</div>
+<div class="line"><a id="l04515" name="l04515"></a><span class="lineno"> 4515</span>}</div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, and <a class="el" href="itype_8h_source.html#l00859">itype::gun</a>.</p>
+<p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, and <a class="el" href="itype_8h_source.html#l00827">itype::gun</a>.</p>
 
 </div>
 </div>
@@ -416,39 +416,39 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa7ab08413d05764e42ae4471799fd6b0">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04457">4457</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04458" name="l04458"></a><span class="lineno"> 4458</span>{</div>
-<div class="line"><a id="l04459" name="l04459"></a><span class="lineno"> 4459</span>    <span class="keyword">auto</span> mods = it.<a class="code hl_function" href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">gunmods</a>();</div>
-<div class="line"><a id="l04460" name="l04460"></a><span class="lineno"> 4460</span> </div>
-<div class="line"><a id="l04461" name="l04461"></a><span class="lineno"> 4461</span>    mods.erase( std::remove_if( mods.begin(), mods.end(), std::bind( &amp;<a class="code hl_function" href="classitem.html#a01f8af501d37d5cb4eaee8ba21270bd6">item::is_irremovable</a>,</div>
-<div class="line"><a id="l04462" name="l04462"></a><span class="lineno"> 4462</span>                                std::placeholders::_1 ) ), mods.end() );</div>
-<div class="line"><a id="l04463" name="l04463"></a><span class="lineno"> 4463</span> </div>
-<div class="line"><a id="l04464" name="l04464"></a><span class="lineno"> 4464</span>    <a class="code hl_class" href="classuilist.html">uilist</a> <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>;</div>
-<div class="line"><a id="l04465" name="l04465"></a><span class="lineno"> 4465</span>    <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.text = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Remove which modification?&quot;</span> );</div>
-<div class="line"><a id="l04466" name="l04466"></a><span class="lineno"> 4466</span> </div>
-<div class="line"><a id="l04467" name="l04467"></a><span class="lineno"> 4467</span>    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i != mods.size(); ++i ) {</div>
-<div class="line"><a id="l04468" name="l04468"></a><span class="lineno"> 4468</span>        <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.addentry( i, <span class="keyword">true</span>, -1, mods[ i ]-&gt;tname() );</div>
-<div class="line"><a id="l04469" name="l04469"></a><span class="lineno"> 4469</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04455">4455</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04456" name="l04456"></a><span class="lineno"> 4456</span>{</div>
+<div class="line"><a id="l04457" name="l04457"></a><span class="lineno"> 4457</span>    <span class="keyword">auto</span> mods = it.<a class="code hl_function" href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">gunmods</a>();</div>
+<div class="line"><a id="l04458" name="l04458"></a><span class="lineno"> 4458</span> </div>
+<div class="line"><a id="l04459" name="l04459"></a><span class="lineno"> 4459</span>    mods.erase( std::remove_if( mods.begin(), mods.end(), std::bind( &amp;<a class="code hl_function" href="classitem.html#a01f8af501d37d5cb4eaee8ba21270bd6">item::is_irremovable</a>,</div>
+<div class="line"><a id="l04460" name="l04460"></a><span class="lineno"> 4460</span>                                std::placeholders::_1 ) ), mods.end() );</div>
+<div class="line"><a id="l04461" name="l04461"></a><span class="lineno"> 4461</span> </div>
+<div class="line"><a id="l04462" name="l04462"></a><span class="lineno"> 4462</span>    <a class="code hl_class" href="classuilist.html">uilist</a> <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>;</div>
+<div class="line"><a id="l04463" name="l04463"></a><span class="lineno"> 4463</span>    <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.text = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Remove which modification?&quot;</span> );</div>
+<div class="line"><a id="l04464" name="l04464"></a><span class="lineno"> 4464</span> </div>
+<div class="line"><a id="l04465" name="l04465"></a><span class="lineno"> 4465</span>    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> i = 0; i != mods.size(); ++i ) {</div>
+<div class="line"><a id="l04466" name="l04466"></a><span class="lineno"> 4466</span>        <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.addentry( i, <span class="keyword">true</span>, -1, mods[ i ]-&gt;tname() );</div>
+<div class="line"><a id="l04467" name="l04467"></a><span class="lineno"> 4467</span>    }</div>
+<div class="line"><a id="l04468" name="l04468"></a><span class="lineno"> 4468</span> </div>
+<div class="line"><a id="l04469" name="l04469"></a><span class="lineno"> 4469</span>    <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.query();</div>
 <div class="line"><a id="l04470" name="l04470"></a><span class="lineno"> 4470</span> </div>
-<div class="line"><a id="l04471" name="l04471"></a><span class="lineno"> 4471</span>    <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.query();</div>
-<div class="line"><a id="l04472" name="l04472"></a><span class="lineno"> 4472</span> </div>
-<div class="line"><a id="l04473" name="l04473"></a><span class="lineno"> 4473</span>    <span class="keywordflow">if</span>( <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.ret &gt;= 0 ) {</div>
-<div class="line"><a id="l04474" name="l04474"></a><span class="lineno"> 4474</span>        <a class="code hl_class" href="classitem.html">item</a> *gm = mods[ <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.ret ];</div>
-<div class="line"><a id="l04475" name="l04475"></a><span class="lineno"> 4475</span>        <a class="code hl_function" href="namespaceavatar__funcs.html#a1bb52c7ff53526e659bfc25b8b53d620">avatar_funcs::gunmod_remove</a>( *p.<a class="code hl_function" href="classCreature.html#aff1d211fe3b960fc3046db5f3dfcf793">as_avatar</a>(), it, *gm );</div>
-<div class="line"><a id="l04476" name="l04476"></a><span class="lineno"> 4476</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l04477" name="l04477"></a><span class="lineno"> 4477</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Never mind.&quot;</span> ) );</div>
-<div class="line"><a id="l04478" name="l04478"></a><span class="lineno"> 4478</span>    }</div>
-<div class="line"><a id="l04479" name="l04479"></a><span class="lineno"> 4479</span> </div>
-<div class="line"><a id="l04480" name="l04480"></a><span class="lineno"> 4480</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l04481" name="l04481"></a><span class="lineno"> 4481</span>}</div>
+<div class="line"><a id="l04471" name="l04471"></a><span class="lineno"> 4471</span>    <span class="keywordflow">if</span>( <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.ret &gt;= 0 ) {</div>
+<div class="line"><a id="l04472" name="l04472"></a><span class="lineno"> 4472</span>        <a class="code hl_class" href="classitem.html">item</a> *gm = mods[ <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>.ret ];</div>
+<div class="line"><a id="l04473" name="l04473"></a><span class="lineno"> 4473</span>        <a class="code hl_function" href="namespaceavatar__funcs.html#a1bb52c7ff53526e659bfc25b8b53d620">avatar_funcs::gunmod_remove</a>( *p.<a class="code hl_function" href="classCreature.html#aff1d211fe3b960fc3046db5f3dfcf793">as_avatar</a>(), it, *gm );</div>
+<div class="line"><a id="l04474" name="l04474"></a><span class="lineno"> 4474</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l04475" name="l04475"></a><span class="lineno"> 4475</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Never mind.&quot;</span> ) );</div>
+<div class="line"><a id="l04476" name="l04476"></a><span class="lineno"> 4476</span>    }</div>
+<div class="line"><a id="l04477" name="l04477"></a><span class="lineno"> 4477</span> </div>
+<div class="line"><a id="l04478" name="l04478"></a><span class="lineno"> 4478</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l04479" name="l04479"></a><span class="lineno"> 4479</span>}</div>
 <div class="ttc" id="aclassCreature_html_aff1d211fe3b960fc3046db5f3dfcf793"><div class="ttname"><a href="classCreature.html#aff1d211fe3b960fc3046db5f3dfcf793">Creature::as_avatar</a></div><div class="ttdeci">virtual avatar * as_avatar()</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00128">creature.h:128</a></div></div>
-<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
-<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00380">player.cpp:380</a></div></div>
+<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00209">item.h:210</a></div></div>
+<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00366">player.cpp:366</a></div></div>
 <div class="ttc" id="aclassuilist_html"><div class="ttname"><a href="classuilist.html">uilist</a></div><div class="ttdoc">uilist: scrolling vertical list menu</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00186">ui.h:187</a></div></div>
-<div class="ttc" id="anamespaceavatar__funcs_html_a1bb52c7ff53526e659bfc25b8b53d620"><div class="ttname"><a href="namespaceavatar__funcs.html#a1bb52c7ff53526e659bfc25b8b53d620">avatar_funcs::gunmod_remove</a></div><div class="ttdeci">bool gunmod_remove(avatar &amp;you, item &amp;gun, item &amp;mod)</div><div class="ttdoc">Removes gunmod after first unloading any contained ammo and returns true on success.</div><div class="ttdef"><b>Definition:</b> <a href="avatar__functions_8cpp_source.html#l00443">avatar_functions.cpp:443</a></div></div>
+<div class="ttc" id="anamespaceavatar__funcs_html_a1bb52c7ff53526e659bfc25b8b53d620"><div class="ttname"><a href="namespaceavatar__funcs.html#a1bb52c7ff53526e659bfc25b8b53d620">avatar_funcs::gunmod_remove</a></div><div class="ttdeci">bool gunmod_remove(avatar &amp;you, item &amp;gun, item &amp;mod)</div><div class="ttdoc">Removes gunmod after first unloading any contained ammo and returns true on success.</div><div class="ttdef"><b>Definition:</b> <a href="avatar__functions_8cpp_source.html#l00459">avatar_functions.cpp:459</a></div></div>
 <div class="ttc" id="anamespacepickup_html_a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c"><div class="ttname"><a href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">pickup::prompt</a></div><div class="ttdeci">@ prompt</div><div class="ttdef"><b>Definition:</b> <a href="pickup_8h_source.html#l00031">pickup.h:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="creature_8h_source.html#l00128">Creature::as_avatar()</a>, <a class="el" href="avatar__functions_8cpp_source.html#l00443">avatar_funcs::gunmod_remove()</a>, <a class="el" href="item_8cpp_source.html#l07735">item::gunmods()</a>, <a class="el" href="item_8cpp_source.html#l06775">item::is_irremovable()</a>, and <a class="el" href="pickup_8h_source.html#l00030">pickup::prompt</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l00366">player::add_msg_if_player()</a>, <a class="el" href="creature_8h_source.html#l00128">Creature::as_avatar()</a>, <a class="el" href="avatar__functions_8cpp_source.html#l00459">avatar_funcs::gunmod_remove()</a>, <a class="el" href="item_8cpp_source.html#l07752">item::gunmods()</a>, <a class="el" href="item_8cpp_source.html#l06800">item::is_irremovable()</a>, and <a class="el" href="pickup_8h_source.html#l00030">pickup::prompt</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classdetach__gunmods__actor.html">detach_gunmods_actor</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:19 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:50 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -207,7 +207,7 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="scent__map_8h_source.html#l00056">56</a> of file <a class="el" href="scent__map_8h_source.html">scent_map.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>: <a class="code hl_variable" href="classscent__map.html#a48681fc613df14b83ba832b4301c4212">gm</a>( <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a> ) { }</div>
 <div class="ttc" id="aclassscent__map_html_a48681fc613df14b83ba832b4301c4212"><div class="ttname"><a href="classscent__map.html#a48681fc613df14b83ba832b4301c4212">scent_map::gm</a></div><div class="ttdeci">const game &amp; gm</div><div class="ttdef"><b>Definition:</b> <a href="scent__map_8h_source.html#l00053">scent_map.h:53</a></div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00281">game.cpp:281</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00283">game.cpp:283</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -352,7 +352,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="cata__tiles_8h.html#affa90804269b044a43867f93746f8f8eaadb115059e28d960fa8badfac5516667">center</a>, <a class="el" href="scent__map_8cpp_source.html#l00094">get()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00058">catacurses::getmaxx()</a>, <a class="el" href="ncurses__def_8cpp_source.html#l00063">catacurses::getmaxy()</a>, <a class="el" href="output_8cpp_source.html#l02081">mvwprintz()</a>, <a class="el" href="scent__map_8cpp_source.html#l00021">sev()</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11117">game::display_scent()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l11133">game::display_scent()</a>.</p>
 
 </div>
 </div>
@@ -441,10 +441,10 @@ template&lt;typename T &gt; </div>
 <div class="fragment"><div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>{</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classscent__map.html#aef8ec1c29840e5f9ec6972d462d83450">grscent</a>[p.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>][p.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>] - std::abs( <a class="code hl_variable" href="classscent__map.html#a48681fc613df14b83ba832b4301c4212">gm</a>.<a class="code hl_function" href="classgame.html#a1761d58262d9bf293c5f9b3a0f6b6719">get_levz</a>() - p.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>}</div>
-<div class="ttc" id="aclassgame_html_a1761d58262d9bf293c5f9b3a0f6b6719"><div class="ttname"><a href="classgame.html#a1761d58262d9bf293c5f9b3a0f6b6719">game::get_levz</a></div><div class="ttdeci">int get_levz() const</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l11872">game.cpp:11872</a></div></div>
+<div class="ttc" id="aclassgame_html_a1761d58262d9bf293c5f9b3a0f6b6719"><div class="ttname"><a href="classgame.html#a1761d58262d9bf293c5f9b3a0f6b6719">game::get_levz</a></div><div class="ttdeci">int get_levz() const</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l11888">game.cpp:11888</a></div></div>
 <div class="ttc" id="astructtripoint_html_ac944c0e329b5eba2602f7a52f66bbbb9"><div class="ttname"><a href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">tripoint::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00138">point.h:138</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="game_8cpp_source.html#l11872">game::get_levz()</a>, <a class="el" href="scent__map_8h_source.html#l00053">gm</a>, <a class="el" href="scent__map_8h_source.html#l00048">grscent</a>, <a class="el" href="point_8h_source.html#l00136">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00137">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
+<p class="reference">References <a class="el" href="game_8cpp_source.html#l11888">game::get_levz()</a>, <a class="el" href="scent__map_8h_source.html#l00053">gm</a>, <a class="el" href="scent__map_8h_source.html#l00048">grscent</a>, <a class="el" href="point_8h_source.html#l00136">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00137">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="scent__block_8cpp_source.html#l00016">scent_block::commit_modifications()</a>, and <a class="el" href="scent__map_8cpp_source.html#l00094">get()</a>.</p>
 
@@ -486,7 +486,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">return</span> scent_map_boundaries.contains( p.<a class="code hl_function" href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">xy</a>() );</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
-<div class="ttc" id="aclassmap_html_a3188771064ca49d4798c6a80bfad0fcd"><div class="ttname"><a href="classmap.html#a3188771064ca49d4798c6a80bfad0fcd">map::valid_move</a></div><div class="ttdeci">bool valid_move(const tripoint &amp;from, const tripoint &amp;to, bool bash=false, bool flying=false, bool via_ramp=false) const</div><div class="ttdoc">Returns true if a creature could walk from from to to in one step.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01920">map.cpp:1920</a></div></div>
+<div class="ttc" id="aclassmap_html_a3188771064ca49d4798c6a80bfad0fcd"><div class="ttname"><a href="classmap.html#a3188771064ca49d4798c6a80bfad0fcd">map::valid_move</a></div><div class="ttdeci">bool valid_move(const tripoint &amp;from, const tripoint &amp;to, bool bash=false, bool flying=false, bool via_ramp=false) const</div><div class="ttdoc">Returns true if a creature could walk from from to to in one step.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01925">map.cpp:1925</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a2b6d307dfab13601267fc3c627192f4e"><div class="ttname"><a href="game__constants_8h.html#a2b6d307dfab13601267fc3c627192f4e">MAPSIZE_Y</a></div><div class="ttdeci">static constexpr int MAPSIZE_Y</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00039">game_constants.h:39</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a2f229f6ae9b3affb78ec8139ccdbf18e"><div class="ttname"><a href="game__constants_8h.html#a2f229f6ae9b3affb78ec8139ccdbf18e">MAPSIZE_X</a></div><div class="ttdeci">static constexpr int MAPSIZE_X</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00038">game_constants.h:38</a></div></div>
 <div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00147">map.cpp:147</a></div></div>
@@ -495,7 +495,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
 <div class="ttc" id="astructtripoint_html_accc0725c936dbebb2486f969f39e2e5f"><div class="ttname"><a href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">tripoint::xy</a></div><div class="ttdeci">constexpr point xy() const</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00206">point.h:206</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="cuboid__rectangle_8h_source.html#l00032">half_open_rectangle&lt; Point, &gt;::contains()</a>, <a class="el" href="game_8cpp_source.html#l11872">game::get_levz()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="scent__map_8h_source.html#l00053">gm</a>, <a class="el" href="game__constants_8h_source.html#l00038">MAPSIZE_X</a>, <a class="el" href="game__constants_8h_source.html#l00039">MAPSIZE_Y</a>, <a class="el" href="scent__map_8h_source.html#l00017">SCENT_MAP_Z_REACH</a>, <a class="el" href="map_8cpp_source.html#l01920">map::valid_move()</a>, <a class="el" href="point_8h_source.html#l00206">tripoint::xy()</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
+<p class="reference">References <a class="el" href="cuboid__rectangle_8h_source.html#l00032">half_open_rectangle&lt; Point, &gt;::contains()</a>, <a class="el" href="game_8cpp_source.html#l11888">game::get_levz()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="scent__map_8h_source.html#l00053">gm</a>, <a class="el" href="game__constants_8h_source.html#l00038">MAPSIZE_X</a>, <a class="el" href="game__constants_8h_source.html#l00039">MAPSIZE_Y</a>, <a class="el" href="scent__map_8h_source.html#l00017">SCENT_MAP_Z_REACH</a>, <a class="el" href="map_8cpp_source.html#l01925">map::valid_move()</a>, <a class="el" href="point_8h_source.html#l00206">tripoint::xy()</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="scent__block_8cpp_source.html#l00016">scent_block::commit_modifications()</a>, <a class="el" href="scent__map_8cpp_source.html#l00094">get()</a>, <a class="el" href="scent__map_8cpp_source.html#l00121">get_type()</a>, <a class="el" href="scent__map_8h_source.html#l00083">inbounds()</a>, <a class="el" href="scent__map_8cpp_source.html#l00102">set()</a>, and <a class="el" href="scent__map_8cpp_source.html#l00082">shift()</a>.</p>
 
@@ -561,7 +561,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="scent__map_8h_source.html#l00048">grscent</a>, and <a class="el" href="scent__map_8h_source.html#l00049">typescent</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00475">game::setup()</a>, <a class="el" href="savegame_8cpp_source.html#l00167">game::unserialize()</a>, and <a class="el" href="game_8cpp_source.html#l10562">game::vertical_shift()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00477">game::setup()</a>, <a class="el" href="savegame_8cpp_source.html#l00167">game::unserialize()</a>, and <a class="el" href="game_8cpp_source.html#l10563">game::vertical_shift()</a>.</p>
 
 </div>
 </div>
@@ -663,7 +663,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="scent__map_8cpp_source.html#l00130">inbounds()</a>, <a class="el" href="scent__map_8cpp_source.html#l00109">set_unsafe()</a>, and <a class="el" href="enums_8h.html#ac7c2392f800a8be2feb093ef5fe48d40a599dcce2998a6b40b1e38e8c6006cb0a">type</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01348">game::do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01353">game::do_turn()</a>.</p>
 
 </div>
 </div>
@@ -745,7 +745,7 @@ template&lt;typename T &gt; </div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="scent__map_8h_source.html#l00048">grscent</a>, <a class="el" href="scent__map_8cpp_source.html#l00130">inbounds()</a>, <a class="el" href="game__constants_8h_source.html#l00038">MAPSIZE_X</a>, <a class="el" href="game__constants_8h_source.html#l00039">MAPSIZE_Y</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, and <a class="el" href="point_8h_source.html#l00039">point::y</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l10645">game::update_map()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l10646">game::update_map()</a>.</p>
 
 </div>
 </div>
@@ -870,8 +870,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        }</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    }</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>}</div>
-<div class="ttc" id="aclassmap_html_a41fa0e03c8ccfc8fb013a6ab5459d06e"><div class="ttname"><a href="classmap.html#a41fa0e03c8ccfc8fb013a6ab5459d06e">map::access_cache</a></div><div class="ttdeci">level_cache &amp; access_cache(int zlev)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08839">map.cpp:8839</a></div></div>
-<div class="ttc" id="aclassmap_html_a479604227db8b7d0ea4c5a26bbd7d19d"><div class="ttname"><a href="classmap.html#a479604227db8b7d0ea4c5a26bbd7d19d">map::scent_blockers</a></div><div class="ttdeci">void scent_blockers(std::array&lt; std::array&lt; char, MAPSIZE_X &gt;, MAPSIZE_Y &gt; &amp;scent_transfer, point min, point max)</div><div class="ttdoc">Build the map of scent-resistant tiles.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08651">map.cpp:8651</a></div></div>
+<div class="ttc" id="aclassmap_html_a41fa0e03c8ccfc8fb013a6ab5459d06e"><div class="ttname"><a href="classmap.html#a41fa0e03c8ccfc8fb013a6ab5459d06e">map::access_cache</a></div><div class="ttdeci">level_cache &amp; access_cache(int zlev)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08861">map.cpp:8861</a></div></div>
+<div class="ttc" id="aclassmap_html_a479604227db8b7d0ea4c5a26bbd7d19d"><div class="ttname"><a href="classmap.html#a479604227db8b7d0ea4c5a26bbd7d19d">map::scent_blockers</a></div><div class="ttdeci">void scent_blockers(std::array&lt; std::array&lt; char, MAPSIZE_X &gt;, MAPSIZE_Y &gt; &amp;scent_transfer, point min, point max)</div><div class="ttdoc">Build the map of scent-resistant tiles.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08673">map.cpp:8673</a></div></div>
 <div class="ttc" id="aclassscent__map_html_a52a49bf388a152806b8c9f43ca6a24a9"><div class="ttname"><a href="classscent__map.html#a52a49bf388a152806b8c9f43ca6a24a9">scent_map::player_last_moved</a></div><div class="ttdeci">time_point player_last_moved</div><div class="ttdef"><b>Definition:</b> <a href="scent__map_8h_source.html#l00051">scent_map.h:51</a></div></div>
 <div class="ttc" id="aclassscent__map_html_add25deef4f30b6f5db04431d243cf503"><div class="ttname"><a href="classscent__map.html#add25deef4f30b6f5db04431d243cf503">scent_map::player_last_position</a></div><div class="ttdeci">std::optional&lt; tripoint &gt; player_last_position</div><div class="ttdef"><b>Definition:</b> <a href="scent__map_8h_source.html#l00050">scent_map.h:50</a></div></div>
 <div class="ttc" id="anamespacecalendar_html_ae15fcbf1c971589eb49c1a657fb6a580"><div class="ttname"><a href="namespacecalendar.html#ae15fcbf1c971589eb49c1a657fb6a580">calendar::turn</a></div><div class="ttdeci">time_point turn</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00036">calendar.cpp:36</a></div></div>
@@ -880,9 +880,9 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="astructdiagonal__blocks_html"><div class="ttname"><a href="structdiagonal__blocks.html">diagonal_blocks</a></div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00296">map.h:296</a></div></div>
 <div class="ttc" id="astructlevel__cache_html_ac41c38c1b2f5132bbf89795536e2553b"><div class="ttname"><a href="structlevel__cache.html#ac41c38c1b2f5132bbf89795536e2553b">level_cache::vehicle_obstructed_cache</a></div><div class="ttdeci">diagonal_blocks vehicle_obstructed_cache[MAPSIZE_X][MAPSIZE_Y]</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00339">map.h:339</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="map_8cpp_source.html#l08839">map::access_cache()</a>, <a class="el" href="cata__tiles_8h.html#affa90804269b044a43867f93746f8f8eaadb115059e28d960fa8badfac5516667">center</a>, <a class="el" href="scent__map_8h_source.html#l00048">grscent</a>, <a class="el" href="game__constants_8h_source.html#l00038">MAPSIZE_X</a>, <a class="el" href="game__constants_8h_source.html#l00039">MAPSIZE_Y</a>, <a class="el" href="scent__map_8h_source.html#l00051">player_last_moved</a>, <a class="el" href="scent__map_8h_source.html#l00050">player_last_position</a>, <a class="el" href="map_8cpp_source.html#l08651">map::scent_blockers()</a>, <a class="el" href="scent__map_8cpp_source.html#l00019">SCENT_RADIUS</a>, <a class="el" href="calendar_8cpp_source.html#l00036">calendar::turn</a>, and <a class="el" href="map_8h_source.html#l00339">level_cache::vehicle_obstructed_cache</a>.</p>
+<p class="reference">References <a class="el" href="map_8cpp_source.html#l08861">map::access_cache()</a>, <a class="el" href="cata__tiles_8h.html#affa90804269b044a43867f93746f8f8eaadb115059e28d960fa8badfac5516667">center</a>, <a class="el" href="scent__map_8h_source.html#l00048">grscent</a>, <a class="el" href="game__constants_8h_source.html#l00038">MAPSIZE_X</a>, <a class="el" href="game__constants_8h_source.html#l00039">MAPSIZE_Y</a>, <a class="el" href="scent__map_8h_source.html#l00051">player_last_moved</a>, <a class="el" href="scent__map_8h_source.html#l00050">player_last_position</a>, <a class="el" href="map_8cpp_source.html#l08673">map::scent_blockers()</a>, <a class="el" href="scent__map_8cpp_source.html#l00019">SCENT_RADIUS</a>, <a class="el" href="calendar_8cpp_source.html#l00036">calendar::turn</a>, and <a class="el" href="map_8h_source.html#l00339">level_cache::vehicle_obstructed_cache</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01348">game::do_turn()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01353">game::do_turn()</a>.</p>
 
 </div>
 </div>
@@ -1028,7 +1028,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classscent__map.html">scent_map</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:32 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:04 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

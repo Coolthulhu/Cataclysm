@@ -122,14 +122,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02454">2454</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02455" name="l02455"></a><span class="lineno"> 2455</span>{</div>
-<div class="line"><a id="l02456" name="l02456"></a><span class="lineno"> 2456</span>    <a class="code hl_variable" href="namespacemelee.html#a037bbc3757ef2973e9d84c68ebbad9a9">melee_stats</a> = <a class="code hl_struct" href="structmelee__statistic__data.html">melee_statistic_data</a>{};</div>
-<div class="line"><a id="l02457" name="l02457"></a><span class="lineno"> 2457</span>}</div>
-<div class="ttc" id="anamespacemelee_html_a037bbc3757ef2973e9d84c68ebbad9a9"><div class="ttname"><a href="namespacemelee.html#a037bbc3757ef2973e9d84c68ebbad9a9">melee::melee_stats</a></div><div class="ttdeci">melee_statistic_data melee_stats</div><div class="ttdef"><b>Definition:</b> <a href="melee_8cpp_source.html#l02461">melee.cpp:2461</a></div></div>
+<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02513">2513</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02514" name="l02514"></a><span class="lineno"> 2514</span>{</div>
+<div class="line"><a id="l02515" name="l02515"></a><span class="lineno"> 2515</span>    <a class="code hl_variable" href="namespacemelee.html#a037bbc3757ef2973e9d84c68ebbad9a9">melee_stats</a> = <a class="code hl_struct" href="structmelee__statistic__data.html">melee_statistic_data</a>{};</div>
+<div class="line"><a id="l02516" name="l02516"></a><span class="lineno"> 2516</span>}</div>
+<div class="ttc" id="anamespacemelee_html_a037bbc3757ef2973e9d84c68ebbad9a9"><div class="ttname"><a href="namespacemelee.html#a037bbc3757ef2973e9d84c68ebbad9a9">melee::melee_stats</a></div><div class="ttdeci">melee_statistic_data melee_stats</div><div class="ttdef"><b>Definition:</b> <a href="melee_8cpp_source.html#l02520">melee.cpp:2520</a></div></div>
 <div class="ttc" id="astructmelee__statistic__data_html"><div class="ttname"><a href="structmelee__statistic__data.html">melee_statistic_data</a></div><div class="ttdef"><b>Definition:</b> <a href="melee_8h_source.html#l00008">melee.h:8</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="melee_8cpp_source.html#l02461">melee_stats</a>.</p>
+<p class="reference">References <a class="el" href="melee_8cpp_source.html#l02520">melee_stats</a>.</p>
 
 </div>
 </div>
@@ -148,12 +148,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02449">2449</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span>{</div>
-<div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacemelee.html#a037bbc3757ef2973e9d84c68ebbad9a9">melee_stats</a>;</div>
-<div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span>}</div>
+<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02508">2508</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02509" name="l02509"></a><span class="lineno"> 2509</span>{</div>
+<div class="line"><a id="l02510" name="l02510"></a><span class="lineno"> 2510</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacemelee.html#a037bbc3757ef2973e9d84c68ebbad9a9">melee_stats</a>;</div>
+<div class="line"><a id="l02511" name="l02511"></a><span class="lineno"> 2511</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="melee_8cpp_source.html#l02461">melee_stats</a>.</p>
+<p class="reference">References <a class="el" href="melee_8cpp_source.html#l02520">melee_stats</a>.</p>
 
 </div>
 </div>
@@ -175,15 +175,15 @@ Variables</h2></td></tr>
 
 <p>Once the accuracy (sum of modifiers) of an attack has been determined, this is used to actually roll the "hit value" of the attack to be compared to dodge. </p>
 
-<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02444">2444</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span>{</div>
-<div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="rng_8cpp.html#a3a6a7e6245951426223e02f989bdd6a4">normal_roll</a>( accuracy * 5, 25.0f );</div>
-<div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span>}</div>
+<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02503">2503</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02504" name="l02504"></a><span class="lineno"> 2504</span>{</div>
+<div class="line"><a id="l02505" name="l02505"></a><span class="lineno"> 2505</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="rng_8cpp.html#a3a6a7e6245951426223e02f989bdd6a4">normal_roll</a>( accuracy * 5, 25.0f );</div>
+<div class="line"><a id="l02506" name="l02506"></a><span class="lineno"> 2506</span>}</div>
 <div class="ttc" id="arng_8cpp_html_a3a6a7e6245951426223e02f989bdd6a4"><div class="ttname"><a href="rng_8cpp.html#a3a6a7e6245951426223e02f989bdd6a4">normal_roll</a></div><div class="ttdeci">double normal_roll(double mean, double stddev)</div><div class="ttdef"><b>Definition:</b> <a href="rng_8cpp_source.html#l00042">rng.cpp:42</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="rng_8cpp_source.html#l00042">normal_roll()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="melee_8cpp_source.html#l00300">Character::hit_roll()</a>, <a class="el" href="monster_8cpp_source.html#l01944">monster::hit_roll()</a>, and <a class="el" href="monster_8cpp_source.html#l01403">monster::melee_attack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="melee_8cpp_source.html#l00357">Character::hit_roll()</a>, <a class="el" href="monster_8cpp_source.html#l01960">monster::hit_roll()</a>, and <a class="el" href="monster_8cpp_source.html#l01419">monster::melee_attack()</a>.</p>
 
 </div>
 </div>
@@ -200,9 +200,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02461">2461</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="melee_8cpp_source.html#l02520">2520</a> of file <a class="el" href="melee_8cpp_source.html">melee.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="melee_8cpp_source.html#l02454">clear_stats()</a>, <a class="el" href="melee_8cpp_source.html#l00739">Character::crit_chance()</a>, <a class="el" href="melee_8cpp_source.html#l02449">get_stats()</a>, and <a class="el" href="melee_8cpp_source.html#l00387">Character::melee_attack()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="melee_8cpp_source.html#l02513">clear_stats()</a>, <a class="el" href="melee_8cpp_source.html#l00796">Character::crit_chance()</a>, <a class="el" href="melee_8cpp_source.html#l02508">get_stats()</a>, and <a class="el" href="melee_8cpp_source.html#l00444">Character::melee_attack()</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacemelee.html">melee</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:42 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

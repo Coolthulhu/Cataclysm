@@ -92,7 +92,7 @@ $(document).ready(function(){initNavTree('namespacevision.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8d88c9a764e41f78d403b0fb6976ef56"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevision.html#a8d88c9a764e41f78d403b0fb6976ef56">threshold_for_nv_range</a> (float range)</td></tr>
+<tr class="memitem:a8d88c9a764e41f78d403b0fb6976ef56"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevision.html#a8d88c9a764e41f78d403b0fb6976ef56">threshold_for_nv_range</a> (float <a class="el" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>)</td></tr>
 <tr class="memdesc:a8d88c9a764e41f78d403b0fb6976ef56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the light level that darkness will have at this range from player.  <a href="namespacevision.html#a8d88c9a764e41f78d403b0fb6976ef56">More...</a><br /></td></tr>
 <tr class="separator:a8d88c9a764e41f78d403b0fb6976ef56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a8ace4b281f390ac9ee3de19c61a78"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacevision.html#a05a8ace4b281f390ac9ee3de19c61a78">nv_range_from_per</a> (int per)</td></tr>
@@ -117,12 +117,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01713">1713</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span>{</div>
-<div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span>    <span class="keywordflow">return</span> -( enc / 10.0f );</div>
-<div class="line"><a id="l01716" name="l01716"></a><span class="lineno"> 1716</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01726">1726</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01727" name="l01727"></a><span class="lineno"> 1727</span>{</div>
+<div class="line"><a id="l01728" name="l01728"></a><span class="lineno"> 1728</span>    <span class="keywordflow">return</span> -( enc / 10.0f );</div>
+<div class="line"><a id="l01729" name="l01729"></a><span class="lineno"> 1729</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00208">get_encumbrance_description()</a>, and <a class="el" href="character_8cpp_source.html#l01614">Character::recalc_sight_limits()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00208">get_encumbrance_description()</a>, and <a class="el" href="character_8cpp_source.html#l01627">Character::recalc_sight_limits()</a>.</p>
 
 </div>
 </div>
@@ -142,13 +142,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01707">1707</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01708" name="l01708"></a><span class="lineno"> 1708</span>{</div>
-<div class="line"><a id="l01709" name="l01709"></a><span class="lineno"> 1709</span>    <span class="comment">// The -1 is because the math is incorrect, but we want the UI to show correct numbers</span></div>
-<div class="line"><a id="l01710" name="l01710"></a><span class="lineno"> 1710</span>    <span class="keywordflow">return</span> per / 3.0f - 1.0f;</div>
-<div class="line"><a id="l01711" name="l01711"></a><span class="lineno"> 1711</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01720">1720</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>{</div>
+<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>    <span class="comment">// The -1 is because the math is incorrect, but we want the UI to show correct numbers</span></div>
+<div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span>    <span class="keywordflow">return</span> per / 3.0f - 1.0f;</div>
+<div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00370">draw_stats_info()</a>, <a class="el" href="character_8cpp_source.html#l01614">Character::recalc_sight_limits()</a>, and <a class="el" href="newcharacter_8cpp_source.html#l00791">set_stats()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character__display_8cpp_source.html#l00370">draw_stats_info()</a>, <a class="el" href="character_8cpp_source.html#l01627">Character::recalc_sight_limits()</a>, and <a class="el" href="newcharacter_8cpp_source.html#l00794">set_stats()</a>.</p>
 
 </div>
 </div>
@@ -171,18 +171,19 @@ Functions</h2></td></tr>
 <p>Returns the light level that darkness will have at this range from player. </p>
 <p >Assumes pure air transparency. </p>
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01700">1700</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01701" name="l01701"></a><span class="lineno"> 1701</span>{</div>
-<div class="line"><a id="l01702" name="l01702"></a><span class="lineno"> 1702</span>    <span class="keyword">constexpr</span> <span class="keywordtype">float</span> epsilon = 0.0001f;</div>
-<div class="line"><a id="l01703" name="l01703"></a><span class="lineno"> 1703</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="lightmap_8h.html#a848d19d18b5cd12db8e2cb95a6020d27">LIGHT_AMBIENT_LOW</a> / std::exp( range * <a class="code hl_variable" href="lightmap_8h.html#ab007d848fe0f7de9118042fff85fef07">LIGHT_TRANSPARENCY_OPEN_AIR</a> )</div>
-<div class="line"><a id="l01704" name="l01704"></a><span class="lineno"> 1704</span>           - epsilon;</div>
-<div class="line"><a id="l01705" name="l01705"></a><span class="lineno"> 1705</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l01713">1713</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01714" name="l01714"></a><span class="lineno"> 1714</span>{</div>
+<div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span>    <span class="keyword">constexpr</span> <span class="keywordtype">float</span> epsilon = 0.0001f;</div>
+<div class="line"><a id="l01716" name="l01716"></a><span class="lineno"> 1716</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="lightmap_8h.html#a848d19d18b5cd12db8e2cb95a6020d27">LIGHT_AMBIENT_LOW</a> / std::exp( <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a> * <a class="code hl_variable" href="lightmap_8h.html#ab007d848fe0f7de9118042fff85fef07">LIGHT_TRANSPARENCY_OPEN_AIR</a> )</div>
+<div class="line"><a id="l01717" name="l01717"></a><span class="lineno"> 1717</span>           - epsilon;</div>
+<div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span>}</div>
+<div class="ttc" id="acharacter_8h_html_addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb"><div class="ttname"><a href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a></div><div class="ttdeci">@ range</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00104">character.h:104</a></div></div>
 <div class="ttc" id="alightmap_8h_html_a848d19d18b5cd12db8e2cb95a6020d27"><div class="ttname"><a href="lightmap_8h.html#a848d19d18b5cd12db8e2cb95a6020d27">LIGHT_AMBIENT_LOW</a></div><div class="ttdeci">static constexpr float LIGHT_AMBIENT_LOW</div><div class="ttdef"><b>Definition:</b> <a href="lightmap_8h_source.html#l00014">lightmap.h:14</a></div></div>
 <div class="ttc" id="alightmap_8h_html_ab007d848fe0f7de9118042fff85fef07"><div class="ttname"><a href="lightmap_8h.html#ab007d848fe0f7de9118042fff85fef07">LIGHT_TRANSPARENCY_OPEN_AIR</a></div><div class="ttdeci">static constexpr float LIGHT_TRANSPARENCY_OPEN_AIR</div><div class="ttdef"><b>Definition:</b> <a href="lightmap_8h_source.html#l00036">lightmap.h:36</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="lightmap_8h_source.html#l00014">LIGHT_AMBIENT_LOW</a>, and <a class="el" href="lightmap_8h_source.html#l00036">LIGHT_TRANSPARENCY_OPEN_AIR</a>.</p>
+<p class="reference">References <a class="el" href="lightmap_8h_source.html#l00014">LIGHT_AMBIENT_LOW</a>, <a class="el" href="lightmap_8h_source.html#l00036">LIGHT_TRANSPARENCY_OPEN_AIR</a>, and <a class="el" href="character_8h_source.html#l00104">range</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l01720">Character::get_vision_threshold()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l01733">Character::get_vision_threshold()</a>.</p>
 
 </div>
 </div>
@@ -192,7 +193,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacevision.html">vision</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:44 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

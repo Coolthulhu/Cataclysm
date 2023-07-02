@@ -172,26 +172,26 @@ Functions</h2></td></tr>
 
 <p>Generates a simple special from a building id. </p>
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l04967">4967</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04968" name="l04968"></a><span class="lineno"> 4968</span>{</div>
-<div class="line"><a id="l04969" name="l04969"></a><span class="lineno"> 4969</span>    <span class="comment">// TODO: Get rid of the hard-coded ids.</span></div>
-<div class="line"><a id="l04970" name="l04970"></a><span class="lineno"> 4970</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">overmap_location_id</a> land( <span class="stringliteral">&quot;land&quot;</span> );</div>
-<div class="line"><a id="l04971" name="l04971"></a><span class="lineno"> 4971</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">overmap_location_id</a> swamp( <span class="stringliteral">&quot;swamp&quot;</span> );</div>
-<div class="line"><a id="l04972" name="l04972"></a><span class="lineno"> 4972</span> </div>
-<div class="line"><a id="l04973" name="l04973"></a><span class="lineno"> 4973</span>    <a class="code hl_class" href="classovermap__special.html">overmap_special</a> new_special;</div>
-<div class="line"><a id="l04974" name="l04974"></a><span class="lineno"> 4974</span> </div>
-<div class="line"><a id="l04975" name="l04975"></a><span class="lineno"> 4975</span>    new_special.<a class="code hl_variable" href="classovermap__special.html#aae533ac4ea687db241db7619f6b318f9">id</a> = <a class="code hl_typedef" href="type__id_8h.html#aa7964d871c74fa759b358081855b6e24">overmap_special_id</a>( <span class="stringliteral">&quot;FakeSpecial_&quot;</span> + base.<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() );</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l04971">4971</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04972" name="l04972"></a><span class="lineno"> 4972</span>{</div>
+<div class="line"><a id="l04973" name="l04973"></a><span class="lineno"> 4973</span>    <span class="comment">// TODO: Get rid of the hard-coded ids.</span></div>
+<div class="line"><a id="l04974" name="l04974"></a><span class="lineno"> 4974</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">overmap_location_id</a> land( <span class="stringliteral">&quot;land&quot;</span> );</div>
+<div class="line"><a id="l04975" name="l04975"></a><span class="lineno"> 4975</span>    <span class="keyword">static</span> <span class="keyword">const</span> <a class="code hl_class" href="classstring__id.html">overmap_location_id</a> swamp( <span class="stringliteral">&quot;swamp&quot;</span> );</div>
 <div class="line"><a id="l04976" name="l04976"></a><span class="lineno"> 4976</span> </div>
-<div class="line"><a id="l04977" name="l04977"></a><span class="lineno"> 4977</span>    <a class="code hl_struct" href="structovermap__special__terrain.html">overmap_special_terrain</a> ter;</div>
-<div class="line"><a id="l04978" name="l04978"></a><span class="lineno"> 4978</span>    ter.<a class="code hl_variable" href="structovermap__special__terrain.html#aa6d67e0a2999bf57abf2a54000df7beb">terrain</a> = base.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>().<a class="code hl_function" href="structoter__type__t.html#abf14584178c7e9fdb5d0aef30666ab93">get_first</a>().<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>();</div>
-<div class="line"><a id="l04979" name="l04979"></a><span class="lineno"> 4979</span>    ter.<a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.insert( land );</div>
-<div class="line"><a id="l04980" name="l04980"></a><span class="lineno"> 4980</span>    ter.<a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.insert( swamp );</div>
-<div class="line"><a id="l04981" name="l04981"></a><span class="lineno"> 4981</span>    new_special.<a class="code hl_variable" href="classovermap__special.html#aabbbfdd7e92792fa9f5a910cc489edc3">terrains</a>.push_back( ter );</div>
-<div class="line"><a id="l04982" name="l04982"></a><span class="lineno"> 4982</span> </div>
-<div class="line"><a id="l04983" name="l04983"></a><span class="lineno"> 4983</span>    new_special.<a class="code hl_variable" href="classovermap__special.html#a366bdd7f56c0b5b1feb53b65eadf6f49">flags</a>.insert( <span class="stringliteral">&quot;ELECTRIC_GRID&quot;</span> );</div>
-<div class="line"><a id="l04984" name="l04984"></a><span class="lineno"> 4984</span> </div>
-<div class="line"><a id="l04985" name="l04985"></a><span class="lineno"> 4985</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#ab400e77eddc76c10bb713c9f7b01b468">specials</a>.insert( new_special ).id;</div>
-<div class="line"><a id="l04986" name="l04986"></a><span class="lineno"> 4986</span>}</div>
+<div class="line"><a id="l04977" name="l04977"></a><span class="lineno"> 4977</span>    <a class="code hl_class" href="classovermap__special.html">overmap_special</a> new_special;</div>
+<div class="line"><a id="l04978" name="l04978"></a><span class="lineno"> 4978</span> </div>
+<div class="line"><a id="l04979" name="l04979"></a><span class="lineno"> 4979</span>    new_special.<a class="code hl_variable" href="classovermap__special.html#aae533ac4ea687db241db7619f6b318f9">id</a> = <a class="code hl_typedef" href="type__id_8h.html#aa7964d871c74fa759b358081855b6e24">overmap_special_id</a>( <span class="stringliteral">&quot;FakeSpecial_&quot;</span> + base.<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() );</div>
+<div class="line"><a id="l04980" name="l04980"></a><span class="lineno"> 4980</span> </div>
+<div class="line"><a id="l04981" name="l04981"></a><span class="lineno"> 4981</span>    <a class="code hl_struct" href="structovermap__special__terrain.html">overmap_special_terrain</a> ter;</div>
+<div class="line"><a id="l04982" name="l04982"></a><span class="lineno"> 4982</span>    ter.<a class="code hl_variable" href="structovermap__special__terrain.html#aa6d67e0a2999bf57abf2a54000df7beb">terrain</a> = base.<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>().<a class="code hl_function" href="structoter__type__t.html#abf14584178c7e9fdb5d0aef30666ab93">get_first</a>().<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>();</div>
+<div class="line"><a id="l04983" name="l04983"></a><span class="lineno"> 4983</span>    ter.<a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.insert( land );</div>
+<div class="line"><a id="l04984" name="l04984"></a><span class="lineno"> 4984</span>    ter.<a class="code hl_variable" href="structovermap__special__terrain.html#a8c047fb10bba197032cb3cc2aca2a0e2">locations</a>.insert( swamp );</div>
+<div class="line"><a id="l04985" name="l04985"></a><span class="lineno"> 4985</span>    new_special.<a class="code hl_variable" href="classovermap__special.html#aabbbfdd7e92792fa9f5a910cc489edc3">terrains</a>.push_back( ter );</div>
+<div class="line"><a id="l04986" name="l04986"></a><span class="lineno"> 4986</span> </div>
+<div class="line"><a id="l04987" name="l04987"></a><span class="lineno"> 4987</span>    new_special.<a class="code hl_variable" href="classovermap__special.html#a366bdd7f56c0b5b1feb53b65eadf6f49">flags</a>.insert( <span class="stringliteral">&quot;ELECTRIC_GRID&quot;</span> );</div>
+<div class="line"><a id="l04988" name="l04988"></a><span class="lineno"> 4988</span> </div>
+<div class="line"><a id="l04989" name="l04989"></a><span class="lineno"> 4989</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#ab400e77eddc76c10bb713c9f7b01b468">specials</a>.insert( new_special ).id;</div>
+<div class="line"><a id="l04990" name="l04990"></a><span class="lineno"> 4990</span>}</div>
 <div class="ttc" id="aclassint__id_html_a88b1e0c550f4d6f36cac7a73feca7f01"><div class="ttname"><a href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">int_id::id</a></div><div class="ttdeci">const string_id&lt; T &gt; &amp; id() const</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00033">ammo_effect.cpp:33</a></div></div>
 <div class="ttc" id="aclassovermap__special_html_a366bdd7f56c0b5b1feb53b65eadf6f49"><div class="ttname"><a href="classovermap__special.html#a366bdd7f56c0b5b1feb53b65eadf6f49">overmap_special::flags</a></div><div class="ttdeci">std::set&lt; std::string &gt; flags</div><div class="ttdef"><b>Definition:</b> <a href="overmap__special_8h_source.html#l00093">overmap_special.h:93</a></div></div>
 <div class="ttc" id="aclassovermap__special_html_aabbbfdd7e92792fa9f5a910cc489edc3"><div class="ttname"><a href="classovermap__special.html#aabbbfdd7e92792fa9f5a910cc489edc3">overmap_special::terrains</a></div><div class="ttdeci">std::list&lt; overmap_special_terrain &gt; terrains</div><div class="ttdef"><b>Definition:</b> <a href="overmap__special_8h_source.html#l00084">overmap_special.h:84</a></div></div>
@@ -262,7 +262,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="namespaceanonymous__namespace_02overmap_8cpp_03.html#ab400e77eddc76c10bb713c9f7b01b468">anonymous_namespace{overmap.cpp}::specials</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmapbuffer_8cpp_source.html#l01587">overmapbuffer::place_special()</a>, <a class="el" href="overmap_8cpp_source.html#l04502">overmap::place_specials()</a>, and <a class="el" href="overmap__ui_8cpp_source.html#l01689">overmap_ui::place_ter_or_special()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmapbuffer_8cpp_source.html#l01587">overmapbuffer::place_special()</a>, <a class="el" href="overmap_8cpp_source.html#l04504">overmap::place_specials()</a>, and <a class="el" href="overmap__ui_8cpp_source.html#l01689">overmap_ui::place_ter_or_special()</a>.</p>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceovermap__specials.html">overmap_specials</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:43 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:14 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

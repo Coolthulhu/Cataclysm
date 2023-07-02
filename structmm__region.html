@@ -157,24 +157,24 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03312">3312</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03313" name="l03313"></a><span class="lineno"> 3313</span>{</div>
-<div class="line"><a id="l03314" name="l03314"></a><span class="lineno"> 3314</span>    jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
-<div class="line"><a id="l03315" name="l03315"></a><span class="lineno"> 3315</span>    <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
-<div class="line"><a id="l03316" name="l03316"></a><span class="lineno"> 3316</span>    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; y++ ) {</div>
-<div class="line"><a id="l03317" name="l03317"></a><span class="lineno"> 3317</span>        <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
-<div class="line"><a id="l03318" name="l03318"></a><span class="lineno"> 3318</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; x++ ) {</div>
-<div class="line"><a id="l03319" name="l03319"></a><span class="lineno"> 3319</span>            <a class="code hl_typedef" href="memory__fast_8h.html#ada897699f31fc8b37c5af09d95d45840">shared_ptr_fast&lt;mm_submap&gt;</a> &amp;<a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="structmm__region.html#a5bd08e452bd34d9a4d03a3f81e41f643">submaps</a>[x][y];</div>
-<div class="line"><a id="l03320" name="l03320"></a><span class="lineno"> 3320</span>            <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = make_shared_fast&lt;mm_submap&gt;();</div>
-<div class="line"><a id="l03321" name="l03321"></a><span class="lineno"> 3321</span>            <span class="keywordflow">if</span>( jsin.<a class="code hl_function" href="classJsonIn.html#a46bf0ee7160d098b0328679c6cb15875">test_null</a>() ) {</div>
-<div class="line"><a id="l03322" name="l03322"></a><span class="lineno"> 3322</span>                jsin.<a class="code hl_function" href="classJsonIn.html#a4b0fe0074f55f005e1fb91e4dc6df180">skip_null</a>();</div>
-<div class="line"><a id="l03323" name="l03323"></a><span class="lineno"> 3323</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03324" name="l03324"></a><span class="lineno"> 3324</span>                <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;deserialize( jsin );</div>
-<div class="line"><a id="l03325" name="l03325"></a><span class="lineno"> 3325</span>            }</div>
-<div class="line"><a id="l03326" name="l03326"></a><span class="lineno"> 3326</span>        }</div>
-<div class="line"><a id="l03327" name="l03327"></a><span class="lineno"> 3327</span>    }</div>
-<div class="line"><a id="l03328" name="l03328"></a><span class="lineno"> 3328</span>    jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
-<div class="line"><a id="l03329" name="l03329"></a><span class="lineno"> 3329</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03322">3322</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03323" name="l03323"></a><span class="lineno"> 3323</span>{</div>
+<div class="line"><a id="l03324" name="l03324"></a><span class="lineno"> 3324</span>    jsin.<a class="code hl_function" href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">start_array</a>();</div>
+<div class="line"><a id="l03325" name="l03325"></a><span class="lineno"> 3325</span>    <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
+<div class="line"><a id="l03326" name="l03326"></a><span class="lineno"> 3326</span>    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; y++ ) {</div>
+<div class="line"><a id="l03327" name="l03327"></a><span class="lineno"> 3327</span>        <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
+<div class="line"><a id="l03328" name="l03328"></a><span class="lineno"> 3328</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; x++ ) {</div>
+<div class="line"><a id="l03329" name="l03329"></a><span class="lineno"> 3329</span>            <a class="code hl_typedef" href="memory__fast_8h.html#ada897699f31fc8b37c5af09d95d45840">shared_ptr_fast&lt;mm_submap&gt;</a> &amp;<a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="structmm__region.html#a5bd08e452bd34d9a4d03a3f81e41f643">submaps</a>[x][y];</div>
+<div class="line"><a id="l03330" name="l03330"></a><span class="lineno"> 3330</span>            <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = make_shared_fast&lt;mm_submap&gt;();</div>
+<div class="line"><a id="l03331" name="l03331"></a><span class="lineno"> 3331</span>            <span class="keywordflow">if</span>( jsin.<a class="code hl_function" href="classJsonIn.html#a46bf0ee7160d098b0328679c6cb15875">test_null</a>() ) {</div>
+<div class="line"><a id="l03332" name="l03332"></a><span class="lineno"> 3332</span>                jsin.<a class="code hl_function" href="classJsonIn.html#a4b0fe0074f55f005e1fb91e4dc6df180">skip_null</a>();</div>
+<div class="line"><a id="l03333" name="l03333"></a><span class="lineno"> 3333</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03334" name="l03334"></a><span class="lineno"> 3334</span>                <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;deserialize( jsin );</div>
+<div class="line"><a id="l03335" name="l03335"></a><span class="lineno"> 3335</span>            }</div>
+<div class="line"><a id="l03336" name="l03336"></a><span class="lineno"> 3336</span>        }</div>
+<div class="line"><a id="l03337" name="l03337"></a><span class="lineno"> 3337</span>    }</div>
+<div class="line"><a id="l03338" name="l03338"></a><span class="lineno"> 3338</span>    jsin.<a class="code hl_function" href="classJsonIn.html#adb53515d72e6e0457ae3266ace12d5e5">end_array</a>();</div>
+<div class="line"><a id="l03339" name="l03339"></a><span class="lineno"> 3339</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_a46bf0ee7160d098b0328679c6cb15875"><div class="ttname"><a href="classJsonIn.html#a46bf0ee7160d098b0328679c6cb15875">JsonIn::test_null</a></div><div class="ttdeci">bool test_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01507">json.cpp:1507</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a4b0fe0074f55f005e1fb91e4dc6df180"><div class="ttname"><a href="classJsonIn.html#a4b0fe0074f55f005e1fb91e4dc6df180">JsonIn::skip_null</a></div><div class="ttdeci">void skip_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00994">json.cpp:994</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_a70443f07b40c2a0ab1aee1e0418a1faf"><div class="ttname"><a href="classJsonIn.html#a70443f07b40c2a0ab1aee1e0418a1faf">JsonIn::start_array</a></div><div class="ttdeci">void start_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01441">json.cpp:1441</a></div></div>
@@ -238,23 +238,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03294">3294</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03295" name="l03295"></a><span class="lineno"> 3295</span>{</div>
-<div class="line"><a id="l03296" name="l03296"></a><span class="lineno"> 3296</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
-<div class="line"><a id="l03297" name="l03297"></a><span class="lineno"> 3297</span>    <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
-<div class="line"><a id="l03298" name="l03298"></a><span class="lineno"> 3298</span>    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; y++ ) {</div>
-<div class="line"><a id="l03299" name="l03299"></a><span class="lineno"> 3299</span>        <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
-<div class="line"><a id="l03300" name="l03300"></a><span class="lineno"> 3300</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; x++ ) {</div>
-<div class="line"><a id="l03301" name="l03301"></a><span class="lineno"> 3301</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="memory__fast_8h.html#ada897699f31fc8b37c5af09d95d45840">shared_ptr_fast&lt;mm_submap&gt;</a> &amp;<a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="structmm__region.html#a5bd08e452bd34d9a4d03a3f81e41f643">submaps</a>[x][y];</div>
-<div class="line"><a id="l03302" name="l03302"></a><span class="lineno"> 3302</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;is_empty() ) {</div>
-<div class="line"><a id="l03303" name="l03303"></a><span class="lineno"> 3303</span>                jsout.<a class="code hl_function" href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">write_null</a>();</div>
-<div class="line"><a id="l03304" name="l03304"></a><span class="lineno"> 3304</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03305" name="l03305"></a><span class="lineno"> 3305</span>                <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;serialize( jsout );</div>
-<div class="line"><a id="l03306" name="l03306"></a><span class="lineno"> 3306</span>            }</div>
-<div class="line"><a id="l03307" name="l03307"></a><span class="lineno"> 3307</span>        }</div>
-<div class="line"><a id="l03308" name="l03308"></a><span class="lineno"> 3308</span>    }</div>
-<div class="line"><a id="l03309" name="l03309"></a><span class="lineno"> 3309</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
-<div class="line"><a id="l03310" name="l03310"></a><span class="lineno"> 3310</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03304">3304</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03305" name="l03305"></a><span class="lineno"> 3305</span>{</div>
+<div class="line"><a id="l03306" name="l03306"></a><span class="lineno"> 3306</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">start_array</a>();</div>
+<div class="line"><a id="l03307" name="l03307"></a><span class="lineno"> 3307</span>    <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
+<div class="line"><a id="l03308" name="l03308"></a><span class="lineno"> 3308</span>    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; y++ ) {</div>
+<div class="line"><a id="l03309" name="l03309"></a><span class="lineno"> 3309</span>        <span class="comment">// NOLINTNEXTLINE(modernize-loop-convert): leaving as is for readability</span></div>
+<div class="line"><a id="l03310" name="l03310"></a><span class="lineno"> 3310</span>        <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a844f35e5f9891ae54a591cd74bc45675">MM_REG_SIZE</a>; x++ ) {</div>
+<div class="line"><a id="l03311" name="l03311"></a><span class="lineno"> 3311</span>            <span class="keyword">const</span> <a class="code hl_typedef" href="memory__fast_8h.html#ada897699f31fc8b37c5af09d95d45840">shared_ptr_fast&lt;mm_submap&gt;</a> &amp;<a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="structmm__region.html#a5bd08e452bd34d9a4d03a3f81e41f643">submaps</a>[x][y];</div>
+<div class="line"><a id="l03312" name="l03312"></a><span class="lineno"> 3312</span>            <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;is_empty() ) {</div>
+<div class="line"><a id="l03313" name="l03313"></a><span class="lineno"> 3313</span>                jsout.<a class="code hl_function" href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">write_null</a>();</div>
+<div class="line"><a id="l03314" name="l03314"></a><span class="lineno"> 3314</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03315" name="l03315"></a><span class="lineno"> 3315</span>                <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;serialize( jsout );</div>
+<div class="line"><a id="l03316" name="l03316"></a><span class="lineno"> 3316</span>            }</div>
+<div class="line"><a id="l03317" name="l03317"></a><span class="lineno"> 3317</span>        }</div>
+<div class="line"><a id="l03318" name="l03318"></a><span class="lineno"> 3318</span>    }</div>
+<div class="line"><a id="l03319" name="l03319"></a><span class="lineno"> 3319</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">end_array</a>();</div>
+<div class="line"><a id="l03320" name="l03320"></a><span class="lineno"> 3320</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a449a76cf061d1949ff144ebd7261102f"><div class="ttname"><a href="classJsonOut.html#a449a76cf061d1949ff144ebd7261102f">JsonOut::write_null</a></div><div class="ttdeci">void write_null()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02158">json.cpp:2158</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a44cdd853d4c6913b37caa9f0131eeff2"><div class="ttname"><a href="classJsonOut.html#a44cdd853d4c6913b37caa9f0131eeff2">JsonOut::end_array</a></div><div class="ttdeci">void end_array()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02150">json.cpp:2150</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_a4550e2036b904c4d4a90e440dd41c684"><div class="ttname"><a href="classJsonOut.html#a4550e2036b904c4d4a90e440dd41c684">JsonOut::start_array</a></div><div class="ttdeci">void start_array(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02139">json.cpp:2139</a></div></div>
@@ -295,7 +295,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structmm__region.html">mm_region</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:28 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:59 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

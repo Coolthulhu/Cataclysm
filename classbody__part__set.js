@@ -13,6 +13,7 @@ var classbody__part__set =
     [ "operator|", "classbody__part__set.html#ad919d9207aa32b6386d71edd29aa1544", null ],
     [ "operator|=", "classbody__part__set.html#a79ad55513e9c6bef62452a77a4f69e64", null ],
     [ "operator~", "classbody__part__set.html#abb6cdc445a068103b295616a4996eaa5", null ],
+    [ "reset", "classbody__part__set.html#a8f5a0908149434fe67573771cea274f3", null ],
     [ "reset", "classbody__part__set.html#a9ff1afd1f2191db23b02937de26f5f71", null ],
     [ "serialize", "classbody__part__set.html#a6879a279a6c9757e92e322a3eb5097e4", null ],
     [ "set", "classbody__part__set.html#a6e283702940781efa731615116bdd070", null ],

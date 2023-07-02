@@ -15,6 +15,7 @@ var npctalk_8cpp =
       [ "NPC_CHAT_SENTENCE", "npctalk_8cpp.html#ad2ae1bb0e28baed485b629d6e87a58c5aa41dbe6194e35f0c7b8f3d71b5befb2a", null ],
       [ "NPC_CHAT_GUARD", "npctalk_8cpp.html#ad2ae1bb0e28baed485b629d6e87a58c5a90dfeb2fc4f4656f62fdd00cd7ea5b31", null ],
       [ "NPC_CHAT_FOLLOW", "npctalk_8cpp.html#ad2ae1bb0e28baed485b629d6e87a58c5a8aac81bf281fbaa1af2f9ae5cbcf7f54", null ],
+      [ "NPC_CHAT_MOVE_TO_POS", "npctalk_8cpp.html#ad2ae1bb0e28baed485b629d6e87a58c5abc23e62f4b97fea89b2b46dcd9528e68", null ],
       [ "NPC_CHAT_AWAKE", "npctalk_8cpp.html#ad2ae1bb0e28baed485b629d6e87a58c5ac4d58a9f084ab657cb4817f4f494e56f", null ],
       [ "NPC_CHAT_MOUNT", "npctalk_8cpp.html#ad2ae1bb0e28baed485b629d6e87a58c5a224cd4a12b403f0e3d141cb5c5f8ce5b", null ],
       [ "NPC_CHAT_DISMOUNT", "npctalk_8cpp.html#ad2ae1bb0e28baed485b629d6e87a58c5a9b51877bb0185865f5643ae8b4859c62", null ],

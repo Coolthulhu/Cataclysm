@@ -1,5 +1,11 @@
 var character_8cpp =
 [
+    [ "ShieldLevel", "character_8cpp.html#a84cb26eb0a6ff55af0d1eb4733bb17e7", [
+      [ "None", "character_8cpp.html#a84cb26eb0a6ff55af0d1eb4733bb17e7a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Block1", "character_8cpp.html#a84cb26eb0a6ff55af0d1eb4733bb17e7ab3e25d19bfd437de6063953f0f4ac6ac", null ],
+      [ "Block2", "character_8cpp.html#a84cb26eb0a6ff55af0d1eb4733bb17e7a3fbe9f2beae8654b86e2d9570f63d4e2", null ],
+      [ "Block3", "character_8cpp.html#a84cb26eb0a6ff55af0d1eb4733bb17e7af7c48a040d5301f4e2deff0e83dd9244", null ]
+    ] ],
     [ "acc_clothing_warmth", "character_8cpp.html#ae11deea526b1f8389fa6a1b002bcc193", null ],
     [ "apply_mut_encumbrance", "character_8cpp.html#a5f07804986d7a43335dbd1ff98cf571b", null ],
     [ "armor_enchantment_adjust", "character_8cpp.html#aedf304731af52cf2eea17fea7d2dc5e3", null ],
@@ -7,6 +13,7 @@ var character_8cpp =
     [ "calc_mutation_value", "character_8cpp.html#a5cbb3d5d062bae11ec68a7114d07d7c7", null ],
     [ "calc_mutation_value_additive", "character_8cpp.html#a8e19ead0b1f973804935b0cfd8df4585", null ],
     [ "calc_mutation_value_multiplicative", "character_8cpp.html#a11d743b9ebd8a1caeb7c700f0c9cd3ac", null ],
+    [ "coverage_modifier_by_technic", "character_8cpp.html#a2dbc388919a1f34a120f5c043d47e3bc", null ],
     [ "destroyed_armor_msg", "character_8cpp.html#a8f8300ddee570367c4a625541b37e456", null ],
     [ "enum_to_string< character_movemode >", "character_8cpp.html#aae9144d812bc4349d426ff02bfb61b43", null ],
     [ "enum_to_string< character_stat >", "character_8cpp.html#a723f9b687dd27a10540fd6f4abde3b06", null ],
@@ -45,14 +52,21 @@ var character_8cpp =
     [ "flag_USE_UPS", "character_8cpp.html#a621b1b54a8fa92c5d21f1b94aa6a0a68", null ],
     [ "from_clothing", "character_8cpp.html#aded8b30269da0d4119f07b696e27ceb8", null ],
     [ "from_effects", "character_8cpp.html#ab3da63b8c7b9e6d10df9605a7e0708eb", null ],
+    [ "get_block_amount", "character_8cpp.html#a7f0ce55771bd1369be517a11b734dca9", null ],
     [ "get_player_character", "character_8cpp.html#a2fcb25d686f4a35fca374c6f71280311", null ],
+    [ "get_shield_resist", "character_8cpp.html#a6b3d7543fe85797fc18fb46c69b26e27", null ],
     [ "get_speedydex_bonus", "character_8cpp.html#a53ddf9114e0180fde5e1eb7f15cf3d05", null ],
     [ "get_stat_name", "character_8cpp.html#a035c78e847a263690eaab59f16c23b88", null ],
     [ "has_psy_protection", "character_8cpp.html#ad9592dafb578bdbac6e6945f9dffda42", null ],
+    [ "is_covered_by_shield", "character_8cpp.html#acbaa7822725451c89b842e3fb47fc247", null ],
+    [ "is_foot_hit", "character_8cpp.html#a1c95f1950f2aa4201bb83df8ce528eaf", null ],
+    [ "is_leg_hit", "character_8cpp.html#aa151a61e3844b320a98c7bb19e2d0d4f", null ],
+    [ "is_valid_hallucination", "character_8cpp.html#a5355d5836149e55a0eefe7f7decff790", null ],
     [ "item_armor_enchantment_adjust", "character_8cpp.html#aa78451da6531882df80ad13ed9a62e6c", null ],
     [ "layer_item", "character_8cpp.html#a6ef9222693ad91f337a76eb8faf70171", null ],
     [ "nv_range_from_eye_encumbrance", "character_8cpp.html#ac9e992a7dff11772e270108ad424e4ab", null ],
     [ "nv_range_from_per", "character_8cpp.html#a05a8ace4b281f390ac9ee3de19c61a78", null ],
+    [ "shield_level", "character_8cpp.html#aa51773b9eedf01d70677bec3940d23da", null ],
     [ "threshold_for_nv_range", "character_8cpp.html#a8d88c9a764e41f78d403b0fb6976ef56", null ],
     [ "ticks_between", "character_8cpp.html#a26b436478395a1951f44786e74ad8d47", null ],
     [ "try_remove_bear_trap", "character_8cpp.html#a54924ca53e886ca218577853f6658dd7", null ],
@@ -257,6 +271,7 @@ var character_8cpp =
     [ "trait_PYROMANIA", "character_8cpp.html#a512959ad2b35ea057f2fed5445fc23c4", null ],
     [ "trait_QUILLS", "character_8cpp.html#a444102b4297414117db15957ce171fb6", null ],
     [ "trait_RADIOGENIC", "character_8cpp.html#aed539cd1d527bf5d7c66b636415e90ed", null ],
+    [ "trait_REGEN_LIZ", "character_8cpp.html#aa3da8ff614f792fca48c877acc0ff880", null ],
     [ "trait_ROOTS2", "character_8cpp.html#a274598613975233d47fea947150a5f2a", null ],
     [ "trait_ROOTS3", "character_8cpp.html#af4ab011c7d44ca72f54db17f5b6c4ff4", null ],
     [ "trait_SAVANT", "character_8cpp.html#a510aede332c4a05b18d61c20e2efbf4d", null ],
@@ -281,5 +296,8 @@ var character_8cpp =
     [ "trait_URSINE_EYE", "character_8cpp.html#a5a9d650e68c539d904f8c0778a815d54", null ],
     [ "trait_VISCOUS", "character_8cpp.html#a71121068c9dffa61c7039a6176c68250", null ],
     [ "trait_WEBBED", "character_8cpp.html#a365df112ebfa257fa507cef2fa5a1c2e", null ],
-    [ "trait_WOOLALLERGY", "character_8cpp.html#a1ed0e0569ca42bfbb736694d90fd03fa", null ]
+    [ "trait_WOOLALLERGY", "character_8cpp.html#a1ed0e0569ca42bfbb736694d90fd03fa", null ],
+    [ "WBLOCK_1", "character_8cpp.html#aef463923e4348588078baaec78bd6c3a", null ],
+    [ "WBLOCK_2", "character_8cpp.html#a791baf23c5c3bf740e272f3e28d1209f", null ],
+    [ "WBLOCK_3", "character_8cpp.html#ab34a32119782ff225e601013d91ab880", null ]
 ];

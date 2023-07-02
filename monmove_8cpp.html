@@ -253,26 +253,26 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="monmove_8cpp_source.html#l01541">1541</a> of file <a class="el" href="monmove_8cpp_source.html">monmove.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01542" name="l01542"></a><span class="lineno"> 1542</span>{</div>
-<div class="line"><a id="l01543" name="l01543"></a><span class="lineno"> 1543</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;candidate : <a class="code hl_function" href="coordinates_8h.html#a13a12943d34d5f17e6c3b4e730659fc6">closest_points_first</a>( near_this, 10 ) ) {</div>
-<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>        <span class="keywordflow">if</span>( here.<a class="code hl_function" href="classmap.html#a27e22f0999ea03eff18babc48643c568">has_flag</a>( stair_type, candidate ) ) {</div>
-<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>            <span class="keywordflow">return</span> candidate;</div>
-<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>        }</div>
-<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>    }</div>
-<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>    <span class="comment">// we didn&#39;t find it</span></div>
-<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>    <span class="keywordflow">return</span> near_this;</div>
-<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>}</div>
+<p class="definition">Definition at line <a class="el" href="monmove_8cpp_source.html#l01543">1543</a> of file <a class="el" href="monmove_8cpp_source.html">monmove.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01544" name="l01544"></a><span class="lineno"> 1544</span>{</div>
+<div class="line"><a id="l01545" name="l01545"></a><span class="lineno"> 1545</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l01546" name="l01546"></a><span class="lineno"> 1546</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;candidate : <a class="code hl_function" href="coordinates_8h.html#a13a12943d34d5f17e6c3b4e730659fc6">closest_points_first</a>( near_this, 10 ) ) {</div>
+<div class="line"><a id="l01547" name="l01547"></a><span class="lineno"> 1547</span>        <span class="keywordflow">if</span>( here.<a class="code hl_function" href="classmap.html#a27e22f0999ea03eff18babc48643c568">has_flag</a>( stair_type, candidate ) ) {</div>
+<div class="line"><a id="l01548" name="l01548"></a><span class="lineno"> 1548</span>            <span class="keywordflow">return</span> candidate;</div>
+<div class="line"><a id="l01549" name="l01549"></a><span class="lineno"> 1549</span>        }</div>
+<div class="line"><a id="l01550" name="l01550"></a><span class="lineno"> 1550</span>    }</div>
+<div class="line"><a id="l01551" name="l01551"></a><span class="lineno"> 1551</span>    <span class="comment">// we didn&#39;t find it</span></div>
+<div class="line"><a id="l01552" name="l01552"></a><span class="lineno"> 1552</span>    <span class="keywordflow">return</span> near_this;</div>
+<div class="line"><a id="l01553" name="l01553"></a><span class="lineno"> 1553</span>}</div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
-<div class="ttc" id="aclassmap_html_a27e22f0999ea03eff18babc48643c568"><div class="ttname"><a href="classmap.html#a27e22f0999ea03eff18babc48643c568">map::has_flag</a></div><div class="ttdeci">bool has_flag(const std::string &amp;flag, const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l02369">map.cpp:2369</a></div></div>
+<div class="ttc" id="aclassmap_html_a27e22f0999ea03eff18babc48643c568"><div class="ttname"><a href="classmap.html#a27e22f0999ea03eff18babc48643c568">map::has_flag</a></div><div class="ttdeci">bool has_flag(const std::string &amp;flag, const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l02374">map.cpp:2374</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a13a12943d34d5f17e6c3b4e730659fc6"><div class="ttname"><a href="coordinates_8h.html#a13a12943d34d5f17e6c3b4e730659fc6">closest_points_first</a></div><div class="ttdeci">std::vector&lt; coords::coord_point&lt; Point, Origin, Scale &gt; &gt; closest_points_first(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc, int min_dist, int max_dist)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00596">coordinates.h:596</a></div></div>
 <div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00147">map.cpp:147</a></div></div>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="coordinates_8h_source.html#l00596">closest_points_first()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, and <a class="el" href="map_8cpp_source.html#l02369">map::has_flag()</a>.</p>
+<p class="reference">References <a class="el" href="coordinates_8h_source.html#l00596">closest_points_first()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, and <a class="el" href="map_8cpp_source.html#l02374">map::has_flag()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01553">monster::move_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01555">monster::move_to()</a>.</p>
 
 </div>
 </div>
@@ -300,7 +300,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01117">monster::nursebot_operate()</a>, and <a class="el" href="monmove_8cpp_source.html#l00316">monster::plan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01119">monster::nursebot_operate()</a>, and <a class="el" href="monmove_8cpp_source.html#l00318">monster::plan()</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00654">monster::is_aquatic_danger()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00656">monster::is_aquatic_danger()</a>.</p>
 
 </div>
 </div>
@@ -372,30 +372,30 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="monmove_8cpp_source.html#l01362">1362</a> of file <a class="el" href="monmove_8cpp_source.html">monmove.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span>{</div>
-<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span>    std::vector&lt;tripoint&gt; <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>;</div>
-<div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>    <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>.push_back( bashee );</div>
-<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>    <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>.push_back( basher );</div>
-<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span>    <span class="comment">// Draw a line from the target through the attacker.</span></div>
-<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>    std::vector&lt;tripoint&gt; path = <a class="code hl_function" href="line_8cpp.html#accf3261606d25eb707e59c395290b74a">continue_line</a>( <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>, maxdepth );</div>
-<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <span class="comment">// Remove the target.</span></div>
-<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>    path.insert( path.begin(), basher );</div>
-<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    std::vector&lt;tripoint&gt; zone;</div>
-<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>    <span class="comment">// Go ahead and reserve enough room for all the points since</span></div>
-<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>    <span class="comment">// we know how many it will be.</span></div>
-<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>    zone.reserve( 3 * maxdepth );</div>
-<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>    <a class="code hl_struct" href="structtripoint.html">tripoint</a> previous = bashee;</div>
-<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;p : path ) {</div>
-<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>        std::vector&lt;point&gt; swath = <a class="code hl_function" href="line_8cpp.html#a1a892ef073bda14e92be0d545d2e406b">squares_in_direction</a>( previous.<a class="code hl_function" href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">xy</a>(), p.xy() );</div>
-<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>        <span class="keywordflow">for</span>( <a class="code hl_struct" href="structpoint.html">point</a> q : swath ) {</div>
-<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>            zone.push_back( <a class="code hl_struct" href="structtripoint.html">tripoint</a>( q, bashee.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> ) );</div>
-<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>        }</div>
-<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span> </div>
-<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span>        previous = p;</div>
-<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span>    }</div>
-<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>    <span class="keywordflow">return</span> zone;</div>
-<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>}</div>
+<p class="definition">Definition at line <a class="el" href="monmove_8cpp_source.html#l01364">1364</a> of file <a class="el" href="monmove_8cpp_source.html">monmove.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01366" name="l01366"></a><span class="lineno"> 1366</span>{</div>
+<div class="line"><a id="l01367" name="l01367"></a><span class="lineno"> 1367</span>    std::vector&lt;tripoint&gt; <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>;</div>
+<div class="line"><a id="l01368" name="l01368"></a><span class="lineno"> 1368</span>    <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>.push_back( bashee );</div>
+<div class="line"><a id="l01369" name="l01369"></a><span class="lineno"> 1369</span>    <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>.push_back( basher );</div>
+<div class="line"><a id="l01370" name="l01370"></a><span class="lineno"> 1370</span>    <span class="comment">// Draw a line from the target through the attacker.</span></div>
+<div class="line"><a id="l01371" name="l01371"></a><span class="lineno"> 1371</span>    std::vector&lt;tripoint&gt; path = <a class="code hl_function" href="line_8cpp.html#accf3261606d25eb707e59c395290b74a">continue_line</a>( <a class="code hl_enumeration" href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a>, maxdepth );</div>
+<div class="line"><a id="l01372" name="l01372"></a><span class="lineno"> 1372</span>    <span class="comment">// Remove the target.</span></div>
+<div class="line"><a id="l01373" name="l01373"></a><span class="lineno"> 1373</span>    path.insert( path.begin(), basher );</div>
+<div class="line"><a id="l01374" name="l01374"></a><span class="lineno"> 1374</span>    std::vector&lt;tripoint&gt; zone;</div>
+<div class="line"><a id="l01375" name="l01375"></a><span class="lineno"> 1375</span>    <span class="comment">// Go ahead and reserve enough room for all the points since</span></div>
+<div class="line"><a id="l01376" name="l01376"></a><span class="lineno"> 1376</span>    <span class="comment">// we know how many it will be.</span></div>
+<div class="line"><a id="l01377" name="l01377"></a><span class="lineno"> 1377</span>    zone.reserve( 3 * maxdepth );</div>
+<div class="line"><a id="l01378" name="l01378"></a><span class="lineno"> 1378</span>    <a class="code hl_struct" href="structtripoint.html">tripoint</a> previous = bashee;</div>
+<div class="line"><a id="l01379" name="l01379"></a><span class="lineno"> 1379</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;p : path ) {</div>
+<div class="line"><a id="l01380" name="l01380"></a><span class="lineno"> 1380</span>        std::vector&lt;point&gt; swath = <a class="code hl_function" href="line_8cpp.html#a1a892ef073bda14e92be0d545d2e406b">squares_in_direction</a>( previous.<a class="code hl_function" href="structtripoint.html#accc0725c936dbebb2486f969f39e2e5f">xy</a>(), p.xy() );</div>
+<div class="line"><a id="l01381" name="l01381"></a><span class="lineno"> 1381</span>        <span class="keywordflow">for</span>( <a class="code hl_struct" href="structpoint.html">point</a> q : swath ) {</div>
+<div class="line"><a id="l01382" name="l01382"></a><span class="lineno"> 1382</span>            zone.push_back( <a class="code hl_struct" href="structtripoint.html">tripoint</a>( q, bashee.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> ) );</div>
+<div class="line"><a id="l01383" name="l01383"></a><span class="lineno"> 1383</span>        }</div>
+<div class="line"><a id="l01384" name="l01384"></a><span class="lineno"> 1384</span> </div>
+<div class="line"><a id="l01385" name="l01385"></a><span class="lineno"> 1385</span>        previous = p;</div>
+<div class="line"><a id="l01386" name="l01386"></a><span class="lineno"> 1386</span>    }</div>
+<div class="line"><a id="l01387" name="l01387"></a><span class="lineno"> 1387</span>    <span class="keywordflow">return</span> zone;</div>
+<div class="line"><a id="l01388" name="l01388"></a><span class="lineno"> 1388</span>}</div>
 <div class="ttc" id="aline_8cpp_html_a1a892ef073bda14e92be0d545d2e406b"><div class="ttname"><a href="line_8cpp.html#a1a892ef073bda14e92be0d545d2e406b">squares_in_direction</a></div><div class="ttdeci">std::vector&lt; point &gt; squares_in_direction(point p1, point p2)</div><div class="ttdef"><b>Definition:</b> <a href="line_8cpp_source.html#l00589">line.cpp:589</a></div></div>
 <div class="ttc" id="aline_8cpp_html_accf3261606d25eb707e59c395290b74a"><div class="ttname"><a href="line_8cpp.html#accf3261606d25eb707e59c395290b74a">continue_line</a></div><div class="ttdeci">std::vector&lt; tripoint &gt; continue_line(const std::vector&lt; tripoint &gt; &amp;line, const int distance)</div><div class="ttdef"><b>Definition:</b> <a href="line_8cpp_source.html#l00408">line.cpp:408</a></div></div>
 <div class="ttc" id="aline_8h_html_a3621d2006812bd84f3ed6999b38f90a3"><div class="ttname"><a href="line_8h.html#a3621d2006812bd84f3ed6999b38f90a3">direction</a></div><div class="ttdeci">direction</div><div class="ttdef"><b>Definition:</b> <a href="line_8h_source.html#l00039">line.h:39</a></div></div>
@@ -405,7 +405,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="line_8cpp_source.html#l00408">continue_line()</a>, <a class="el" href="line_8cpp_source.html#l00589">squares_in_direction()</a>, <a class="el" href="point_8h_source.html#l00206">tripoint::xy()</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01447">monster::group_bash_skill()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01449">monster::group_bash_skill()</a>.</p>
 
 </div>
 </div>
@@ -452,23 +452,23 @@ Variables</h2></td></tr>
 <p>Method to make monster movement speed consistent in the face of staggering behavior and differing distance metrics. </p>
 <p >It works by scaling the cost to take a step by how much that step reduces the distance to your goal. Since it incorporates the current distance metric, it also scales for diagonal vs orthogonal movement. </p>
 
-<p class="definition">Definition at line <a class="el" href="monmove_8cpp_source.html#l00638">638</a> of file <a class="el" href="monmove_8cpp_source.html">monmove.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>{</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <span class="comment">// TODO: push this down into rl_dist</span></div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> initial_dist =</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>        <a class="code hl_variable" href="cached__options_8cpp.html#a40b9d88f6d95e646490329d0071ec931">trigdist</a> ? <a class="code hl_function" href="coordinates_8h.html#adf2fa43699f878fca49a987112d4aa03">trig_dist</a>( source, destination ) : <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( source, destination );</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> new_dist =</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <a class="code hl_variable" href="cached__options_8cpp.html#a40b9d88f6d95e646490329d0071ec931">trigdist</a> ? <a class="code hl_function" href="coordinates_8h.html#adf2fa43699f878fca49a987112d4aa03">trig_dist</a>( next_step, destination ) : <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( next_step, destination );</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="comment">// If we return 0, it wil cancel the action.</span></div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keywordflow">return</span> std::max( 0.01f, initial_dist - new_dist );</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>}</div>
+<p class="definition">Definition at line <a class="el" href="monmove_8cpp_source.html#l00640">640</a> of file <a class="el" href="monmove_8cpp_source.html">monmove.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>{</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    <span class="comment">// TODO: push this down into rl_dist</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> initial_dist =</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <a class="code hl_variable" href="cached__options_8cpp.html#a40b9d88f6d95e646490329d0071ec931">trigdist</a> ? <a class="code hl_function" href="coordinates_8h.html#adf2fa43699f878fca49a987112d4aa03">trig_dist</a>( source, destination ) : <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( source, destination );</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">const</span> <span class="keywordtype">float</span> new_dist =</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        <a class="code hl_variable" href="cached__options_8cpp.html#a40b9d88f6d95e646490329d0071ec931">trigdist</a> ? <a class="code hl_function" href="coordinates_8h.html#adf2fa43699f878fca49a987112d4aa03">trig_dist</a>( next_step, destination ) : <a class="code hl_function" href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a>( next_step, destination );</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>    <span class="comment">// If we return 0, it wil cancel the action.</span></div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    <span class="keywordflow">return</span> std::max( 0.01f, initial_dist - new_dist );</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>}</div>
 <div class="ttc" id="acached__options_8cpp_html_a40b9d88f6d95e646490329d0071ec931"><div class="ttname"><a href="cached__options_8cpp.html#a40b9d88f6d95e646490329d0071ec931">trigdist</a></div><div class="ttdeci">bool trigdist</div><div class="ttdoc">Circular distances.</div><div class="ttdef"><b>Definition:</b> <a href="cached__options_8cpp_source.html#l00013">cached_options.cpp:13</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a47953b33a873caa0861b12222842a5ec"><div class="ttname"><a href="coordinates_8h.html#a47953b33a873caa0861b12222842a5ec">rl_dist</a></div><div class="ttdeci">int rl_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00519">coordinates.h:519</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_adf2fa43699f878fca49a987112d4aa03"><div class="ttname"><a href="coordinates_8h.html#adf2fa43699f878fca49a987112d4aa03">trig_dist</a></div><div class="ttdeci">int trig_dist(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc1, const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc2)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00512">coordinates.h:512</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="coordinates_8h_source.html#l00519">rl_dist()</a>, <a class="el" href="coordinates_8h_source.html#l00512">trig_dist()</a>, and <a class="el" href="cached__options_8cpp_source.html#l00013">trigdist</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>.</p>
 
 </div>
 </div>
@@ -505,7 +505,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="game__constants_8h_source.html#l00060">OVERMAP_DEPTH</a>, and <a class="el" href="game__constants_8h_source.html#l00062">OVERMAP_HEIGHT</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00230">monster::can_reach_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00232">monster::can_reach_to()</a>.</p>
 
 </div>
 </div>
@@ -534,7 +534,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l00316">monster::plan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l00318">monster::plan()</a>.</p>
 
 </div>
 </div>
@@ -562,7 +562,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01553">monster::move_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01555">monster::move_to()</a>.</p>
 
 </div>
 </div>
@@ -590,7 +590,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01117">monster::nursebot_operate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01119">monster::nursebot_operate()</a>.</p>
 
 </div>
 </div>
@@ -618,7 +618,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00316">monster::plan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00318">monster::plan()</a>.</p>
 
 </div>
 </div>
@@ -646,7 +646,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01762">monster::push_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01766">monster::push_to()</a>.</p>
 
 </div>
 </div>
@@ -674,7 +674,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01094">monster::find_dragged_foe()</a>, <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>, <a class="el" href="monmove_8cpp_source.html#l01117">monster::nursebot_operate()</a>, and <a class="el" href="monmove_8cpp_source.html#l00316">monster::plan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01096">monster::find_dragged_foe()</a>, <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>, <a class="el" href="monmove_8cpp_source.html#l01119">monster::nursebot_operate()</a>, and <a class="el" href="monmove_8cpp_source.html#l00318">monster::plan()</a>.</p>
 
 </div>
 </div>
@@ -702,7 +702,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l01117">monster::nursebot_operate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l01119">monster::nursebot_operate()</a>.</p>
 
 </div>
 </div>
@@ -730,7 +730,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>.</p>
 
 </div>
 </div>
@@ -758,7 +758,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l00316">monster::plan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l00318">monster::plan()</a>.</p>
 
 </div>
 </div>
@@ -786,7 +786,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01553">monster::move_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01555">monster::move_to()</a>.</p>
 
 </div>
 </div>
@@ -814,7 +814,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01117">monster::nursebot_operate()</a>, and <a class="el" href="monmove_8cpp_source.html#l00316">monster::plan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01119">monster::nursebot_operate()</a>, and <a class="el" href="monmove_8cpp_source.html#l00318">monster::plan()</a>.</p>
 
 </div>
 </div>
@@ -842,7 +842,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>.</p>
 
 </div>
 </div>
@@ -870,7 +870,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01762">monster::push_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01766">monster::push_to()</a>.</p>
 
 </div>
 </div>
@@ -898,7 +898,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01945">monster::knock_back_to()</a>, <a class="el" href="monmove_8cpp_source.html#l00678">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l01762">monster::push_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01949">monster::knock_back_to()</a>, <a class="el" href="monmove_8cpp_source.html#l00680">monster::move()</a>, and <a class="el" href="monmove_8cpp_source.html#l01766">monster::push_to()</a>.</p>
 
 </div>
 </div>
@@ -982,7 +982,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01553">monster::move_to()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l01555">monster::move_to()</a>.</p>
 
 </div>
 </div>
@@ -1038,7 +1038,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00316">monster::plan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="monmove_8cpp_source.html#l00318">monster::plan()</a>.</p>
 
 </div>
 </div>
@@ -1048,7 +1048,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="monmove_8cpp.html">monmove.cpp</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:11 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:42 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

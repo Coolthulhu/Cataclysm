@@ -207,19 +207,19 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l04418">4418</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04419" name="l04419"></a><span class="lineno"> 4419</span>{</div>
-<div class="line"><a id="l04420" name="l04420"></a><span class="lineno"> 4420</span>    std::vector&lt;point_om_omt&gt; res;</div>
-<div class="line"><a id="l04421" name="l04421"></a><span class="lineno"> 4421</span> </div>
-<div class="line"><a id="l04422" name="l04422"></a><span class="lineno"> 4422</span>    res.reserve( ( <a class="code hl_variable" href="game__constants_8h.html#a282f307f5d51bf229c829518b5ab9232">OMAPX</a> / sector_width ) * ( <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a> / sector_width ) );</div>
-<div class="line"><a id="l04423" name="l04423"></a><span class="lineno"> 4423</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a282f307f5d51bf229c829518b5ab9232">OMAPX</a>; x += sector_width ) {</div>
-<div class="line"><a id="l04424" name="l04424"></a><span class="lineno"> 4424</span>        <span class="keywordflow">for</span>( <span class="keywordtype">int</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a>; y += sector_width ) {</div>
-<div class="line"><a id="l04425" name="l04425"></a><span class="lineno"> 4425</span>            res.emplace_back( x, y );</div>
-<div class="line"><a id="l04426" name="l04426"></a><span class="lineno"> 4426</span>        }</div>
-<div class="line"><a id="l04427" name="l04427"></a><span class="lineno"> 4427</span>    }</div>
-<div class="line"><a id="l04428" name="l04428"></a><span class="lineno"> 4428</span>    std::shuffle( res.begin(), res.end(), <a class="code hl_function" href="rng_8cpp.html#acf9418ccfee8372eff44e7483f709ce2">rng_get_engine</a>() );</div>
-<div class="line"><a id="l04429" name="l04429"></a><span class="lineno"> 4429</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structom__special__sectors.html">om_special_sectors</a>{ res, sector_width };</div>
-<div class="line"><a id="l04430" name="l04430"></a><span class="lineno"> 4430</span>}</div>
+<p class="definition">Definition at line <a class="el" href="overmap_8cpp_source.html#l04420">4420</a> of file <a class="el" href="overmap_8cpp_source.html">overmap.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04421" name="l04421"></a><span class="lineno"> 4421</span>{</div>
+<div class="line"><a id="l04422" name="l04422"></a><span class="lineno"> 4422</span>    std::vector&lt;point_om_omt&gt; res;</div>
+<div class="line"><a id="l04423" name="l04423"></a><span class="lineno"> 4423</span> </div>
+<div class="line"><a id="l04424" name="l04424"></a><span class="lineno"> 4424</span>    res.reserve( ( <a class="code hl_variable" href="game__constants_8h.html#a282f307f5d51bf229c829518b5ab9232">OMAPX</a> / sector_width ) * ( <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a> / sector_width ) );</div>
+<div class="line"><a id="l04425" name="l04425"></a><span class="lineno"> 4425</span>    <span class="keywordflow">for</span>( <span class="keywordtype">int</span> x = 0; x &lt; <a class="code hl_variable" href="game__constants_8h.html#a282f307f5d51bf229c829518b5ab9232">OMAPX</a>; x += sector_width ) {</div>
+<div class="line"><a id="l04426" name="l04426"></a><span class="lineno"> 4426</span>        <span class="keywordflow">for</span>( <span class="keywordtype">int</span> y = 0; y &lt; <a class="code hl_variable" href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a>; y += sector_width ) {</div>
+<div class="line"><a id="l04427" name="l04427"></a><span class="lineno"> 4427</span>            res.emplace_back( x, y );</div>
+<div class="line"><a id="l04428" name="l04428"></a><span class="lineno"> 4428</span>        }</div>
+<div class="line"><a id="l04429" name="l04429"></a><span class="lineno"> 4429</span>    }</div>
+<div class="line"><a id="l04430" name="l04430"></a><span class="lineno"> 4430</span>    std::shuffle( res.begin(), res.end(), <a class="code hl_function" href="rng_8cpp.html#acf9418ccfee8372eff44e7483f709ce2">rng_get_engine</a>() );</div>
+<div class="line"><a id="l04431" name="l04431"></a><span class="lineno"> 4431</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structom__special__sectors.html">om_special_sectors</a>{ res, sector_width };</div>
+<div class="line"><a id="l04432" name="l04432"></a><span class="lineno"> 4432</span>}</div>
 <div class="ttc" id="agame__constants_8h_html_a19d4c597789235509b7ee6060543829e"><div class="ttname"><a href="game__constants_8h.html#a19d4c597789235509b7ee6060543829e">OMAPY</a></div><div class="ttdeci">static constexpr int OMAPY</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00051">game_constants.h:51</a></div></div>
 <div class="ttc" id="agame__constants_8h_html_a282f307f5d51bf229c829518b5ab9232"><div class="ttname"><a href="game__constants_8h.html#a282f307f5d51bf229c829518b5ab9232">OMAPX</a></div><div class="ttdeci">static constexpr int OMAPX</div><div class="ttdoc">Size of the overmap.</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00050">game_constants.h:50</a></div></div>
 <div class="ttc" id="arng_8cpp_html_acf9418ccfee8372eff44e7483f709ce2"><div class="ttname"><a href="rng_8cpp.html#acf9418ccfee8372eff44e7483f709ce2">rng_get_engine</a></div><div class="ttdeci">cata_default_random_engine &amp; rng_get_engine()</div><div class="ttdef"><b>Definition:</b> <a href="rng_8cpp_source.html#l00136">rng.cpp:136</a></div></div>
@@ -227,7 +227,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="game__constants_8h_source.html#l00050">OMAPX</a>, <a class="el" href="game__constants_8h_source.html#l00051">OMAPY</a>, and <a class="el" href="rng_8cpp_source.html#l00136">rng_get_engine()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmapbuffer_8cpp_source.html#l01587">overmapbuffer::place_special()</a>, and <a class="el" href="overmap_8cpp_source.html#l04502">overmap::place_specials()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmapbuffer_8cpp_source.html#l01587">overmapbuffer::place_special()</a>, and <a class="el" href="overmap_8cpp_source.html#l04504">overmap::place_specials()</a>.</p>
 
 </div>
 </div>
@@ -254,7 +254,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="overmap__special_8h_source.html#l00036">36</a> of file <a class="el" href="overmap__special_8h_source.html">overmap_special.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00506">overmap_specials::check_consistency()</a>, <a class="el" href="overmapbuffer_8cpp_source.html#l01587">overmapbuffer::place_special()</a>, and <a class="el" href="overmap_8cpp_source.html#l04502">overmap::place_specials()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="overmap_8cpp_source.html#l00506">overmap_specials::check_consistency()</a>, <a class="el" href="overmapbuffer_8cpp_source.html#l01587">overmapbuffer::place_special()</a>, and <a class="el" href="overmap_8cpp_source.html#l04504">overmap::place_specials()</a>.</p>
 
 </div>
 </div>
@@ -264,7 +264,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="overmap__special_8h.html">overmap_special.h</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:12 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:43 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

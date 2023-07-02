@@ -283,62 +283,62 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if all conditions are true, otherwise false. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00656">656</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>{</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> &amp;weapon = *turret.<a class="code hl_function" href="classturret__data.html#a737465cce9c8f1e87eec808ee1363421">base</a>();</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    <span class="keywordflow">if</span>( !weapon.<a class="code hl_function" href="classitem.html#a2912b2e15a4eec07a5070fffbbd152e8">is_gun</a>() ) {</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Expected turret base to be a gun.&quot;</span> );</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    }</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>    <span class="keywordflow">switch</span>( turret.<a class="code hl_function" href="classturret__data.html#a585d18f2c33116bc1e9028210fccadbc">query</a>() ) {</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ad16da1e7201b298007ba19ec58671dad">turret_data::status::no_ammo</a>:</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;The %s is out of ammo.&quot;</span> ), turret.<a class="code hl_function" href="classturret__data.html#a3d31c9d61e07b678c4d7fac5d7c4646a">name</a>() );</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6a27d876a7b5832c85bf83234bc47006ab">turret_data::status::no_power</a>:</div>
-<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;The %s is not powered.&quot;</span> ), turret.<a class="code hl_function" href="classturret__data.html#a3d31c9d61e07b678c4d7fac5d7c4646a">name</a>() );</div>
+<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00660">660</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>{</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>    <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> &amp;weapon = *turret.<a class="code hl_function" href="classturret__data.html#a737465cce9c8f1e87eec808ee1363421">base</a>();</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>    <span class="keywordflow">if</span>( !weapon.<a class="code hl_function" href="classitem.html#a2912b2e15a4eec07a5070fffbbd152e8">is_gun</a>() ) {</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Expected turret base to be a gun.&quot;</span> );</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    }</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span> </div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    <span class="keywordflow">switch</span>( turret.<a class="code hl_function" href="classturret__data.html#a585d18f2c33116bc1e9028210fccadbc">query</a>() ) {</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ad16da1e7201b298007ba19ec58671dad">turret_data::status::no_ammo</a>:</div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;The %s is out of ammo.&quot;</span> ), turret.<a class="code hl_function" href="classturret__data.html#a3d31c9d61e07b678c4d7fac5d7c4646a">name</a>() );</div>
 <div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ab2fdab230a2c39f3595a947861863cb7">turret_data::status::ready</a>:</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Unknown turret status&quot;</span> );</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>    }</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span> </div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>    <span class="keywordflow">if</span>( you.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="avatar__action_8cpp.html#a8573cc3a9649fd0a9b82dc86b0dff30e">effect_relax_gas</a> ) ) {</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="rng_8cpp.html#aad28bdad07401a34ecf9912708f8b750">one_in</a>( 5 ) ) {</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea2f644bab8f796b847285eab073040f10">m_good</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Your eyes steel, and you aim your weapon!&quot;</span> ) );</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>            you.<a class="code hl_variable" href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">moves</a> -= <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 2, 5 ) * 10;</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You are too pacified to aim the turret…&quot;</span> ) );</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        }</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>    }</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>    std::vector&lt;std::string&gt; messages;</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const gun_mode_id, gun_mode&gt; &amp;mode_map : weapon.<a class="code hl_function" href="classitem.html#aa1a2ecb3e9ebf95dc7fedac4c1de32b4">gun_all_modes</a>() ) {</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        <span class="keywordtype">bool</span> can_use_mode = <a class="code hl_function" href="namespaceranged.html#aed4420a1fd77e160a72de2a528e56da5">ranged::gunmode_checks_common</a>( you, m, messages, mode_map.second );</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        <span class="keywordflow">if</span>( can_use_mode ) {</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>        }</div>
-<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>    }</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="namespacemapgen__defer.html#a616ad2c7ee2eb002b683b41b04a888c1">message</a> : messages ) {</div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_variable" href="namespacemapgen__defer.html#a616ad2c7ee2eb002b683b41b04a888c1">message</a> );</div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6a27d876a7b5832c85bf83234bc47006ab">turret_data::status::no_power</a>:</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;The %s is not powered.&quot;</span> ), turret.<a class="code hl_function" href="classturret__data.html#a3d31c9d61e07b678c4d7fac5d7c4646a">name</a>() );</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ab2fdab230a2c39f3595a947861863cb7">turret_data::status::ready</a>:</div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span> </div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>            <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Unknown turret status&quot;</span> );</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>    }</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span> </div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    <span class="keywordflow">if</span>( you.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="avatar__action_8cpp.html#a8573cc3a9649fd0a9b82dc86b0dff30e">effect_relax_gas</a> ) ) {</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="rng_8cpp.html#aad28bdad07401a34ecf9912708f8b750">one_in</a>( 5 ) ) {</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea2f644bab8f796b847285eab073040f10">m_good</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Your eyes steel, and you aim your weapon!&quot;</span> ) );</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>            you.<a class="code hl_variable" href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">moves</a> -= <a class="code hl_function" href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a>( 2, 5 ) * 10;</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>            <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You are too pacified to aim the turret…&quot;</span> ) );</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        }</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>    }</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    std::vector&lt;std::string&gt; messages;</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const gun_mode_id, gun_mode&gt; &amp;mode_map : weapon.<a class="code hl_function" href="classitem.html#aa1a2ecb3e9ebf95dc7fedac4c1de32b4">gun_all_modes</a>() ) {</div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span>        <span class="keywordtype">bool</span> can_use_mode = <a class="code hl_function" href="namespaceranged.html#aed4420a1fd77e160a72de2a528e56da5">ranged::gunmode_checks_common</a>( you, m, messages, mode_map.second );</div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span>        <span class="keywordflow">if</span>( can_use_mode ) {</div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span>        }</div>
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span>    }</div>
-<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>}</div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
+<div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="namespacemapgen__defer.html#a616ad2c7ee2eb002b683b41b04a888c1">message</a> : messages ) {</div>
+<div class="line"><a id="l00705" name="l00705"></a><span class="lineno">  705</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_variable" href="namespacemapgen__defer.html#a616ad2c7ee2eb002b683b41b04a888c1">message</a> );</div>
+<div class="line"><a id="l00706" name="l00706"></a><span class="lineno">  706</span>    }</div>
+<div class="line"><a id="l00707" name="l00707"></a><span class="lineno">  707</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00708" name="l00708"></a><span class="lineno">  708</span>}</div>
 <div class="ttc" id="aartifact_8cpp_html_a70800e95389f34dd34186fafaea2a840"><div class="ttname"><a href="artifact_8cpp.html#a70800e95389f34dd34186fafaea2a840">rng</a></div><div class="ttdeci">units::quantity&lt; V, B &gt; rng(const units::quantity&lt; V, B &gt; &amp;min, const units::quantity&lt; V, B &gt; &amp;max)</div><div class="ttdef"><b>Definition:</b> <a href="artifact_8cpp_source.html#l00032">artifact.cpp:32</a></div></div>
 <div class="ttc" id="aavatar__action_8cpp_html_a8573cc3a9649fd0a9b82dc86b0dff30e"><div class="ttname"><a href="avatar__action_8cpp.html#a8573cc3a9649fd0a9b82dc86b0dff30e">effect_relax_gas</a></div><div class="ttdeci">static const efftype_id effect_relax_gas(&quot;relax_gas&quot;)</div></div>
-<div class="ttc" id="aclassCreature_html_a6fb79df9315dc2bed6f34d9a2e37da90"><div class="ttname"><a href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">Creature::has_effect</a></div><div class="ttdeci">bool has_effect(const efftype_id &amp;eff_id, body_part bp=num_bp) const</div><div class="ttdoc">Check if creature has the matching effect.</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01186">creature.cpp:1186</a></div></div>
-<div class="ttc" id="aclassCreature_html_a8c5a392caa213bee9581b47e9f0e2052"><div class="ttname"><a href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">Creature::moves</a></div><div class="ttdeci">int moves</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00578">creature.h:578</a></div></div>
-<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
-<div class="ttc" id="aclassitem_html_a2912b2e15a4eec07a5070fffbbd152e8"><div class="ttname"><a href="classitem.html#a2912b2e15a4eec07a5070fffbbd152e8">item::is_gun</a></div><div class="ttdeci">bool is_gun() const</div><div class="ttdoc">Can this item be used to perform a ranged attack?</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06517">item.cpp:6517</a></div></div>
-<div class="ttc" id="aclassitem_html_aa1a2ecb3e9ebf95dc7fedac4c1de32b4"><div class="ttname"><a href="classitem.html#aa1a2ecb3e9ebf95dc7fedac4c1de32b4">item::gun_all_modes</a></div><div class="ttdeci">std::map&lt; gun_mode_id, gun_mode &gt; gun_all_modes() const</div><div class="ttdoc">Get all possible modes for this gun inclusive of any attached gunmods.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07834">item.cpp:7834</a></div></div>
+<div class="ttc" id="aclassCreature_html_a6fb79df9315dc2bed6f34d9a2e37da90"><div class="ttname"><a href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">Creature::has_effect</a></div><div class="ttdeci">bool has_effect(const efftype_id &amp;eff_id, body_part bp=num_bp) const</div><div class="ttdoc">Check if creature has the matching effect.</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01187">creature.cpp:1187</a></div></div>
+<div class="ttc" id="aclassCreature_html_a8c5a392caa213bee9581b47e9f0e2052"><div class="ttname"><a href="classCreature.html#a8c5a392caa213bee9581b47e9f0e2052">Creature::moves</a></div><div class="ttdeci">int moves</div><div class="ttdef"><b>Definition:</b> <a href="creature_8h_source.html#l00582">creature.h:582</a></div></div>
+<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00209">item.h:210</a></div></div>
+<div class="ttc" id="aclassitem_html_a2912b2e15a4eec07a5070fffbbd152e8"><div class="ttname"><a href="classitem.html#a2912b2e15a4eec07a5070fffbbd152e8">item::is_gun</a></div><div class="ttdeci">bool is_gun() const</div><div class="ttdoc">Can this item be used to perform a ranged attack?</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06542">item.cpp:6542</a></div></div>
+<div class="ttc" id="aclassitem_html_aa1a2ecb3e9ebf95dc7fedac4c1de32b4"><div class="ttname"><a href="classitem.html#aa1a2ecb3e9ebf95dc7fedac4c1de32b4">item::gun_all_modes</a></div><div class="ttdeci">std::map&lt; gun_mode_id, gun_mode &gt; gun_all_modes() const</div><div class="ttdoc">Get all possible modes for this gun inclusive of any attached gunmods.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07855">item.cpp:7855</a></div></div>
 <div class="ttc" id="aclassturret__data_html_a3d31c9d61e07b678c4d7fac5d7c4646a"><div class="ttname"><a href="classturret__data.html#a3d31c9d61e07b678c4d7fac5d7c4646a">turret_data::name</a></div><div class="ttdeci">std::string name() const</div><div class="ttdef"><b>Definition:</b> <a href="turret_8cpp_source.html#l00079">turret.cpp:79</a></div></div>
 <div class="ttc" id="aclassturret__data_html_a585d18f2c33116bc1e9028210fccadbc"><div class="ttname"><a href="classturret__data.html#a585d18f2c33116bc1e9028210fccadbc">turret_data::query</a></div><div class="ttdeci">status query() const</div><div class="ttdef"><b>Definition:</b> <a href="turret_8cpp_source.html#l00232">turret.cpp:232</a></div></div>
 <div class="ttc" id="aclassturret__data_html_a737465cce9c8f1e87eec808ee1363421"><div class="ttname"><a href="classturret__data.html#a737465cce9c8f1e87eec808ee1363421">turret_data::base</a></div><div class="ttdeci">item_location base()</div><div class="ttdoc">Get base item location.</div><div class="ttdef"><b>Definition:</b> <a href="turret_8cpp_source.html#l00084">turret.cpp:84</a></div></div>
@@ -351,13 +351,13 @@ Variables</h2></td></tr>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a></div><div class="ttdeci">@ m_bad</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00261">enums.h:261</a></div></div>
 <div class="ttc" id="amessages_8cpp_html_a54489326fc37823819c5105addfa27f2"><div class="ttname"><a href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a></div><div class="ttdeci">void add_msg(std::string msg)</div><div class="ttdef"><b>Definition:</b> <a href="messages_8cpp_source.html#l00910">messages.cpp:910</a></div></div>
 <div class="ttc" id="anamespacemapgen__defer_html_a616ad2c7ee2eb002b683b41b04a888c1"><div class="ttname"><a href="namespacemapgen__defer.html#a616ad2c7ee2eb002b683b41b04a888c1">mapgen_defer::message</a></div><div class="ttdeci">std::string message</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l00411">mapgen.cpp:411</a></div></div>
-<div class="ttc" id="anamespaceranged_html_aed4420a1fd77e160a72de2a528e56da5"><div class="ttname"><a href="namespaceranged.html#aed4420a1fd77e160a72de2a528e56da5">ranged::gunmode_checks_common</a></div><div class="ttdeci">bool gunmode_checks_common(avatar &amp;you, const map &amp;m, std::vector&lt; std::string &gt; &amp;messages, const gun_mode &amp;gmode)</div><div class="ttdoc">Common checks for gunmode (when firing a weapon / manually firing turret)</div><div class="ttdef"><b>Definition:</b> <a href="ranged_8cpp_source.html#l03710">ranged.cpp:3710</a></div></div>
+<div class="ttc" id="anamespaceranged_html_aed4420a1fd77e160a72de2a528e56da5"><div class="ttname"><a href="namespaceranged.html#aed4420a1fd77e160a72de2a528e56da5">ranged::gunmode_checks_common</a></div><div class="ttdeci">bool gunmode_checks_common(avatar &amp;you, const map &amp;m, std::vector&lt; std::string &gt; &amp;messages, const gun_mode &amp;gmode)</div><div class="ttdoc">Common checks for gunmode (when firing a weapon / manually firing turret)</div><div class="ttdef"><b>Definition:</b> <a href="ranged_8cpp_source.html#l03704">ranged.cpp:3704</a></div></div>
 <div class="ttc" id="arng_8cpp_html_aad28bdad07401a34ecf9912708f8b750"><div class="ttname"><a href="rng_8cpp.html#aad28bdad07401a34ecf9912708f8b750">one_in</a></div><div class="ttdeci">bool one_in(int chance)</div><div class="ttdef"><b>Definition:</b> <a href="rng_8cpp_source.html#l00065">rng.cpp:65</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="turret_8cpp_source.html#l00084">turret_data::base()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="avatar__action_8cpp.html#a8573cc3a9649fd0a9b82dc86b0dff30e">effect_relax_gas</a>, <a class="el" href="item_8cpp_source.html#l07834">item::gun_all_modes()</a>, <a class="el" href="ranged_8cpp_source.html#l03710">ranged::gunmode_checks_common()</a>, <a class="el" href="creature_8cpp_source.html#l01186">Creature::has_effect()</a>, <a class="el" href="item_8cpp_source.html#l06517">item::is_gun()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="enums_8h_source.html#l00260">m_good</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="mapgen_8cpp_source.html#l00411">mapgen_defer::message</a>, <a class="el" href="creature_8h_source.html#l00578">Creature::moves</a>, <a class="el" href="turret_8cpp_source.html#l00079">turret_data::name()</a>, <a class="el" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ad16da1e7201b298007ba19ec58671dad">turret_data::no_ammo</a>, <a class="el" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6a27d876a7b5832c85bf83234bc47006ab">turret_data::no_power</a>, <a class="el" href="rng_8cpp_source.html#l00065">one_in()</a>, <a class="el" href="turret_8cpp_source.html#l00232">turret_data::query()</a>, <a class="el" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ab2fdab230a2c39f3595a947861863cb7">turret_data::ready</a>, <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>, and <a class="el" href="character_8h_source.html#l01555">Character::weapon</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="turret_8cpp_source.html#l00084">turret_data::base()</a>, <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="avatar__action_8cpp.html#a8573cc3a9649fd0a9b82dc86b0dff30e">effect_relax_gas</a>, <a class="el" href="item_8cpp_source.html#l07855">item::gun_all_modes()</a>, <a class="el" href="ranged_8cpp_source.html#l03704">ranged::gunmode_checks_common()</a>, <a class="el" href="creature_8cpp_source.html#l01187">Creature::has_effect()</a>, <a class="el" href="item_8cpp_source.html#l06542">item::is_gun()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="enums_8h_source.html#l00260">m_good</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="mapgen_8cpp_source.html#l00411">mapgen_defer::message</a>, <a class="el" href="creature_8h_source.html#l00582">Creature::moves</a>, <a class="el" href="turret_8cpp_source.html#l00079">turret_data::name()</a>, <a class="el" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ad16da1e7201b298007ba19ec58671dad">turret_data::no_ammo</a>, <a class="el" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6a27d876a7b5832c85bf83234bc47006ab">turret_data::no_power</a>, <a class="el" href="rng_8cpp_source.html#l00065">one_in()</a>, <a class="el" href="turret_8cpp_source.html#l00232">turret_data::query()</a>, <a class="el" href="classturret__data.html#aa11f464b221b987d03a8859293e07ab6ab2fdab230a2c39f3595a947861863cb7">turret_data::ready</a>, and <a class="el" href="artifact_8cpp_source.html#l00032">rng()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00738">avatar_action::fire_turret_manual()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00742">avatar_action::fire_turret_manual()</a>.</p>
 
 </div>
 </div>
@@ -395,24 +395,24 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l01132">1132</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>{</div>
-<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> *<a class="code hl_enumeration" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">mod</a> : itm.<a class="code hl_function" href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">gunmods</a>() ) {</div>
-<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="avatar__action_8cpp.html#ab8c230f51e83af172fcf4d4976b93f57">can_reload_item_or_mods</a>( you, *<a class="code hl_enumeration" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">mod</a> ) ) {</div>
-<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>        }</div>
-<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    }</div>
-<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>    <span class="keywordflow">return</span> itm.<a class="code hl_function" href="classitem.html#a84cbca948718b41241902acce542f352">is_reloadable</a>() &amp;&amp; you.<a class="code hl_function" href="classCharacter.html#a5fb8820d11de3088b8ebe4157920e3cb">can_reload</a>( itm );</div>
-<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>}</div>
-<div class="ttc" id="aavatar__action_8cpp_html_ab8c230f51e83af172fcf4d4976b93f57"><div class="ttname"><a href="avatar__action_8cpp.html#ab8c230f51e83af172fcf4d4976b93f57">can_reload_item_or_mods</a></div><div class="ttdeci">static bool can_reload_item_or_mods(const avatar &amp;you, const item &amp;itm)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l01132">avatar_action.cpp:1132</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a5fb8820d11de3088b8ebe4157920e3cb"><div class="ttname"><a href="classCharacter.html#a5fb8820d11de3088b8ebe4157920e3cb">Character::can_reload</a></div><div class="ttdeci">bool can_reload(const item &amp;it, const itype_id &amp;ammo=itype_id()) const</div><div class="ttdoc">Whether a tool or gun is potentially reloadable (optionally considering a specific ammo)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10893">character.cpp:10893</a></div></div>
-<div class="ttc" id="aclassitem_html_a84cbca948718b41241902acce542f352"><div class="ttname"><a href="classitem.html#a84cbca948718b41241902acce542f352">item::is_reloadable</a></div><div class="ttdeci">bool is_reloadable() const</div><div class="ttdoc">Is it ever possible to reload this item? Only the base item is considered with any mods ignored.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l09825">item.cpp:9825</a></div></div>
-<div class="ttc" id="aclassitem_html_acd78321ba4d5c09d39f1d58d20b68484"><div class="ttname"><a href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">item::gunmods</a></div><div class="ttdeci">std::vector&lt; item * &gt; gunmods()</div><div class="ttdoc">Returns all gunmods currently attached to this item (always empty if item not a gun)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07735">item.cpp:7735</a></div></div>
+<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l01139">1139</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span>{</div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> *<a class="code hl_enumeration" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">mod</a> : itm.<a class="code hl_function" href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">gunmods</a>() ) {</div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="avatar__action_8cpp.html#ab8c230f51e83af172fcf4d4976b93f57">can_reload_item_or_mods</a>( you, *<a class="code hl_enumeration" href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">mod</a> ) ) {</div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>        }</div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>    }</div>
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>    <span class="keywordflow">return</span> itm.<a class="code hl_function" href="classitem.html#a84cbca948718b41241902acce542f352">is_reloadable</a>() &amp;&amp; you.<a class="code hl_function" href="classCharacter.html#a5fb8820d11de3088b8ebe4157920e3cb">can_reload</a>( itm );</div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>}</div>
+<div class="ttc" id="aavatar__action_8cpp_html_ab8c230f51e83af172fcf4d4976b93f57"><div class="ttname"><a href="avatar__action_8cpp.html#ab8c230f51e83af172fcf4d4976b93f57">can_reload_item_or_mods</a></div><div class="ttdeci">static bool can_reload_item_or_mods(const avatar &amp;you, const item &amp;itm)</div><div class="ttdef"><b>Definition:</b> <a href="avatar__action_8cpp_source.html#l01139">avatar_action.cpp:1139</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a5fb8820d11de3088b8ebe4157920e3cb"><div class="ttname"><a href="classCharacter.html#a5fb8820d11de3088b8ebe4157920e3cb">Character::can_reload</a></div><div class="ttdeci">bool can_reload(const item &amp;it, const itype_id &amp;ammo=itype_id()) const</div><div class="ttdoc">Whether a tool or gun is potentially reloadable (optionally considering a specific ammo)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l11064">character.cpp:11064</a></div></div>
+<div class="ttc" id="aclassitem_html_a84cbca948718b41241902acce542f352"><div class="ttname"><a href="classitem.html#a84cbca948718b41241902acce542f352">item::is_reloadable</a></div><div class="ttdeci">bool is_reloadable() const</div><div class="ttdoc">Is it ever possible to reload this item? Only the base item is considered with any mods ignored.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l09859">item.cpp:9859</a></div></div>
+<div class="ttc" id="aclassitem_html_acd78321ba4d5c09d39f1d58d20b68484"><div class="ttname"><a href="classitem.html#acd78321ba4d5c09d39f1d58d20b68484">item::gunmods</a></div><div class="ttdeci">std::vector&lt; item * &gt; gunmods()</div><div class="ttdoc">Returns all gunmods currently attached to this item (always empty if item not a gun)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l07752">item.cpp:7752</a></div></div>
 <div class="ttc" id="anamespaceenchant__vals_html_acd6a6ebb27f9ecb82b3bce1d3aef2998"><div class="ttname"><a href="namespaceenchant__vals.html#acd6a6ebb27f9ecb82b3bce1d3aef2998">enchant_vals::mod</a></div><div class="ttdeci">mod</div><div class="ttdef"><b>Definition:</b> <a href="magic__enchantment_8h_source.html#l00026">magic_enchantment.h:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l10893">Character::can_reload()</a>, <a class="el" href="avatar__action_8cpp_source.html#l01132">can_reload_item_or_mods()</a>, <a class="el" href="item_8cpp_source.html#l07735">item::gunmods()</a>, and <a class="el" href="item_8cpp_source.html#l09825">item::is_reloadable()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l11064">Character::can_reload()</a>, <a class="el" href="avatar__action_8cpp_source.html#l01139">can_reload_item_or_mods()</a>, <a class="el" href="item_8cpp_source.html#l07752">item::gunmods()</a>, and <a class="el" href="item_8cpp_source.html#l09859">item::is_reloadable()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l01132">can_reload_item_or_mods()</a>, <a class="el" href="avatar__action_8cpp_source.html#l01143">avatar_action::reload()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l01219">avatar_action::reload_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l01139">can_reload_item_or_mods()</a>, <a class="el" href="avatar__action_8cpp_source.html#l01150">avatar_action::reload()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l01226">avatar_action::reload_item()</a>.</p>
 
 </div>
 </div>
@@ -462,36 +462,36 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l01111">1111</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>{</div>
-<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span>    <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem__location.html">item_location</a> &amp;<span class="keyword">&gt;</span>( u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> ).make_dirty();</div>
-<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>    <span class="keywordflow">if</span>( u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> ) {</div>
-<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>        std::vector&lt;item_reload_option&gt; ammo_list;</div>
-<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacecharacter__funcs.html#ae7bfa36ae343bba14f1630cc9350f2d9">character_funcs::list_ammo</a>( u, it, ammo_list, empty, <span class="keyword">false</span> ) ) {</div>
-<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>            <span class="keyword">const</span> <span class="keyword">auto</span> is_favorite_and_compatible = [&amp;it, &amp;u]( <span class="keyword">const</span> <a class="code hl_class" href="classitem__reload__option.html">item_reload_option</a> &amp; opt ) {</div>
-<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>                <span class="keywordflow">return</span> opt.ammo == u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> &amp;&amp; it.<a class="code hl_function" href="classitem.html#ace13716223c28fcc8d8ad3de3b0469a5">can_reload_with</a>( opt.ammo-&gt;typeId() );</div>
-<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>            };</div>
-<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>            <span class="keyword">auto</span> iter = std::find_if( ammo_list.begin(), ammo_list.end(), is_favorite_and_compatible );</div>
-<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>            <span class="keywordflow">if</span>( iter != ammo_list.end() ) {</div>
-<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>                <span class="keywordflow">return</span> *iter;</div>
-<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>            }</div>
-<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>        }</div>
-<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>        <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem__location.html">item_location</a> &amp;<span class="keyword">&gt;</span>( u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> ) = <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
-<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>    }</div>
-<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacecharacter__funcs.html#a4c310418ea1c2bab8b4b03d7e0981df9">character_funcs::select_ammo</a>( u, it, <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>, empty );</div>
-<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>}</div>
+<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l01118">1118</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>{</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>    <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem__location.html">item_location</a> &amp;<span class="keyword">&gt;</span>( u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> ).make_dirty();</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    <span class="keywordflow">if</span>( u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> ) {</div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>        std::vector&lt;item_reload_option&gt; ammo_list;</div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>        <span class="keywordflow">if</span>( <a class="code hl_function" href="namespacecharacter__funcs.html#ae7bfa36ae343bba14f1630cc9350f2d9">character_funcs::list_ammo</a>( u, it, ammo_list, empty, <span class="keyword">false</span> ) ) {</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span>            <span class="keyword">const</span> <span class="keyword">auto</span> is_favorite_and_compatible = [&amp;it, &amp;u]( <span class="keyword">const</span> <a class="code hl_class" href="classitem__reload__option.html">item_reload_option</a> &amp; opt ) {</div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>                <span class="keywordflow">return</span> opt.ammo == u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> &amp;&amp; it.<a class="code hl_function" href="classitem.html#a64f0ee7f8a0f5894a6e43e3b5becafb1">can_reload_with</a>( opt.ammo-&gt;typeId() );</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span>            };</div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>            <span class="keyword">auto</span> iter = std::find_if( ammo_list.begin(), ammo_list.end(), is_favorite_and_compatible );</div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>            <span class="keywordflow">if</span>( iter != ammo_list.end() ) {</div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>                <span class="keywordflow">return</span> *iter;</div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>            }</div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>        }</div>
+<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>        <span class="keyword">const_cast&lt;</span><a class="code hl_class" href="classitem__location.html">item_location</a> &amp;<span class="keyword">&gt;</span>( u.<a class="code hl_variable" href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">ammo_location</a> ) = <a class="code hl_class" href="classitem__location.html">item_location</a>();</div>
+<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>    }</div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacecharacter__funcs.html#a4c310418ea1c2bab8b4b03d7e0981df9">character_funcs::select_ammo</a>( u, it, <a class="code hl_enumvalue" href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">prompt</a>, empty );</div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>}</div>
 <div class="ttc" id="aclassitem__location_html"><div class="ttname"><a href="classitem__location.html">item_location</a></div><div class="ttdoc">A lightweight handle to an item independent of it's location Unlike a raw pointer can be (de-)seriali...</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8h_source.html#l00022">item_location.h:23</a></div></div>
-<div class="ttc" id="aclassitem__reload__option_html"><div class="ttname"><a href="classitem__reload__option.html">item_reload_option</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00176">item.h:177</a></div></div>
-<div class="ttc" id="aclassitem_html_ace13716223c28fcc8d8ad3de3b0469a5"><div class="ttname"><a href="classitem.html#ace13716223c28fcc8d8ad3de3b0469a5">item::can_reload_with</a></div><div class="ttdeci">bool can_reload_with(const itype_id &amp;ammo) const</div><div class="ttdoc">Returns true if this item can be reloaded with specified ammo type, ignoring currently loaded ammo.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06861">item.cpp:6861</a></div></div>
+<div class="ttc" id="aclassitem__reload__option_html"><div class="ttname"><a href="classitem__reload__option.html">item_reload_option</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00175">item.h:176</a></div></div>
+<div class="ttc" id="aclassitem_html_a64f0ee7f8a0f5894a6e43e3b5becafb1"><div class="ttname"><a href="classitem.html#a64f0ee7f8a0f5894a6e43e3b5becafb1">item::can_reload_with</a></div><div class="ttdeci">bool can_reload_with(const ammotype &amp;ammo) const</div><div class="ttdoc">Returns true if this item can be reloaded with specified ammo type, ignoring currently loaded ammo.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06886">item.cpp:6886</a></div></div>
 <div class="ttc" id="aclassplayer_html_a5f1ee4ce958fda62c4766dd8762529c2"><div class="ttname"><a href="classplayer.html#a5f1ee4ce958fda62c4766dd8762529c2">player::ammo_location</a></div><div class="ttdeci">item_location ammo_location</div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00244">player.h:244</a></div></div>
 <div class="ttc" id="anamespacecharacter__funcs_html_a4c310418ea1c2bab8b4b03d7e0981df9"><div class="ttname"><a href="namespacecharacter__funcs.html#a4c310418ea1c2bab8b4b03d7e0981df9">character_funcs::select_ammo</a></div><div class="ttdeci">item_reload_option select_ammo(const Character &amp;who, const item &amp;base, std::vector&lt; item_reload_option &gt; opts)</div><div class="ttdoc">Select ammo from the provided options.</div><div class="ttdef"><b>Definition:</b> <a href="character__functions_8cpp_source.html#l00750">character_functions.cpp:750</a></div></div>
 <div class="ttc" id="anamespacecharacter__funcs_html_ae7bfa36ae343bba14f1630cc9350f2d9"><div class="ttname"><a href="namespacecharacter__funcs.html#ae7bfa36ae343bba14f1630cc9350f2d9">character_funcs::list_ammo</a></div><div class="ttdeci">bool list_ammo(const Character &amp;who, const item &amp;base, std::vector&lt; item_reload_option &gt; &amp;ammo_list, bool include_empty_mags, bool include_potential)</div><div class="ttdoc">List ammo suitable for given item.</div><div class="ttdef"><b>Definition:</b> <a href="character__functions_8cpp_source.html#l00706">character_functions.cpp:706</a></div></div>
 <div class="ttc" id="anamespacepickup_html_a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c"><div class="ttname"><a href="namespacepickup.html#a03a2e6f98be01a67be0ad42cb7aa4c61a29ea7ce63137484da296feacfa4f021c">pickup::prompt</a></div><div class="ttdeci">@ prompt</div><div class="ttdef"><b>Definition:</b> <a href="pickup_8h_source.html#l00031">pickup.h:30</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="player_8h_source.html#l00244">player::ammo_location</a>, <a class="el" href="item_8cpp_source.html#l06861">item::can_reload_with()</a>, <a class="el" href="character__functions_8cpp_source.html#l00706">character_funcs::list_ammo()</a>, <a class="el" href="pickup_8h_source.html#l00030">pickup::prompt</a>, and <a class="el" href="character__functions_8cpp_source.html#l00750">character_funcs::select_ammo()</a>.</p>
+<p class="reference">References <a class="el" href="player_8h_source.html#l00244">player::ammo_location</a>, <a class="el" href="item_8cpp_source.html#l06886">item::can_reload_with()</a>, <a class="el" href="character__functions_8cpp_source.html#l00706">character_funcs::list_ammo()</a>, <a class="el" href="pickup_8h_source.html#l00030">pickup::prompt</a>, and <a class="el" href="character__functions_8cpp_source.html#l00750">character_funcs::select_ammo()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l01143">avatar_action::reload()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l01150">avatar_action::reload()</a>.</p>
 
 </div>
 </div>
@@ -519,7 +519,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00968">avatar_action::use_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00975">avatar_action::use_item()</a>.</p>
 
 </div>
 </div>
@@ -575,7 +575,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00853">avatar_action::plthrow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00857">avatar_action::plthrow()</a>.</p>
 
 </div>
 </div>
@@ -603,7 +603,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00442">avatar_action::ramp_move()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00446">avatar_action::ramp_move()</a>.</p>
 
 </div>
 </div>
@@ -631,7 +631,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00496">avatar_action::swim()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00500">avatar_action::swim()</a>.</p>
 
 </div>
 </div>
@@ -659,32 +659,32 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00936">936</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>{</div>
-<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>    <span class="keywordflow">switch</span>( loc.<a class="code hl_function" href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">where</a>() ) {</div>
-<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::type::map</a>:</div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>            here.<a class="code hl_function" href="classmap.html#abc7101be108a49131b6646bfb29d381f">make_active</a>( loc );</div>
-<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da5a76e813d6a0a40548b91acc11557bd2">item_location::type::vehicle</a>:</div>
-<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>            here.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( loc.<a class="code hl_function" href="classitem__location.html#a7c2a92227d0946b673eb95b0a53c766c">position</a>() )-&gt;vehicle().make_active( loc );</div>
-<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>    }</div>
-<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>}</div>
+<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00943">943</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>{</div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>    <span class="keywordflow">switch</span>( loc.<a class="code hl_function" href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">where</a>() ) {</div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::type::map</a>:</div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span>            here.<a class="code hl_function" href="classmap.html#abc7101be108a49131b6646bfb29d381f">make_active</a>( loc );</div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da5a76e813d6a0a40548b91acc11557bd2">item_location::type::vehicle</a>:</div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span>            here.<a class="code hl_function" href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">veh_at</a>( loc.<a class="code hl_function" href="classitem__location.html#a7c2a92227d0946b673eb95b0a53c766c">position</a>() )-&gt;vehicle().make_active( loc );</div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>    }</div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>}</div>
 <div class="ttc" id="aclassitem__location_html_a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae"><div class="ttname"><a href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::type::map</a></div><div class="ttdeci">@ map</div></div>
 <div class="ttc" id="aclassitem__location_html_a038e108475b9fb4f9833268f5fa2888da5a76e813d6a0a40548b91acc11557bd2"><div class="ttname"><a href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da5a76e813d6a0a40548b91acc11557bd2">item_location::type::vehicle</a></div><div class="ttdeci">@ vehicle</div></div>
 <div class="ttc" id="aclassitem__location_html_a0f73e1c094e3e36d6455d46436e299a9"><div class="ttname"><a href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">item_location::where</a></div><div class="ttdeci">type where() const</div><div class="ttdoc">Returns the type of location where the item is found.</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8cpp_source.html#l00729">item_location.cpp:729</a></div></div>
 <div class="ttc" id="aclassitem__location_html_a7c2a92227d0946b673eb95b0a53c766c"><div class="ttname"><a href="classitem__location.html#a7c2a92227d0946b673eb95b0a53c766c">item_location::position</a></div><div class="ttdeci">tripoint position() const</div><div class="ttdoc">Returns the position where the item is found.</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8cpp_source.html#l00734">item_location.cpp:734</a></div></div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
-<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01068">map.cpp:1068</a></div></div>
-<div class="ttc" id="aclassmap_html_abc7101be108a49131b6646bfb29d381f"><div class="ttname"><a href="classmap.html#abc7101be108a49131b6646bfb29d381f">map::make_active</a></div><div class="ttdeci">void make_active(item_location &amp;loc)</div><div class="ttdoc">Update an item's active status, for example when adding hot or perishable liquid to a container.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l04519">map.cpp:4519</a></div></div>
+<div class="ttc" id="aclassmap_html_aa487d96256c3d35db7a1bf273156b64a"><div class="ttname"><a href="classmap.html#aa487d96256c3d35db7a1bf273156b64a">map::veh_at</a></div><div class="ttdeci">optional_vpart_position veh_at(const tripoint &amp;p) const</div><div class="ttdoc">Checks if tile is occupied by vehicle and by which part.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01073">map.cpp:1073</a></div></div>
+<div class="ttc" id="aclassmap_html_abc7101be108a49131b6646bfb29d381f"><div class="ttname"><a href="classmap.html#abc7101be108a49131b6646bfb29d381f">map::make_active</a></div><div class="ttdeci">void make_active(item_location &amp;loc)</div><div class="ttdoc">Update an item's active status, for example when adding hot or perishable liquid to a container.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l04525">map.cpp:4525</a></div></div>
 <div class="ttc" id="amap_8cpp_html_acb0b34be6e497bdd2f9f40ae6929d562"><div class="ttname"><a href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a></div><div class="ttdeci">map &amp; get_map()</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l00147">map.cpp:147</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="map_8cpp_source.html#l04519">map::make_active()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::map</a>, <a class="el" href="item__location_8cpp_source.html#l00734">item_location::position()</a>, <a class="el" href="map_8cpp_source.html#l01068">map::veh_at()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da5a76e813d6a0a40548b91acc11557bd2">item_location::vehicle</a>, and <a class="el" href="item__location_8cpp_source.html#l00729">item_location::where()</a>.</p>
+<p class="reference">References <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="map_8cpp_source.html#l04525">map::make_active()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::map</a>, <a class="el" href="item__location_8cpp_source.html#l00734">item_location::position()</a>, <a class="el" href="map_8cpp_source.html#l01073">map::veh_at()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da5a76e813d6a0a40548b91acc11557bd2">item_location::vehicle</a>, and <a class="el" href="item__location_8cpp_source.html#l00729">item_location::where()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00968">avatar_action::use_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00975">avatar_action::use_item()</a>.</p>
 
 </div>
 </div>
@@ -712,25 +712,24 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00575">575</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span>{</div>
-<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span>    <span class="keyword">const</span> <a class="code hl_class" href="classnpc.html">npc</a> *np = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="classnpc.html">npc</a> *<span class="keyword">&gt;</span>( &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
-<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keywordflow">if</span>( np != <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacenpc__ai.html#a690893653e3fda1bcbc29448fd9478cf">npc_ai::weapon_value</a>( *np, np-&gt;<a class="code hl_variable" href="classCharacter.html#ae68b7a6565646ba662e448bded8b6599">weapon</a> );</div>
-<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>    }</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
-<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmonster.html">monster</a> *m = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="classmonster.html">monster</a> *<span class="keyword">&gt;</span>( &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
-<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>    <span class="keywordflow">return</span> m-&gt;<a class="code hl_variable" href="classmonster.html#aa30f973bf524ba275ada847f6118b048">type</a>-&gt;<a class="code hl_variable" href="structmtype.html#a7f92cbd89d3870833c9d5300acb325a1">difficulty</a>;</div>
-<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>}</div>
-<div class="ttc" id="aclassCharacter_html_ae68b7a6565646ba662e448bded8b6599"><div class="ttname"><a href="classCharacter.html#ae68b7a6565646ba662e448bded8b6599">Character::weapon</a></div><div class="ttdeci">item weapon</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01555">character.h:1555</a></div></div>
+<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00579">579</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>{</div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span>    <span class="keyword">const</span> <a class="code hl_class" href="classnpc.html">npc</a> *np = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="classnpc.html">npc</a> *<span class="keyword">&gt;</span>( &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span>    <span class="keywordflow">if</span>( np != <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="namespacenpc__ai.html#a03081587a4844207a7386844f8a31cd5">npc_ai::wielded_value</a>( *np );</div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    }</div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span> </div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keyword">const</span> <a class="code hl_class" href="classmonster.html">monster</a> *m = <span class="keyword">dynamic_cast&lt;</span><span class="keyword">const </span><a class="code hl_class" href="classmonster.html">monster</a> *<span class="keyword">&gt;</span>( &amp;<a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> );</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>    <span class="keywordflow">return</span> m-&gt;<a class="code hl_variable" href="classmonster.html#aa30f973bf524ba275ada847f6118b048">type</a>-&gt;<a class="code hl_variable" href="structmtype.html#a7f92cbd89d3870833c9d5300acb325a1">difficulty</a>;</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>}</div>
 <div class="ttc" id="aclassmonster_html"><div class="ttname"><a href="classmonster.html">monster</a></div><div class="ttdef"><b>Definition:</b> <a href="monster_8h_source.html#l00084">monster.h:85</a></div></div>
-<div class="ttc" id="aclassmonster_html_aa30f973bf524ba275ada847f6118b048"><div class="ttname"><a href="classmonster.html#aa30f973bf524ba275ada847f6118b048">monster::type</a></div><div class="ttdeci">const mtype * type</div><div class="ttdef"><b>Definition:</b> <a href="monster_8h_source.html#l00477">monster.h:477</a></div></div>
+<div class="ttc" id="aclassmonster_html_aa30f973bf524ba275ada847f6118b048"><div class="ttname"><a href="classmonster.html#aa30f973bf524ba275ada847f6118b048">monster::type</a></div><div class="ttdeci">const mtype * type</div><div class="ttdef"><b>Definition:</b> <a href="monster_8h_source.html#l00478">monster.h:478</a></div></div>
 <div class="ttc" id="aclassnpc_html"><div class="ttname"><a href="classnpc.html">npc</a></div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00743">npc.h:744</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
-<div class="ttc" id="anamespacenpc__ai_html_a690893653e3fda1bcbc29448fd9478cf"><div class="ttname"><a href="namespacenpc__ai.html#a690893653e3fda1bcbc29448fd9478cf">npc_ai::weapon_value</a></div><div class="ttdeci">double weapon_value(const Character &amp;who, const item &amp;weap, int ammo=item::INFINITE_CHARGES)</div><div class="ttdoc">Evaluate item as weapon (melee or gun)</div><div class="ttdef"><b>Definition:</b> <a href="melee_8cpp_source.html#l02261">melee.cpp:2261</a></div></div>
+<div class="ttc" id="anamespacenpc__ai_html_a03081587a4844207a7386844f8a31cd5"><div class="ttname"><a href="namespacenpc__ai.html#a03081587a4844207a7386844f8a31cd5">npc_ai::wielded_value</a></div><div class="ttdeci">double wielded_value(const Character &amp;who)</div><div class="ttdoc">Evaluate wielded weapon's ideal value.</div><div class="ttdef"><b>Definition:</b> <a href="melee_8cpp_source.html#l02319">melee.cpp:2319</a></div></div>
 <div class="ttc" id="astructmtype_html_a7f92cbd89d3870833c9d5300acb325a1"><div class="ttname"><a href="structmtype.html#a7f92cbd89d3870833c9d5300acb325a1">mtype::difficulty</a></div><div class="ttdeci">int difficulty</div><div class="ttdef"><b>Definition:</b> <a href="mtype_8h_source.html#l00267">mtype.h:267</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="mtype_8h_source.html#l00267">mtype::difficulty</a>, <a class="el" href="monster_8h_source.html#l00477">monster::type</a>, <a class="el" href="character_8h_source.html#l01555">Character::weapon</a>, and <a class="el" href="melee_8cpp_source.html#l02261">npc_ai::weapon_value()</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="mtype_8h_source.html#l00267">mtype::difficulty</a>, <a class="el" href="monster_8h_source.html#l00478">monster::type</a>, and <a class="el" href="melee_8cpp_source.html#l02319">npc_ai::wielded_value()</a>.</p>
 
 </div>
 </div>
@@ -768,22 +767,22 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00951">951</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span>{</div>
-<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    <span class="keywordflow">switch</span>( loc.<a class="code hl_function" href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">where</a>() ) {</div>
-<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::type::map</a>:</div>
-<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>            <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>().<a class="code hl_function" href="classmap.html#a0e3e16bbd43c622282867e85ff5100d2">update_lum</a>( loc, <a class="code hl_function" href="namespaceom__direction.html#a75c0342ea30288a5a6d5bdbff38f7cde">add</a> );</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>    }</div>
-<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>}</div>
-<div class="ttc" id="aclassmap_html_a0e3e16bbd43c622282867e85ff5100d2"><div class="ttname"><a href="classmap.html#a0e3e16bbd43c622282867e85ff5100d2">map::update_lum</a></div><div class="ttdeci">void update_lum(item_location &amp;loc, bool add)</div><div class="ttdoc">Update luminosity before and after item's transformation.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l04539">map.cpp:4539</a></div></div>
-<div class="ttc" id="anamespaceom__direction_html_a75c0342ea30288a5a6d5bdbff38f7cde"><div class="ttname"><a href="namespaceom__direction.html#a75c0342ea30288a5a6d5bdbff38f7cde">om_direction::add</a></div><div class="ttdeci">type add(type dir1, type dir2)</div><div class="ttdoc">Returns a sum of two numbers.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04193">overmap.cpp:4193</a></div></div>
+<p class="definition">Definition at line <a class="el" href="avatar__action_8cpp_source.html#l00958">958</a> of file <a class="el" href="avatar__action_8cpp_source.html">avatar_action.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>{</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>    <span class="keywordflow">switch</span>( loc.<a class="code hl_function" href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">where</a>() ) {</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::type::map</a>:</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span>            <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>().<a class="code hl_function" href="classmap.html#a0e3e16bbd43c622282867e85ff5100d2">update_lum</a>( loc, <a class="code hl_function" href="namespaceom__direction.html#a75c0342ea30288a5a6d5bdbff38f7cde">add</a> );</div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span>    }</div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>}</div>
+<div class="ttc" id="aclassmap_html_a0e3e16bbd43c622282867e85ff5100d2"><div class="ttname"><a href="classmap.html#a0e3e16bbd43c622282867e85ff5100d2">map::update_lum</a></div><div class="ttdeci">void update_lum(item_location &amp;loc, bool add)</div><div class="ttdoc">Update luminosity before and after item's transformation.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l04545">map.cpp:4545</a></div></div>
+<div class="ttc" id="anamespaceom__direction_html_a75c0342ea30288a5a6d5bdbff38f7cde"><div class="ttname"><a href="namespaceom__direction.html#a75c0342ea30288a5a6d5bdbff38f7cde">om_direction::add</a></div><div class="ttdeci">type add(type dir1, type dir2)</div><div class="ttdoc">Returns a sum of two numbers.</div><div class="ttdef"><b>Definition:</b> <a href="overmap_8cpp_source.html#l04195">overmap.cpp:4195</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="overmap_8cpp_source.html#l04193">om_direction::add()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::map</a>, <a class="el" href="map_8cpp_source.html#l04539">map::update_lum()</a>, and <a class="el" href="item__location_8cpp_source.html#l00729">item_location::where()</a>.</p>
+<p class="reference">References <a class="el" href="overmap_8cpp_source.html#l04195">om_direction::add()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888da1d78dc8ed51214e518b5114fe24490ae">item_location::map</a>, <a class="el" href="map_8cpp_source.html#l04545">map::update_lum()</a>, and <a class="el" href="item__location_8cpp_source.html#l00729">item_location::where()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00968">avatar_action::use_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00975">avatar_action::use_item()</a>.</p>
 
 </div>
 </div>
@@ -840,7 +839,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00496">avatar_action::swim()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00500">avatar_action::swim()</a>.</p>
 
 </div>
 </div>
@@ -896,7 +895,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00496">avatar_action::swim()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00500">avatar_action::swim()</a>.</p>
 
 </div>
 </div>
@@ -952,7 +951,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00656">can_fire_turret()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00618">avatar_action::can_fire_weapon()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00853">avatar_action::plthrow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00660">can_fire_turret()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00622">avatar_action::can_fire_weapon()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00857">avatar_action::plthrow()</a>.</p>
 
 </div>
 </div>
@@ -1036,7 +1035,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00769">avatar_action::eat_here()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00773">avatar_action::eat_here()</a>.</p>
 
 </div>
 </div>
@@ -1064,7 +1063,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00496">avatar_action::swim()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00500">avatar_action::swim()</a>.</p>
 
 </div>
 </div>
@@ -1092,7 +1091,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00769">avatar_action::eat_here()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00773">avatar_action::eat_here()</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1119,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00496">avatar_action::swim()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00500">avatar_action::swim()</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1175,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00769">avatar_action::eat_here()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00773">avatar_action::eat_here()</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1203,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00769">avatar_action::eat_here()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00773">avatar_action::eat_here()</a>.</p>
 
 </div>
 </div>
@@ -1232,7 +1231,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00853">avatar_action::plthrow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00857">avatar_action::plthrow()</a>.</p>
 
 </div>
 </div>
@@ -1242,7 +1241,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="avatar__action_8cpp.html">avatar_action.cpp</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:07 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:38 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

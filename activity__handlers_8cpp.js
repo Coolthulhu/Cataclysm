@@ -200,6 +200,7 @@ var activity__handlers_8cpp =
     [ "itype_welder", "activity__handlers_8cpp.html#af8e36ab370766d9dc7c2da5461285f61", null ],
     [ "itype_wire", "activity__handlers_8cpp.html#af799950113f0bfdb12101fbc976ebfa8", null ],
     [ "itype_wool_staple", "activity__handlers_8cpp.html#a0b7c2cd6b61341e070d8ee0a723cf2c8", null ],
+    [ "qual_AXE", "activity__handlers_8cpp.html#a5a11f34784499ed2f6b7b5c4d6c31c5d", null ],
     [ "qual_BUTCHER", "activity__handlers_8cpp.html#a3fc86f1d1632ea68f1f84cb278dc1674", null ],
     [ "qual_CUT_FINE", "activity__handlers_8cpp.html#a79102cccd879186fb2a3e9a0443c604d", null ],
     [ "qual_LOCKPICK", "activity__handlers_8cpp.html#ab78ab4891ee6307746c1e74a8b77de8d", null ],

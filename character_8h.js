@@ -8,7 +8,6 @@ var character_8h =
     [ "Character", "classCharacter.html", "classCharacter" ],
     [ "Character::has_mission_item_filter", "structCharacter_1_1has__mission__item__filter.html", "structCharacter_1_1has__mission__item__filter" ],
     [ "CATA_SRC_CHARACTER_H", "character_8h.html#a40a19339f13ec04291e3cc17bca37d69", null ],
-    [ "MAX_CLAIRVOYANCE", "character_8h.html#a0b97b2ab8862038f108ad883eb5274fb", null ],
     [ "character_movemode", "character_8h.html#af749573d20b6327d21f9588ebdd5b19b", [
       [ "CMM_WALK", "character_8h.html#af749573d20b6327d21f9588ebdd5b19ba7bf92261bd9be1bced9caa8354c3203d", null ],
       [ "CMM_RUN", "character_8h.html#af749573d20b6327d21f9588ebdd5b19ba3d69a30a227d3f7bcd67e80d164cf786", null ],
@@ -35,9 +34,10 @@ var character_8h =
       [ "massive", "character_8h.html#abf088072c9ca5b676f7f7545bac9a137a7ab3f388bbf5200ebf5e501260ecddcc", null ]
     ] ],
     [ "npc_ai_info", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051d", [
-      [ "weapon_value", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da5795b0d5637a6bb0691323c64d3eb6bd", null ],
+      [ "ideal_weapon_value", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da6c1d5de20741d1572a1638942c179e99", null ],
       [ "reloadables", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051dab91c4c8a749a85ab33d1efd8ed599078", null ],
       [ "reloadable_cbms", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051dad246d6598f2387698643855cb158a952", null ],
+      [ "range", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb", null ],
       [ "num_npc_ai_info", "character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051dad787eaa09702636f57611c4caff3a620", null ]
     ] ],
     [ "rechargeable_cbm", "character_8h.html#a70a4eaaf64bcd7658f91bfb500492f5a", [
@@ -64,17 +64,17 @@ var character_8h =
       [ "dead", "character_8h.html#a2e6af65e94e820564fb484840378cf4aaf58e6a506c76fc2c90a7d29cbc631c2f", null ]
     ] ],
     [ "vision_modes", "character_8h.html#ad87be595004034c31843cf782d41c0b5", [
-      [ "DEBUG_NIGHTVISION", "character_8h.html#ad87be595004034c31843cf782d41c0b5a232e47de967199b15bebe8327183bd6c", null ],
-      [ "NV_GOGGLES", "character_8h.html#ad87be595004034c31843cf782d41c0b5acd90043f9adf49fd333cd2109af3f2f5", null ],
-      [ "BIRD_EYE", "character_8h.html#ad87be595004034c31843cf782d41c0b5aca4ce71d13f327d46d3376ea5af37f97", null ],
-      [ "URSINE_VISION", "character_8h.html#ad87be595004034c31843cf782d41c0b5a582ec79b4a071ed1e03262170e9d3300", null ],
-      [ "BOOMERED", "character_8h.html#ad87be595004034c31843cf782d41c0b5ae4bacc6aae9091c9d29899746414ece1", null ],
-      [ "DARKNESS", "character_8h.html#ad87be595004034c31843cf782d41c0b5a2e8bc5fc1b2072d06a95f19237a2a9f6", null ],
-      [ "IR_VISION", "character_8h.html#ad87be595004034c31843cf782d41c0b5a6de8bc5418fbd309dd4f4e48a601871f", null ],
-      [ "VISION_CLAIRVOYANCE", "character_8h.html#ad87be595004034c31843cf782d41c0b5aa5b4ba001872cf564a9012ba16d1d0ac", null ],
-      [ "VISION_CLAIRVOYANCE_PLUS", "character_8h.html#ad87be595004034c31843cf782d41c0b5a3e642fddb09b71bfed722b3f267b901d", null ],
-      [ "VISION_CLAIRVOYANCE_SUPER", "character_8h.html#ad87be595004034c31843cf782d41c0b5acd7b0fad90d4b19f6a69304d099827ce", null ],
-      [ "NUM_VISION_MODES", "character_8h.html#ad87be595004034c31843cf782d41c0b5a0a7effe1d6f45087e6f1f0f209109bc4", null ]
+      [ "DEBUG_NIGHTVISION", "character_8h.html#ad87be595004034c31843cf782d41c0b5a5a4ea44982882dfc3595f9dfd0ffc7d0", null ],
+      [ "NV_GOGGLES", "character_8h.html#ad87be595004034c31843cf782d41c0b5a3237fa835c78d6e2b82d10446c76532d", null ],
+      [ "BIRD_EYE", "character_8h.html#ad87be595004034c31843cf782d41c0b5a26e9e68bb52c4bf5a9491a8f69fe8ad0", null ],
+      [ "URSINE_VISION", "character_8h.html#ad87be595004034c31843cf782d41c0b5a3b8adf803574d977ffdb2bd274433ea7", null ],
+      [ "BOOMERED", "character_8h.html#ad87be595004034c31843cf782d41c0b5a2a5ca22ea4dd869fee8c9606bb33677e", null ],
+      [ "DARKNESS", "character_8h.html#ad87be595004034c31843cf782d41c0b5a70419927a73bef553f50bdc5198a300c", null ],
+      [ "IR_VISION", "character_8h.html#ad87be595004034c31843cf782d41c0b5afd0eb73cc7a305e7fb1239aaf1faed6c", null ],
+      [ "VISION_CLAIRVOYANCE", "character_8h.html#ad87be595004034c31843cf782d41c0b5a034af707792a366af677a6d543a87f9f", null ],
+      [ "VISION_CLAIRVOYANCE_PLUS", "character_8h.html#ad87be595004034c31843cf782d41c0b5a8a3b6dccbc30b730305c7f26f6afd4db", null ],
+      [ "VISION_CLAIRVOYANCE_SUPER", "character_8h.html#ad87be595004034c31843cf782d41c0b5ad702f8f6d9c522dd7107e361a1505066", null ],
+      [ "NUM_VISION_MODES", "character_8h.html#ad87be595004034c31843cf782d41c0b5aa2ef5ce1642502f7f80c794791aebb60", null ]
     ] ],
     [ "bonus_from_clothing", "character_8h.html#a1c5231c963e438d6f00d73f47f464ad5", null ],
     [ "from_clothing", "character_8h.html#aded8b30269da0d4119f07b696e27ceb8", null ],

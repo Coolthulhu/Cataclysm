@@ -28,6 +28,7 @@ var monexamine_8h =
     [ "start_leading", "monexamine_8h.html#a1c203b2eee53d0bcd927c4271e410c87", null ],
     [ "stop_leading", "monexamine_8h.html#a663586e54746514203b84f302e5b7faf", null ],
     [ "swap", "monexamine_8h.html#af4ee634a5921005409a5f3aa79e4a8a3", null ],
+    [ "take_items_from", "monexamine_8h.html#a2e9ee18138d440c2bcaf2833826c7211", null ],
     [ "tie_pet", "monexamine_8h.html#ae76b120af015a9112d4ae33380b28164", null ],
     [ "untie_pet", "monexamine_8h.html#a3500f4f80a6dc864dac50a5af744be0a", null ]
 ];

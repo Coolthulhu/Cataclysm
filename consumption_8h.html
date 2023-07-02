@@ -86,7 +86,8 @@ $(document).ready(function(){initNavTree('consumption_8h.html',''); initResizabl
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">consumption.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -107,6 +108,11 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a0bad22033736e19bb9908fdb6e6158db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="consumption_8h.html#a0bad22033736e19bb9908fdb6e6158db">CATA_SRC_CONSUMPTION_H</a></td></tr>
 <tr class="separator:a0bad22033736e19bb9908fdb6e6158db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aac08741712a8c206a0cb74130f7517d5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="consumption_8h.html#aac08741712a8c206a0cb74130f7517d5">query_consume_ownership</a> (<a class="el" href="classitem.html">item</a> &amp;target, <a class="el" href="classavatar.html">avatar</a> &amp;you)</td></tr>
+<tr class="separator:aac08741712a8c206a0cb74130f7517d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a0bad22033736e19bb9908fdb6e6158db" name="a0bad22033736e19bb9908fdb6e6158db"></a>
@@ -125,13 +131,71 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aac08741712a8c206a0cb74130f7517d5" name="aac08741712a8c206a0cb74130f7517d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac08741712a8c206a0cb74130f7517d5">&#9670;&nbsp;</a></span>query_consume_ownership()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool query_consume_ownership </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classitem.html">item</a> &amp;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classavatar.html">avatar</a> &amp;&#160;</td>
+          <td class="paramname"><em>you</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="consumption_8cpp_source.html#l01491">1491</a> of file <a class="el" href="consumption_8cpp_source.html">consumption.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01492" name="l01492"></a><span class="lineno"> 1492</span>{</div>
+<div class="line"><a id="l01493" name="l01493"></a><span class="lineno"> 1493</span>    <span class="comment">//Add in a reset here to make sure user keeps getting asked if not set to keep thief setting</span></div>
+<div class="line"><a id="l01494" name="l01494"></a><span class="lineno"> 1494</span>    <span class="keywordflow">if</span>( you.<a class="code hl_function" href="classCreature.html#a2acb6e1e19bcb775748403d07d8dc3f0">get_value</a>( <span class="stringliteral">&quot;THIEF_MODE_KEEP&quot;</span> ) != <span class="stringliteral">&quot;YES&quot;</span> ) {</div>
+<div class="line"><a id="l01495" name="l01495"></a><span class="lineno"> 1495</span>        you.<a class="code hl_function" href="classCreature.html#a04c1983abeefbf67db1e3f2b2a9b58ab">set_value</a>( <span class="stringliteral">&quot;THIEF_MODE&quot;</span>, <span class="stringliteral">&quot;THIEF_ASK&quot;</span> );</div>
+<div class="line"><a id="l01496" name="l01496"></a><span class="lineno"> 1496</span>    }</div>
+<div class="line"><a id="l01497" name="l01497"></a><span class="lineno"> 1497</span>    <span class="keywordflow">if</span>( !target.<a class="code hl_function" href="classitem.html#a0b35b9066ad71987b77727af45d96059">is_owned_by</a>( you, <span class="keyword">true</span> ) ) {</div>
+<div class="line"><a id="l01498" name="l01498"></a><span class="lineno"> 1498</span>        <span class="keywordtype">bool</span> choice = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01499" name="l01499"></a><span class="lineno"> 1499</span>        <span class="keywordflow">if</span>( you.<a class="code hl_function" href="classCreature.html#a2acb6e1e19bcb775748403d07d8dc3f0">get_value</a>( <span class="stringliteral">&quot;THIEF_MODE&quot;</span> ) == <span class="stringliteral">&quot;THIEF_ASK&quot;</span> ) {</div>
+<div class="line"><a id="l01500" name="l01500"></a><span class="lineno"> 1500</span>            choice = <a class="code hl_function" href="namespacepickup.html#abd31c624477e99fff1c2dee074c44531">pickup::query_thief</a>();</div>
+<div class="line"><a id="l01501" name="l01501"></a><span class="lineno"> 1501</span>        }</div>
+<div class="line"><a id="l01502" name="l01502"></a><span class="lineno"> 1502</span>        <span class="keywordflow">if</span>( you.<a class="code hl_function" href="classCreature.html#a2acb6e1e19bcb775748403d07d8dc3f0">get_value</a>( <span class="stringliteral">&quot;THIEF_MODE&quot;</span> ) == <span class="stringliteral">&quot;THIEF_HONEST&quot;</span> || !choice ) {</div>
+<div class="line"><a id="l01503" name="l01503"></a><span class="lineno"> 1503</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01504" name="l01504"></a><span class="lineno"> 1504</span>        }</div>
+<div class="line"><a id="l01505" name="l01505"></a><span class="lineno"> 1505</span>        <a class="code hl_function" href="namespaceavatar__funcs.html#a0cb75fd1a3b035578ab495d30d8ee0bd">avatar_funcs::handle_theft_witnesses</a>( you, target.<a class="code hl_function" href="classitem.html#a326dae8709070c316f6859ef0704bf85">get_owner</a>() );</div>
+<div class="line"><a id="l01506" name="l01506"></a><span class="lineno"> 1506</span>    }</div>
+<div class="line"><a id="l01507" name="l01507"></a><span class="lineno"> 1507</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01508" name="l01508"></a><span class="lineno"> 1508</span>}</div>
+<div class="ttc" id="aclassCreature_html_a04c1983abeefbf67db1e3f2b2a9b58ab"><div class="ttname"><a href="classCreature.html#a04c1983abeefbf67db1e3f2b2a9b58ab">Creature::set_value</a></div><div class="ttdeci">void set_value(const std::string &amp;key, const std::string &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01352">creature.cpp:1352</a></div></div>
+<div class="ttc" id="aclassCreature_html_a2acb6e1e19bcb775748403d07d8dc3f0"><div class="ttname"><a href="classCreature.html#a2acb6e1e19bcb775748403d07d8dc3f0">Creature::get_value</a></div><div class="ttdeci">std::string get_value(const std::string &amp;key) const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01362">creature.cpp:1362</a></div></div>
+<div class="ttc" id="aclassitem_html_a0b35b9066ad71987b77727af45d96059"><div class="ttname"><a href="classitem.html#a0b35b9066ad71987b77727af45d96059">item::is_owned_by</a></div><div class="ttdeci">bool is_owned_by(const Character &amp;c, bool available_to_take=false) const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l01237">item.cpp:1237</a></div></div>
+<div class="ttc" id="aclassitem_html_a326dae8709070c316f6859ef0704bf85"><div class="ttname"><a href="classitem.html#a326dae8709070c316f6859ef0704bf85">item::get_owner</a></div><div class="ttdeci">faction_id get_owner() const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l01282">item.cpp:1282</a></div></div>
+<div class="ttc" id="anamespaceavatar__funcs_html_a0cb75fd1a3b035578ab495d30d8ee0bd"><div class="ttname"><a href="namespaceavatar__funcs.html#a0cb75fd1a3b035578ab495d30d8ee0bd">avatar_funcs::handle_theft_witnesses</a></div><div class="ttdeci">bool handle_theft_witnesses(avatar &amp;you, const faction_id &amp;owners)</div><div class="ttdoc">Handle NPCs witnessing theft of their stuff.</div><div class="ttdef"><b>Definition:</b> <a href="avatar__functions_8cpp_source.html#l00850">avatar_functions.cpp:850</a></div></div>
+<div class="ttc" id="anamespacepickup_html_abd31c624477e99fff1c2dee074c44531"><div class="ttname"><a href="namespacepickup.html#abd31c624477e99fff1c2dee074c44531">pickup::query_thief</a></div><div class="ttdeci">bool query_thief()</div><div class="ttdef"><b>Definition:</b> <a href="pickup_8cpp_source.html#l00188">pickup.cpp:188</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l01282">item::get_owner()</a>, <a class="el" href="creature_8cpp_source.html#l01362">Creature::get_value()</a>, <a class="el" href="avatar__functions_8cpp_source.html#l00850">avatar_funcs::handle_theft_witnesses()</a>, <a class="el" href="item_8cpp_source.html#l01237">item::is_owned_by()</a>, <a class="el" href="pickup_8cpp_source.html#l00188">pickup::query_thief()</a>, and <a class="el" href="creature_8cpp_source.html#l01352">Creature::set_value()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="consumption_8cpp_source.html#l01510">Character::consume_item()</a>, and <a class="el" href="avatar__functions_8cpp_source.html#l00649">avatar_funcs::unload_item()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="consumption_8h.html">consumption.h</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:08 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:39 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -259,15 +259,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">        <span class="keywordflow">return</span> std::make_unique&lt;my_iuse_actor&gt;( *<span class="keyword">this</span> );</div>
 <div class="line">    }</div>
 <div class="line">};</div>
-<div class="ttc" id="aclassfireweapon__on__actor_html_a8067ced4a40d37939ac7189b0e1634f6"><div class="ttname"><a href="classfireweapon__on__actor.html#a8067ced4a40d37939ac7189b0e1634f6">fireweapon_on_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l02237">iuse_actor.cpp:2237</a></div></div>
+<div class="ttc" id="aclassfireweapon__on__actor_html_a8067ced4a40d37939ac7189b0e1634f6"><div class="ttname"><a href="classfireweapon__on__actor.html#a8067ced4a40d37939ac7189b0e1634f6">fireweapon_on_actor::clone</a></div><div class="ttdeci">std::unique_ptr&lt; iuse_actor &gt; clone() const override</div><div class="ttdoc">Returns a deep copy of this object.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8cpp_source.html#l02236">iuse_actor.cpp:2236</a></div></div>
 </div><!-- fragment --><p> The returned value should behave like the original item and must have the same type. </p>
 
 <p>Implements <a class="el" href="classiuse__actor.html#a79a3e229ab9a4f5433d061cc1faec42d">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l02237">2237</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02238" name="l02238"></a><span class="lineno"> 2238</span>{</div>
-<div class="line"><a id="l02239" name="l02239"></a><span class="lineno"> 2239</span>    <span class="keywordflow">return</span> std::make_unique&lt;fireweapon_on_actor&gt;( *<span class="keyword">this</span> );</div>
-<div class="line"><a id="l02240" name="l02240"></a><span class="lineno"> 2240</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l02236">2236</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02237" name="l02237"></a><span class="lineno"> 2237</span>{</div>
+<div class="line"><a id="l02238" name="l02238"></a><span class="lineno"> 2238</span>    <span class="keywordflow">return</span> std::make_unique&lt;fireweapon_on_actor&gt;( *<span class="keyword">this</span> );</div>
+<div class="line"><a id="l02239" name="l02239"></a><span class="lineno"> 2239</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -297,19 +297,19 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa93b616e6f6e450b098209ad19ae78c4">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l02223">2223</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02224" name="l02224"></a><span class="lineno"> 2224</span>{</div>
-<div class="line"><a id="l02225" name="l02225"></a><span class="lineno"> 2225</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a7a940ccd63a591a884e0cfdb64cdddca">noise_message</a>                   = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;noise_message&quot;</span>, <span class="stringliteral">&quot;hsss&quot;</span> );</div>
-<div class="line"><a id="l02226" name="l02226"></a><span class="lineno"> 2226</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a64e6d3ceb3b0e206fb2f7fc8951bce29">voluntary_extinguish_message</a>    = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;voluntary_extinguish_message&quot;</span> );</div>
-<div class="line"><a id="l02227" name="l02227"></a><span class="lineno"> 2227</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#ae2243ecdf6674abad0d4956c87f77ff8">charges_extinguish_message</a>      = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;charges_extinguish_message&quot;</span> );</div>
-<div class="line"><a id="l02228" name="l02228"></a><span class="lineno"> 2228</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a1bdf81412ab25917415538936c974b16">water_extinguish_message</a>        = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;water_extinguish_message&quot;</span> );</div>
-<div class="line"><a id="l02229" name="l02229"></a><span class="lineno"> 2229</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a57e569cd793783b1d8ca89c3cd02626c">noise</a>                           = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;noise&quot;</span>, 0 );</div>
-<div class="line"><a id="l02230" name="l02230"></a><span class="lineno"> 2230</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a948c0b58b395ed6aea9594e7386da857">noise_chance</a>                    = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;noise_chance&quot;</span>, 1 );</div>
-<div class="line"><a id="l02231" name="l02231"></a><span class="lineno"> 2231</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a>          = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;auto_extinguish_chance&quot;</span>, 0 );</div>
-<div class="line"><a id="l02232" name="l02232"></a><span class="lineno"> 2232</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a> &gt; 0 ) {</div>
-<div class="line"><a id="l02233" name="l02233"></a><span class="lineno"> 2233</span>        <a class="code hl_variable" href="classfireweapon__on__actor.html#a360c623253b58255d1db204fdd45d067">auto_extinguish_message</a>         = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;auto_extinguish_message&quot;</span> );</div>
-<div class="line"><a id="l02234" name="l02234"></a><span class="lineno"> 2234</span>    }</div>
-<div class="line"><a id="l02235" name="l02235"></a><span class="lineno"> 2235</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l02222">2222</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02223" name="l02223"></a><span class="lineno"> 2223</span>{</div>
+<div class="line"><a id="l02224" name="l02224"></a><span class="lineno"> 2224</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a7a940ccd63a591a884e0cfdb64cdddca">noise_message</a>                   = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;noise_message&quot;</span>, <span class="stringliteral">&quot;hsss&quot;</span> );</div>
+<div class="line"><a id="l02225" name="l02225"></a><span class="lineno"> 2225</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a64e6d3ceb3b0e206fb2f7fc8951bce29">voluntary_extinguish_message</a>    = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;voluntary_extinguish_message&quot;</span> );</div>
+<div class="line"><a id="l02226" name="l02226"></a><span class="lineno"> 2226</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#ae2243ecdf6674abad0d4956c87f77ff8">charges_extinguish_message</a>      = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;charges_extinguish_message&quot;</span> );</div>
+<div class="line"><a id="l02227" name="l02227"></a><span class="lineno"> 2227</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a1bdf81412ab25917415538936c974b16">water_extinguish_message</a>        = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;water_extinguish_message&quot;</span> );</div>
+<div class="line"><a id="l02228" name="l02228"></a><span class="lineno"> 2228</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a57e569cd793783b1d8ca89c3cd02626c">noise</a>                           = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;noise&quot;</span>, 0 );</div>
+<div class="line"><a id="l02229" name="l02229"></a><span class="lineno"> 2229</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a948c0b58b395ed6aea9594e7386da857">noise_chance</a>                    = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;noise_chance&quot;</span>, 1 );</div>
+<div class="line"><a id="l02230" name="l02230"></a><span class="lineno"> 2230</span>    <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a>          = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;auto_extinguish_chance&quot;</span>, 0 );</div>
+<div class="line"><a id="l02231" name="l02231"></a><span class="lineno"> 2231</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a> &gt; 0 ) {</div>
+<div class="line"><a id="l02232" name="l02232"></a><span class="lineno"> 2232</span>        <a class="code hl_variable" href="classfireweapon__on__actor.html#a360c623253b58255d1db204fdd45d067">auto_extinguish_message</a>         = obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;auto_extinguish_message&quot;</span> );</div>
+<div class="line"><a id="l02233" name="l02233"></a><span class="lineno"> 2233</span>    }</div>
+<div class="line"><a id="l02234" name="l02234"></a><span class="lineno"> 2234</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00382">json.cpp:382</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a99e64f59bc5e72e7572125064b68da29"><div class="ttname"><a href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">JsonObject::get_int</a></div><div class="ttdeci">int get_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00350">json.cpp:350</a></div></div>
 <div class="ttc" id="aclassfireweapon__on__actor_html_a1bdf81412ab25917415538936c974b16"><div class="ttname"><a href="classfireweapon__on__actor.html#a1bdf81412ab25917415538936c974b16">fireweapon_on_actor::water_extinguish_message</a></div><div class="ttdeci">std::string water_extinguish_message</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00714">iuse_actor.h:714</a></div></div>
@@ -373,40 +373,39 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classiuse__actor.html#aa7ab08413d05764e42ae4471799fd6b0">iuse_actor</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l02242">2242</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02243" name="l02243"></a><span class="lineno"> 2243</span>{</div>
-<div class="line"><a id="l02244" name="l02244"></a><span class="lineno"> 2244</span>    <span class="keywordtype">bool</span> extinguish = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l02245" name="l02245"></a><span class="lineno"> 2245</span>    <span class="keywordflow">if</span>( it.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a> == 0 ) {</div>
-<div class="line"><a id="l02246" name="l02246"></a><span class="lineno"> 2246</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#ae2243ecdf6674abad0d4956c87f77ff8">charges_extinguish_message</a> ) );</div>
-<div class="line"><a id="l02247" name="l02247"></a><span class="lineno"> 2247</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCreature.html#a5a2346f549de9c87e8f2afeec1e71366">is_underwater</a>() ) {</div>
-<div class="line"><a id="l02248" name="l02248"></a><span class="lineno"> 2248</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a1bdf81412ab25917415538936c974b16">water_extinguish_message</a> ) );</div>
-<div class="line"><a id="l02249" name="l02249"></a><span class="lineno"> 2249</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a> &gt; 0 &amp;&amp; <a class="code hl_function" href="rng_8cpp.html#aad28bdad07401a34ecf9912708f8b750">one_in</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a> ) ) {</div>
-<div class="line"><a id="l02250" name="l02250"></a><span class="lineno"> 2250</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a360c623253b58255d1db204fdd45d067">auto_extinguish_message</a> ) );</div>
-<div class="line"><a id="l02251" name="l02251"></a><span class="lineno"> 2251</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( !t ) {</div>
-<div class="line"><a id="l02252" name="l02252"></a><span class="lineno"> 2252</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a64e6d3ceb3b0e206fb2f7fc8951bce29">voluntary_extinguish_message</a> ) );</div>
-<div class="line"><a id="l02253" name="l02253"></a><span class="lineno"> 2253</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02254" name="l02254"></a><span class="lineno"> 2254</span>        extinguish = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l02255" name="l02255"></a><span class="lineno"> 2255</span>    }</div>
-<div class="line"><a id="l02256" name="l02256"></a><span class="lineno"> 2256</span> </div>
-<div class="line"><a id="l02257" name="l02257"></a><span class="lineno"> 2257</span>    <span class="keywordflow">if</span>( extinguish ) {</div>
-<div class="line"><a id="l02258" name="l02258"></a><span class="lineno"> 2258</span>        it.<a class="code hl_function" href="classitem.html#a3e058f8327de11a69a8e33f597be6d80">deactivate</a>( &amp;p, <span class="keyword">false</span> );</div>
-<div class="line"><a id="l02259" name="l02259"></a><span class="lineno"> 2259</span> </div>
-<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="rng_8cpp.html#aad28bdad07401a34ecf9912708f8b750">one_in</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a948c0b58b395ed6aea9594e7386da857">noise_chance</a> ) ) {</div>
-<div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a57e569cd793783b1d8ca89c3cd02626c">noise</a> &gt; 0 ) {</div>
-<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span>            <a class="code hl_function" href="namespacesounds.html#a6bb79ae1c9c3dcd8c8e0b28c66b0398d">sounds::sound</a>( p.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>(), <a class="code hl_variable" href="classfireweapon__on__actor.html#a57e569cd793783b1d8ca89c3cd02626c">noise</a>, <a class="code hl_enumvalue" href="namespacesounds.html#af6b3d144906d9ccfda6824fb87e46aa3ac222ae0d4e9c59bd254b72521b9e74ed">sounds::sound_t::combat</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a7a940ccd63a591a884e0cfdb64cdddca">noise_message</a> ) );</div>
-<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>            p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a7a940ccd63a591a884e0cfdb64cdddca">noise_message</a> ) );</div>
-<div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span>        }</div>
-<div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span>    }</div>
-<div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span> </div>
-<div class="line"><a id="l02268" name="l02268"></a><span class="lineno"> 2268</span>    <span class="keywordflow">return</span> it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_function" href="structitype.html#a953828c9c01185fef0f619ecdcd7f3b1">charges_to_use</a>();</div>
-<div class="line"><a id="l02269" name="l02269"></a><span class="lineno"> 2269</span>}</div>
-<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00591">character.cpp:591</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l02241">2241</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02242" name="l02242"></a><span class="lineno"> 2242</span>{</div>
+<div class="line"><a id="l02243" name="l02243"></a><span class="lineno"> 2243</span>    <span class="keywordtype">bool</span> extinguish = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l02244" name="l02244"></a><span class="lineno"> 2244</span>    <span class="keywordflow">if</span>( it.<a class="code hl_variable" href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">charges</a> == 0 ) {</div>
+<div class="line"><a id="l02245" name="l02245"></a><span class="lineno"> 2245</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#ae2243ecdf6674abad0d4956c87f77ff8">charges_extinguish_message</a> ) );</div>
+<div class="line"><a id="l02246" name="l02246"></a><span class="lineno"> 2246</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classCreature.html#a5a2346f549de9c87e8f2afeec1e71366">is_underwater</a>() ) {</div>
+<div class="line"><a id="l02247" name="l02247"></a><span class="lineno"> 2247</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a1bdf81412ab25917415538936c974b16">water_extinguish_message</a> ) );</div>
+<div class="line"><a id="l02248" name="l02248"></a><span class="lineno"> 2248</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a> &gt; 0 &amp;&amp; <a class="code hl_function" href="rng_8cpp.html#aad28bdad07401a34ecf9912708f8b750">one_in</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a4cadaf1529eaf2e21b35a02939e51d2d">auto_extinguish_chance</a> ) ) {</div>
+<div class="line"><a id="l02249" name="l02249"></a><span class="lineno"> 2249</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a360c623253b58255d1db204fdd45d067">auto_extinguish_message</a> ) );</div>
+<div class="line"><a id="l02250" name="l02250"></a><span class="lineno"> 2250</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( !t ) {</div>
+<div class="line"><a id="l02251" name="l02251"></a><span class="lineno"> 2251</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a64e6d3ceb3b0e206fb2f7fc8951bce29">voluntary_extinguish_message</a> ) );</div>
+<div class="line"><a id="l02252" name="l02252"></a><span class="lineno"> 2252</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02253" name="l02253"></a><span class="lineno"> 2253</span>        extinguish = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l02254" name="l02254"></a><span class="lineno"> 2254</span>    }</div>
+<div class="line"><a id="l02255" name="l02255"></a><span class="lineno"> 2255</span> </div>
+<div class="line"><a id="l02256" name="l02256"></a><span class="lineno"> 2256</span>    <span class="keywordflow">if</span>( extinguish ) {</div>
+<div class="line"><a id="l02257" name="l02257"></a><span class="lineno"> 2257</span>        it.<a class="code hl_function" href="classitem.html#a3e058f8327de11a69a8e33f597be6d80">deactivate</a>( &amp;p, <span class="keyword">false</span> );</div>
+<div class="line"><a id="l02258" name="l02258"></a><span class="lineno"> 2258</span> </div>
+<div class="line"><a id="l02259" name="l02259"></a><span class="lineno"> 2259</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_function" href="rng_8cpp.html#aad28bdad07401a34ecf9912708f8b750">one_in</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a948c0b58b395ed6aea9594e7386da857">noise_chance</a> ) ) {</div>
+<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a57e569cd793783b1d8ca89c3cd02626c">noise</a> &gt; 0 ) {</div>
+<div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span>            <a class="code hl_function" href="namespacesounds.html#a6bb79ae1c9c3dcd8c8e0b28c66b0398d">sounds::sound</a>( p.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>(), <a class="code hl_variable" href="classfireweapon__on__actor.html#a57e569cd793783b1d8ca89c3cd02626c">noise</a>, <a class="code hl_enumvalue" href="namespacesounds.html#af6b3d144906d9ccfda6824fb87e46aa3ac222ae0d4e9c59bd254b72521b9e74ed">sounds::sound_t::combat</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a7a940ccd63a591a884e0cfdb64cdddca">noise_message</a> ) );</div>
+<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span>        }</div>
+<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span>        p.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <a class="code hl_variable" href="classfireweapon__on__actor.html#a7a940ccd63a591a884e0cfdb64cdddca">noise_message</a> ) );</div>
+<div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>    }</div>
+<div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span> </div>
+<div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span>    <span class="keywordflow">return</span> it.<a class="code hl_variable" href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">type</a>-&gt;<a class="code hl_function" href="structitype.html#a953828c9c01185fef0f619ecdcd7f3b1">charges_to_use</a>();</div>
+<div class="line"><a id="l02267" name="l02267"></a><span class="lineno"> 2267</span>}</div>
+<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00599">character.cpp:599</a></div></div>
 <div class="ttc" id="aclassCreature_html_a5a2346f549de9c87e8f2afeec1e71366"><div class="ttname"><a href="classCreature.html#a5a2346f549de9c87e8f2afeec1e71366">Creature::is_underwater</a></div><div class="ttdeci">virtual bool is_underwater() const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l00171">creature.cpp:171</a></div></div>
-<div class="ttc" id="aclassitem_html_a3e058f8327de11a69a8e33f597be6d80"><div class="ttname"><a href="classitem.html#a3e058f8327de11a69a8e33f597be6d80">item::deactivate</a></div><div class="ttdeci">item &amp; deactivate(const Character *ch=nullptr, bool alert=true)</div><div class="ttdoc">Filter converting this instance to the inactive type If the item is either inactive or cannot be deac...</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l00540">item.cpp:540</a></div></div>
-<div class="ttc" id="aclassitem_html_a6bfb92ab5d41e0eb3a1da160fac71b0e"><div class="ttname"><a href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">item::charges</a></div><div class="ttdeci">int charges</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02196">item.h:2196</a></div></div>
-<div class="ttc" id="aclassitem_html_ac1d2c4c33b8a499812f3437cb2fad742"><div class="ttname"><a href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">item::type</a></div><div class="ttdeci">const itype * type</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02157">item.h:2157</a></div></div>
-<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00380">player.cpp:380</a></div></div>
+<div class="ttc" id="aclassitem_html_a3e058f8327de11a69a8e33f597be6d80"><div class="ttname"><a href="classitem.html#a3e058f8327de11a69a8e33f597be6d80">item::deactivate</a></div><div class="ttdeci">item &amp; deactivate(const Character *ch=nullptr, bool alert=true)</div><div class="ttdoc">Filter converting this instance to the inactive type If the item is either inactive or cannot be deac...</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l00543">item.cpp:543</a></div></div>
+<div class="ttc" id="aclassitem_html_a6bfb92ab5d41e0eb3a1da160fac71b0e"><div class="ttname"><a href="classitem.html#a6bfb92ab5d41e0eb3a1da160fac71b0e">item::charges</a></div><div class="ttdeci">int charges</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02199">item.h:2199</a></div></div>
+<div class="ttc" id="aclassitem_html_ac1d2c4c33b8a499812f3437cb2fad742"><div class="ttname"><a href="classitem.html#ac1d2c4c33b8a499812f3437cb2fad742">item::type</a></div><div class="ttdeci">const itype * type</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02160">item.h:2160</a></div></div>
+<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00366">player.cpp:366</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a></div><div class="ttdeci">@ m_bad</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00261">enums.h:261</a></div></div>
 <div class="ttc" id="anamespacesounds_html_a6bb79ae1c9c3dcd8c8e0b28c66b0398d"><div class="ttname"><a href="namespacesounds.html#a6bb79ae1c9c3dcd8c8e0b28c66b0398d">sounds::sound</a></div><div class="ttdeci">void sound(const tripoint &amp;p, int vol, sound_t category, const std::string &amp;description, bool ambient=false, const std::string &amp;id=&quot;&quot;, const std::string &amp;variant=&quot;default&quot;)</div><div class="ttdoc">Sound at (p) of intensity (vol)</div><div class="ttdef"><b>Definition:</b> <a href="sounds_8cpp_source.html#l00177">sounds.cpp:177</a></div></div>
 <div class="ttc" id="anamespacesounds_html_af6b3d144906d9ccfda6824fb87e46aa3ac222ae0d4e9c59bd254b72521b9e74ed"><div class="ttname"><a href="namespacesounds.html#af6b3d144906d9ccfda6824fb87e46aa3ac222ae0d4e9c59bd254b72521b9e74ed">sounds::sound_t::combat</a></div><div class="ttdeci">@ combat</div></div>
@@ -414,7 +413,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="astructitype_html_a953828c9c01185fef0f619ecdcd7f3b1"><div class="ttname"><a href="structitype.html#a953828c9c01185fef0f619ecdcd7f3b1">itype::charges_to_use</a></div><div class="ttdeci">int charges_to_use() const</div><div class="ttdef"><b>Definition:</b> <a href="itype_8cpp_source.html#l00110">itype.cpp:110</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="iuse__actor_8h_source.html#l00718">auto_extinguish_chance</a>, <a class="el" href="iuse__actor_8h_source.html#l00715">auto_extinguish_message</a>, <a class="el" href="item_8h_source.html#l02196">item::charges</a>, <a class="el" href="iuse__actor_8h_source.html#l00713">charges_extinguish_message</a>, <a class="el" href="itype_8cpp_source.html#l00110">itype::charges_to_use()</a>, <a class="el" href="namespacesounds.html#af6b3d144906d9ccfda6824fb87e46aa3ac222ae0d4e9c59bd254b72521b9e74ed">sounds::combat</a>, <a class="el" href="item_8cpp_source.html#l00540">item::deactivate()</a>, <a class="el" href="creature_8cpp_source.html#l00171">Creature::is_underwater()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="iuse__actor_8h_source.html#l00716">noise</a>, <a class="el" href="iuse__actor_8h_source.html#l00717">noise_chance</a>, <a class="el" href="iuse__actor_8h_source.html#l00711">noise_message</a>, <a class="el" href="rng_8cpp_source.html#l00065">one_in()</a>, <a class="el" href="character_8cpp_source.html#l00591">Character::pos()</a>, <a class="el" href="sounds_8cpp_source.html#l00177">sounds::sound()</a>, <a class="el" href="item_8h_source.html#l02157">item::type</a>, <a class="el" href="iuse__actor_8h_source.html#l00712">voluntary_extinguish_message</a>, and <a class="el" href="iuse__actor_8h_source.html#l00714">water_extinguish_message</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l00366">player::add_msg_if_player()</a>, <a class="el" href="iuse__actor_8h_source.html#l00718">auto_extinguish_chance</a>, <a class="el" href="iuse__actor_8h_source.html#l00715">auto_extinguish_message</a>, <a class="el" href="item_8h_source.html#l02199">item::charges</a>, <a class="el" href="iuse__actor_8h_source.html#l00713">charges_extinguish_message</a>, <a class="el" href="itype_8cpp_source.html#l00110">itype::charges_to_use()</a>, <a class="el" href="namespacesounds.html#af6b3d144906d9ccfda6824fb87e46aa3ac222ae0d4e9c59bd254b72521b9e74ed">sounds::combat</a>, <a class="el" href="item_8cpp_source.html#l00543">item::deactivate()</a>, <a class="el" href="creature_8cpp_source.html#l00171">Creature::is_underwater()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="iuse__actor_8h_source.html#l00716">noise</a>, <a class="el" href="iuse__actor_8h_source.html#l00717">noise_chance</a>, <a class="el" href="iuse__actor_8h_source.html#l00711">noise_message</a>, <a class="el" href="rng_8cpp_source.html#l00065">one_in()</a>, <a class="el" href="character_8cpp_source.html#l00599">Character::pos()</a>, <a class="el" href="sounds_8cpp_source.html#l00177">sounds::sound()</a>, <a class="el" href="item_8h_source.html#l02160">item::type</a>, <a class="el" href="iuse__actor_8h_source.html#l00712">voluntary_extinguish_message</a>, and <a class="el" href="iuse__actor_8h_source.html#l00714">water_extinguish_message</a>.</p>
 
 </div>
 </div>
@@ -433,7 +432,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00718">718</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -451,7 +450,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00715">715</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -469,7 +468,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00713">713</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -487,7 +486,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00716">716</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -505,7 +504,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00717">717</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -523,7 +522,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00711">711</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -541,7 +540,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00712">712</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -559,7 +558,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="iuse__actor_8h_source.html#l00714">714</a> of file <a class="el" href="iuse__actor_8h_source.html">iuse_actor.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02223">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02242">use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02222">load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l02241">use()</a>.</p>
 
 </div>
 </div>
@@ -573,7 +572,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classfireweapon__on__actor.html">fireweapon_on_actor</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -135,17 +135,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03353">3353</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03354" name="l03354"></a><span class="lineno"> 3354</span>{</div>
-<div class="line"><a id="l03355" name="l03355"></a><span class="lineno"> 3355</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ) {</div>
-<div class="line"><a id="l03356" name="l03356"></a><span class="lineno"> 3356</span>        elem.second = 0;</div>
-<div class="line"><a id="l03357" name="l03357"></a><span class="lineno"> 3357</span>    }</div>
-<div class="line"><a id="l03358" name="l03358"></a><span class="lineno"> 3358</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03355">3355</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03356" name="l03356"></a><span class="lineno"> 3356</span>{</div>
+<div class="line"><a id="l03357" name="l03357"></a><span class="lineno"> 3357</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ) {</div>
+<div class="line"><a id="l03358" name="l03358"></a><span class="lineno"> 3358</span>        elem.second = 0;</div>
+<div class="line"><a id="l03359" name="l03359"></a><span class="lineno"> 3359</span>    }</div>
+<div class="line"><a id="l03360" name="l03360"></a><span class="lineno"> 3360</span>}</div>
 <div class="ttc" id="aclassjob__data_html_a19e511506e7234a9720d5e5dd32fed46"><div class="ttname"><a href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">job_data::task_priorities</a></div><div class="ttdeci">std::map&lt; activity_id, int &gt; task_priorities</div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00119">npc.h:119</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="npc_8h_source.html#l00119">task_priorities</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="faction__camp_8cpp_source.html#l01746">basecamp::job_assignment_ui()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00791">talk_function::leave()</a>, and <a class="el" href="npc_8cpp_source.html#l01349">npc::mutiny()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="faction__camp_8cpp_source.html#l01746">basecamp::job_assignment_ui()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00791">talk_function::leave()</a>, and <a class="el" href="npc_8cpp_source.html#l01337">npc::mutiny()</a>.</p>
 
 </div>
 </div>
@@ -165,14 +165,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01400">1400</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01401" name="l01401"></a><span class="lineno"> 1401</span>{</div>
-<div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>    <span class="keywordflow">if</span>( jsin.<a class="code hl_function" href="classJsonIn.html#ae41dde30fea19bf2f707e9a297077d5f">test_object</a>() ) {</div>
-<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>        <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>        jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>        jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;task_priorities&quot;</span>, <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> );</div>
-<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span>    }</div>
-<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01401">1401</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01402" name="l01402"></a><span class="lineno"> 1402</span>{</div>
+<div class="line"><a id="l01403" name="l01403"></a><span class="lineno"> 1403</span>    <span class="keywordflow">if</span>( jsin.<a class="code hl_function" href="classJsonIn.html#ae41dde30fea19bf2f707e9a297077d5f">test_object</a>() ) {</div>
+<div class="line"><a id="l01404" name="l01404"></a><span class="lineno"> 1404</span>        <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l01405" name="l01405"></a><span class="lineno"> 1405</span>        jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l01406" name="l01406"></a><span class="lineno"> 1406</span>        jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;task_priorities&quot;</span>, <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> );</div>
+<div class="line"><a id="l01407" name="l01407"></a><span class="lineno"> 1407</span>    }</div>
+<div class="line"><a id="l01408" name="l01408"></a><span class="lineno"> 1408</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_ae41dde30fea19bf2f707e9a297077d5f"><div class="ttname"><a href="classJsonIn.html#ae41dde30fea19bf2f707e9a297077d5f">JsonIn::test_object</a></div><div class="ttdeci">bool test_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01545">json.cpp:1545</a></div></div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
@@ -198,27 +198,27 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03360">3360</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03361" name="l03361"></a><span class="lineno"> 3361</span>{</div>
-<div class="line"><a id="l03362" name="l03362"></a><span class="lineno"> 3362</span>    std::vector&lt;std::pair&lt;activity_id, int&gt;&gt; pairs( begin( <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ), end( <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ) );</div>
-<div class="line"><a id="l03363" name="l03363"></a><span class="lineno"> 3363</span> </div>
-<div class="line"><a id="l03364" name="l03364"></a><span class="lineno"> 3364</span>    std::vector&lt;activity_id&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l03365" name="l03365"></a><span class="lineno"> 3365</span>    sort( begin( pairs ), end( pairs ), []( <span class="keyword">const</span> std::pair&lt;activity_id, int&gt; &amp;<a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>,</div>
-<div class="line"><a id="l03366" name="l03366"></a><span class="lineno"> 3366</span>    <span class="keyword">const</span> std::pair&lt;activity_id, int&gt; &amp;<a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> ) {</div>
-<div class="line"><a id="l03367" name="l03367"></a><span class="lineno"> 3367</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>.second &gt; <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>.second;</div>
-<div class="line"><a id="l03368" name="l03368"></a><span class="lineno"> 3368</span>    } );</div>
-<div class="line"><a id="l03369" name="l03369"></a><span class="lineno"> 3369</span>    <span class="keywordflow">for</span>( std::pair&lt;activity_id, int&gt; elem : pairs ) {</div>
-<div class="line"><a id="l03370" name="l03370"></a><span class="lineno"> 3370</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>.push_back( elem.first );</div>
-<div class="line"><a id="l03371" name="l03371"></a><span class="lineno"> 3371</span>    }</div>
-<div class="line"><a id="l03372" name="l03372"></a><span class="lineno"> 3372</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l03373" name="l03373"></a><span class="lineno"> 3373</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03362">3362</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03363" name="l03363"></a><span class="lineno"> 3363</span>{</div>
+<div class="line"><a id="l03364" name="l03364"></a><span class="lineno"> 3364</span>    std::vector&lt;std::pair&lt;activity_id, int&gt;&gt; pairs( begin( <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ), end( <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ) );</div>
+<div class="line"><a id="l03365" name="l03365"></a><span class="lineno"> 3365</span> </div>
+<div class="line"><a id="l03366" name="l03366"></a><span class="lineno"> 3366</span>    std::vector&lt;activity_id&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l03367" name="l03367"></a><span class="lineno"> 3367</span>    sort( begin( pairs ), end( pairs ), []( <span class="keyword">const</span> std::pair&lt;activity_id, int&gt; &amp;<a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>,</div>
+<div class="line"><a id="l03368" name="l03368"></a><span class="lineno"> 3368</span>    <span class="keyword">const</span> std::pair&lt;activity_id, int&gt; &amp;<a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> ) {</div>
+<div class="line"><a id="l03369" name="l03369"></a><span class="lineno"> 3369</span>        <span class="keywordflow">return</span> <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a>.second &gt; <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a>.second;</div>
+<div class="line"><a id="l03370" name="l03370"></a><span class="lineno"> 3370</span>    } );</div>
+<div class="line"><a id="l03371" name="l03371"></a><span class="lineno"> 3371</span>    <span class="keywordflow">for</span>( std::pair&lt;activity_id, int&gt; elem : pairs ) {</div>
+<div class="line"><a id="l03372" name="l03372"></a><span class="lineno"> 3372</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>.push_back( elem.first );</div>
+<div class="line"><a id="l03373" name="l03373"></a><span class="lineno"> 3373</span>    }</div>
+<div class="line"><a id="l03374" name="l03374"></a><span class="lineno"> 3374</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l03375" name="l03375"></a><span class="lineno"> 3375</span>}</div>
 <div class="ttc" id="amagic_8cpp_html_a188caae18b60b66f9f44214c7e28ac1f"><div class="ttname"><a href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a></div><div class="ttdeci">constexpr double a</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01030">magic.cpp:1030</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
-<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
+<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00098">hash_utils.h:98</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, and <a class="el" href="npc_8h_source.html#l00119">task_priorities</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>, and <a class="el" href="npc_8h_source.html#l00119">task_priorities</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02571">npc::find_job_to_perform()</a>, and <a class="el" href="faction__camp_8cpp_source.html#l01746">basecamp::job_assignment_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02608">npc::find_job_to_perform()</a>, and <a class="el" href="faction__camp_8cpp_source.html#l01746">basecamp::job_assignment_ui()</a>.</p>
 
 </div>
 </div>
@@ -238,19 +238,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03375">3375</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03376" name="l03376"></a><span class="lineno"> 3376</span>{</div>
-<div class="line"><a id="l03377" name="l03377"></a><span class="lineno"> 3377</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.find( req_job );</div>
-<div class="line"><a id="l03378" name="l03378"></a><span class="lineno"> 3378</span>    <span class="keywordflow">if</span>( it != <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.end() ) {</div>
-<div class="line"><a id="l03379" name="l03379"></a><span class="lineno"> 3379</span>        <span class="keywordflow">return</span> it-&gt;second;</div>
-<div class="line"><a id="l03380" name="l03380"></a><span class="lineno"> 3380</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03381" name="l03381"></a><span class="lineno"> 3381</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l03382" name="l03382"></a><span class="lineno"> 3382</span>    }</div>
-<div class="line"><a id="l03383" name="l03383"></a><span class="lineno"> 3383</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03377">3377</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03378" name="l03378"></a><span class="lineno"> 3378</span>{</div>
+<div class="line"><a id="l03379" name="l03379"></a><span class="lineno"> 3379</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.find( req_job );</div>
+<div class="line"><a id="l03380" name="l03380"></a><span class="lineno"> 3380</span>    <span class="keywordflow">if</span>( it != <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.end() ) {</div>
+<div class="line"><a id="l03381" name="l03381"></a><span class="lineno"> 3381</span>        <span class="keywordflow">return</span> it-&gt;second;</div>
+<div class="line"><a id="l03382" name="l03382"></a><span class="lineno"> 3382</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03383" name="l03383"></a><span class="lineno"> 3383</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l03384" name="l03384"></a><span class="lineno"> 3384</span>    }</div>
+<div class="line"><a id="l03385" name="l03385"></a><span class="lineno"> 3385</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="npc_8h_source.html#l00119">task_priorities</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02571">npc::find_job_to_perform()</a>, and <a class="el" href="faction__camp_8cpp_source.html#l01746">basecamp::job_assignment_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npcmove_8cpp_source.html#l02608">npc::find_job_to_perform()</a>, and <a class="el" href="faction__camp_8cpp_source.html#l01746">basecamp::job_assignment_ui()</a>.</p>
 
 </div>
 </div>
@@ -269,19 +269,19 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03385">3385</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03386" name="l03386"></a><span class="lineno"> 3386</span>{</div>
-<div class="line"><a id="l03387" name="l03387"></a><span class="lineno"> 3387</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ) {</div>
-<div class="line"><a id="l03388" name="l03388"></a><span class="lineno"> 3388</span>        <span class="keywordflow">if</span>( elem.second &gt; 0 ) {</div>
-<div class="line"><a id="l03389" name="l03389"></a><span class="lineno"> 3389</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l03390" name="l03390"></a><span class="lineno"> 3390</span>        }</div>
-<div class="line"><a id="l03391" name="l03391"></a><span class="lineno"> 3391</span>    }</div>
-<div class="line"><a id="l03392" name="l03392"></a><span class="lineno"> 3392</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l03393" name="l03393"></a><span class="lineno"> 3393</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03387">3387</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03388" name="l03388"></a><span class="lineno"> 3388</span>{</div>
+<div class="line"><a id="l03389" name="l03389"></a><span class="lineno"> 3389</span>    <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;elem : <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> ) {</div>
+<div class="line"><a id="l03390" name="l03390"></a><span class="lineno"> 3390</span>        <span class="keywordflow">if</span>( elem.second &gt; 0 ) {</div>
+<div class="line"><a id="l03391" name="l03391"></a><span class="lineno"> 3391</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l03392" name="l03392"></a><span class="lineno"> 3392</span>        }</div>
+<div class="line"><a id="l03393" name="l03393"></a><span class="lineno"> 3393</span>    }</div>
+<div class="line"><a id="l03394" name="l03394"></a><span class="lineno"> 3394</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l03395" name="l03395"></a><span class="lineno"> 3395</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="npc_8h_source.html#l00119">task_priorities</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8h_source.html#l01202">npc::has_job()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8h_source.html#l01204">npc::has_job()</a>.</p>
 
 </div>
 </div>
@@ -301,12 +301,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01394">1394</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01395" name="l01395"></a><span class="lineno"> 1395</span>{</div>
-<div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;task_priorities&quot;</span>, <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> );</div>
-<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01395">1395</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01396" name="l01396"></a><span class="lineno"> 1396</span>{</div>
+<div class="line"><a id="l01397" name="l01397"></a><span class="lineno"> 1397</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l01398" name="l01398"></a><span class="lineno"> 1398</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;task_priorities&quot;</span>, <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a> );</div>
+<div class="line"><a id="l01399" name="l01399"></a><span class="lineno"> 1399</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l01400" name="l01400"></a><span class="lineno"> 1400</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
@@ -341,15 +341,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03343">3343</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03344" name="l03344"></a><span class="lineno"> 3344</span>{</div>
-<div class="line"><a id="l03345" name="l03345"></a><span class="lineno"> 3345</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.find( task );</div>
-<div class="line"><a id="l03346" name="l03346"></a><span class="lineno"> 3346</span>    <span class="keywordflow">if</span>( it != <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.end() ) {</div>
-<div class="line"><a id="l03347" name="l03347"></a><span class="lineno"> 3347</span>        <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>[task] = new_priority;</div>
-<div class="line"><a id="l03348" name="l03348"></a><span class="lineno"> 3348</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l03349" name="l03349"></a><span class="lineno"> 3349</span>    }</div>
-<div class="line"><a id="l03350" name="l03350"></a><span class="lineno"> 3350</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l03351" name="l03351"></a><span class="lineno"> 3351</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l03345">3345</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03346" name="l03346"></a><span class="lineno"> 3346</span>{</div>
+<div class="line"><a id="l03347" name="l03347"></a><span class="lineno"> 3347</span>    <span class="keyword">auto</span> it = <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.find( task );</div>
+<div class="line"><a id="l03348" name="l03348"></a><span class="lineno"> 3348</span>    <span class="keywordflow">if</span>( it != <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>.end() ) {</div>
+<div class="line"><a id="l03349" name="l03349"></a><span class="lineno"> 3349</span>        <a class="code hl_variable" href="classjob__data.html#a19e511506e7234a9720d5e5dd32fed46">task_priorities</a>[task] = new_priority;</div>
+<div class="line"><a id="l03350" name="l03350"></a><span class="lineno"> 3350</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l03351" name="l03351"></a><span class="lineno"> 3351</span>    }</div>
+<div class="line"><a id="l03352" name="l03352"></a><span class="lineno"> 3352</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l03353" name="l03353"></a><span class="lineno"> 3353</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="npc_8h_source.html#l00119">task_priorities</a>.</p>
 
@@ -393,7 +393,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00119">119</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l03353">clear_all_priorities()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01400">deserialize()</a>, <a class="el" href="npc_8cpp_source.html#l03360">get_prioritised_vector()</a>, <a class="el" href="npc_8cpp_source.html#l03375">get_priority_of_job()</a>, <a class="el" href="npc_8cpp_source.html#l03385">has_job()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01394">serialize()</a>, and <a class="el" href="npc_8cpp_source.html#l03343">set_task_priority()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l03355">clear_all_priorities()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01401">deserialize()</a>, <a class="el" href="npc_8cpp_source.html#l03362">get_prioritised_vector()</a>, <a class="el" href="npc_8cpp_source.html#l03377">get_priority_of_job()</a>, <a class="el" href="npc_8cpp_source.html#l03387">has_job()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01395">serialize()</a>, and <a class="el" href="npc_8cpp_source.html#l03345">set_task_priority()</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classjob__data.html">job_data</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:25 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

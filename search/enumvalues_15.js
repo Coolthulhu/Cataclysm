@@ -15,7 +15,7 @@ var searchData=
   ['unsafe_5fteleport_12',['UNSAFE_TELEPORT',['../magic_8h.html#a5322019703a7521b2c3e0ae4a038d0d9a2bc807b6bbcbe09e916df1376c6b1b86',1,'magic.h']]],
   ['up_13',['up',['../namespacedetail.html#a85c22d2ea092a6b8340cec5779f4f2e7a46c48bec0d282018b9d167eef7711b2c',1,'detail']]],
   ['update_5fmapgen_14',['update_mapgen',['../map__extras_8h.html#ae6a473fecbe545a7d12f13bf18ed8464abcbec6c749cf7e6d48b25c92c176d219',1,'map_extras.h']]],
-  ['ursine_5fvision_15',['URSINE_VISION',['../character_8h.html#ad87be595004034c31843cf782d41c0b5a582ec79b4a071ed1e03262170e9d3300',1,'character.h']]],
+  ['ursine_5fvision_15',['URSINE_VISION',['../character_8h.html#ad87be595004034c31843cf782d41c0b5a3b8adf803574d977ffdb2bd274433ea7',1,'character.h']]],
   ['use_5ffrom_5fboth_16',['use_from_both',['../craft__command_8h.html#a5684f219761d78b4f98e7b2869dd1726a36367df8f9785058d22d022dbd8e5fae',1,'craft_command.h']]],
   ['use_5ffrom_5fmap_17',['use_from_map',['../craft__command_8h.html#a5684f219761d78b4f98e7b2869dd1726ae0cfa7503d9e51c0f908fe4f210a56cb',1,'craft_command.h']]],
   ['use_5ffrom_5fnone_18',['use_from_none',['../craft__command_8h.html#a5684f219761d78b4f98e7b2869dd1726a87a06975828a650a938662676287691c',1,'craft_command.h']]],

@@ -181,18 +181,18 @@ Public Attributes</h2></td></tr>
 <p>Add a new mission to the available missions (<a class="el" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a>). </p>
 <p >For compatibility it silently ignores null pointers passed to it. </p>
 
-<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l02750">2750</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02751" name="l02751"></a><span class="lineno"> 2751</span>{</div>
-<div class="line"><a id="l02752" name="l02752"></a><span class="lineno"> 2752</span>    <span class="keywordflow">if</span>( miss == <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span>    }</div>
-<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a>.push_back( miss );</div>
-<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npc_8cpp_source.html#l02752">2752</a> of file <a class="el" href="npc_8cpp_source.html">npc.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>{</div>
+<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span>    <span class="keywordflow">if</span>( miss == <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>    }</div>
+<div class="line"><a id="l02757" name="l02757"></a><span class="lineno"> 2757</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a>.push_back( miss );</div>
+<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span>}</div>
 <div class="ttc" id="astructnpc__chatbin_html_a99b51df0b9772ea2166968a03d1d4317"><div class="ttname"><a href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">npc_chatbin::missions</a></div><div class="ttdeci">std::vector&lt; mission * &gt; missions</div><div class="ttdoc">Missions that the NPC can give out.</div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00711">npc.h:711</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="npc_8h_source.html#l00711">missions</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02660">npc::add_new_mission()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02662">npc::add_new_mission()</a>.</p>
 
 </div>
 </div>
@@ -214,23 +214,23 @@ Public Attributes</h2></td></tr>
 <p>Check that assigned missions are still assigned if not move them back to the unassigned vector. </p>
 <p >This is called directly before talking. </p>
 
-<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l00722">722</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>{</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    <span class="comment">// TODO: or simply fail them? Some missions might only need to be reported.</span></div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    <span class="keyword">auto</span> &amp;ma = <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>;</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a> = std::remove_if( ma.begin(), ma.end(), []( <span class="keyword">class</span> <a class="code hl_class" href="classmission.html">mission</a> <span class="keyword">const</span> * m ) {</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>        return !m-&gt;is_assigned();</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    } );</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    std::copy( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end(), std::back_inserter( <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> ) );</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    ma.erase( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end() );</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l00757">757</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>{</div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span>    <span class="comment">// TODO: or simply fail them? Some missions might only need to be reported.</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span>    <span class="keyword">auto</span> &amp;ma = <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>;</div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a> = std::remove_if( ma.begin(), ma.end(), []( <span class="keyword">class</span> <a class="code hl_class" href="classmission.html">mission</a> <span class="keyword">const</span> * m ) {</div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span>        return !m-&gt;is_assigned();</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>    } );</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    std::copy( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end(), std::back_inserter( <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> ) );</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    ma.erase( <a class="code hl_enumvalue" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, ma.end() );</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span>}</div>
 <div class="ttc" id="aachievement_8h_html_a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51"><div class="ttname"><a href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">achievement_comparison::last</a></div><div class="ttdeci">@ last</div></div>
 <div class="ttc" id="aclassmission_html"><div class="ttname"><a href="classmission.html">mission</a></div><div class="ttdef"><b>Definition:</b> <a href="mission_8h_source.html#l00289">mission.h:290</a></div></div>
 <div class="ttc" id="astructnpc__chatbin_html_a639940a9d29a697bec5c09acc2a8da39"><div class="ttname"><a href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">npc_chatbin::missions_assigned</a></div><div class="ttdeci">std::vector&lt; mission * &gt; missions_assigned</div><div class="ttdoc">Mission that have been assigned by this NPC to a player character.</div><div class="ttdef"><b>Definition:</b> <a href="npc_8h_source.html#l00715">npc.h:715</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="achievement_8h.html#a4c2771ccaad822c94aee3786288bb112a98bd1c45684cf587ac2347a92dd7bb51">last</a>, <a class="el" href="npc_8h_source.html#l00711">missions</a>, and <a class="el" href="npc_8h_source.html#l00715">missions_assigned</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -250,43 +250,43 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01277">1277</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span>{</div>
-<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>    data.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span> </div>
-<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;first_topic&quot;</span> ) ) {</div>
-<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>        <span class="keywordtype">int</span> tmptopic = 0;</div>
-<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;first_topic&quot;</span>, tmptopic );</div>
-<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>        <a class="code hl_variable" href="structnpc__chatbin.html#a083175cd6d6a4cc4e77135c79dd4f518">first_topic</a> = <a class="code hl_function" href="npc_8h.html#a44edcea0eb4426e7592722cfd516b384">convert_talk_topic</a>( <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="npc_8h.html#ac8243858aef483b83981202d916ec68a">talk_topic_enum</a><span class="keyword">&gt;</span>( tmptopic ) );</div>
-<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;first_topic&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#a083175cd6d6a4cc4e77135c79dd4f518">first_topic</a> );</div>
-<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>    }</div>
-<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span> </div>
-<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;skill&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#af4900fa04a03ef91e668d4ad675cc361">skill</a> );</div>
-<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;style&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#ac16d0e05b42274232123ab95cfefc54d">style</a> );</div>
-<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span> </div>
-<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>    std::vector&lt;int&gt; tmpmissions;</div>
-<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;missions&quot;</span>, tmpmissions );</div>
-<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> = <a class="code hl_function" href="classmission.html#ae7da6745d90aac9571a54f0c3df6c5cc">mission::to_ptr_vector</a>( tmpmissions );</div>
-<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>    std::vector&lt;int&gt; tmpmissions_assigned;</div>
-<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;missions_assigned&quot;</span>, tmpmissions_assigned );</div>
-<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a> = <a class="code hl_function" href="classmission.html#ae7da6745d90aac9571a54f0c3df6c5cc">mission::to_ptr_vector</a>( tmpmissions_assigned );</div>
-<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span> </div>
-<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>    <span class="keywordtype">int</span> tmpmission_selected = 0;</div>
-<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;mission_selected&quot;</span>, tmpmission_selected ) &amp;&amp; tmpmission_selected != -1 ) {</div>
-<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8h.html#ad92349523462977f97edd9afbed2a996">savegame_loading_version</a> &lt;= 23 ) {</div>
-<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>            <span class="comment">// In 0.C, it was an index into the missions_assigned vector</span></div>
-<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>            <span class="keywordflow">if</span>( tmpmission_selected &gt;= 0 &amp;&amp;</div>
-<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>                tmpmission_selected &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>.size() ) ) {</div>
-<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>                <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> = <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>[tmpmission_selected];</div>
-<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>            }</div>
-<div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>            <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> = <a class="code hl_function" href="classmission.html#aae4146d3201610c753263debf3d37467">mission::find</a>( tmpmission_selected );</div>
-<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span>        }</div>
-<div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span>    }</div>
-<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01278">1278</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>{</div>
+<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> data = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>    data.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span> </div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;first_topic&quot;</span> ) ) {</div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>        <span class="keywordtype">int</span> tmptopic = 0;</div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;first_topic&quot;</span>, tmptopic );</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>        <a class="code hl_variable" href="structnpc__chatbin.html#a083175cd6d6a4cc4e77135c79dd4f518">first_topic</a> = <a class="code hl_function" href="npc_8h.html#a44edcea0eb4426e7592722cfd516b384">convert_talk_topic</a>( <span class="keyword">static_cast&lt;</span><a class="code hl_enumeration" href="npc_8h.html#ac8243858aef483b83981202d916ec68a">talk_topic_enum</a><span class="keyword">&gt;</span>( tmptopic ) );</div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>        data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;first_topic&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#a083175cd6d6a4cc4e77135c79dd4f518">first_topic</a> );</div>
+<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>    }</div>
+<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span> </div>
+<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;skill&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#af4900fa04a03ef91e668d4ad675cc361">skill</a> );</div>
+<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;style&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#ac16d0e05b42274232123ab95cfefc54d">style</a> );</div>
+<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span> </div>
+<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>    std::vector&lt;int&gt; tmpmissions;</div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;missions&quot;</span>, tmpmissions );</div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> = <a class="code hl_function" href="classmission.html#ae7da6745d90aac9571a54f0c3df6c5cc">mission::to_ptr_vector</a>( tmpmissions );</div>
+<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>    std::vector&lt;int&gt; tmpmissions_assigned;</div>
+<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>    data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;missions_assigned&quot;</span>, tmpmissions_assigned );</div>
+<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a> = <a class="code hl_function" href="classmission.html#ae7da6745d90aac9571a54f0c3df6c5cc">mission::to_ptr_vector</a>( tmpmissions_assigned );</div>
+<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span> </div>
+<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>    <span class="keywordtype">int</span> tmpmission_selected = 0;</div>
+<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>    <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>    <span class="keywordflow">if</span>( data.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;mission_selected&quot;</span>, tmpmission_selected ) &amp;&amp; tmpmission_selected != -1 ) {</div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>        <span class="keywordflow">if</span>( <a class="code hl_variable" href="game_8h.html#ad92349523462977f97edd9afbed2a996">savegame_loading_version</a> &lt;= 23 ) {</div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>            <span class="comment">// In 0.C, it was an index into the missions_assigned vector</span></div>
+<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>            <span class="keywordflow">if</span>( tmpmission_selected &gt;= 0 &amp;&amp;</div>
+<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>                tmpmission_selected &lt; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>.size() ) ) {</div>
+<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>                <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> = <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a>[tmpmission_selected];</div>
+<div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>            }</div>
+<div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span>            <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> = <a class="code hl_function" href="classmission.html#aae4146d3201610c753263debf3d37467">mission::find</a>( tmpmission_selected );</div>
+<div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span>        }</div>
+<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>    }</div>
+<div class="line"><a id="l01314" name="l01314"></a><span class="lineno"> 1314</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a6f04277ed5262b016bc4b4642b14d866"><div class="ttname"><a href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">JsonObject::has_int</a></div><div class="ttdeci">bool has_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00925">json.h:925</a></div></div>
@@ -322,19 +322,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01263">1263</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span>{</div>
-<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;first_topic&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#a083175cd6d6a4cc4e77135c79dd4f518">first_topic</a> );</div>
-<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> != <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;mission_selected&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a>-&gt;<a class="code hl_function" href="classmission.html#aac16dc2a81e99d01d5006ddfb7bf04c0">get_id</a>() );</div>
-<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span>    }</div>
-<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;skill&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#af4900fa04a03ef91e668d4ad675cc361">skill</a> );</div>
-<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;style&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#ac16d0e05b42274232123ab95cfefc54d">style</a> );</div>
-<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;missions&quot;</span>, <a class="code hl_function" href="classmission.html#a0f6bcb9fcb282e5c86af19de376c9839">mission::to_uid_vector</a>( <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> ) );</div>
-<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;missions_assigned&quot;</span>, <a class="code hl_function" href="classmission.html#a0f6bcb9fcb282e5c86af19de376c9839">mission::to_uid_vector</a>( <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a> ) );</div>
-<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l01264">1264</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>{</div>
+<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;first_topic&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#a083175cd6d6a4cc4e77135c79dd4f518">first_topic</a> );</div>
+<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a> != <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;mission_selected&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#a6badc35e703d29f340f0f9c3d66b6e78">mission_selected</a>-&gt;<a class="code hl_function" href="classmission.html#aac16dc2a81e99d01d5006ddfb7bf04c0">get_id</a>() );</div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>    }</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;skill&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#af4900fa04a03ef91e668d4ad675cc361">skill</a> );</div>
+<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;style&quot;</span>, <a class="code hl_variable" href="structnpc__chatbin.html#ac16d0e05b42274232123ab95cfefc54d">style</a> );</div>
+<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;missions&quot;</span>, <a class="code hl_function" href="classmission.html#a0f6bcb9fcb282e5c86af19de376c9839">mission::to_uid_vector</a>( <a class="code hl_variable" href="structnpc__chatbin.html#a99b51df0b9772ea2166968a03d1d4317">missions</a> ) );</div>
+<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;missions_assigned&quot;</span>, <a class="code hl_function" href="classmission.html#a0f6bcb9fcb282e5c86af19de376c9839">mission::to_uid_vector</a>( <a class="code hl_variable" href="structnpc__chatbin.html#a639940a9d29a697bec5c09acc2a8da39">missions_assigned</a> ) );</div>
+<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
@@ -362,7 +362,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00732">732</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
 
 </div>
 </div>
@@ -380,7 +380,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00733">733</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk__funcs_8cpp_source.html#l00379">talk_function::assign_camp()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00353">talk_function::assign_guard()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00439">talk_function::end_conversation()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00298">talk_function::goto_location()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00445">talk_function::insult_combat()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00791">talk_function::leave()</a>, <a class="el" href="npc_8cpp_source.html#l00216">npc_template::load()</a>, <a class="el" href="npc_8cpp_source.html#l00289">npc::load_npc_template()</a>, <a class="el" href="npc_8cpp_source.html#l01349">npc::mutiny()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l01011">talk_function::npc_thankful()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00398">talk_function::stop_guard()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00824">talk_function::stranger_neutral()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk__funcs_8cpp_source.html#l00379">talk_function::assign_camp()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00353">talk_function::assign_guard()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01278">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00439">talk_function::end_conversation()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00298">talk_function::goto_location()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00445">talk_function::insult_combat()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00791">talk_function::leave()</a>, <a class="el" href="npc_8cpp_source.html#l00220">npc_template::load()</a>, <a class="el" href="npc_8cpp_source.html#l00293">npc::load_npc_template()</a>, <a class="el" href="npc_8cpp_source.html#l01337">npc::mutiny()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l01011">talk_function::npc_thankful()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01264">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00398">talk_function::stop_guard()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00824">talk_function::stranger_neutral()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -401,7 +401,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00720">720</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02482">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00133">talk_function::mission_failure()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00172">talk_function::mission_reward()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00112">talk_function::mission_success()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02517">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01278">deserialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00133">talk_function::mission_failure()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00172">talk_function::mission_reward()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00112">talk_function::mission_success()</a>, <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, <a class="el" href="game_8cpp_source.html#l02628">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01264">serialize()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -422,7 +422,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00711">711</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02750">add_new_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk_8cpp_source.html#l00722">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02752">add_new_mission()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npctalk_8cpp_source.html#l00757">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01278">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="game_8cpp_source.html#l02628">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01264">serialize()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -442,7 +442,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00715">715</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02482">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npc_8cpp_source.html#l01468">npc::assigned_missions_value()</a>, <a class="el" href="npctalk_8cpp_source.html#l00722">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="mission_8cpp_source.html#l00345">mission::is_complete()</a>, <a class="el" href="npcmove_8cpp_source.html#l00648">npc::regen_ai_cache()</a>, <a class="el" href="game_8cpp_source.html#l02631">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l02374">talk_effect_fun_t::set_add_mission()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00733">npc::talk_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npctalk_8cpp_source.html#l02517">talk_effect_t::apply()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00099">talk_function::assign_mission()</a>, <a class="el" href="npc_8cpp_source.html#l01456">npc::assigned_missions_value()</a>, <a class="el" href="npctalk_8cpp_source.html#l00757">check_missions()</a>, <a class="el" href="npctalk__funcs_8cpp_source.html#l00145">talk_function::clear_mission()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01278">deserialize()</a>, <a class="el" href="debug__menu_8cpp_source.html#l01178">debug_menu::mission_debug::edit_npc()</a>, <a class="el" href="mission_8cpp_source.html#l00345">mission::is_complete()</a>, <a class="el" href="npcmove_8cpp_source.html#l00651">npc::regen_ai_cache()</a>, <a class="el" href="game_8cpp_source.html#l02628">game::reset_npc_dispositions()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01264">serialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l02409">talk_effect_fun_t::set_add_mission()</a>, and <a class="el" href="npctalk_8cpp_source.html#l00768">npc::talk_to_u()</a>.</p>
 
 </div>
 </div>
@@ -462,7 +462,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00724">724</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01278">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01264">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
 
 </div>
 </div>
@@ -482,7 +482,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="npc_8h_source.html#l00728">728</a> of file <a class="el" href="npc_8h_source.html">npc.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01277">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01739">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01263">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l01278">deserialize()</a>, <a class="el" href="npctalk_8cpp_source.html#l01774">dialogue::opt()</a>, <a class="el" href="savegame__json_8cpp_source.html#l01264">serialize()</a>, and <a class="el" href="npctalk__funcs_8cpp_source.html#l00902">talk_function::start_training()</a>.</p>
 
 </div>
 </div>
@@ -498,7 +498,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structnpc__chatbin.html">npc_chatbin</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:30 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:01 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

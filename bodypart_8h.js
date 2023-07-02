@@ -3,6 +3,7 @@ var bodypart_8h =
     [ "enum_traits< body_part >", "structenum__traits_3_01body__part_01_4.html", "structenum__traits_3_01body__part_01_4" ],
     [ "enum_traits< side >", "structenum__traits_3_01side_01_4.html", "structenum__traits_3_01side_01_4" ],
     [ "body_part_type", "structbody__part__type.html", "structbody__part__type" ],
+    [ "wield_status", "classwield__status.html", "classwield__status" ],
     [ "bodypart", "classbodypart.html", "classbodypart" ],
     [ "body_part_set", "classbody__part__set.html", "classbody__part__set" ],
     [ "CATA_SRC_BODYPART_H", "bodypart_8h.html#a746dfcf0a244f2a725e8cc486d369375", null ],

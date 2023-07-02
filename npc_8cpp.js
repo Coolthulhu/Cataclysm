@@ -1,6 +1,7 @@
 var npc_8cpp =
 [
     [ "flag_NPC_SAFE", "npc_8cpp.html#a5b7b7ed02b359195ca3f4d392bb53f65", null ],
+    [ "flag_SPLINT", "npc_8cpp.html#ac515c71f173b6c81dbc78f60ce2b89d2", null ],
     [ "get_clothing_item", "npc_8cpp.html#ad16f112d2b04ef5d0aae5fee81d0b1c4", null ],
     [ "maybe_shift", "npc_8cpp.html#abd51c077ce6d869ed80795d2afb14ffe", null ],
     [ "maybe_shift", "npc_8cpp.html#affdaf613b6750271bd05132644f66e1f", null ],
@@ -18,6 +19,7 @@ var npc_8cpp =
     [ "effect_bouldering", "npc_8cpp.html#aa3320a370fe1f7f1cf6e14918ca20358", null ],
     [ "effect_contacts", "npc_8cpp.html#a3151d4a613895c95436a5981e382ef80", null ],
     [ "effect_drunk", "npc_8cpp.html#a0b49aa7d4b07c448f7546ba24fb6b233", null ],
+    [ "effect_feral_killed_recently", "npc_8cpp.html#ad40d0488713b6d2a14b3501b978493c9", null ],
     [ "effect_infection", "npc_8cpp.html#aa252b893cc9c6b44632f8dffa16e261c", null ],
     [ "effect_mending", "npc_8cpp.html#ae239a31e1ebbbbacd06a8fcdd8be2861", null ],
     [ "effect_npc_flee_player", "npc_8cpp.html#afdcaa355e9fb31990b6222e12cc0416a", null ],
@@ -46,8 +48,10 @@ var npc_8cpp =
     [ "trait_HALLUCINATION", "npc_8cpp.html#a4181c72465d202fa60004a18c55fb29a", null ],
     [ "trait_HYPEROPIC", "npc_8cpp.html#a83835dcd301781ff63080d4b0fc72a18", null ],
     [ "trait_ILLITERATE", "npc_8cpp.html#a357572465dfb7a0a417d86e1be77af49", null ],
+    [ "trait_KILLER", "npc_8cpp.html#a79d0578dfe3d1e27332b119e515f47fb", null ],
     [ "trait_MUTE", "npc_8cpp.html#a8f1aa22c897a0644823f6da1863de4c8", null ],
     [ "trait_PROF_DICEMASTER", "npc_8cpp.html#abe59975b0f897b05b7572b71af1a2ca7", null ],
+    [ "trait_PROF_FERAL", "npc_8cpp.html#a5d306b6d12363ab6be78977038dee4dd", null ],
     [ "trait_PSYCHOPATH", "npc_8cpp.html#a9bbf692360c0fe96f9fccf41db5756be", null ],
     [ "trait_SAPIOVORE", "npc_8cpp.html#a93f31d20e997d966be8b81d64c31582b", null ],
     [ "trait_SCHIZOPHRENIC", "npc_8cpp.html#af2d313b1132870a819487a4e4fd5e6c1", null ],

@@ -120,7 +120,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Data for items that represent in-progress crafts. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02176">2176</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02179">2179</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a87e6142e6a5897f3cad0ec33feee684b" name="a87e6142e6a5897f3cad0ec33feee684b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87e6142e6a5897f3cad0ec33feee684b">&#9670;&nbsp;</a></span>deserialize() <span class="overload">[1/2]</span></h2>
@@ -138,25 +138,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02076">2076</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>{</div>
-<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>    <a class="code hl_variable" href="classitem_1_1craft__data.html#a45b916bcb1f936a67e86dea2464790ed">making</a> = &amp;<a class="code hl_typedef" href="type__id_8h.html#a7d1934ae1f3ab6bea8bd75f88070482d">recipe_id</a>( obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;making&quot;</span> ) ).<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();</div>
-<div class="line"><a id="l02080" name="l02080"></a><span class="lineno"> 2080</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;comps_used&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a3eda71747b45f004b30d9517d1070644">comps_used</a> );</div>
-<div class="line"><a id="l02081" name="l02081"></a><span class="lineno"> 2081</span>    <a class="code hl_variable" href="classitem_1_1craft__data.html#a94d9590e4be12fd60821af42dce20e9b">next_failure_point</a> = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;next_failure_point&quot;</span>, -1 );</div>
-<div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span>    <a class="code hl_variable" href="classitem_1_1craft__data.html#aa082fa5f08b35638560da4a22fe4ffe5">tools_to_continue</a> = obj.<a class="code hl_function" href="classJsonObject.html#a9e628525564a9e7ef3755c10e0c9fac4">get_bool</a>( <span class="stringliteral">&quot;tools_to_continue&quot;</span>, <span class="keyword">false</span> );</div>
-<div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;cached_tool_selections&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a052f2a8ec4c4246da768b04e456251b2">cached_tool_selections</a> );</div>
-<div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02086">2086</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02087" name="l02087"></a><span class="lineno"> 2087</span>{</div>
+<div class="line"><a id="l02088" name="l02088"></a><span class="lineno"> 2088</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l02089" name="l02089"></a><span class="lineno"> 2089</span>    <a class="code hl_variable" href="classitem_1_1craft__data.html#a45b916bcb1f936a67e86dea2464790ed">making</a> = &amp;<a class="code hl_typedef" href="type__id_8h.html#a7d1934ae1f3ab6bea8bd75f88070482d">recipe_id</a>( obj.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;making&quot;</span> ) ).<a class="code hl_function" href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">obj</a>();</div>
+<div class="line"><a id="l02090" name="l02090"></a><span class="lineno"> 2090</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;comps_used&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a3eda71747b45f004b30d9517d1070644">comps_used</a> );</div>
+<div class="line"><a id="l02091" name="l02091"></a><span class="lineno"> 2091</span>    <a class="code hl_variable" href="classitem_1_1craft__data.html#a94d9590e4be12fd60821af42dce20e9b">next_failure_point</a> = obj.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;next_failure_point&quot;</span>, -1 );</div>
+<div class="line"><a id="l02092" name="l02092"></a><span class="lineno"> 2092</span>    <a class="code hl_variable" href="classitem_1_1craft__data.html#aa082fa5f08b35638560da4a22fe4ffe5">tools_to_continue</a> = obj.<a class="code hl_function" href="classJsonObject.html#a9e628525564a9e7ef3755c10e0c9fac4">get_bool</a>( <span class="stringliteral">&quot;tools_to_continue&quot;</span>, <span class="keyword">false</span> );</div>
+<div class="line"><a id="l02093" name="l02093"></a><span class="lineno"> 2093</span>    obj.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;cached_tool_selections&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a052f2a8ec4c4246da768b04e456251b2">cached_tool_selections</a> );</div>
+<div class="line"><a id="l02094" name="l02094"></a><span class="lineno"> 2094</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00382">json.cpp:382</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a99e64f59bc5e72e7572125064b68da29"><div class="ttname"><a href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">JsonObject::get_int</a></div><div class="ttdeci">int get_int(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00350">json.cpp:350</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a9e628525564a9e7ef3755c10e0c9fac4"><div class="ttname"><a href="classJsonObject.html#a9e628525564a9e7ef3755c10e0c9fac4">JsonObject::get_bool</a></div><div class="ttdeci">bool get_bool(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00334">json.cpp:334</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00151">json.cpp:151</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00941">json.h:941</a></div></div>
-<div class="ttc" id="aclassitem_1_1craft__data_html_a052f2a8ec4c4246da768b04e456251b2"><div class="ttname"><a href="classitem_1_1craft__data.html#a052f2a8ec4c4246da768b04e456251b2">item::craft_data::cached_tool_selections</a></div><div class="ttdeci">std::vector&lt; comp_selection&lt; tool_comp &gt; &gt; cached_tool_selections</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02184">item.h:2184</a></div></div>
-<div class="ttc" id="aclassitem_1_1craft__data_html_a3eda71747b45f004b30d9517d1070644"><div class="ttname"><a href="classitem_1_1craft__data.html#a3eda71747b45f004b30d9517d1070644">item::craft_data::comps_used</a></div><div class="ttdeci">std::vector&lt; item_comp &gt; comps_used</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02181">item.h:2181</a></div></div>
-<div class="ttc" id="aclassitem_1_1craft__data_html_a45b916bcb1f936a67e86dea2464790ed"><div class="ttname"><a href="classitem_1_1craft__data.html#a45b916bcb1f936a67e86dea2464790ed">item::craft_data::making</a></div><div class="ttdeci">const recipe * making</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02179">item.h:2179</a></div></div>
-<div class="ttc" id="aclassitem_1_1craft__data_html_a94d9590e4be12fd60821af42dce20e9b"><div class="ttname"><a href="classitem_1_1craft__data.html#a94d9590e4be12fd60821af42dce20e9b">item::craft_data::next_failure_point</a></div><div class="ttdeci">int next_failure_point</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02180">item.h:2180</a></div></div>
-<div class="ttc" id="aclassitem_1_1craft__data_html_aa082fa5f08b35638560da4a22fe4ffe5"><div class="ttname"><a href="classitem_1_1craft__data.html#aa082fa5f08b35638560da4a22fe4ffe5">item::craft_data::tools_to_continue</a></div><div class="ttdeci">bool tools_to_continue</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02183">item.h:2183</a></div></div>
+<div class="ttc" id="aclassitem_1_1craft__data_html_a052f2a8ec4c4246da768b04e456251b2"><div class="ttname"><a href="classitem_1_1craft__data.html#a052f2a8ec4c4246da768b04e456251b2">item::craft_data::cached_tool_selections</a></div><div class="ttdeci">std::vector&lt; comp_selection&lt; tool_comp &gt; &gt; cached_tool_selections</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02187">item.h:2187</a></div></div>
+<div class="ttc" id="aclassitem_1_1craft__data_html_a3eda71747b45f004b30d9517d1070644"><div class="ttname"><a href="classitem_1_1craft__data.html#a3eda71747b45f004b30d9517d1070644">item::craft_data::comps_used</a></div><div class="ttdeci">std::vector&lt; item_comp &gt; comps_used</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02184">item.h:2184</a></div></div>
+<div class="ttc" id="aclassitem_1_1craft__data_html_a45b916bcb1f936a67e86dea2464790ed"><div class="ttname"><a href="classitem_1_1craft__data.html#a45b916bcb1f936a67e86dea2464790ed">item::craft_data::making</a></div><div class="ttdeci">const recipe * making</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02182">item.h:2182</a></div></div>
+<div class="ttc" id="aclassitem_1_1craft__data_html_a94d9590e4be12fd60821af42dce20e9b"><div class="ttname"><a href="classitem_1_1craft__data.html#a94d9590e4be12fd60821af42dce20e9b">item::craft_data::next_failure_point</a></div><div class="ttdeci">int next_failure_point</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02183">item.h:2183</a></div></div>
+<div class="ttc" id="aclassitem_1_1craft__data_html_aa082fa5f08b35638560da4a22fe4ffe5"><div class="ttname"><a href="classitem_1_1craft__data.html#aa082fa5f08b35638560da4a22fe4ffe5">item::craft_data::tools_to_continue</a></div><div class="ttdeci">bool tools_to_continue</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02186">item.h:2186</a></div></div>
 <div class="ttc" id="aclassstring__id_html_a4796245d3cd6e0283670698a98d46ae9"><div class="ttname"><a href="classstring__id.html#a4796245d3cd6e0283670698a98d46ae9">string_id::obj</a></div><div class="ttdeci">const T &amp; obj() const</div><div class="ttdoc">Returns the actual object this id refers to.</div><div class="ttdef"><b>Definition:</b> <a href="achievement_8cpp_source.html#l00060">achievement.cpp:60</a></div></div>
 <div class="ttc" id="atype__id_8h_html_a7d1934ae1f3ab6bea8bd75f88070482d"><div class="ttname"><a href="type__id_8h.html#a7d1934ae1f3ab6bea8bd75f88070482d">recipe_id</a></div><div class="ttdeci">string_id&lt; recipe &gt; recipe_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00143">type_id.h:143</a></div></div>
 </div><!-- fragment -->
@@ -180,14 +180,14 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02071">2071</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span>{</div>
-<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>    <a class="code hl_function" href="classitem_1_1craft__data.html#a18c3115320431e3555a889d4aac0b3cb">deserialize</a>( jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>() );</div>
-<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02081">2081</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02082" name="l02082"></a><span class="lineno"> 2082</span>{</div>
+<div class="line"><a id="l02083" name="l02083"></a><span class="lineno"> 2083</span>    <a class="code hl_function" href="classitem_1_1craft__data.html#a18c3115320431e3555a889d4aac0b3cb">deserialize</a>( jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>() );</div>
+<div class="line"><a id="l02084" name="l02084"></a><span class="lineno"> 2084</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
-<div class="ttc" id="aclassitem_1_1craft__data_html_a18c3115320431e3555a889d4aac0b3cb"><div class="ttname"><a href="classitem_1_1craft__data.html#a18c3115320431e3555a889d4aac0b3cb">item::craft_data::deserialize</a></div><div class="ttdeci">void deserialize(JsonIn &amp;jsin)</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l02071">savegame_json.cpp:2071</a></div></div>
+<div class="ttc" id="aclassitem_1_1craft__data_html_a18c3115320431e3555a889d4aac0b3cb"><div class="ttname"><a href="classitem_1_1craft__data.html#a18c3115320431e3555a889d4aac0b3cb">item::craft_data::deserialize</a></div><div class="ttdeci">void deserialize(JsonIn &amp;jsin)</div><div class="ttdef"><b>Definition:</b> <a href="savegame__json_8cpp_source.html#l02081">savegame_json.cpp:2081</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="savegame__json_8cpp_source.html#l02357">item::deserialize()</a>, and <a class="el" href="json_8cpp_source.html#l01432">JsonIn::get_object()</a>.</p>
+<p class="reference">References <a class="el" href="savegame__json_8cpp_source.html#l02367">item::deserialize()</a>, and <a class="el" href="json_8cpp_source.html#l01432">JsonIn::get_object()</a>.</p>
 
 </div>
 </div>
@@ -207,23 +207,23 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02060">2060</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02061" name="l02061"></a><span class="lineno"> 2061</span>{</div>
-<div class="line"><a id="l02062" name="l02062"></a><span class="lineno"> 2062</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l02063" name="l02063"></a><span class="lineno"> 2063</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;making&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a45b916bcb1f936a67e86dea2464790ed">making</a>-&gt;<a class="code hl_function" href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">ident</a>().<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() );</div>
-<div class="line"><a id="l02064" name="l02064"></a><span class="lineno"> 2064</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;comps_used&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a3eda71747b45f004b30d9517d1070644">comps_used</a> );</div>
-<div class="line"><a id="l02065" name="l02065"></a><span class="lineno"> 2065</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;next_failure_point&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a94d9590e4be12fd60821af42dce20e9b">next_failure_point</a> );</div>
-<div class="line"><a id="l02066" name="l02066"></a><span class="lineno"> 2066</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;tools_to_continue&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#aa082fa5f08b35638560da4a22fe4ffe5">tools_to_continue</a> );</div>
-<div class="line"><a id="l02067" name="l02067"></a><span class="lineno"> 2067</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;cached_tool_selections&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a052f2a8ec4c4246da768b04e456251b2">cached_tool_selections</a> );</div>
-<div class="line"><a id="l02068" name="l02068"></a><span class="lineno"> 2068</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l02069" name="l02069"></a><span class="lineno"> 2069</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02070">2070</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02071" name="l02071"></a><span class="lineno"> 2071</span>{</div>
+<div class="line"><a id="l02072" name="l02072"></a><span class="lineno"> 2072</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l02073" name="l02073"></a><span class="lineno"> 2073</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;making&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a45b916bcb1f936a67e86dea2464790ed">making</a>-&gt;<a class="code hl_function" href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">ident</a>().<a class="code hl_function" href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">str</a>() );</div>
+<div class="line"><a id="l02074" name="l02074"></a><span class="lineno"> 2074</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;comps_used&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a3eda71747b45f004b30d9517d1070644">comps_used</a> );</div>
+<div class="line"><a id="l02075" name="l02075"></a><span class="lineno"> 2075</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;next_failure_point&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a94d9590e4be12fd60821af42dce20e9b">next_failure_point</a> );</div>
+<div class="line"><a id="l02076" name="l02076"></a><span class="lineno"> 2076</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;tools_to_continue&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#aa082fa5f08b35638560da4a22fe4ffe5">tools_to_continue</a> );</div>
+<div class="line"><a id="l02077" name="l02077"></a><span class="lineno"> 2077</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;cached_tool_selections&quot;</span>, <a class="code hl_variable" href="classitem_1_1craft__data.html#a052f2a8ec4c4246da768b04e456251b2">cached_tool_selections</a> );</div>
+<div class="line"><a id="l02078" name="l02078"></a><span class="lineno"> 2078</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l02079" name="l02079"></a><span class="lineno"> 2079</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
 <div class="ttc" id="aclassrecipe_html_a5f1fa30e49785a8c16c4f5951d039afb"><div class="ttname"><a href="classrecipe.html#a5f1fa30e49785a8c16c4f5951d039afb">recipe::ident</a></div><div class="ttdeci">const recipe_id &amp; ident() const</div><div class="ttdef"><b>Definition:</b> <a href="recipe_8h_source.html#l00077">recipe.h:77</a></div></div>
 <div class="ttc" id="aclassstring__id_html_aa7dabc565f0c067e1a237ea224b18f93"><div class="ttname"><a href="classstring__id.html#aa7dabc565f0c067e1a237ea224b18f93">string_id::str</a></div><div class="ttdeci">const std::string &amp; str() const</div><div class="ttdoc">Returns the identifier as plain std::string.</div><div class="ttdef"><b>Definition:</b> <a href="string__id_8h_source.html#l00255">string_id.h:255</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8h_source.html#l02184">cached_tool_selections</a>, <a class="el" href="item_8h_source.html#l02181">comps_used</a>, <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="recipe_8h_source.html#l00077">recipe::ident()</a>, <a class="el" href="item_8h_source.html#l02179">making</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="item_8h_source.html#l02180">next_failure_point</a>, <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>, <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::str()</a>, and <a class="el" href="item_8h_source.html#l02183">tools_to_continue</a>.</p>
+<p class="reference">References <a class="el" href="item_8h_source.html#l02187">cached_tool_selections</a>, <a class="el" href="item_8h_source.html#l02184">comps_used</a>, <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="recipe_8h_source.html#l00077">recipe::ident()</a>, <a class="el" href="item_8h_source.html#l02182">making</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="item_8h_source.html#l02183">next_failure_point</a>, <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>, <a class="el" href="string__id_8h_source.html#l00255">string_id&lt; T &gt;::str()</a>, and <a class="el" href="item_8h_source.html#l02186">tools_to_continue</a>.</p>
 
 </div>
 </div>
@@ -240,9 +240,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02184">2184</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02187">2187</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02060">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02070">serialize()</a>.</p>
 
 </div>
 </div>
@@ -258,9 +258,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02181">2181</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02184">2184</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02060">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02070">serialize()</a>.</p>
 
 </div>
 </div>
@@ -276,9 +276,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02179">2179</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02182">2182</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02060">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02070">serialize()</a>.</p>
 
 </div>
 </div>
@@ -294,9 +294,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02180">2180</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02183">2183</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02060">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02070">serialize()</a>.</p>
 
 </div>
 </div>
@@ -312,9 +312,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02183">2183</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l02186">2186</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02060">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="savegame__json_8cpp_source.html#l02070">serialize()</a>.</p>
 
 </div>
 </div>
@@ -328,7 +328,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classitem.html">item</a></li><li class="navelem"><a class="el" href="classitem_1_1craft__data.html">craft_data</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

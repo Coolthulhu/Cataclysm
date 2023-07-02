@@ -161,7 +161,7 @@ Public Attributes</h2></td></tr>
 <p >Contains the value of one property of an item, as well as various metadata items required to output that value. This is used primarily for user output of information about an item, for example in the various inventory menus. See <a class="el" href="classitem.html#a59b179750453eefd9d4c66bf8261a3f6">item::info()</a> for the main example of how a class desiring to provide user output might obtain a class of this type.</p>
 <p >As an example, if the item being queried was a piece of clothing, then several properties might be returned. All would have sType "ARMOR". There would be one for the coverage stat with sName "Coverage: ", another for the warmth stat with sName "Warmth: ", etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00108">108</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00107">107</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a52b3543e16cce6f69f2e5cdb021c1e16" name="a52b3543e16cce6f69f2e5cdb021c1e16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52b3543e16cce6f69f2e5cdb021c1e16">&#9670;&nbsp;</a></span>flags</h2>
@@ -190,23 +190,23 @@ Public Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00143">143</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
-<div class="fragment"><div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                   {</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3">no_flags</a> = 0,</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698">is_decimal</a> = 1 &lt;&lt; 0, <span class="comment">///&lt; Print as decimal rather than integer</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">is_three_decimal</a> = 1 &lt;&lt; 1, <span class="comment">///&lt; Print as decimal with three points of precision</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890">no_newline</a> = 1 &lt;&lt; 2, <span class="comment">///&lt; Do not follow with a newline</span></div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801">lower_is_better</a> = 1 &lt;&lt; 3, <span class="comment">///&lt; Lower values are better for this stat</span></div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa">no_name</a> = 1 &lt;&lt; 4, <span class="comment">///&lt; Do not print the name</span></div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5">show_plus</a> = 1 &lt;&lt; 5, <span class="comment">///&lt; Use a + sign for positive values</span></div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        };</div>
-<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3">iteminfo::no_flags</a></div><div class="ttdeci">@ no_flags</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00144">item.h:144</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890">iteminfo::no_newline</a></div><div class="ttdeci">@ no_newline</div><div class="ttdoc">Do not follow with a newline.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00147">item.h:147</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698">iteminfo::is_decimal</a></div><div class="ttdeci">@ is_decimal</div><div class="ttdoc">Print as decimal rather than integer.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00145">item.h:145</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5">iteminfo::show_plus</a></div><div class="ttdeci">@ show_plus</div><div class="ttdoc">Use a + sign for positive values.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00150">item.h:150</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">iteminfo::is_three_decimal</a></div><div class="ttdeci">@ is_three_decimal</div><div class="ttdoc">Print as decimal with three points of precision.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00146">item.h:146</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801">iteminfo::lower_is_better</a></div><div class="ttdeci">@ lower_is_better</div><div class="ttdoc">Lower values are better for this stat.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00148">item.h:148</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa">iteminfo::no_name</a></div><div class="ttdeci">@ no_name</div><div class="ttdoc">Do not print the name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00149">item.h:149</a></div></div>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00142">142</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<div class="fragment"><div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                   {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3">no_flags</a> = 0,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698">is_decimal</a> = 1 &lt;&lt; 0, <span class="comment">///&lt; Print as decimal rather than integer</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">is_three_decimal</a> = 1 &lt;&lt; 1, <span class="comment">///&lt; Print as decimal with three points of precision</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890">no_newline</a> = 1 &lt;&lt; 2, <span class="comment">///&lt; Do not follow with a newline</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801">lower_is_better</a> = 1 &lt;&lt; 3, <span class="comment">///&lt; Lower values are better for this stat</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa">no_name</a> = 1 &lt;&lt; 4, <span class="comment">///&lt; Do not print the name</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>            <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5">show_plus</a> = 1 &lt;&lt; 5, <span class="comment">///&lt; Use a + sign for positive values</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        };</div>
+<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3">iteminfo::no_flags</a></div><div class="ttdeci">@ no_flags</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00143">item.h:143</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890">iteminfo::no_newline</a></div><div class="ttdeci">@ no_newline</div><div class="ttdoc">Do not follow with a newline.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00146">item.h:146</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698">iteminfo::is_decimal</a></div><div class="ttdeci">@ is_decimal</div><div class="ttdoc">Print as decimal rather than integer.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00144">item.h:144</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5">iteminfo::show_plus</a></div><div class="ttdeci">@ show_plus</div><div class="ttdoc">Use a + sign for positive values.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00149">item.h:149</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">iteminfo::is_three_decimal</a></div><div class="ttdeci">@ is_three_decimal</div><div class="ttdoc">Print as decimal with three points of precision.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00145">item.h:145</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801">iteminfo::lower_is_better</a></div><div class="ttdeci">@ lower_is_better</div><div class="ttdoc">Lower values are better for this stat.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00147">item.h:147</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa"><div class="ttname"><a href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa">iteminfo::no_name</a></div><div class="ttdeci">@ no_name</div><div class="ttdoc">Do not print the name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00148">item.h:148</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -265,48 +265,48 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="item_8cpp_source.html#l08696">8696</a> of file <a class="el" href="item_8cpp_source.html">item.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l08698" name="l08698"></a><span class="lineno"> 8698</span>{</div>
-<div class="line"><a id="l08699" name="l08699"></a><span class="lineno"> 8699</span>    <a class="code hl_variable" href="structiteminfo.html#a2ea894a0db6894975592baf5a3c8289b">sType</a> = Type;</div>
-<div class="line"><a id="l08700" name="l08700"></a><span class="lineno"> 8700</span>    <a class="code hl_variable" href="structiteminfo.html#a7f6c25802ea562031e5ffbfb998a0686">sName</a> = <a class="code hl_function" href="string__utils_8cpp.html#a813ac4bd0ac2745dfe41d13adf98996f">replace_colors</a>( <a class="code hl_namespace" href="namespaceName.html">Name</a> );</div>
-<div class="line"><a id="l08701" name="l08701"></a><span class="lineno"> 8701</span>    <a class="code hl_variable" href="structiteminfo.html#ab85666284bdac5599ffd8c19391b1be5">sFmt</a> = <a class="code hl_function" href="string__utils_8cpp.html#a813ac4bd0ac2745dfe41d13adf98996f">replace_colors</a>( Fmt );</div>
-<div class="line"><a id="l08702" name="l08702"></a><span class="lineno"> 8702</span>    <a class="code hl_variable" href="structiteminfo.html#a418a277b5fa7b32389e980c2332b80ac">is_int</a> = !( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698">is_decimal</a> || Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">is_three_decimal</a> );</div>
-<div class="line"><a id="l08703" name="l08703"></a><span class="lineno"> 8703</span>    <a class="code hl_variable" href="structiteminfo.html#aed2f130ae24c9ee1e2649196352fb782">three_decimal</a> = ( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">is_three_decimal</a> );</div>
-<div class="line"><a id="l08704" name="l08704"></a><span class="lineno"> 8704</span>    <a class="code hl_variable" href="structiteminfo.html#ad5598af53ee36fb5de533be3f12f74f9">dValue</a> = Value;</div>
-<div class="line"><a id="l08705" name="l08705"></a><span class="lineno"> 8705</span>    <a class="code hl_variable" href="structiteminfo.html#ae3c25a7898858865e4fb8d4a269c1856">bShowPlus</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5">show_plus</a> );</div>
-<div class="line"><a id="l08706" name="l08706"></a><span class="lineno"> 8706</span>    std::stringstream <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a>;</div>
-<div class="line"><a id="l08707" name="l08707"></a><span class="lineno"> 8707</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structiteminfo.html#ae3c25a7898858865e4fb8d4a269c1856">bShowPlus</a> ) {</div>
-<div class="line"><a id="l08708" name="l08708"></a><span class="lineno"> 8708</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::showpos;</div>
-<div class="line"><a id="l08709" name="l08709"></a><span class="lineno"> 8709</span>    }</div>
-<div class="line"><a id="l08710" name="l08710"></a><span class="lineno"> 8710</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structiteminfo.html#a418a277b5fa7b32389e980c2332b80ac">is_int</a> ) {</div>
-<div class="line"><a id="l08711" name="l08711"></a><span class="lineno"> 8711</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::setprecision( 0 );</div>
-<div class="line"><a id="l08712" name="l08712"></a><span class="lineno"> 8712</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_variable" href="structiteminfo.html#aed2f130ae24c9ee1e2649196352fb782">three_decimal</a> ) {</div>
-<div class="line"><a id="l08713" name="l08713"></a><span class="lineno"> 8713</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::setprecision( 3 );</div>
-<div class="line"><a id="l08714" name="l08714"></a><span class="lineno"> 8714</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l08715" name="l08715"></a><span class="lineno"> 8715</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::setprecision( 2 );</div>
-<div class="line"><a id="l08716" name="l08716"></a><span class="lineno"> 8716</span>    }</div>
-<div class="line"><a id="l08717" name="l08717"></a><span class="lineno"> 8717</span>    <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::fixed &lt;&lt; Value;</div>
-<div class="line"><a id="l08718" name="l08718"></a><span class="lineno"> 8718</span>    <a class="code hl_variable" href="structiteminfo.html#a4af089d1ce07dd2730196fd033d4d995">sValue</a> = <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a>.str();</div>
-<div class="line"><a id="l08719" name="l08719"></a><span class="lineno"> 8719</span>    <a class="code hl_variable" href="structiteminfo.html#a08df1fc0d74c7025b1b8d8417a7649d2">bNewLine</a> = !( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890">no_newline</a> );</div>
-<div class="line"><a id="l08720" name="l08720"></a><span class="lineno"> 8720</span>    <a class="code hl_variable" href="structiteminfo.html#a3548ec5e2cad86363f4f81a23739f62b">bLowerIsBetter</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801">lower_is_better</a> );</div>
-<div class="line"><a id="l08721" name="l08721"></a><span class="lineno"> 8721</span>    <a class="code hl_variable" href="structiteminfo.html#ac432b73c5315b2b20965b8131fee7878">bDrawName</a> = !( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa">no_name</a> );</div>
-<div class="line"><a id="l08722" name="l08722"></a><span class="lineno"> 8722</span>}</div>
+<p class="definition">Definition at line <a class="el" href="item_8cpp_source.html#l08717">8717</a> of file <a class="el" href="item_8cpp_source.html">item.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l08719" name="l08719"></a><span class="lineno"> 8719</span>{</div>
+<div class="line"><a id="l08720" name="l08720"></a><span class="lineno"> 8720</span>    <a class="code hl_variable" href="structiteminfo.html#a2ea894a0db6894975592baf5a3c8289b">sType</a> = Type;</div>
+<div class="line"><a id="l08721" name="l08721"></a><span class="lineno"> 8721</span>    <a class="code hl_variable" href="structiteminfo.html#a7f6c25802ea562031e5ffbfb998a0686">sName</a> = <a class="code hl_function" href="string__utils_8cpp.html#a813ac4bd0ac2745dfe41d13adf98996f">replace_colors</a>( <a class="code hl_namespace" href="namespaceName.html">Name</a> );</div>
+<div class="line"><a id="l08722" name="l08722"></a><span class="lineno"> 8722</span>    <a class="code hl_variable" href="structiteminfo.html#ab85666284bdac5599ffd8c19391b1be5">sFmt</a> = <a class="code hl_function" href="string__utils_8cpp.html#a813ac4bd0ac2745dfe41d13adf98996f">replace_colors</a>( Fmt );</div>
+<div class="line"><a id="l08723" name="l08723"></a><span class="lineno"> 8723</span>    <a class="code hl_variable" href="structiteminfo.html#a418a277b5fa7b32389e980c2332b80ac">is_int</a> = !( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a3d47ad00c6b1394cba5781ae07ae6698">is_decimal</a> || Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">is_three_decimal</a> );</div>
+<div class="line"><a id="l08724" name="l08724"></a><span class="lineno"> 8724</span>    <a class="code hl_variable" href="structiteminfo.html#aed2f130ae24c9ee1e2649196352fb782">three_decimal</a> = ( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a9b7dcf09984fe1ac347060606e3d5851">is_three_decimal</a> );</div>
+<div class="line"><a id="l08725" name="l08725"></a><span class="lineno"> 8725</span>    <a class="code hl_variable" href="structiteminfo.html#ad5598af53ee36fb5de533be3f12f74f9">dValue</a> = Value;</div>
+<div class="line"><a id="l08726" name="l08726"></a><span class="lineno"> 8726</span>    <a class="code hl_variable" href="structiteminfo.html#ae3c25a7898858865e4fb8d4a269c1856">bShowPlus</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a711e564f20b0271cab7a85e1ab115cf5">show_plus</a> );</div>
+<div class="line"><a id="l08727" name="l08727"></a><span class="lineno"> 8727</span>    std::stringstream <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a>;</div>
+<div class="line"><a id="l08728" name="l08728"></a><span class="lineno"> 8728</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structiteminfo.html#ae3c25a7898858865e4fb8d4a269c1856">bShowPlus</a> ) {</div>
+<div class="line"><a id="l08729" name="l08729"></a><span class="lineno"> 8729</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::showpos;</div>
+<div class="line"><a id="l08730" name="l08730"></a><span class="lineno"> 8730</span>    }</div>
+<div class="line"><a id="l08731" name="l08731"></a><span class="lineno"> 8731</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structiteminfo.html#a418a277b5fa7b32389e980c2332b80ac">is_int</a> ) {</div>
+<div class="line"><a id="l08732" name="l08732"></a><span class="lineno"> 8732</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::setprecision( 0 );</div>
+<div class="line"><a id="l08733" name="l08733"></a><span class="lineno"> 8733</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( <a class="code hl_variable" href="structiteminfo.html#aed2f130ae24c9ee1e2649196352fb782">three_decimal</a> ) {</div>
+<div class="line"><a id="l08734" name="l08734"></a><span class="lineno"> 8734</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::setprecision( 3 );</div>
+<div class="line"><a id="l08735" name="l08735"></a><span class="lineno"> 8735</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l08736" name="l08736"></a><span class="lineno"> 8736</span>        <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::setprecision( 2 );</div>
+<div class="line"><a id="l08737" name="l08737"></a><span class="lineno"> 8737</span>    }</div>
+<div class="line"><a id="l08738" name="l08738"></a><span class="lineno"> 8738</span>    <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a> &lt;&lt; std::fixed &lt;&lt; Value;</div>
+<div class="line"><a id="l08739" name="l08739"></a><span class="lineno"> 8739</span>    <a class="code hl_variable" href="structiteminfo.html#a4af089d1ce07dd2730196fd033d4d995">sValue</a> = <a class="code hl_function" href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">convert</a>.str();</div>
+<div class="line"><a id="l08740" name="l08740"></a><span class="lineno"> 8740</span>    <a class="code hl_variable" href="structiteminfo.html#a08df1fc0d74c7025b1b8d8417a7649d2">bNewLine</a> = !( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a340086fad9f573d5b79675a99335e890">no_newline</a> );</div>
+<div class="line"><a id="l08741" name="l08741"></a><span class="lineno"> 8741</span>    <a class="code hl_variable" href="structiteminfo.html#a3548ec5e2cad86363f4f81a23739f62b">bLowerIsBetter</a> = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16aba076bfbbc0221d2216b5f699d66b801">lower_is_better</a> );</div>
+<div class="line"><a id="l08742" name="l08742"></a><span class="lineno"> 8742</span>    <a class="code hl_variable" href="structiteminfo.html#ac432b73c5315b2b20965b8131fee7878">bDrawName</a> = !( Flags &amp; <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16acd4efabc933c1eb5ed469082a5eacaaa">no_name</a> );</div>
+<div class="line"><a id="l08743" name="l08743"></a><span class="lineno"> 8743</span>}</div>
 <div class="ttc" id="agroup__string__formatter__convert_html_gaf6c1b09e9154ca0f0018624028929df5"><div class="ttname"><a href="group__string__formatter__convert.html#gaf6c1b09e9154ca0f0018624028929df5">cata::convert</a></div><div class="ttdeci">std::enable_if&lt; is_integer&lt; RT &gt;::value &amp;&amp;is_integer&lt; T &gt;::value, RT &gt;::type convert(RT *, const string_formatter &amp;, T &amp;&amp;value, int)</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00097">string_formatter.h:97</a></div></div>
 <div class="ttc" id="anamespaceName_html"><div class="ttname"><a href="namespaceName.html">Name</a></div><div class="ttdef"><b>Definition:</b> <a href="name_8cpp_source.html#l00016">name.cpp:17</a></div></div>
-<div class="ttc" id="astring__utils_8cpp_html_a813ac4bd0ac2745dfe41d13adf98996f"><div class="ttname"><a href="string__utils_8cpp.html#a813ac4bd0ac2745dfe41d13adf98996f">replace_colors</a></div><div class="ttdeci">std::string replace_colors(std::string text)</div><div class="ttdoc">Replace special color tags (e.g.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00312">string_utils.cpp:312</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a08df1fc0d74c7025b1b8d8417a7649d2"><div class="ttname"><a href="structiteminfo.html#a08df1fc0d74c7025b1b8d8417a7649d2">iteminfo::bNewLine</a></div><div class="ttdeci">bool bNewLine</div><div class="ttdoc">Flag indicating whether a newline should be printed after printing this item.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00129">item.h:129</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a2ea894a0db6894975592baf5a3c8289b"><div class="ttname"><a href="structiteminfo.html#a2ea894a0db6894975592baf5a3c8289b">iteminfo::sType</a></div><div class="ttdeci">std::string sType</div><div class="ttdoc">Category of item that owns this iteminfo.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00111">item.h:111</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a3548ec5e2cad86363f4f81a23739f62b"><div class="ttname"><a href="structiteminfo.html#a3548ec5e2cad86363f4f81a23739f62b">iteminfo::bLowerIsBetter</a></div><div class="ttdeci">bool bLowerIsBetter</div><div class="ttdoc">Reverses behavior of red/green text coloring; smaller values are green if true.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00132">item.h:132</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a418a277b5fa7b32389e980c2332b80ac"><div class="ttname"><a href="structiteminfo.html#a418a277b5fa7b32389e980c2332b80ac">iteminfo::is_int</a></div><div class="ttdeci">bool is_int</div><div class="ttdoc">Flag indicating type of sValue.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00126">item.h:126</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a4af089d1ce07dd2730196fd033d4d995"><div class="ttname"><a href="structiteminfo.html#a4af089d1ce07dd2730196fd033d4d995">iteminfo::sValue</a></div><div class="ttdeci">std::string sValue</div><div class="ttdoc">Numerical value of this property.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00120">item.h:120</a></div></div>
-<div class="ttc" id="astructiteminfo_html_a7f6c25802ea562031e5ffbfb998a0686"><div class="ttname"><a href="structiteminfo.html#a7f6c25802ea562031e5ffbfb998a0686">iteminfo::sName</a></div><div class="ttdeci">std::string sName</div><div class="ttdoc">Main text of this property's name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00114">item.h:114</a></div></div>
-<div class="ttc" id="astructiteminfo_html_ab85666284bdac5599ffd8c19391b1be5"><div class="ttname"><a href="structiteminfo.html#ab85666284bdac5599ffd8c19391b1be5">iteminfo::sFmt</a></div><div class="ttdeci">std::string sFmt</div><div class="ttdoc">Formatting text to be placed between the name and value of this item.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00117">item.h:117</a></div></div>
-<div class="ttc" id="astructiteminfo_html_ac432b73c5315b2b20965b8131fee7878"><div class="ttname"><a href="structiteminfo.html#ac432b73c5315b2b20965b8131fee7878">iteminfo::bDrawName</a></div><div class="ttdeci">bool bDrawName</div><div class="ttdoc">Whether to print sName.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00135">item.h:135</a></div></div>
-<div class="ttc" id="astructiteminfo_html_ad5598af53ee36fb5de533be3f12f74f9"><div class="ttname"><a href="structiteminfo.html#ad5598af53ee36fb5de533be3f12f74f9">iteminfo::dValue</a></div><div class="ttdeci">double dValue</div><div class="ttdoc">Internal double floating point version of value, for numerical comparisons.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00123">item.h:123</a></div></div>
-<div class="ttc" id="astructiteminfo_html_ae3c25a7898858865e4fb8d4a269c1856"><div class="ttname"><a href="structiteminfo.html#ae3c25a7898858865e4fb8d4a269c1856">iteminfo::bShowPlus</a></div><div class="ttdeci">bool bShowPlus</div><div class="ttdoc">Whether to print a sign on positive values.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00138">item.h:138</a></div></div>
-<div class="ttc" id="astructiteminfo_html_aed2f130ae24c9ee1e2649196352fb782"><div class="ttname"><a href="structiteminfo.html#aed2f130ae24c9ee1e2649196352fb782">iteminfo::three_decimal</a></div><div class="ttdeci">bool three_decimal</div><div class="ttdoc">Flag indicating decimal with three points of precision.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00141">item.h:141</a></div></div>
+<div class="ttc" id="astring__utils_8cpp_html_a813ac4bd0ac2745dfe41d13adf98996f"><div class="ttname"><a href="string__utils_8cpp.html#a813ac4bd0ac2745dfe41d13adf98996f">replace_colors</a></div><div class="ttdeci">std::string replace_colors(std::string text)</div><div class="ttdoc">Replace special color tags (e.g.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00315">string_utils.cpp:315</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a08df1fc0d74c7025b1b8d8417a7649d2"><div class="ttname"><a href="structiteminfo.html#a08df1fc0d74c7025b1b8d8417a7649d2">iteminfo::bNewLine</a></div><div class="ttdeci">bool bNewLine</div><div class="ttdoc">Flag indicating whether a newline should be printed after printing this item.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00128">item.h:128</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a2ea894a0db6894975592baf5a3c8289b"><div class="ttname"><a href="structiteminfo.html#a2ea894a0db6894975592baf5a3c8289b">iteminfo::sType</a></div><div class="ttdeci">std::string sType</div><div class="ttdoc">Category of item that owns this iteminfo.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00110">item.h:110</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a3548ec5e2cad86363f4f81a23739f62b"><div class="ttname"><a href="structiteminfo.html#a3548ec5e2cad86363f4f81a23739f62b">iteminfo::bLowerIsBetter</a></div><div class="ttdeci">bool bLowerIsBetter</div><div class="ttdoc">Reverses behavior of red/green text coloring; smaller values are green if true.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00131">item.h:131</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a418a277b5fa7b32389e980c2332b80ac"><div class="ttname"><a href="structiteminfo.html#a418a277b5fa7b32389e980c2332b80ac">iteminfo::is_int</a></div><div class="ttdeci">bool is_int</div><div class="ttdoc">Flag indicating type of sValue.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00125">item.h:125</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a4af089d1ce07dd2730196fd033d4d995"><div class="ttname"><a href="structiteminfo.html#a4af089d1ce07dd2730196fd033d4d995">iteminfo::sValue</a></div><div class="ttdeci">std::string sValue</div><div class="ttdoc">Numerical value of this property.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00119">item.h:119</a></div></div>
+<div class="ttc" id="astructiteminfo_html_a7f6c25802ea562031e5ffbfb998a0686"><div class="ttname"><a href="structiteminfo.html#a7f6c25802ea562031e5ffbfb998a0686">iteminfo::sName</a></div><div class="ttdeci">std::string sName</div><div class="ttdoc">Main text of this property's name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00113">item.h:113</a></div></div>
+<div class="ttc" id="astructiteminfo_html_ab85666284bdac5599ffd8c19391b1be5"><div class="ttname"><a href="structiteminfo.html#ab85666284bdac5599ffd8c19391b1be5">iteminfo::sFmt</a></div><div class="ttdeci">std::string sFmt</div><div class="ttdoc">Formatting text to be placed between the name and value of this item.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00116">item.h:116</a></div></div>
+<div class="ttc" id="astructiteminfo_html_ac432b73c5315b2b20965b8131fee7878"><div class="ttname"><a href="structiteminfo.html#ac432b73c5315b2b20965b8131fee7878">iteminfo::bDrawName</a></div><div class="ttdeci">bool bDrawName</div><div class="ttdoc">Whether to print sName.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00134">item.h:134</a></div></div>
+<div class="ttc" id="astructiteminfo_html_ad5598af53ee36fb5de533be3f12f74f9"><div class="ttname"><a href="structiteminfo.html#ad5598af53ee36fb5de533be3f12f74f9">iteminfo::dValue</a></div><div class="ttdeci">double dValue</div><div class="ttdoc">Internal double floating point version of value, for numerical comparisons.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00122">item.h:122</a></div></div>
+<div class="ttc" id="astructiteminfo_html_ae3c25a7898858865e4fb8d4a269c1856"><div class="ttname"><a href="structiteminfo.html#ae3c25a7898858865e4fb8d4a269c1856">iteminfo::bShowPlus</a></div><div class="ttdeci">bool bShowPlus</div><div class="ttdoc">Whether to print a sign on positive values.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00137">item.h:137</a></div></div>
+<div class="ttc" id="astructiteminfo_html_aed2f130ae24c9ee1e2649196352fb782"><div class="ttname"><a href="structiteminfo.html#aed2f130ae24c9ee1e2649196352fb782">iteminfo::three_decimal</a></div><div class="ttdeci">bool three_decimal</div><div class="ttdoc">Flag indicating decimal with three points of precision.</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00140">item.h:140</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8h_source.html#l00135">bDrawName</a>, <a class="el" href="item_8h_source.html#l00132">bLowerIsBetter</a>, <a class="el" href="item_8h_source.html#l00129">bNewLine</a>, <a class="el" href="item_8h_source.html#l00138">bShowPlus</a>, <a class="el" href="string__formatter_8h_source.html#l00097">cata::convert()</a>, <a class="el" href="item_8h_source.html#l00123">dValue</a>, <a class="el" href="item_8h_source.html#l00145">is_decimal</a>, <a class="el" href="item_8h_source.html#l00126">is_int</a>, <a class="el" href="item_8h_source.html#l00146">is_three_decimal</a>, <a class="el" href="item_8h_source.html#l00148">lower_is_better</a>, <a class="el" href="item_8h_source.html#l00149">no_name</a>, <a class="el" href="item_8h_source.html#l00147">no_newline</a>, <a class="el" href="string__utils_8cpp_source.html#l00312">replace_colors()</a>, <a class="el" href="item_8h_source.html#l00117">sFmt</a>, <a class="el" href="item_8h_source.html#l00150">show_plus</a>, <a class="el" href="item_8h_source.html#l00114">sName</a>, <a class="el" href="item_8h_source.html#l00111">sType</a>, <a class="el" href="item_8h_source.html#l00120">sValue</a>, and <a class="el" href="item_8h_source.html#l00141">three_decimal</a>.</p>
+<p class="reference">References <a class="el" href="item_8h_source.html#l00134">bDrawName</a>, <a class="el" href="item_8h_source.html#l00131">bLowerIsBetter</a>, <a class="el" href="item_8h_source.html#l00128">bNewLine</a>, <a class="el" href="item_8h_source.html#l00137">bShowPlus</a>, <a class="el" href="string__formatter_8h_source.html#l00097">cata::convert()</a>, <a class="el" href="item_8h_source.html#l00122">dValue</a>, <a class="el" href="item_8h_source.html#l00144">is_decimal</a>, <a class="el" href="item_8h_source.html#l00125">is_int</a>, <a class="el" href="item_8h_source.html#l00145">is_three_decimal</a>, <a class="el" href="item_8h_source.html#l00147">lower_is_better</a>, <a class="el" href="item_8h_source.html#l00148">no_name</a>, <a class="el" href="item_8h_source.html#l00146">no_newline</a>, <a class="el" href="string__utils_8cpp_source.html#l00315">replace_colors()</a>, <a class="el" href="item_8h_source.html#l00116">sFmt</a>, <a class="el" href="item_8h_source.html#l00149">show_plus</a>, <a class="el" href="item_8h_source.html#l00113">sName</a>, <a class="el" href="item_8h_source.html#l00110">sType</a>, <a class="el" href="item_8h_source.html#l00119">sValue</a>, and <a class="el" href="item_8h_source.html#l00140">three_decimal</a>.</p>
 
 </div>
 </div>
@@ -342,11 +342,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="item_8cpp_source.html#l08724">8724</a> of file <a class="el" href="item_8cpp_source.html">item.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l08725" name="l08725"></a><span class="lineno"> 8725</span>    : <a class="code hl_function" href="structiteminfo.html#a8ac438e68c259d85bce4bad7b0734dd1">iteminfo</a>( Type, <a class="code hl_namespace" href="namespaceName.html">Name</a>, <span class="stringliteral">&quot;&quot;</span>, <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3">no_flags</a>, Value )</div>
-<div class="line"><a id="l08726" name="l08726"></a><span class="lineno"> 8726</span>{</div>
-<div class="line"><a id="l08727" name="l08727"></a><span class="lineno"> 8727</span>}</div>
-<div class="ttc" id="astructiteminfo_html_a8ac438e68c259d85bce4bad7b0734dd1"><div class="ttname"><a href="structiteminfo.html#a8ac438e68c259d85bce4bad7b0734dd1">iteminfo::iteminfo</a></div><div class="ttdeci">iteminfo(const std::string &amp;Type, const std::string &amp;Name, const std::string &amp;Fmt=&quot;&quot;, flags Flags=no_flags, double Value=-999)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l08696">item.cpp:8696</a></div></div>
+<p class="definition">Definition at line <a class="el" href="item_8cpp_source.html#l08745">8745</a> of file <a class="el" href="item_8cpp_source.html">item.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l08746" name="l08746"></a><span class="lineno"> 8746</span>    : <a class="code hl_function" href="structiteminfo.html#a8ac438e68c259d85bce4bad7b0734dd1">iteminfo</a>( Type, <a class="code hl_namespace" href="namespaceName.html">Name</a>, <span class="stringliteral">&quot;&quot;</span>, <a class="code hl_enumvalue" href="structiteminfo.html#a52b3543e16cce6f69f2e5cdb021c1e16a17168a987307538a1f25fa97640471f3">no_flags</a>, Value )</div>
+<div class="line"><a id="l08747" name="l08747"></a><span class="lineno"> 8747</span>{</div>
+<div class="line"><a id="l08748" name="l08748"></a><span class="lineno"> 8748</span>}</div>
+<div class="ttc" id="astructiteminfo_html_a8ac438e68c259d85bce4bad7b0734dd1"><div class="ttname"><a href="structiteminfo.html#a8ac438e68c259d85bce4bad7b0734dd1">iteminfo::iteminfo</a></div><div class="ttdeci">iteminfo(const std::string &amp;Type, const std::string &amp;Name, const std::string &amp;Fmt=&quot;&quot;, flags Flags=no_flags, double Value=-999)</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l08717">item.cpp:8717</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -366,9 +366,9 @@ Public Attributes</h2></td></tr>
 <p>Whether to print sName. </p>
 <p >If false, use for comparisons but don't print for user. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00135">135</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00134">134</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -386,9 +386,9 @@ Public Attributes</h2></td></tr>
 
 <p>Reverses behavior of red/green text coloring; smaller values are green if true. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00132">132</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00131">131</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -406,9 +406,9 @@ Public Attributes</h2></td></tr>
 
 <p>Flag indicating whether a newline should be printed after printing this item. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00129">129</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00128">128</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -426,9 +426,9 @@ Public Attributes</h2></td></tr>
 
 <p>Whether to print a sign on positive values. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00138">138</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00137">137</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -446,9 +446,9 @@ Public Attributes</h2></td></tr>
 
 <p>Internal double floating point version of value, for numerical comparisons. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00123">123</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00122">122</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -467,9 +467,9 @@ Public Attributes</h2></td></tr>
 <p>Flag indicating type of sValue. </p>
 <p >True if integer, false if single decimal </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00126">126</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00125">125</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -487,9 +487,9 @@ Public Attributes</h2></td></tr>
 
 <p>Formatting text to be placed between the name and value of this item. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00117">117</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00116">116</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -507,9 +507,9 @@ Public Attributes</h2></td></tr>
 
 <p>Main text of this property's name. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00114">114</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00113">113</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -528,9 +528,9 @@ Public Attributes</h2></td></tr>
 <p>Category of item that owns this iteminfo. </p>
 <p >See <a class="el" href="classitem__category.html">item_category</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00111">111</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00110">110</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -549,9 +549,9 @@ Public Attributes</h2></td></tr>
 <p>Numerical value of this property. </p>
 <p >Set to -999 if no compare value is present </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00120">120</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00119">119</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -571,9 +571,9 @@ Public Attributes</h2></td></tr>
 <p ><br  />
  </p>
 
-<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00141">141</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="item_8h_source.html#l00140">140</a> of file <a class="el" href="item_8h_source.html">item.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08696">iteminfo()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l08717">iteminfo()</a>.</p>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structiteminfo.html">iteminfo</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

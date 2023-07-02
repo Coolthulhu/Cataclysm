@@ -17,8 +17,6 @@ var itype_8h =
     [ "fuel_explosion", "structfuel__explosion.html", "structfuel__explosion" ],
     [ "islot_fuel", "structislot__fuel.html", "structislot__fuel" ],
     [ "islot_gun", "structislot__gun.html", "structislot__gun" ],
-    [ "gun_type_type", "classgun__type__type.html", "classgun__type__type" ],
-    [ "std::hash< gun_type_type >", "structstd_1_1hash_3_01gun__type__type_01_4.html", "structstd_1_1hash_3_01gun__type__type_01_4" ],
     [ "islot_gunmod", "structislot__gunmod.html", "structislot__gunmod" ],
     [ "islot_magazine", "structislot__magazine.html", "structislot__magazine" ],
     [ "islot_battery", "structislot__battery.html", "structislot__battery" ],

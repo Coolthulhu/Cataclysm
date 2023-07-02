@@ -11,7 +11,6 @@ var namespacestd =
     [ "hash< coords::coord_point< Point, Origin, Scale > >", "structstd_1_1hash_3_01coords_1_1coord__point_3_01Point_00_01Origin_00_01Scale_01_4_01_4.html", "structstd_1_1hash_3_01coords_1_1coord__point_3_01Point_00_01Origin_00_01Scale_01_4_01_4" ],
     [ "hash< description_affix >", "structstd_1_1hash_3_01description__affix_01_4.html", "structstd_1_1hash_3_01description__affix_01_4" ],
     [ "hash< event_type >", "structstd_1_1hash_3_01event__type_01_4.html", "structstd_1_1hash_3_01event__type_01_4" ],
-    [ "hash< gun_type_type >", "structstd_1_1hash_3_01gun__type__type_01_4.html", "structstd_1_1hash_3_01gun__type__type_01_4" ],
     [ "hash< int_id< T > >", "structstd_1_1hash_3_01int__id_3_01T_01_4_01_4.html", "structstd_1_1hash_3_01int__id_3_01T_01_4_01_4" ],
     [ "hash< map_key >", "structstd_1_1hash_3_01map__key_01_4.html", "structstd_1_1hash_3_01map__key_01_4" ],
     [ "hash< nc_color >", "structstd_1_1hash_3_01nc__color_01_4.html", "structstd_1_1hash_3_01nc__color_01_4" ],

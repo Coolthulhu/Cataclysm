@@ -27,5 +27,6 @@ var classbodypart =
     [ "healed_total", "classbodypart.html#a35c33c3b839887686609819a4da457c3", null ],
     [ "hp_cur", "classbodypart.html#a07454526c99985415a334a07b96007ed", null ],
     [ "hp_max", "classbodypart.html#a8b368d2b531b11d5f4acd25fcd64841c", null ],
-    [ "id", "classbodypart.html#aecf68b9dedd93cad6660a8d332033168", null ]
+    [ "id", "classbodypart.html#aecf68b9dedd93cad6660a8d332033168", null ],
+    [ "wielding", "classbodypart.html#aabcc18ad428edd4685af03ebf7b65a79", null ]
 ];

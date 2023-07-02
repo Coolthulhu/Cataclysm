@@ -352,52 +352,52 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03428">3428</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03429" name="l03429"></a><span class="lineno"> 3429</span>{</div>
-<div class="line"><a id="l03430" name="l03430"></a><span class="lineno"> 3430</span>    <span class="keyword">const</span> std::string startdurability = fix-&gt;<a class="code hl_function" href="classitem.html#a80ef6d13a5545c5d32af710fedf717eb">durability_indicator</a>( <span class="keyword">true</span> );</div>
-<div class="line"><a id="l03431" name="l03431"></a><span class="lineno"> 3431</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_enumvalue" href="mutation_8h.html#a034ae5e964e0a02c1de845df8b031755aff9a344674366cee6d23a1e3bda6c176">destroyed</a> = fix-&gt;<a class="code hl_function" href="classitem.html#aca60af3c295738c2c1fddf0fd669f9a1">inc_damage</a>();</div>
-<div class="line"><a id="l03432" name="l03432"></a><span class="lineno"> 3432</span>    <span class="keyword">const</span> std::string resultdurability = fix-&gt;<a class="code hl_function" href="classitem.html#a80ef6d13a5545c5d32af710fedf717eb">durability_indicator</a>( <span class="keyword">true</span> );</div>
-<div class="line"><a id="l03433" name="l03433"></a><span class="lineno"> 3433</span>    pl.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You damage your %s!  ( %s-&gt; %s)&quot;</span> ), fix-&gt;<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>( 1, <span class="keyword">false</span> ),</div>
-<div class="line"><a id="l03434" name="l03434"></a><span class="lineno"> 3434</span>                          startdurability, resultdurability );</div>
-<div class="line"><a id="l03435" name="l03435"></a><span class="lineno"> 3435</span>    <span class="keywordflow">if</span>( destroyed ) {</div>
-<div class="line"><a id="l03436" name="l03436"></a><span class="lineno"> 3436</span>        pl.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You destroy it!&quot;</span> ) );</div>
-<div class="line"><a id="l03437" name="l03437"></a><span class="lineno"> 3437</span>        <span class="keywordflow">if</span>( fix.<a class="code hl_function" href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">where</a>() == <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888daa956161a69928cd130a889b88082fb6e">item_location::type::character</a> ) {</div>
-<div class="line"><a id="l03438" name="l03438"></a><span class="lineno"> 3438</span>            pl.<a class="code hl_function" href="classCharacter.html#a6d48b7ecc176e222e641cf4a2dd4d7cd">i_rem_keep_contents</a>( pl.<a class="code hl_function" href="classCharacter.html#a50ca774a69b5d6e12f7fba07434d9b35">get_item_position</a>( fix.<a class="code hl_function" href="classitem__location.html#a350bb267073f30205f780b394324a32c">get_item</a>() ) );</div>
-<div class="line"><a id="l03439" name="l03439"></a><span class="lineno"> 3439</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03440" name="l03440"></a><span class="lineno"> 3440</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> *it : fix-&gt;<a class="code hl_variable" href="classitem.html#a4afe851abb42cbff0857065860f96e0e">contents</a>.<a class="code hl_function" href="classitem__contents.html#a7f56c09b0d592bdc425a578d02b4b44d">all_items_top</a>() ) {</div>
-<div class="line"><a id="l03441" name="l03441"></a><span class="lineno"> 3441</span>                <a class="code hl_function" href="activity__handlers_8h.html#aaffe872a8e49c99b600d61b6e1b4062e">put_into_vehicle_or_drop</a>( pl, <a class="code hl_enumvalue" href="activity__handlers_8h.html#a3931cba30166834e066ef80c02d84611a38dd6f2bec3ea3b3cde92db954842bdb">item_drop_reason::deliberate</a>, { *it }, fix.<a class="code hl_function" href="classitem__location.html#a7c2a92227d0946b673eb95b0a53c766c">position</a>() );</div>
-<div class="line"><a id="l03442" name="l03442"></a><span class="lineno"> 3442</span>            }</div>
-<div class="line"><a id="l03443" name="l03443"></a><span class="lineno"> 3443</span>            fix.<a class="code hl_function" href="classitem__location.html#a41e90133672d99aa1cecde670e37c23c">remove_item</a>();</div>
-<div class="line"><a id="l03444" name="l03444"></a><span class="lineno"> 3444</span>        }</div>
-<div class="line"><a id="l03445" name="l03445"></a><span class="lineno"> 3445</span> </div>
-<div class="line"><a id="l03446" name="l03446"></a><span class="lineno"> 3446</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l03447" name="l03447"></a><span class="lineno"> 3447</span>    }</div>
-<div class="line"><a id="l03448" name="l03448"></a><span class="lineno"> 3448</span> </div>
-<div class="line"><a id="l03449" name="l03449"></a><span class="lineno"> 3449</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l03450" name="l03450"></a><span class="lineno"> 3450</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03426">3426</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03427" name="l03427"></a><span class="lineno"> 3427</span>{</div>
+<div class="line"><a id="l03428" name="l03428"></a><span class="lineno"> 3428</span>    <span class="keyword">const</span> std::string startdurability = fix-&gt;<a class="code hl_function" href="classitem.html#a80ef6d13a5545c5d32af710fedf717eb">durability_indicator</a>( <span class="keyword">true</span> );</div>
+<div class="line"><a id="l03429" name="l03429"></a><span class="lineno"> 3429</span>    <span class="keyword">const</span> <span class="keyword">auto</span> <a class="code hl_enumvalue" href="mutation_8h.html#a034ae5e964e0a02c1de845df8b031755aff9a344674366cee6d23a1e3bda6c176">destroyed</a> = fix-&gt;<a class="code hl_function" href="classitem.html#aca60af3c295738c2c1fddf0fd669f9a1">inc_damage</a>();</div>
+<div class="line"><a id="l03430" name="l03430"></a><span class="lineno"> 3430</span>    <span class="keyword">const</span> std::string resultdurability = fix-&gt;<a class="code hl_function" href="classitem.html#a80ef6d13a5545c5d32af710fedf717eb">durability_indicator</a>( <span class="keyword">true</span> );</div>
+<div class="line"><a id="l03431" name="l03431"></a><span class="lineno"> 3431</span>    pl.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You damage your %s!  ( %s-&gt; %s)&quot;</span> ), fix-&gt;<a class="code hl_function" href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">tname</a>( 1, <span class="keyword">false</span> ),</div>
+<div class="line"><a id="l03432" name="l03432"></a><span class="lineno"> 3432</span>                          startdurability, resultdurability );</div>
+<div class="line"><a id="l03433" name="l03433"></a><span class="lineno"> 3433</span>    <span class="keywordflow">if</span>( destroyed ) {</div>
+<div class="line"><a id="l03434" name="l03434"></a><span class="lineno"> 3434</span>        pl.<a class="code hl_function" href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">add_msg_if_player</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;You destroy it!&quot;</span> ) );</div>
+<div class="line"><a id="l03435" name="l03435"></a><span class="lineno"> 3435</span>        <span class="keywordflow">if</span>( fix.<a class="code hl_function" href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">where</a>() == <a class="code hl_enumvalue" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888daa956161a69928cd130a889b88082fb6e">item_location::type::character</a> ) {</div>
+<div class="line"><a id="l03436" name="l03436"></a><span class="lineno"> 3436</span>            pl.<a class="code hl_function" href="classCharacter.html#a6d48b7ecc176e222e641cf4a2dd4d7cd">i_rem_keep_contents</a>( pl.<a class="code hl_function" href="classCharacter.html#a50ca774a69b5d6e12f7fba07434d9b35">get_item_position</a>( fix.<a class="code hl_function" href="classitem__location.html#a350bb267073f30205f780b394324a32c">get_item</a>() ) );</div>
+<div class="line"><a id="l03437" name="l03437"></a><span class="lineno"> 3437</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03438" name="l03438"></a><span class="lineno"> 3438</span>            <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> *it : fix-&gt;<a class="code hl_variable" href="classitem.html#a4afe851abb42cbff0857065860f96e0e">contents</a>.<a class="code hl_function" href="classitem__contents.html#a7f56c09b0d592bdc425a578d02b4b44d">all_items_top</a>() ) {</div>
+<div class="line"><a id="l03439" name="l03439"></a><span class="lineno"> 3439</span>                <a class="code hl_function" href="activity__handlers_8h.html#aaffe872a8e49c99b600d61b6e1b4062e">put_into_vehicle_or_drop</a>( pl, <a class="code hl_enumvalue" href="activity__handlers_8h.html#a3931cba30166834e066ef80c02d84611a38dd6f2bec3ea3b3cde92db954842bdb">item_drop_reason::deliberate</a>, { *it }, fix.<a class="code hl_function" href="classitem__location.html#a7c2a92227d0946b673eb95b0a53c766c">position</a>() );</div>
+<div class="line"><a id="l03440" name="l03440"></a><span class="lineno"> 3440</span>            }</div>
+<div class="line"><a id="l03441" name="l03441"></a><span class="lineno"> 3441</span>            fix.<a class="code hl_function" href="classitem__location.html#a41e90133672d99aa1cecde670e37c23c">remove_item</a>();</div>
+<div class="line"><a id="l03442" name="l03442"></a><span class="lineno"> 3442</span>        }</div>
+<div class="line"><a id="l03443" name="l03443"></a><span class="lineno"> 3443</span> </div>
+<div class="line"><a id="l03444" name="l03444"></a><span class="lineno"> 3444</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l03445" name="l03445"></a><span class="lineno"> 3445</span>    }</div>
+<div class="line"><a id="l03446" name="l03446"></a><span class="lineno"> 3446</span> </div>
+<div class="line"><a id="l03447" name="l03447"></a><span class="lineno"> 3447</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l03448" name="l03448"></a><span class="lineno"> 3448</span>}</div>
 <div class="ttc" id="aactivity__handlers_8h_html_a3931cba30166834e066ef80c02d84611a38dd6f2bec3ea3b3cde92db954842bdb"><div class="ttname"><a href="activity__handlers_8h.html#a3931cba30166834e066ef80c02d84611a38dd6f2bec3ea3b3cde92db954842bdb">item_drop_reason::deliberate</a></div><div class="ttdeci">@ deliberate</div></div>
 <div class="ttc" id="aactivity__handlers_8h_html_aaffe872a8e49c99b600d61b6e1b4062e"><div class="ttname"><a href="activity__handlers_8h.html#aaffe872a8e49c99b600d61b6e1b4062e">put_into_vehicle_or_drop</a></div><div class="ttdeci">void put_into_vehicle_or_drop(Character &amp;c, item_drop_reason, const std::list&lt; item &gt; &amp;items)</div><div class="ttdef"><b>Definition:</b> <a href="activity__item__handling_8cpp_source.html#l00394">activity_item_handling.cpp:394</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a50ca774a69b5d6e12f7fba07434d9b35"><div class="ttname"><a href="classCharacter.html#a50ca774a69b5d6e12f7fba07434d9b35">Character::get_item_position</a></div><div class="ttdeci">int get_item_position(const item *it) const</div><div class="ttdoc">Returns the item position (suitable for i_at or similar) of a specific item.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02339">character.cpp:2339</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a6d48b7ecc176e222e641cf4a2dd4d7cd"><div class="ttname"><a href="classCharacter.html#a6d48b7ecc176e222e641cf4a2dd4d7cd">Character::i_rem_keep_contents</a></div><div class="ttdeci">void i_rem_keep_contents(int idx)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02386">character.cpp:2386</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a50ca774a69b5d6e12f7fba07434d9b35"><div class="ttname"><a href="classCharacter.html#a50ca774a69b5d6e12f7fba07434d9b35">Character::get_item_position</a></div><div class="ttdeci">int get_item_position(const item *it) const</div><div class="ttdoc">Returns the item position (suitable for i_at or similar) of a specific item.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02352">character.cpp:2352</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a6d48b7ecc176e222e641cf4a2dd4d7cd"><div class="ttname"><a href="classCharacter.html#a6d48b7ecc176e222e641cf4a2dd4d7cd">Character::i_rem_keep_contents</a></div><div class="ttdeci">void i_rem_keep_contents(int idx)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02400">character.cpp:2400</a></div></div>
 <div class="ttc" id="aclassitem__contents_html_a7f56c09b0d592bdc425a578d02b4b44d"><div class="ttname"><a href="classitem__contents.html#a7f56c09b0d592bdc425a578d02b4b44d">item_contents::all_items_top</a></div><div class="ttdeci">std::list&lt; item * &gt; all_items_top()</div><div class="ttdoc">returns a list of pointers to all top-level items</div><div class="ttdef"><b>Definition:</b> <a href="item__contents_8cpp_source.html#l00128">item_contents.cpp:128</a></div></div>
 <div class="ttc" id="aclassitem__location_html_a038e108475b9fb4f9833268f5fa2888daa956161a69928cd130a889b88082fb6e"><div class="ttname"><a href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888daa956161a69928cd130a889b88082fb6e">item_location::type::character</a></div><div class="ttdeci">@ character</div></div>
 <div class="ttc" id="aclassitem__location_html_a0f73e1c094e3e36d6455d46436e299a9"><div class="ttname"><a href="classitem__location.html#a0f73e1c094e3e36d6455d46436e299a9">item_location::where</a></div><div class="ttdeci">type where() const</div><div class="ttdoc">Returns the type of location where the item is found.</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8cpp_source.html#l00729">item_location.cpp:729</a></div></div>
 <div class="ttc" id="aclassitem__location_html_a350bb267073f30205f780b394324a32c"><div class="ttname"><a href="classitem__location.html#a350bb267073f30205f780b394324a32c">item_location::get_item</a></div><div class="ttdeci">item * get_item()</div><div class="ttdoc">Gets the selected item or nullptr.</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8cpp_source.html#l00768">item_location.cpp:768</a></div></div>
 <div class="ttc" id="aclassitem__location_html_a41e90133672d99aa1cecde670e37c23c"><div class="ttname"><a href="classitem__location.html#a41e90133672d99aa1cecde670e37c23c">item_location::remove_item</a></div><div class="ttdeci">void remove_item()</div><div class="ttdoc">Removes the selected item from the game.</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8cpp_source.html#l00758">item_location.cpp:758</a></div></div>
 <div class="ttc" id="aclassitem__location_html_a7c2a92227d0946b673eb95b0a53c766c"><div class="ttname"><a href="classitem__location.html#a7c2a92227d0946b673eb95b0a53c766c">item_location::position</a></div><div class="ttdeci">tripoint position() const</div><div class="ttdoc">Returns the position where the item is found.</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8cpp_source.html#l00734">item_location.cpp:734</a></div></div>
-<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
-<div class="ttc" id="aclassitem_html_a4afe851abb42cbff0857065860f96e0e"><div class="ttname"><a href="classitem.html#a4afe851abb42cbff0857065860f96e0e">item::contents</a></div><div class="ttdeci">item_contents contents</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02158">item.h:2158</a></div></div>
-<div class="ttc" id="aclassitem_html_a7e78e26dcf9b357cda769c3ca2938eda"><div class="ttname"><a href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">item::tname</a></div><div class="ttdeci">std::string tname(unsigned int quantity=1, bool with_prefix=true, unsigned int truncate=0) const</div><div class="ttdoc">Return the (translated) item name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l04554">item.cpp:4554</a></div></div>
-<div class="ttc" id="aclassitem_html_a80ef6d13a5545c5d32af710fedf717eb"><div class="ttname"><a href="classitem.html#a80ef6d13a5545c5d32af710fedf717eb">item::durability_indicator</a></div><div class="ttdeci">std::string durability_indicator(bool include_intact=false) const</div><div class="ttdoc">Provides a prefix for the durability state of the item.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06316">item.cpp:6316</a></div></div>
-<div class="ttc" id="aclassitem_html_aca60af3c295738c2c1fddf0fd669f9a1"><div class="ttname"><a href="classitem.html#aca60af3c295738c2c1fddf0fd669f9a1">item::inc_damage</a></div><div class="ttdeci">bool inc_damage(damage_type dt)</div><div class="ttdoc">Increment item damage by itype::damage_scale constrained by max_damage.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06253">item.cpp:6253</a></div></div>
-<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00380">player.cpp:380</a></div></div>
+<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00209">item.h:210</a></div></div>
+<div class="ttc" id="aclassitem_html_a4afe851abb42cbff0857065860f96e0e"><div class="ttname"><a href="classitem.html#a4afe851abb42cbff0857065860f96e0e">item::contents</a></div><div class="ttdeci">item_contents contents</div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l02161">item.h:2161</a></div></div>
+<div class="ttc" id="aclassitem_html_a7e78e26dcf9b357cda769c3ca2938eda"><div class="ttname"><a href="classitem.html#a7e78e26dcf9b357cda769c3ca2938eda">item::tname</a></div><div class="ttdeci">std::string tname(unsigned int quantity=1, bool with_prefix=true, unsigned int truncate=0) const</div><div class="ttdoc">Return the (translated) item name.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l04574">item.cpp:4574</a></div></div>
+<div class="ttc" id="aclassitem_html_a80ef6d13a5545c5d32af710fedf717eb"><div class="ttname"><a href="classitem.html#a80ef6d13a5545c5d32af710fedf717eb">item::durability_indicator</a></div><div class="ttdeci">std::string durability_indicator(bool include_intact=false) const</div><div class="ttdoc">Provides a prefix for the durability state of the item.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06341">item.cpp:6341</a></div></div>
+<div class="ttc" id="aclassitem_html_aca60af3c295738c2c1fddf0fd669f9a1"><div class="ttname"><a href="classitem.html#aca60af3c295738c2c1fddf0fd669f9a1">item::inc_damage</a></div><div class="ttdeci">bool inc_damage(damage_type dt)</div><div class="ttdoc">Increment item damage by itype::damage_scale constrained by max_damage.</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l06278">item.cpp:6278</a></div></div>
+<div class="ttc" id="aclassplayer_html_ae7009d849f19a4f5ebe877cbe463c459"><div class="ttname"><a href="classplayer.html#ae7009d849f19a4f5ebe877cbe463c459">player::add_msg_if_player</a></div><div class="ttdeci">void add_msg_if_player(const std::string &amp;msg) const override</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00366">player.cpp:366</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea72e7b82d57a6df0d4263c2043139b1b1">m_bad</a></div><div class="ttdeci">@ m_bad</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00261">enums.h:261</a></div></div>
 <div class="ttc" id="amutation_8h_html_a034ae5e964e0a02c1de845df8b031755aff9a344674366cee6d23a1e3bda6c176"><div class="ttname"><a href="mutation_8h.html#a034ae5e964e0a02c1de845df8b031755aff9a344674366cee6d23a1e3bda6c176">mutagen_rejection::destroyed</a></div><div class="ttdeci">@ destroyed</div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l00380">player::add_msg_if_player()</a>, <a class="el" href="item__contents_8cpp_source.html#l00128">item_contents::all_items_top()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888daa956161a69928cd130a889b88082fb6e">item_location::character</a>, <a class="el" href="item_8h_source.html#l02158">item::contents</a>, <a class="el" href="activity__handlers_8h.html#a3931cba30166834e066ef80c02d84611a38dd6f2bec3ea3b3cde92db954842bdb">deliberate</a>, <a class="el" href="mutation_8h.html#a034ae5e964e0a02c1de845df8b031755aff9a344674366cee6d23a1e3bda6c176">destroyed</a>, <a class="el" href="item_8cpp_source.html#l06316">item::durability_indicator()</a>, <a class="el" href="item__location_8cpp_source.html#l00768">item_location::get_item()</a>, <a class="el" href="character_8cpp_source.html#l02339">Character::get_item_position()</a>, <a class="el" href="character_8cpp_source.html#l02386">Character::i_rem_keep_contents()</a>, <a class="el" href="item_8cpp_source.html#l06253">item::inc_damage()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="item__location_8cpp_source.html#l00734">item_location::position()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l00394">put_into_vehicle_or_drop()</a>, <a class="el" href="item__location_8cpp_source.html#l00758">item_location::remove_item()</a>, <a class="el" href="item_8cpp_source.html#l04554">item::tname()</a>, and <a class="el" href="item__location_8cpp_source.html#l00729">item_location::where()</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="player_8cpp_source.html#l00366">player::add_msg_if_player()</a>, <a class="el" href="item__contents_8cpp_source.html#l00128">item_contents::all_items_top()</a>, <a class="el" href="classitem__location.html#a038e108475b9fb4f9833268f5fa2888daa956161a69928cd130a889b88082fb6e">item_location::character</a>, <a class="el" href="item_8h_source.html#l02161">item::contents</a>, <a class="el" href="activity__handlers_8h.html#a3931cba30166834e066ef80c02d84611a38dd6f2bec3ea3b3cde92db954842bdb">deliberate</a>, <a class="el" href="mutation_8h.html#a034ae5e964e0a02c1de845df8b031755aff9a344674366cee6d23a1e3bda6c176">destroyed</a>, <a class="el" href="item_8cpp_source.html#l06341">item::durability_indicator()</a>, <a class="el" href="item__location_8cpp_source.html#l00768">item_location::get_item()</a>, <a class="el" href="character_8cpp_source.html#l02352">Character::get_item_position()</a>, <a class="el" href="character_8cpp_source.html#l02400">Character::i_rem_keep_contents()</a>, <a class="el" href="item_8cpp_source.html#l06278">item::inc_damage()</a>, <a class="el" href="enums_8h_source.html#l00261">m_bad</a>, <a class="el" href="item__location_8cpp_source.html#l00734">item_location::position()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l00394">put_into_vehicle_or_drop()</a>, <a class="el" href="item__location_8cpp_source.html#l00758">item_location::remove_item()</a>, <a class="el" href="item_8cpp_source.html#l04574">item::tname()</a>, and <a class="el" href="item__location_8cpp_source.html#l00729">item_location::where()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03452">repair_item_actor::repair()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03450">repair_item_actor::repair()</a>.</p>
 
 </div>
 </div>
@@ -441,41 +441,41 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03217">3217</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03218" name="l03218"></a><span class="lineno"> 3218</span>{</div>
-<div class="line"><a id="l03219" name="l03219"></a><span class="lineno"> 3219</span>    <span class="comment">// If the recipe is not found, this will remain unchanged</span></div>
-<div class="line"><a id="l03220" name="l03220"></a><span class="lineno"> 3220</span>    <span class="keywordtype">int</span> min = -1;</div>
-<div class="line"><a id="l03221" name="l03221"></a><span class="lineno"> 3221</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a> ) {</div>
-<div class="line"><a id="l03222" name="l03222"></a><span class="lineno"> 3222</span>        <span class="keyword">const</span> <span class="keyword">auto</span> r = e.second;</div>
-<div class="line"><a id="l03223" name="l03223"></a><span class="lineno"> 3223</span>        <span class="keywordflow">if</span>( <span class="keywordtype">id</span> != r.result() ) {</div>
-<div class="line"><a id="l03224" name="l03224"></a><span class="lineno"> 3224</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l03225" name="l03225"></a><span class="lineno"> 3225</span>        }</div>
-<div class="line"><a id="l03226" name="l03226"></a><span class="lineno"> 3226</span>        <span class="comment">// If this is the first time we found a recipe</span></div>
-<div class="line"><a id="l03227" name="l03227"></a><span class="lineno"> 3227</span>        <span class="keywordflow">if</span>( min == -1 ) {</div>
-<div class="line"><a id="l03228" name="l03228"></a><span class="lineno"> 3228</span>            min = 5;</div>
-<div class="line"><a id="l03229" name="l03229"></a><span class="lineno"> 3229</span>        }</div>
-<div class="line"><a id="l03230" name="l03230"></a><span class="lineno"> 3230</span> </div>
-<div class="line"><a id="l03231" name="l03231"></a><span class="lineno"> 3231</span>        <span class="keywordtype">int</span> cur_difficulty = r.difficulty;</div>
-<div class="line"><a id="l03232" name="l03232"></a><span class="lineno"> 3232</span>        <span class="keywordflow">if</span>( !training &amp;&amp; !pl.<a class="code hl_function" href="classCharacter.html#a7950b035ea05fa28a0851b4107377265">knows_recipe</a>( &amp;r ) ) {</div>
-<div class="line"><a id="l03233" name="l03233"></a><span class="lineno"> 3233</span>            cur_difficulty++;</div>
-<div class="line"><a id="l03234" name="l03234"></a><span class="lineno"> 3234</span>        }</div>
-<div class="line"><a id="l03235" name="l03235"></a><span class="lineno"> 3235</span> </div>
-<div class="line"><a id="l03236" name="l03236"></a><span class="lineno"> 3236</span>        <span class="keywordflow">if</span>( !training &amp;&amp; !pl.<a class="code hl_function" href="classplayer.html#a7de4e27c52a5b8c08b91ec54bb28c8b9">has_recipe_requirements</a>( r ) ) {</div>
-<div class="line"><a id="l03237" name="l03237"></a><span class="lineno"> 3237</span>            cur_difficulty++;</div>
-<div class="line"><a id="l03238" name="l03238"></a><span class="lineno"> 3238</span>        }</div>
-<div class="line"><a id="l03239" name="l03239"></a><span class="lineno"> 3239</span> </div>
-<div class="line"><a id="l03240" name="l03240"></a><span class="lineno"> 3240</span>        min = std::min( cur_difficulty, min );</div>
-<div class="line"><a id="l03241" name="l03241"></a><span class="lineno"> 3241</span>    }</div>
-<div class="line"><a id="l03242" name="l03242"></a><span class="lineno"> 3242</span> </div>
-<div class="line"><a id="l03243" name="l03243"></a><span class="lineno"> 3243</span>    <span class="keywordflow">return</span> min;</div>
-<div class="line"><a id="l03244" name="l03244"></a><span class="lineno"> 3244</span>}</div>
-<div class="ttc" id="aclassCharacter_html_a7950b035ea05fa28a0851b4107377265"><div class="ttname"><a href="classCharacter.html#a7950b035ea05fa28a0851b4107377265">Character::knows_recipe</a></div><div class="ttdeci">bool knows_recipe(const recipe *rec) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10565">character.cpp:10565</a></div></div>
-<div class="ttc" id="aclassplayer_html_a7de4e27c52a5b8c08b91ec54bb28c8b9"><div class="ttname"><a href="classplayer.html#a7de4e27c52a5b8c08b91ec54bb28c8b9">player::has_recipe_requirements</a></div><div class="ttdeci">bool has_recipe_requirements(const recipe &amp;rec) const</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00342">player.cpp:342</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03215">3215</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03216" name="l03216"></a><span class="lineno"> 3216</span>{</div>
+<div class="line"><a id="l03217" name="l03217"></a><span class="lineno"> 3217</span>    <span class="comment">// If the recipe is not found, this will remain unchanged</span></div>
+<div class="line"><a id="l03218" name="l03218"></a><span class="lineno"> 3218</span>    <span class="keywordtype">int</span> min = -1;</div>
+<div class="line"><a id="l03219" name="l03219"></a><span class="lineno"> 3219</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;e : <a class="code hl_variable" href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a> ) {</div>
+<div class="line"><a id="l03220" name="l03220"></a><span class="lineno"> 3220</span>        <span class="keyword">const</span> <span class="keyword">auto</span> r = e.second;</div>
+<div class="line"><a id="l03221" name="l03221"></a><span class="lineno"> 3221</span>        <span class="keywordflow">if</span>( <span class="keywordtype">id</span> != r.result() ) {</div>
+<div class="line"><a id="l03222" name="l03222"></a><span class="lineno"> 3222</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l03223" name="l03223"></a><span class="lineno"> 3223</span>        }</div>
+<div class="line"><a id="l03224" name="l03224"></a><span class="lineno"> 3224</span>        <span class="comment">// If this is the first time we found a recipe</span></div>
+<div class="line"><a id="l03225" name="l03225"></a><span class="lineno"> 3225</span>        <span class="keywordflow">if</span>( min == -1 ) {</div>
+<div class="line"><a id="l03226" name="l03226"></a><span class="lineno"> 3226</span>            min = 5;</div>
+<div class="line"><a id="l03227" name="l03227"></a><span class="lineno"> 3227</span>        }</div>
+<div class="line"><a id="l03228" name="l03228"></a><span class="lineno"> 3228</span> </div>
+<div class="line"><a id="l03229" name="l03229"></a><span class="lineno"> 3229</span>        <span class="keywordtype">int</span> cur_difficulty = r.difficulty;</div>
+<div class="line"><a id="l03230" name="l03230"></a><span class="lineno"> 3230</span>        <span class="keywordflow">if</span>( !training &amp;&amp; !pl.<a class="code hl_function" href="classCharacter.html#a7950b035ea05fa28a0851b4107377265">knows_recipe</a>( &amp;r ) ) {</div>
+<div class="line"><a id="l03231" name="l03231"></a><span class="lineno"> 3231</span>            cur_difficulty++;</div>
+<div class="line"><a id="l03232" name="l03232"></a><span class="lineno"> 3232</span>        }</div>
+<div class="line"><a id="l03233" name="l03233"></a><span class="lineno"> 3233</span> </div>
+<div class="line"><a id="l03234" name="l03234"></a><span class="lineno"> 3234</span>        <span class="keywordflow">if</span>( !training &amp;&amp; !pl.<a class="code hl_function" href="classplayer.html#a7de4e27c52a5b8c08b91ec54bb28c8b9">has_recipe_requirements</a>( r ) ) {</div>
+<div class="line"><a id="l03235" name="l03235"></a><span class="lineno"> 3235</span>            cur_difficulty++;</div>
+<div class="line"><a id="l03236" name="l03236"></a><span class="lineno"> 3236</span>        }</div>
+<div class="line"><a id="l03237" name="l03237"></a><span class="lineno"> 3237</span> </div>
+<div class="line"><a id="l03238" name="l03238"></a><span class="lineno"> 3238</span>        min = std::min( cur_difficulty, min );</div>
+<div class="line"><a id="l03239" name="l03239"></a><span class="lineno"> 3239</span>    }</div>
+<div class="line"><a id="l03240" name="l03240"></a><span class="lineno"> 3240</span> </div>
+<div class="line"><a id="l03241" name="l03241"></a><span class="lineno"> 3241</span>    <span class="keywordflow">return</span> min;</div>
+<div class="line"><a id="l03242" name="l03242"></a><span class="lineno"> 3242</span>}</div>
+<div class="ttc" id="aclassCharacter_html_a7950b035ea05fa28a0851b4107377265"><div class="ttname"><a href="classCharacter.html#a7950b035ea05fa28a0851b4107377265">Character::knows_recipe</a></div><div class="ttdeci">bool knows_recipe(const recipe *rec) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10596">character.cpp:10596</a></div></div>
+<div class="ttc" id="aclassplayer_html_a7de4e27c52a5b8c08b91ec54bb28c8b9"><div class="ttname"><a href="classplayer.html#a7de4e27c52a5b8c08b91ec54bb28c8b9">player::has_recipe_requirements</a></div><div class="ttdeci">bool has_recipe_requirements(const recipe &amp;rec) const</div><div class="ttdef"><b>Definition:</b> <a href="player_8cpp_source.html#l00328">player.cpp:328</a></div></div>
 <div class="ttc" id="arecipe__dictionary_8cpp_html_a9fdb53bd54fb6dcc5f9b2e1e1b44570f"><div class="ttname"><a href="recipe__dictionary_8cpp.html#a9fdb53bd54fb6dcc5f9b2e1e1b44570f">recipe_dict</a></div><div class="ttdeci">recipe_dictionary recipe_dict</div><div class="ttdef"><b>Definition:</b> <a href="recipe__dictionary_8cpp_source.html#l00029">recipe_dictionary.cpp:29</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="player_8cpp_source.html#l00342">player::has_recipe_requirements()</a>, <a class="el" href="character_8cpp_source.html#l10565">Character::knows_recipe()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>.</p>
+<p class="reference">References <a class="el" href="player_8cpp_source.html#l00328">player::has_recipe_requirements()</a>, <a class="el" href="character_8cpp_source.html#l10596">Character::knows_recipe()</a>, and <a class="el" href="recipe__dictionary_8cpp_source.html#l00029">recipe_dict</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03249">repair_item_actor::repair_recipe_difficulty()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03247">repair_item_actor::repair_recipe_difficulty()</a>.</p>
 
 </div>
 </div>
@@ -503,7 +503,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03387">repair_item_actor::default_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03385">repair_item_actor::default_action()</a>.</p>
 
 </div>
 </div>
@@ -531,7 +531,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03387">repair_item_actor::default_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03385">repair_item_actor::default_action()</a>.</p>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03387">repair_item_actor::default_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03385">repair_item_actor::default_action()</a>.</p>
 
 </div>
 </div>
@@ -615,7 +615,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03387">repair_item_actor::default_action()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03385">repair_item_actor::default_action()</a>.</p>
 
 </div>
 </div>
@@ -659,32 +659,32 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03072">3072</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03073" name="l03073"></a><span class="lineno"> 3073</span>{</div>
-<div class="line"><a id="l03074" name="l03074"></a><span class="lineno"> 3074</span>    <span class="comment">// Item on a character</span></div>
-<div class="line"><a id="l03075" name="l03075"></a><span class="lineno"> 3075</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classvisitable.html#af49d5ef7b3f2f0a8664c23097a56373f">has_item</a>( it ) ) {</div>
-<div class="line"><a id="l03076" name="l03076"></a><span class="lineno"> 3076</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>( p, &amp;it );</div>
-<div class="line"><a id="l03077" name="l03077"></a><span class="lineno"> 3077</span>    }</div>
-<div class="line"><a id="l03078" name="l03078"></a><span class="lineno"> 3078</span> </div>
-<div class="line"><a id="l03079" name="l03079"></a><span class="lineno"> 3079</span>    <span class="comment">// Item in a vehicle</span></div>
-<div class="line"><a id="l03080" name="l03080"></a><span class="lineno"> 3080</span>    <span class="keywordflow">if</span>( <span class="keyword">const</span> <a class="code hl_class" href="classoptional__vpart__position.html">optional_vpart_position</a> &amp;vp = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>().veh_at( pos ) ) {</div>
-<div class="line"><a id="l03081" name="l03081"></a><span class="lineno"> 3081</span>        <a class="code hl_class" href="classvehicle__cursor.html">vehicle_cursor</a> vc( vp-&gt;vehicle(), vp-&gt;part_index() );</div>
-<div class="line"><a id="l03082" name="l03082"></a><span class="lineno"> 3082</span>        <span class="keywordtype">bool</span> found_in_vehicle = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l03083" name="l03083"></a><span class="lineno"> 3083</span>        vc.visit_items( [&amp;]( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> * e ) {</div>
-<div class="line"><a id="l03084" name="l03084"></a><span class="lineno"> 3084</span>            <span class="keywordflow">if</span>( e == &amp;it ) {</div>
-<div class="line"><a id="l03085" name="l03085"></a><span class="lineno"> 3085</span>                found_in_vehicle = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l03086" name="l03086"></a><span class="lineno"> 3086</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da8d12a2ca7e5a64036d7251a3eda51a38">VisitResponse::ABORT</a>;</div>
-<div class="line"><a id="l03087" name="l03087"></a><span class="lineno"> 3087</span>            }</div>
-<div class="line"><a id="l03088" name="l03088"></a><span class="lineno"> 3088</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da47559fb833ff58321570e5e877b467f6">VisitResponse::NEXT</a>;</div>
-<div class="line"><a id="l03089" name="l03089"></a><span class="lineno"> 3089</span>        } );</div>
-<div class="line"><a id="l03090" name="l03090"></a><span class="lineno"> 3090</span>        <span class="keywordflow">if</span>( found_in_vehicle ) {</div>
-<div class="line"><a id="l03091" name="l03091"></a><span class="lineno"> 3091</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>( vc, &amp;it );</div>
-<div class="line"><a id="l03092" name="l03092"></a><span class="lineno"> 3092</span>        }</div>
-<div class="line"><a id="l03093" name="l03093"></a><span class="lineno"> 3093</span>    }</div>
-<div class="line"><a id="l03094" name="l03094"></a><span class="lineno"> 3094</span> </div>
-<div class="line"><a id="l03095" name="l03095"></a><span class="lineno"> 3095</span>    <span class="comment">// Item on the map</span></div>
-<div class="line"><a id="l03096" name="l03096"></a><span class="lineno"> 3096</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>( pos, &amp;it );</div>
-<div class="line"><a id="l03097" name="l03097"></a><span class="lineno"> 3097</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03070">3070</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03071" name="l03071"></a><span class="lineno"> 3071</span>{</div>
+<div class="line"><a id="l03072" name="l03072"></a><span class="lineno"> 3072</span>    <span class="comment">// Item on a character</span></div>
+<div class="line"><a id="l03073" name="l03073"></a><span class="lineno"> 3073</span>    <span class="keywordflow">if</span>( p.<a class="code hl_function" href="classvisitable.html#af49d5ef7b3f2f0a8664c23097a56373f">has_item</a>( it ) ) {</div>
+<div class="line"><a id="l03074" name="l03074"></a><span class="lineno"> 3074</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>( p, &amp;it );</div>
+<div class="line"><a id="l03075" name="l03075"></a><span class="lineno"> 3075</span>    }</div>
+<div class="line"><a id="l03076" name="l03076"></a><span class="lineno"> 3076</span> </div>
+<div class="line"><a id="l03077" name="l03077"></a><span class="lineno"> 3077</span>    <span class="comment">// Item in a vehicle</span></div>
+<div class="line"><a id="l03078" name="l03078"></a><span class="lineno"> 3078</span>    <span class="keywordflow">if</span>( <span class="keyword">const</span> <a class="code hl_class" href="classoptional__vpart__position.html">optional_vpart_position</a> &amp;vp = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>().veh_at( pos ) ) {</div>
+<div class="line"><a id="l03079" name="l03079"></a><span class="lineno"> 3079</span>        <a class="code hl_class" href="classvehicle__cursor.html">vehicle_cursor</a> vc( vp-&gt;vehicle(), vp-&gt;part_index() );</div>
+<div class="line"><a id="l03080" name="l03080"></a><span class="lineno"> 3080</span>        <span class="keywordtype">bool</span> found_in_vehicle = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l03081" name="l03081"></a><span class="lineno"> 3081</span>        vc.visit_items( [&amp;]( <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> * e ) {</div>
+<div class="line"><a id="l03082" name="l03082"></a><span class="lineno"> 3082</span>            <span class="keywordflow">if</span>( e == &amp;it ) {</div>
+<div class="line"><a id="l03083" name="l03083"></a><span class="lineno"> 3083</span>                found_in_vehicle = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l03084" name="l03084"></a><span class="lineno"> 3084</span>                <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da8d12a2ca7e5a64036d7251a3eda51a38">VisitResponse::ABORT</a>;</div>
+<div class="line"><a id="l03085" name="l03085"></a><span class="lineno"> 3085</span>            }</div>
+<div class="line"><a id="l03086" name="l03086"></a><span class="lineno"> 3086</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da47559fb833ff58321570e5e877b467f6">VisitResponse::NEXT</a>;</div>
+<div class="line"><a id="l03087" name="l03087"></a><span class="lineno"> 3087</span>        } );</div>
+<div class="line"><a id="l03088" name="l03088"></a><span class="lineno"> 3088</span>        <span class="keywordflow">if</span>( found_in_vehicle ) {</div>
+<div class="line"><a id="l03089" name="l03089"></a><span class="lineno"> 3089</span>            <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>( vc, &amp;it );</div>
+<div class="line"><a id="l03090" name="l03090"></a><span class="lineno"> 3090</span>        }</div>
+<div class="line"><a id="l03091" name="l03091"></a><span class="lineno"> 3091</span>    }</div>
+<div class="line"><a id="l03092" name="l03092"></a><span class="lineno"> 3092</span> </div>
+<div class="line"><a id="l03093" name="l03093"></a><span class="lineno"> 3093</span>    <span class="comment">// Item on the map</span></div>
+<div class="line"><a id="l03094" name="l03094"></a><span class="lineno"> 3094</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classitem__location.html">item_location</a>( pos, &amp;it );</div>
+<div class="line"><a id="l03095" name="l03095"></a><span class="lineno"> 3095</span>}</div>
 <div class="ttc" id="aclassitem__location_html"><div class="ttname"><a href="classitem__location.html">item_location</a></div><div class="ttdoc">A lightweight handle to an item independent of it's location Unlike a raw pointer can be (de-)seriali...</div><div class="ttdef"><b>Definition:</b> <a href="item__location_8h_source.html#l00022">item_location.h:23</a></div></div>
 <div class="ttc" id="aclassoptional__vpart__position_html"><div class="ttname"><a href="classoptional__vpart__position.html">optional_vpart_position</a></div><div class="ttdoc">Simple wrapper to forward functions that may return a std::optional to vpart_position.</div><div class="ttdef"><b>Definition:</b> <a href="vpart__position_8h_source.html#l00103">vpart_position.h:104</a></div></div>
 <div class="ttc" id="aclassvehicle__cursor_html"><div class="ttname"><a href="classvehicle__cursor.html">vehicle_cursor</a></div><div class="ttdef"><b>Definition:</b> <a href="vehicle__selector_8h_source.html#l00013">vehicle_selector.h:14</a></div></div>
@@ -693,9 +693,9 @@ Variables</h2></td></tr>
 <div class="ttc" id="avisitable_8h_html_aa872f25fbac30cbf9e03c0153587613da47559fb833ff58321570e5e877b467f6"><div class="ttname"><a href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da47559fb833ff58321570e5e877b467f6">VisitResponse::NEXT</a></div><div class="ttdeci">@ NEXT</div></div>
 <div class="ttc" id="avisitable_8h_html_aa872f25fbac30cbf9e03c0153587613da8d12a2ca7e5a64036d7251a3eda51a38"><div class="ttname"><a href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da8d12a2ca7e5a64036d7251a3eda51a38">VisitResponse::ABORT</a></div><div class="ttdeci">@ ABORT</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da8d12a2ca7e5a64036d7251a3eda51a38">ABORT</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="visitable_8cpp_source.html#l00095">visitable&lt; T &gt;::has_item()</a>, <a class="el" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da47559fb833ff58321570e5e877b467f6">NEXT</a>, <a class="el" href="character_8cpp_source.html#l00591">Character::pos()</a>, and <a class="el" href="visitable_8cpp_source.html#l00422">visitable&lt; T &gt;::visit_items()</a>.</p>
+<p class="reference">References <a class="el" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da8d12a2ca7e5a64036d7251a3eda51a38">ABORT</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="visitable_8cpp_source.html#l00095">visitable&lt; T &gt;::has_item()</a>, <a class="el" href="visitable_8h.html#aa872f25fbac30cbf9e03c0153587613da47559fb833ff58321570e5e877b467f6">NEXT</a>, <a class="el" href="character_8cpp_source.html#l00599">Character::pos()</a>, and <a class="el" href="visitable_8cpp_source.html#l00422">visitable&lt; T &gt;::visit_items()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03099">repair_item_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03097">repair_item_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -733,33 +733,33 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03648">3648</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03649" name="l03649"></a><span class="lineno"> 3649</span>{</div>
-<div class="line"><a id="l03650" name="l03650"></a><span class="lineno"> 3650</span>    <span class="keywordflow">if</span>( healer.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>() == pos ) {</div>
-<div class="line"><a id="l03651" name="l03651"></a><span class="lineno"> 3651</span>        <span class="keywordflow">return</span> healer;</div>
-<div class="line"><a id="l03652" name="l03652"></a><span class="lineno"> 3652</span>    }</div>
-<div class="line"><a id="l03653" name="l03653"></a><span class="lineno"> 3653</span> </div>
-<div class="line"><a id="l03654" name="l03654"></a><span class="lineno"> 3654</span>    <a class="code hl_class" href="classplayer.html">player</a> *<span class="keyword">const</span> person = <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;critter_at&lt;<a class="code hl_class" href="classplayer.html">player</a>&gt;( pos );</div>
-<div class="line"><a id="l03655" name="l03655"></a><span class="lineno"> 3655</span>    <span class="keywordflow">if</span>( !person ) {</div>
-<div class="line"><a id="l03656" name="l03656"></a><span class="lineno"> 3656</span>        <span class="comment">// Default to heal self on failure not to break old functionality</span></div>
-<div class="line"><a id="l03657" name="l03657"></a><span class="lineno"> 3657</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea9855e523119c93601d8f67718994df05">m_debug</a>, <span class="stringliteral">&quot;No heal target at position %d,%d,%d&quot;</span>, pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, pos.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
-<div class="line"><a id="l03658" name="l03658"></a><span class="lineno"> 3658</span>        <span class="keywordflow">return</span> healer;</div>
-<div class="line"><a id="l03659" name="l03659"></a><span class="lineno"> 3659</span>    }</div>
-<div class="line"><a id="l03660" name="l03660"></a><span class="lineno"> 3660</span> </div>
-<div class="line"><a id="l03661" name="l03661"></a><span class="lineno"> 3661</span>    <span class="keywordflow">return</span> *person;</div>
-<div class="line"><a id="l03662" name="l03662"></a><span class="lineno"> 3662</span>}</div>
-<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00591">character.cpp:591</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03646">3646</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03647" name="l03647"></a><span class="lineno"> 3647</span>{</div>
+<div class="line"><a id="l03648" name="l03648"></a><span class="lineno"> 3648</span>    <span class="keywordflow">if</span>( healer.<a class="code hl_function" href="classCharacter.html#ad24859164517ed6e392e21df69527199">pos</a>() == pos ) {</div>
+<div class="line"><a id="l03649" name="l03649"></a><span class="lineno"> 3649</span>        <span class="keywordflow">return</span> healer;</div>
+<div class="line"><a id="l03650" name="l03650"></a><span class="lineno"> 3650</span>    }</div>
+<div class="line"><a id="l03651" name="l03651"></a><span class="lineno"> 3651</span> </div>
+<div class="line"><a id="l03652" name="l03652"></a><span class="lineno"> 3652</span>    <a class="code hl_class" href="classplayer.html">player</a> *<span class="keyword">const</span> person = <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;critter_at&lt;<a class="code hl_class" href="classplayer.html">player</a>&gt;( pos );</div>
+<div class="line"><a id="l03653" name="l03653"></a><span class="lineno"> 3653</span>    <span class="keywordflow">if</span>( !person ) {</div>
+<div class="line"><a id="l03654" name="l03654"></a><span class="lineno"> 3654</span>        <span class="comment">// Default to heal self on failure not to break old functionality</span></div>
+<div class="line"><a id="l03655" name="l03655"></a><span class="lineno"> 3655</span>        <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea9855e523119c93601d8f67718994df05">m_debug</a>, <span class="stringliteral">&quot;No heal target at position %d,%d,%d&quot;</span>, pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, pos.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
+<div class="line"><a id="l03656" name="l03656"></a><span class="lineno"> 3656</span>        <span class="keywordflow">return</span> healer;</div>
+<div class="line"><a id="l03657" name="l03657"></a><span class="lineno"> 3657</span>    }</div>
+<div class="line"><a id="l03658" name="l03658"></a><span class="lineno"> 3658</span> </div>
+<div class="line"><a id="l03659" name="l03659"></a><span class="lineno"> 3659</span>    <span class="keywordflow">return</span> *person;</div>
+<div class="line"><a id="l03660" name="l03660"></a><span class="lineno"> 3660</span>}</div>
+<div class="ttc" id="aclassCharacter_html_ad24859164517ed6e392e21df69527199"><div class="ttname"><a href="classCharacter.html#ad24859164517ed6e392e21df69527199">Character::pos</a></div><div class="ttdeci">const tripoint &amp; pos() const override</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l00599">character.cpp:599</a></div></div>
 <div class="ttc" id="aclassplayer_html"><div class="ttname"><a href="classplayer.html">player</a></div><div class="ttdef"><b>Definition:</b> <a href="player_8h_source.html#l00083">player.h:84</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea9855e523119c93601d8f67718994df05"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea9855e523119c93601d8f67718994df05">m_debug</a></div><div class="ttdeci">@ m_debug</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00271">enums.h:271</a></div></div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00281">game.cpp:281</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00283">game.cpp:283</a></div></div>
 <div class="ttc" id="amessages_8cpp_html_a54489326fc37823819c5105addfa27f2"><div class="ttname"><a href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a></div><div class="ttdeci">void add_msg(std::string msg)</div><div class="ttdef"><b>Definition:</b> <a href="messages_8cpp_source.html#l00910">messages.cpp:910</a></div></div>
 <div class="ttc" id="astructtripoint_html_a89f6c0a16e2bfd7ce4f1f1d20404c4d7"><div class="ttname"><a href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">tripoint::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00137">point.h:137</a></div></div>
 <div class="ttc" id="astructtripoint_html_ac944c0e329b5eba2602f7a52f66bbbb9"><div class="ttname"><a href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">tripoint::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00138">point.h:138</a></div></div>
 <div class="ttc" id="astructtripoint_html_affdc0d5b75024cbfacd208a495def3dc"><div class="ttname"><a href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">tripoint::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00136">point.h:136</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="game_8cpp_source.html#l00281">g</a>, <a class="el" href="enums_8h_source.html#l00271">m_debug</a>, <a class="el" href="character_8cpp_source.html#l00591">Character::pos()</a>, <a class="el" href="point_8h_source.html#l00136">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00137">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
+<p class="reference">References <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="game_8cpp_source.html#l00283">g</a>, <a class="el" href="enums_8h_source.html#l00271">m_debug</a>, <a class="el" href="character_8cpp_source.html#l00599">Character::pos()</a>, <a class="el" href="point_8h_source.html#l00136">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00137">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03664">heal_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03662">heal_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -797,24 +797,24 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04105">4105</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04106" name="l04106"></a><span class="lineno"> 4106</span>{</div>
-<div class="line"><a id="l04107" name="l04107"></a><span class="lineno"> 4107</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l04108" name="l04108"></a><span class="lineno"> 4108</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;t : here.<a class="code hl_function" href="classmap.html#a4f5f812d7e89a998429958573a4c340f">points_in_radius</a>( pos, 1, 0 ) ) {</div>
-<div class="line"><a id="l04109" name="l04109"></a><span class="lineno"> 4109</span>        <span class="keywordflow">if</span>( here.<a class="code hl_function" href="classmap.html#aba8f330c2cc25be0652489b42d8dd530">ter</a>( t ) == terrain_id ) {</div>
-<div class="line"><a id="l04110" name="l04110"></a><span class="lineno"> 4110</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l04111" name="l04111"></a><span class="lineno"> 4111</span>        }</div>
-<div class="line"><a id="l04112" name="l04112"></a><span class="lineno"> 4112</span>    }</div>
-<div class="line"><a id="l04113" name="l04113"></a><span class="lineno"> 4113</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l04114" name="l04114"></a><span class="lineno"> 4114</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04103">4103</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04104" name="l04104"></a><span class="lineno"> 4104</span>{</div>
+<div class="line"><a id="l04105" name="l04105"></a><span class="lineno"> 4105</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l04106" name="l04106"></a><span class="lineno"> 4106</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> &amp;t : here.<a class="code hl_function" href="classmap.html#a4f5f812d7e89a998429958573a4c340f">points_in_radius</a>( pos, 1, 0 ) ) {</div>
+<div class="line"><a id="l04107" name="l04107"></a><span class="lineno"> 4107</span>        <span class="keywordflow">if</span>( here.<a class="code hl_function" href="classmap.html#aba8f330c2cc25be0652489b42d8dd530">ter</a>( t ) == terrain_id ) {</div>
+<div class="line"><a id="l04108" name="l04108"></a><span class="lineno"> 4108</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l04109" name="l04109"></a><span class="lineno"> 4109</span>        }</div>
+<div class="line"><a id="l04110" name="l04110"></a><span class="lineno"> 4110</span>    }</div>
+<div class="line"><a id="l04111" name="l04111"></a><span class="lineno"> 4111</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l04112" name="l04112"></a><span class="lineno"> 4112</span>}</div>
 <div class="ttc" id="aclassmap_html"><div class="ttname"><a href="classmap.html">map</a></div><div class="ttdoc">Manage and cache data about a part of the map.</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00383">map.h:384</a></div></div>
-<div class="ttc" id="aclassmap_html_a4f5f812d7e89a998429958573a4c340f"><div class="ttname"><a href="classmap.html#a4f5f812d7e89a998429958573a4c340f">map::points_in_radius</a></div><div class="ttdeci">tripoint_range&lt; tripoint &gt; points_in_radius(const tripoint &amp;center, size_t radius, size_t radiusz=0) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08711">map.cpp:8711</a></div></div>
-<div class="ttc" id="aclassmap_html_aba8f330c2cc25be0652489b42d8dd530"><div class="ttname"><a href="classmap.html#aba8f330c2cc25be0652489b42d8dd530">map::ter</a></div><div class="ttdeci">ter_id ter(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01557">map.cpp:1557</a></div></div>
+<div class="ttc" id="aclassmap_html_a4f5f812d7e89a998429958573a4c340f"><div class="ttname"><a href="classmap.html#a4f5f812d7e89a998429958573a4c340f">map::points_in_radius</a></div><div class="ttdeci">tripoint_range&lt; tripoint &gt; points_in_radius(const tripoint &amp;center, size_t radius, size_t radiusz=0) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l08733">map.cpp:8733</a></div></div>
+<div class="ttc" id="aclassmap_html_aba8f330c2cc25be0652489b42d8dd530"><div class="ttname"><a href="classmap.html#aba8f330c2cc25be0652489b42d8dd530">map::ter</a></div><div class="ttdeci">ter_id ter(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01562">map.cpp:1562</a></div></div>
 <div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="map_8cpp_source.html#l08711">map::points_in_radius()</a>, <a class="el" href="character_8cpp_source.html#l00591">Character::pos()</a>, and <a class="el" href="map_8cpp_source.html#l01557">map::ter()</a>.</p>
+<p class="reference">References <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="map_8cpp_source.html#l08733">map::points_in_radius()</a>, <a class="el" href="character_8cpp_source.html#l00599">Character::pos()</a>, and <a class="el" href="map_8cpp_source.html#l01562">map::ter()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04116">place_trap_actor::is_allowed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04114">place_trap_actor::is_allowed()</a>.</p>
 
 </div>
 </div>
@@ -852,20 +852,20 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04097">4097</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04098" name="l04098"></a><span class="lineno"> 4098</span>{</div>
-<div class="line"><a id="l04099" name="l04099"></a><span class="lineno"> 4099</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l04100" name="l04100"></a><span class="lineno"> 4100</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> = pos + offset;</div>
-<div class="line"><a id="l04101" name="l04101"></a><span class="lineno"> 4101</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> = pos - offset;</div>
-<div class="line"><a id="l04102" name="l04102"></a><span class="lineno"> 4102</span>    <span class="keywordflow">return</span> here.<a class="code hl_function" href="classmap.html#abe9e7b93cf8ee15c370ad55c3138c4f6">move_cost</a>( <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> ) != 2 &amp;&amp; here.<a class="code hl_function" href="classmap.html#abe9e7b93cf8ee15c370ad55c3138c4f6">move_cost</a>( <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> ) != 2;</div>
-<div class="line"><a id="l04103" name="l04103"></a><span class="lineno"> 4103</span>}</div>
-<div class="ttc" id="aclassmap_html_abe9e7b93cf8ee15c370ad55c3138c4f6"><div class="ttname"><a href="classmap.html#abe9e7b93cf8ee15c370ad55c3138c4f6">map::move_cost</a></div><div class="ttdeci">int move_cost(const tripoint &amp;p, const vehicle *ignored_vehicle=nullptr) const</div><div class="ttdoc">Calculate the cost to move past the tile at p.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01839">map.cpp:1839</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04095">4095</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04096" name="l04096"></a><span class="lineno"> 4096</span>{</div>
+<div class="line"><a id="l04097" name="l04097"></a><span class="lineno"> 4097</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l04098" name="l04098"></a><span class="lineno"> 4098</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> = pos + offset;</div>
+<div class="line"><a id="l04099" name="l04099"></a><span class="lineno"> 4099</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> = pos - offset;</div>
+<div class="line"><a id="l04100" name="l04100"></a><span class="lineno"> 4100</span>    <span class="keywordflow">return</span> here.<a class="code hl_function" href="classmap.html#abe9e7b93cf8ee15c370ad55c3138c4f6">move_cost</a>( <a class="code hl_variable" href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a> ) != 2 &amp;&amp; here.<a class="code hl_function" href="classmap.html#abe9e7b93cf8ee15c370ad55c3138c4f6">move_cost</a>( <a class="code hl_variable" href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a> ) != 2;</div>
+<div class="line"><a id="l04101" name="l04101"></a><span class="lineno"> 4101</span>}</div>
+<div class="ttc" id="aclassmap_html_abe9e7b93cf8ee15c370ad55c3138c4f6"><div class="ttname"><a href="classmap.html#abe9e7b93cf8ee15c370ad55c3138c4f6">map::move_cost</a></div><div class="ttdeci">int move_cost(const tripoint &amp;p, const vehicle *ignored_vehicle=nullptr) const</div><div class="ttdoc">Calculate the cost to move past the tile at p.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01844">map.cpp:1844</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a188caae18b60b66f9f44214c7e28ac1f"><div class="ttname"><a href="magic_8cpp.html#a188caae18b60b66f9f44214c7e28ac1f">a</a></div><div class="ttdeci">constexpr double a</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01030">magic.cpp:1030</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_aa93a189fb7bbbf87be54bcc7bd11bb6f"><div class="ttname"><a href="magic_8cpp.html#aa93a189fb7bbbf87be54bcc7bd11bb6f">b</a></div><div class="ttdeci">constexpr double b</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01031">magic.cpp:1031</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="map_8cpp_source.html#l01839">map::move_cost()</a>, and <a class="el" href="character_8cpp_source.html#l00591">Character::pos()</a>.</p>
+<p class="reference">References <a class="el" href="magic_8cpp_source.html#l01030">a</a>, <a class="el" href="magic_8cpp_source.html#l01031">b</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="map_8cpp_source.html#l01844">map::move_cost()</a>, and <a class="el" href="character_8cpp_source.html#l00599">Character::pos()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04116">place_trap_actor::is_allowed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04114">place_trap_actor::is_allowed()</a>.</p>
 
 </div>
 </div>
@@ -932,14 +932,14 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclasstime__duration_html_a0f7145f4fc4c09defbaf25f468e4e54a"><div class="ttname"><a href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a></div><div class="ttdeci">static constexpr time_duration from_turns(const T t)</div><div class="ttdoc">Named constructors to get a duration representing a multiple of the named time units.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00204">calendar.h:204</a></div></div>
 <div class="ttc" id="aclasstime__duration_html_a4694c27b90feb607344d0605cfa50db8"><div class="ttname"><a href="classtime__duration.html#a4694c27b90feb607344d0605cfa50db8">time_duration::units</a></div><div class="ttdeci">static const std::vector&lt; std::pair&lt; std::string, time_duration &gt; &gt; units</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00335">calendar.h:335</a></div></div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
-<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
+<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00098">hash_utils.h:98</a></div></div>
 <div class="ttc" id="arelic_8h_html_a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b"><div class="ttname"><a href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b">relic_recharge_type::time</a></div><div class="ttdeci">@ time</div><div class="ttdoc">Recharges slowly with time.</div></div>
 <div class="ttc" id="astructeffect__data_html"><div class="ttname"><a href="structeffect__data.html">effect_data</a></div><div class="ttdoc">Used in consume_drug_iuse for storing effect data.</div><div class="ttdef"><b>Definition:</b> <a href="iuse__actor_8h_source.html#l00234">iuse_actor.h:234</a></div></div>
 <div class="ttc" id="atype__id_8h_html_acc8305d21e9a186d196c8ff88ba2cf19"><div class="ttname"><a href="type__id_8h.html#acc8305d21e9a186d196c8ff88ba2cf19">efftype_id</a></div><div class="ttdeci">string_id&lt; effect_type &gt; efftype_id</div><div class="ttdef"><b>Definition:</b> <a href="type__id_8h_source.html#l00039">type_id.h:39</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="calendar_8h_source.html#l00204">time_duration::from_turns()</a>, <a class="el" href="bodypart_8cpp_source.html#l00180">get_body_part_token()</a>, <a class="el" href="json_8cpp_source.html#l00334">JsonObject::get_bool()</a>, <a class="el" href="json_8cpp_source.html#l00350">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00309">JsonObject::get_raw()</a>, <a class="el" href="json_8cpp_source.html#l00382">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00473">JsonObject::has_string()</a>, <a class="el" href="cached__options_8cpp_source.html#l00005">json_report_strict</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, <a class="el" href="json_8cpp_source.html#l00234">JsonObject::throw_error()</a>, <a class="el" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b">time</a>, and <a class="el" href="calendar_8h_source.html#l00335">time_duration::units</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="calendar_8h_source.html#l00204">time_duration::from_turns()</a>, <a class="el" href="bodypart_8cpp_source.html#l00180">get_body_part_token()</a>, <a class="el" href="json_8cpp_source.html#l00334">JsonObject::get_bool()</a>, <a class="el" href="json_8cpp_source.html#l00350">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l00309">JsonObject::get_raw()</a>, <a class="el" href="json_8cpp_source.html#l00382">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00473">JsonObject::has_string()</a>, <a class="el" href="cached__options_8cpp_source.html#l00005">json_report_strict</a>, <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>, <a class="el" href="json_8cpp_source.html#l00234">JsonObject::throw_error()</a>, <a class="el" href="relic_8h.html#a37cd9dd49ee6b62891ec331828640ddca07cc694b9b3fc636710fa08b6922c42b">time</a>, and <a class="el" href="calendar_8h_source.html#l00335">time_duration::units</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00742">consume_drug_iuse::load()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l05038">change_scent_iuse::load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03604">heal_actor::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00742">consume_drug_iuse::load()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l05036">change_scent_iuse::load()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03602">heal_actor::load()</a>.</p>
 
 </div>
 </div>
@@ -1037,59 +1037,59 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 Perception slightly increases precision when using first aid on someone else Firstaid increases precision when using first aid on someone else 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03876">3876</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03882" name="l03882"></a><span class="lineno"> 3882</span>{</div>
-<div class="line"><a id="l03883" name="l03883"></a><span class="lineno"> 3883</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> bleed = bleed_chance &gt; 0.0f;</div>
-<div class="line"><a id="l03884" name="l03884"></a><span class="lineno"> 3884</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> bite = bite_chance &gt; 0.0f;</div>
-<div class="line"><a id="l03885" name="l03885"></a><span class="lineno"> 3885</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> infect = infect_chance &gt; 0.0f;</div>
-<div class="line"><a id="l03886" name="l03886"></a><span class="lineno"> 3886</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> precise = &amp;healer == &amp;patient ?</div>
-<div class="line"><a id="l03887" name="l03887"></a><span class="lineno"> 3887</span>                         patient.<a class="code hl_function" href="classCharacter.html#af06dd97724f4f05df782e7a4b4f9cfe1">has_trait</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#aaba29ebaa1b21855ea43edd5864d6063">trait_SELFAWARE</a> ) :<span class="comment"></span></div>
-<div class="line"><a id="l03888" name="l03888"></a><span class="lineno"> 3888</span><span class="comment">                         /** @EFFECT_PER slightly increases precision when using first aid on someone else */</span></div>
-<div class="line"><a id="l03889" name="l03889"></a><span class="lineno"> 3889</span><span class="comment"></span> </div>
-<div class="line"><a id="l03890" name="l03890"></a><span class="lineno"> 3890</span><span class="comment">                         /** @EFFECT_FIRSTAID increases precision when using first aid on someone else */</span></div>
-<div class="line"><a id="l03891" name="l03891"></a><span class="lineno"> 3891</span>                         ( healer.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#aaf598d0fedebd89ec20f768da3b5fd8a">skill_firstaid</a> ) * 4 + healer.<a class="code hl_variable" href="classCharacter.html#ad8a2bb942a756787aced3b83319176ff">per_cur</a> &gt;= 20 );</div>
-<div class="line"><a id="l03892" name="l03892"></a><span class="lineno"> 3892</span>    <span class="keywordflow">while</span>( <span class="keyword">true</span> ) {</div>
-<div class="line"><a id="l03893" name="l03893"></a><span class="lineno"> 3893</span>        <a class="code hl_enumeration" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0">hp_part</a> healed_part = patient.<a class="code hl_function" href="classCharacter.html#a3a3aee03c9178a74889be4ba3c557d9c">body_window</a>( menu_header, force, precise,</div>
-<div class="line"><a id="l03894" name="l03894"></a><span class="lineno"> 3894</span>                              limb_power, head_bonus, torso_bonus,</div>
-<div class="line"><a id="l03895" name="l03895"></a><span class="lineno"> 3895</span>                              bleed_chance, bite_chance, infect_chance, bandage_power, disinfectant_power );</div>
-<div class="line"><a id="l03896" name="l03896"></a><span class="lineno"> 3896</span>        <span class="keywordflow">if</span>( healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0ad276871b7d0cc8a7678aae85a07a5cc6">num_hp_parts</a> ) {</div>
-<div class="line"><a id="l03897" name="l03897"></a><span class="lineno"> 3897</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0ad276871b7d0cc8a7678aae85a07a5cc6">num_hp_parts</a>;</div>
-<div class="line"><a id="l03898" name="l03898"></a><span class="lineno"> 3898</span>        }</div>
-<div class="line"><a id="l03899" name="l03899"></a><span class="lineno"> 3899</span> </div>
-<div class="line"><a id="l03900" name="l03900"></a><span class="lineno"> 3900</span>        <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a> &amp;bp = <a class="code hl_function" href="bodypart_8cpp.html#ae34a481a7c686b233f2d8c48e43b723a">convert_bp</a>( <a class="code hl_function" href="classCharacter.html#af781804624ab031f0016b970b4fa8007">player::hp_to_bp</a>( healed_part ) ).<a class="code hl_function" href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">id</a>();</div>
-<div class="line"><a id="l03901" name="l03901"></a><span class="lineno"> 3901</span>        <span class="keywordflow">if</span>( ( infect &amp;&amp; patient.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#a1de43fa1f6d16ce87ab7a3a49e47c463">effect_infected</a>, bp-&gt;token ) ) ||</div>
-<div class="line"><a id="l03902" name="l03902"></a><span class="lineno"> 3902</span>            ( bite &amp;&amp; patient.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#a39b21fc30fecd7d4fb15047600d03522">effect_bite</a>, bp-&gt;token ) ) ||</div>
-<div class="line"><a id="l03903" name="l03903"></a><span class="lineno"> 3903</span>            ( bleed &amp;&amp; patient.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#a151e6b162a8a2cdbdb11c407013076eb">effect_bleed</a>, bp-&gt;token ) ) ) {</div>
-<div class="line"><a id="l03904" name="l03904"></a><span class="lineno"> 3904</span>            <span class="keywordflow">return</span> healed_part;</div>
-<div class="line"><a id="l03905" name="l03905"></a><span class="lineno"> 3905</span>        }</div>
-<div class="line"><a id="l03906" name="l03906"></a><span class="lineno"> 3906</span> </div>
-<div class="line"><a id="l03907" name="l03907"></a><span class="lineno"> 3907</span>        <span class="keywordflow">if</span>( patient.<a class="code hl_function" href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">is_limb_broken</a>( bp ) ) {</div>
-<div class="line"><a id="l03908" name="l03908"></a><span class="lineno"> 3908</span>            <span class="keywordflow">if</span>( healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0a915090f188555ecb1e15d8b0587d7953">hp_arm_l</a> || healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0a8a16b23e27533d953982c08821ab13f7">hp_arm_r</a> ) {</div>
-<div class="line"><a id="l03909" name="l03909"></a><span class="lineno"> 3909</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;That arm is broken.  It needs surgical attention or a splint.&quot;</span> ) );</div>
-<div class="line"><a id="l03910" name="l03910"></a><span class="lineno"> 3910</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0afd5011bfeb0a79800c76ac45c7fc67c3">hp_leg_l</a> || healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0a836da7f5dc719418e50b65641d92a76e">hp_leg_r</a> ) {</div>
-<div class="line"><a id="l03911" name="l03911"></a><span class="lineno"> 3911</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;That leg is broken.  It needs surgical attention or a splint.&quot;</span> ) );</div>
-<div class="line"><a id="l03912" name="l03912"></a><span class="lineno"> 3912</span>            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03913" name="l03913"></a><span class="lineno"> 3913</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <span class="stringliteral">&quot;That body part is bugged.  It needs developer&#39;s attention.&quot;</span> );</div>
-<div class="line"><a id="l03914" name="l03914"></a><span class="lineno"> 3914</span>            }</div>
-<div class="line"><a id="l03915" name="l03915"></a><span class="lineno"> 3915</span> </div>
-<div class="line"><a id="l03916" name="l03916"></a><span class="lineno"> 3916</span>            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l03917" name="l03917"></a><span class="lineno"> 3917</span>        }</div>
-<div class="line"><a id="l03918" name="l03918"></a><span class="lineno"> 3918</span> </div>
-<div class="line"><a id="l03919" name="l03919"></a><span class="lineno"> 3919</span>        <span class="keywordflow">if</span>( force || patient.<a class="code hl_function" href="classCreature.html#ab901ee8b150fdad01ff2028ec8dba84c">get_part_hp_cur</a>( bp ) &lt; patient.<a class="code hl_function" href="classCreature.html#aad6dc5532f233030d367ed67e0ea6613">get_part_hp_max</a>( bp ) ) {</div>
-<div class="line"><a id="l03920" name="l03920"></a><span class="lineno"> 3920</span>            <span class="keywordflow">return</span> healed_part;</div>
-<div class="line"><a id="l03921" name="l03921"></a><span class="lineno"> 3921</span>        }</div>
-<div class="line"><a id="l03922" name="l03922"></a><span class="lineno"> 3922</span>    }</div>
-<div class="line"><a id="l03923" name="l03923"></a><span class="lineno"> 3923</span>}</div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l03874">3874</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03880" name="l03880"></a><span class="lineno"> 3880</span>{</div>
+<div class="line"><a id="l03881" name="l03881"></a><span class="lineno"> 3881</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> bleed = bleed_chance &gt; 0.0f;</div>
+<div class="line"><a id="l03882" name="l03882"></a><span class="lineno"> 3882</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> bite = bite_chance &gt; 0.0f;</div>
+<div class="line"><a id="l03883" name="l03883"></a><span class="lineno"> 3883</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> infect = infect_chance &gt; 0.0f;</div>
+<div class="line"><a id="l03884" name="l03884"></a><span class="lineno"> 3884</span>    <span class="keyword">const</span> <span class="keywordtype">bool</span> precise = &amp;healer == &amp;patient ?</div>
+<div class="line"><a id="l03885" name="l03885"></a><span class="lineno"> 3885</span>                         patient.<a class="code hl_function" href="classCharacter.html#af06dd97724f4f05df782e7a4b4f9cfe1">has_trait</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#aaba29ebaa1b21855ea43edd5864d6063">trait_SELFAWARE</a> ) :<span class="comment"></span></div>
+<div class="line"><a id="l03886" name="l03886"></a><span class="lineno"> 3886</span><span class="comment">                         /** @EFFECT_PER slightly increases precision when using first aid on someone else */</span></div>
+<div class="line"><a id="l03887" name="l03887"></a><span class="lineno"> 3887</span><span class="comment"></span> </div>
+<div class="line"><a id="l03888" name="l03888"></a><span class="lineno"> 3888</span><span class="comment">                         /** @EFFECT_FIRSTAID increases precision when using first aid on someone else */</span></div>
+<div class="line"><a id="l03889" name="l03889"></a><span class="lineno"> 3889</span>                         ( healer.<a class="code hl_function" href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">get_skill_level</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#aaf598d0fedebd89ec20f768da3b5fd8a">skill_firstaid</a> ) * 4 + healer.<a class="code hl_variable" href="classCharacter.html#ad8a2bb942a756787aced3b83319176ff">per_cur</a> &gt;= 20 );</div>
+<div class="line"><a id="l03890" name="l03890"></a><span class="lineno"> 3890</span>    <span class="keywordflow">while</span>( <span class="keyword">true</span> ) {</div>
+<div class="line"><a id="l03891" name="l03891"></a><span class="lineno"> 3891</span>        <a class="code hl_enumeration" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0">hp_part</a> healed_part = patient.<a class="code hl_function" href="classCharacter.html#a3a3aee03c9178a74889be4ba3c557d9c">body_window</a>( menu_header, force, precise,</div>
+<div class="line"><a id="l03892" name="l03892"></a><span class="lineno"> 3892</span>                              limb_power, head_bonus, torso_bonus,</div>
+<div class="line"><a id="l03893" name="l03893"></a><span class="lineno"> 3893</span>                              bleed_chance, bite_chance, infect_chance, bandage_power, disinfectant_power );</div>
+<div class="line"><a id="l03894" name="l03894"></a><span class="lineno"> 3894</span>        <span class="keywordflow">if</span>( healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0ad276871b7d0cc8a7678aae85a07a5cc6">num_hp_parts</a> ) {</div>
+<div class="line"><a id="l03895" name="l03895"></a><span class="lineno"> 3895</span>            <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0ad276871b7d0cc8a7678aae85a07a5cc6">num_hp_parts</a>;</div>
+<div class="line"><a id="l03896" name="l03896"></a><span class="lineno"> 3896</span>        }</div>
+<div class="line"><a id="l03897" name="l03897"></a><span class="lineno"> 3897</span> </div>
+<div class="line"><a id="l03898" name="l03898"></a><span class="lineno"> 3898</span>        <span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a> &amp;bp = <a class="code hl_function" href="bodypart_8cpp.html#ae34a481a7c686b233f2d8c48e43b723a">convert_bp</a>( <a class="code hl_function" href="classCharacter.html#af781804624ab031f0016b970b4fa8007">player::hp_to_bp</a>( healed_part ) ).<a class="code hl_function" href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">id</a>();</div>
+<div class="line"><a id="l03899" name="l03899"></a><span class="lineno"> 3899</span>        <span class="keywordflow">if</span>( ( infect &amp;&amp; patient.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#a1de43fa1f6d16ce87ab7a3a49e47c463">effect_infected</a>, bp-&gt;token ) ) ||</div>
+<div class="line"><a id="l03900" name="l03900"></a><span class="lineno"> 3900</span>            ( bite &amp;&amp; patient.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#a39b21fc30fecd7d4fb15047600d03522">effect_bite</a>, bp-&gt;token ) ) ||</div>
+<div class="line"><a id="l03901" name="l03901"></a><span class="lineno"> 3901</span>            ( bleed &amp;&amp; patient.<a class="code hl_function" href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">has_effect</a>( <a class="code hl_variable" href="iuse__actor_8cpp.html#a151e6b162a8a2cdbdb11c407013076eb">effect_bleed</a>, bp-&gt;token ) ) ) {</div>
+<div class="line"><a id="l03902" name="l03902"></a><span class="lineno"> 3902</span>            <span class="keywordflow">return</span> healed_part;</div>
+<div class="line"><a id="l03903" name="l03903"></a><span class="lineno"> 3903</span>        }</div>
+<div class="line"><a id="l03904" name="l03904"></a><span class="lineno"> 3904</span> </div>
+<div class="line"><a id="l03905" name="l03905"></a><span class="lineno"> 3905</span>        <span class="keywordflow">if</span>( patient.<a class="code hl_function" href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">is_limb_broken</a>( bp ) ) {</div>
+<div class="line"><a id="l03906" name="l03906"></a><span class="lineno"> 3906</span>            <span class="keywordflow">if</span>( healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0a915090f188555ecb1e15d8b0587d7953">hp_arm_l</a> || healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0a8a16b23e27533d953982c08821ab13f7">hp_arm_r</a> ) {</div>
+<div class="line"><a id="l03907" name="l03907"></a><span class="lineno"> 3907</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;That arm is broken.  It needs surgical attention or a splint.&quot;</span> ) );</div>
+<div class="line"><a id="l03908" name="l03908"></a><span class="lineno"> 3908</span>            } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0afd5011bfeb0a79800c76ac45c7fc67c3">hp_leg_l</a> || healed_part == <a class="code hl_enumvalue" href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0a836da7f5dc719418e50b65641d92a76e">hp_leg_r</a> ) {</div>
+<div class="line"><a id="l03909" name="l03909"></a><span class="lineno"> 3909</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;That leg is broken.  It needs surgical attention or a splint.&quot;</span> ) );</div>
+<div class="line"><a id="l03910" name="l03910"></a><span class="lineno"> 3910</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03911" name="l03911"></a><span class="lineno"> 3911</span>                <a class="code hl_function" href="messages_8cpp.html#a54489326fc37823819c5105addfa27f2">add_msg</a>( <a class="code hl_enumvalue" href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a>, <span class="stringliteral">&quot;That body part is bugged.  It needs developer&#39;s attention.&quot;</span> );</div>
+<div class="line"><a id="l03912" name="l03912"></a><span class="lineno"> 3912</span>            }</div>
+<div class="line"><a id="l03913" name="l03913"></a><span class="lineno"> 3913</span> </div>
+<div class="line"><a id="l03914" name="l03914"></a><span class="lineno"> 3914</span>            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l03915" name="l03915"></a><span class="lineno"> 3915</span>        }</div>
+<div class="line"><a id="l03916" name="l03916"></a><span class="lineno"> 3916</span> </div>
+<div class="line"><a id="l03917" name="l03917"></a><span class="lineno"> 3917</span>        <span class="keywordflow">if</span>( force || patient.<a class="code hl_function" href="classCreature.html#ab901ee8b150fdad01ff2028ec8dba84c">get_part_hp_cur</a>( bp ) &lt; patient.<a class="code hl_function" href="classCreature.html#aad6dc5532f233030d367ed67e0ea6613">get_part_hp_max</a>( bp ) ) {</div>
+<div class="line"><a id="l03918" name="l03918"></a><span class="lineno"> 3918</span>            <span class="keywordflow">return</span> healed_part;</div>
+<div class="line"><a id="l03919" name="l03919"></a><span class="lineno"> 3919</span>        }</div>
+<div class="line"><a id="l03920" name="l03920"></a><span class="lineno"> 3920</span>    }</div>
+<div class="line"><a id="l03921" name="l03921"></a><span class="lineno"> 3921</span>}</div>
 <div class="ttc" id="abodypart_8cpp_html_ae34a481a7c686b233f2d8c48e43b723a"><div class="ttname"><a href="bodypart_8cpp.html#ae34a481a7c686b233f2d8c48e43b723a">convert_bp</a></div><div class="ttdeci">const bodypart_str_id &amp; convert_bp(body_part bp)</div><div class="ttdoc">Returns the new id for old token.</div><div class="ttdef"><b>Definition:</b> <a href="bodypart_8cpp_source.html#l00185">bodypart.cpp:185</a></div></div>
-<div class="ttc" id="aclassCharacter_html_a3a3aee03c9178a74889be4ba3c557d9c"><div class="ttname"><a href="classCharacter.html#a3a3aee03c9178a74889be4ba3c557d9c">Character::body_window</a></div><div class="ttdeci">hp_part body_window(const std::string &amp;menu_header, bool show_all, bool precise, int normal_bonus, int head_bonus, int torso_bonus, float bleed, float bite, float infect, float bandage_power, float disinfectant_power) const</div><div class="ttdoc">Displays menu with body part hp, optionally with hp estimation after healing.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l05729">character.cpp:5729</a></div></div>
-<div class="ttc" id="aclassCharacter_html_ac2245aed6c7279986f42ef9208e816c0"><div class="ttname"><a href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">Character::is_limb_broken</a></div><div class="ttdeci">bool is_limb_broken(const bodypart_id &amp;limb) const</div><div class="ttdoc">Returns true if the limb is broken.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01249">character.cpp:1249</a></div></div>
-<div class="ttc" id="aclassCharacter_html_ad8a2bb942a756787aced3b83319176ff"><div class="ttname"><a href="classCharacter.html#ad8a2bb942a756787aced3b83319176ff">Character::per_cur</a></div><div class="ttdeci">int per_cur</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00266">character.h:266</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a3a3aee03c9178a74889be4ba3c557d9c"><div class="ttname"><a href="classCharacter.html#a3a3aee03c9178a74889be4ba3c557d9c">Character::body_window</a></div><div class="ttdeci">hp_part body_window(const std::string &amp;menu_header, bool show_all, bool precise, int normal_bonus, int head_bonus, int torso_bonus, float bleed, float bite, float infect, float bandage_power, float disinfectant_power) const</div><div class="ttdoc">Displays menu with body part hp, optionally with hp estimation after healing.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l05753">character.cpp:5753</a></div></div>
+<div class="ttc" id="aclassCharacter_html_ac2245aed6c7279986f42ef9208e816c0"><div class="ttname"><a href="classCharacter.html#ac2245aed6c7279986f42ef9208e816c0">Character::is_limb_broken</a></div><div class="ttdeci">bool is_limb_broken(const bodypart_id &amp;limb) const</div><div class="ttdoc">Returns true if the limb is broken.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01262">character.cpp:1262</a></div></div>
+<div class="ttc" id="aclassCharacter_html_ad8a2bb942a756787aced3b83319176ff"><div class="ttname"><a href="classCharacter.html#ad8a2bb942a756787aced3b83319176ff">Character::per_cur</a></div><div class="ttdeci">int per_cur</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00267">character.h:267</a></div></div>
 <div class="ttc" id="aclassCharacter_html_af06dd97724f4f05df782e7a4b4f9cfe1"><div class="ttname"><a href="classCharacter.html#af06dd97724f4f05df782e7a4b4f9cfe1">Character::has_trait</a></div><div class="ttdeci">bool has_trait(const trait_id &amp;b) const override</div><div class="ttdoc">Returns true if the player has the entered trait.</div><div class="ttdef"><b>Definition:</b> <a href="mutation_8cpp_source.html#l00101">mutation.cpp:101</a></div></div>
-<div class="ttc" id="aclassCharacter_html_af781804624ab031f0016b970b4fa8007"><div class="ttname"><a href="classCharacter.html#af781804624ab031f0016b970b4fa8007">Character::hp_to_bp</a></div><div class="ttdeci">static body_part hp_to_bp(hp_part hpart)</div><div class="ttdoc">Converts an hp_part to a body_part.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l06459">character.cpp:6459</a></div></div>
-<div class="ttc" id="aclassCharacter_html_afa95fe499ca6b55ab97f1b442a4c95c5"><div class="ttname"><a href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">Character::get_skill_level</a></div><div class="ttdeci">int get_skill_level(const skill_id &amp;ident) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03331">character.cpp:3331</a></div></div>
-<div class="ttc" id="aclassCreature_html_a6fb79df9315dc2bed6f34d9a2e37da90"><div class="ttname"><a href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">Creature::has_effect</a></div><div class="ttdeci">bool has_effect(const efftype_id &amp;eff_id, body_part bp=num_bp) const</div><div class="ttdoc">Check if creature has the matching effect.</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01186">creature.cpp:1186</a></div></div>
-<div class="ttc" id="aclassCreature_html_aad6dc5532f233030d367ed67e0ea6613"><div class="ttname"><a href="classCreature.html#aad6dc5532f233030d367ed67e0ea6613">Creature::get_part_hp_max</a></div><div class="ttdeci">int get_part_hp_max(const bodypart_id &amp;id) const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01586">creature.cpp:1586</a></div></div>
-<div class="ttc" id="aclassCreature_html_ab901ee8b150fdad01ff2028ec8dba84c"><div class="ttname"><a href="classCreature.html#ab901ee8b150fdad01ff2028ec8dba84c">Creature::get_part_hp_cur</a></div><div class="ttdeci">int get_part_hp_cur(const bodypart_id &amp;id) const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01581">creature.cpp:1581</a></div></div>
+<div class="ttc" id="aclassCharacter_html_af781804624ab031f0016b970b4fa8007"><div class="ttname"><a href="classCharacter.html#af781804624ab031f0016b970b4fa8007">Character::hp_to_bp</a></div><div class="ttdeci">static body_part hp_to_bp(hp_part hpart)</div><div class="ttdoc">Converts an hp_part to a body_part.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l06484">character.cpp:6484</a></div></div>
+<div class="ttc" id="aclassCharacter_html_afa95fe499ca6b55ab97f1b442a4c95c5"><div class="ttname"><a href="classCharacter.html#afa95fe499ca6b55ab97f1b442a4c95c5">Character::get_skill_level</a></div><div class="ttdeci">int get_skill_level(const skill_id &amp;ident) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03353">character.cpp:3353</a></div></div>
+<div class="ttc" id="aclassCreature_html_a6fb79df9315dc2bed6f34d9a2e37da90"><div class="ttname"><a href="classCreature.html#a6fb79df9315dc2bed6f34d9a2e37da90">Creature::has_effect</a></div><div class="ttdeci">bool has_effect(const efftype_id &amp;eff_id, body_part bp=num_bp) const</div><div class="ttdoc">Check if creature has the matching effect.</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01187">creature.cpp:1187</a></div></div>
+<div class="ttc" id="aclassCreature_html_aad6dc5532f233030d367ed67e0ea6613"><div class="ttname"><a href="classCreature.html#aad6dc5532f233030d367ed67e0ea6613">Creature::get_part_hp_max</a></div><div class="ttdeci">int get_part_hp_max(const bodypart_id &amp;id) const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01592">creature.cpp:1592</a></div></div>
+<div class="ttc" id="aclassCreature_html_ab901ee8b150fdad01ff2028ec8dba84c"><div class="ttname"><a href="classCreature.html#ab901ee8b150fdad01ff2028ec8dba84c">Creature::get_part_hp_cur</a></div><div class="ttdeci">int get_part_hp_cur(const bodypart_id &amp;id) const</div><div class="ttdef"><b>Definition:</b> <a href="creature_8cpp_source.html#l01587">creature.cpp:1587</a></div></div>
 <div class="ttc" id="aclassint__id_html"><div class="ttname"><a href="classint__id.html">int_id</a></div><div class="ttdoc">Just like the string_id, this is a wrapper for int based identifiers.</div><div class="ttdef"><b>Definition:</b> <a href="int__id_8h_source.html#l00019">int_id.h:20</a></div></div>
 <div class="ttc" id="aclassstring__id_html_aa3cde2bfb58efa9621289c0a70d24c5a"><div class="ttname"><a href="classstring__id.html#aa3cde2bfb58efa9621289c0a70d24c5a">string_id::id</a></div><div class="ttdeci">int_id&lt; T &gt; id() const</div><div class="ttdoc">Translate the string based it to the matching integer based id.</div><div class="ttdef"><b>Definition:</b> <a href="ammo__effect_8cpp_source.html#l00054">ammo_effect.cpp:54</a></div></div>
 <div class="ttc" id="aenums_8h_html_a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f"><div class="ttname"><a href="enums_8h.html#a3baf36d700701401b6baf94db93d096ea5d3734a51686ceb1848704dd277dfc7f">m_info</a></div><div class="ttdeci">@ m_info</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00265">enums.h:265</a></div></div>
@@ -1105,9 +1105,9 @@ Perception slightly increases precision when using first aid on someone else Fir
 <div class="ttc" id="apldata_8h_html_a51c99b582921c7fe956e6cb62a7b8fe0ad276871b7d0cc8a7678aae85a07a5cc6"><div class="ttname"><a href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0ad276871b7d0cc8a7678aae85a07a5cc6">num_hp_parts</a></div><div class="ttdeci">@ num_hp_parts</div><div class="ttdef"><b>Definition:</b> <a href="pldata_8h_source.html#l00040">pldata.h:39</a></div></div>
 <div class="ttc" id="apldata_8h_html_a51c99b582921c7fe956e6cb62a7b8fe0afd5011bfeb0a79800c76ac45c7fc67c3"><div class="ttname"><a href="pldata_8h.html#a51c99b582921c7fe956e6cb62a7b8fe0afd5011bfeb0a79800c76ac45c7fc67c3">hp_leg_l</a></div><div class="ttdeci">@ hp_leg_l</div><div class="ttdef"><b>Definition:</b> <a href="pldata_8h_source.html#l00037">pldata.h:37</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="creature_8cpp_source.html#l00127">Creature::bleed()</a>, <a class="el" href="character_8cpp_source.html#l05729">Character::body_window()</a>, <a class="el" href="bodypart_8cpp_source.html#l00185">convert_bp()</a>, <a class="el" href="iuse__actor_8cpp.html#a39b21fc30fecd7d4fb15047600d03522">effect_bite</a>, <a class="el" href="iuse__actor_8cpp.html#a151e6b162a8a2cdbdb11c407013076eb">effect_bleed</a>, <a class="el" href="iuse__actor_8cpp.html#a1de43fa1f6d16ce87ab7a3a49e47c463">effect_infected</a>, <a class="el" href="creature_8cpp_source.html#l01581">Creature::get_part_hp_cur()</a>, <a class="el" href="creature_8cpp_source.html#l01586">Creature::get_part_hp_max()</a>, <a class="el" href="character_8cpp_source.html#l03331">Character::get_skill_level()</a>, <a class="el" href="creature_8cpp_source.html#l01186">Creature::has_effect()</a>, <a class="el" href="mutation_8cpp_source.html#l00101">Character::has_trait()</a>, <a class="el" href="pldata_8h_source.html#l00035">hp_arm_l</a>, <a class="el" href="pldata_8h_source.html#l00036">hp_arm_r</a>, <a class="el" href="pldata_8h_source.html#l00037">hp_leg_l</a>, <a class="el" href="pldata_8h_source.html#l00038">hp_leg_r</a>, <a class="el" href="character_8cpp_source.html#l06459">Character::hp_to_bp()</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00054">string_id&lt; T &gt;::id()</a>, <a class="el" href="character_8cpp_source.html#l01249">Character::is_limb_broken()</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="pldata_8h_source.html#l00039">num_hp_parts</a>, <a class="el" href="character_8h_source.html#l00266">Character::per_cur</a>, <a class="el" href="iuse__actor_8cpp.html#aaf598d0fedebd89ec20f768da3b5fd8a">skill_firstaid</a>, and <a class="el" href="iuse__actor_8cpp.html#aaba29ebaa1b21855ea43edd5864d6063">trait_SELFAWARE</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="messages_8cpp_source.html#l00910">add_msg()</a>, <a class="el" href="creature_8cpp_source.html#l00127">Creature::bleed()</a>, <a class="el" href="character_8cpp_source.html#l05753">Character::body_window()</a>, <a class="el" href="bodypart_8cpp_source.html#l00185">convert_bp()</a>, <a class="el" href="iuse__actor_8cpp.html#a39b21fc30fecd7d4fb15047600d03522">effect_bite</a>, <a class="el" href="iuse__actor_8cpp.html#a151e6b162a8a2cdbdb11c407013076eb">effect_bleed</a>, <a class="el" href="iuse__actor_8cpp.html#a1de43fa1f6d16ce87ab7a3a49e47c463">effect_infected</a>, <a class="el" href="creature_8cpp_source.html#l01587">Creature::get_part_hp_cur()</a>, <a class="el" href="creature_8cpp_source.html#l01592">Creature::get_part_hp_max()</a>, <a class="el" href="character_8cpp_source.html#l03353">Character::get_skill_level()</a>, <a class="el" href="creature_8cpp_source.html#l01187">Creature::has_effect()</a>, <a class="el" href="mutation_8cpp_source.html#l00101">Character::has_trait()</a>, <a class="el" href="pldata_8h_source.html#l00035">hp_arm_l</a>, <a class="el" href="pldata_8h_source.html#l00036">hp_arm_r</a>, <a class="el" href="pldata_8h_source.html#l00037">hp_leg_l</a>, <a class="el" href="pldata_8h_source.html#l00038">hp_leg_r</a>, <a class="el" href="character_8cpp_source.html#l06484">Character::hp_to_bp()</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00054">string_id&lt; T &gt;::id()</a>, <a class="el" href="character_8cpp_source.html#l01262">Character::is_limb_broken()</a>, <a class="el" href="enums_8h_source.html#l00265">m_info</a>, <a class="el" href="pldata_8h_source.html#l00039">num_hp_parts</a>, <a class="el" href="character_8h_source.html#l00267">Character::per_cur</a>, <a class="el" href="iuse__actor_8cpp.html#aaf598d0fedebd89ec20f768da3b5fd8a">skill_firstaid</a>, and <a class="el" href="iuse__actor_8cpp.html#aaba29ebaa1b21855ea43edd5864d6063">trait_SELFAWARE</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03925">heal_actor::use_healing_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03923">heal_actor::use_healing_item()</a>.</p>
 
 </div>
 </div>
@@ -1151,24 +1151,24 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04154">4154</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l04155" name="l04155"></a><span class="lineno"> 4155</span>{</div>
-<div class="line"><a id="l04156" name="l04156"></a><span class="lineno"> 4156</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
-<div class="line"><a id="l04157" name="l04157"></a><span class="lineno"> 4157</span>    here.<a class="code hl_function" href="classmap.html#ade82e480520c05f5a4e8917df19cef8c">trap_set</a>( pos, <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l04158" name="l04158"></a><span class="lineno"> 4158</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtrap.html">trap</a> &amp;tr = here.<a class="code hl_function" href="classmap.html#a30ccb67ed3651d350f2caf214e0b5176">tr_at</a>( pos );</div>
-<div class="line"><a id="l04159" name="l04159"></a><span class="lineno"> 4159</span>    <span class="keywordflow">if</span>( !tr.<a class="code hl_function" href="structtrap.html#abeb5ff27f9f78475035f22aabdcfe834">can_see</a>( pos, p ) ) {</div>
-<div class="line"><a id="l04160" name="l04160"></a><span class="lineno"> 4160</span>        p.<a class="code hl_function" href="classCharacter.html#ada34ca3fb472a8b1816e297ead2b31df">add_known_trap</a>( pos, tr );</div>
-<div class="line"><a id="l04161" name="l04161"></a><span class="lineno"> 4161</span>    }</div>
-<div class="line"><a id="l04162" name="l04162"></a><span class="lineno"> 4162</span>}</div>
-<div class="ttc" id="aclassCharacter_html_ada34ca3fb472a8b1816e297ead2b31df"><div class="ttname"><a href="classCharacter.html#ada34ca3fb472a8b1816e297ead2b31df">Character::add_known_trap</a></div><div class="ttdeci">void add_known_trap(const tripoint &amp;pos, const trap &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10223">character.cpp:10223</a></div></div>
-<div class="ttc" id="aclassmap_html_a30ccb67ed3651d350f2caf214e0b5176"><div class="ttname"><a href="classmap.html#a30ccb67ed3651d350f2caf214e0b5176">map::tr_at</a></div><div class="ttdeci">const trap &amp; tr_at(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l05230">map.cpp:5230</a></div></div>
-<div class="ttc" id="aclassmap_html_ade82e480520c05f5a4e8917df19cef8c"><div class="ttname"><a href="classmap.html#ade82e480520c05f5a4e8917df19cef8c">map::trap_set</a></div><div class="ttdeci">void trap_set(const tripoint &amp;p, const trap_id &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l05282">map.cpp:5282</a></div></div>
+<p class="definition">Definition at line <a class="el" href="iuse__actor_8cpp_source.html#l04152">4152</a> of file <a class="el" href="iuse__actor_8cpp_source.html">iuse_actor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l04153" name="l04153"></a><span class="lineno"> 4153</span>{</div>
+<div class="line"><a id="l04154" name="l04154"></a><span class="lineno"> 4154</span>    <a class="code hl_class" href="classmap.html">map</a> &amp;here = <a class="code hl_function" href="map_8cpp.html#acb0b34be6e497bdd2f9f40ae6929d562">get_map</a>();</div>
+<div class="line"><a id="l04155" name="l04155"></a><span class="lineno"> 4155</span>    here.<a class="code hl_function" href="classmap.html#ade82e480520c05f5a4e8917df19cef8c">trap_set</a>( pos, <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l04156" name="l04156"></a><span class="lineno"> 4156</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtrap.html">trap</a> &amp;tr = here.<a class="code hl_function" href="classmap.html#a30ccb67ed3651d350f2caf214e0b5176">tr_at</a>( pos );</div>
+<div class="line"><a id="l04157" name="l04157"></a><span class="lineno"> 4157</span>    <span class="keywordflow">if</span>( !tr.<a class="code hl_function" href="structtrap.html#abeb5ff27f9f78475035f22aabdcfe834">can_see</a>( pos, p ) ) {</div>
+<div class="line"><a id="l04158" name="l04158"></a><span class="lineno"> 4158</span>        p.<a class="code hl_function" href="classCharacter.html#ada34ca3fb472a8b1816e297ead2b31df">add_known_trap</a>( pos, tr );</div>
+<div class="line"><a id="l04159" name="l04159"></a><span class="lineno"> 4159</span>    }</div>
+<div class="line"><a id="l04160" name="l04160"></a><span class="lineno"> 4160</span>}</div>
+<div class="ttc" id="aclassCharacter_html_ada34ca3fb472a8b1816e297ead2b31df"><div class="ttname"><a href="classCharacter.html#ada34ca3fb472a8b1816e297ead2b31df">Character::add_known_trap</a></div><div class="ttdeci">void add_known_trap(const tripoint &amp;pos, const trap &amp;t)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l10254">character.cpp:10254</a></div></div>
+<div class="ttc" id="aclassmap_html_a30ccb67ed3651d350f2caf214e0b5176"><div class="ttname"><a href="classmap.html#a30ccb67ed3651d350f2caf214e0b5176">map::tr_at</a></div><div class="ttdeci">const trap &amp; tr_at(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l05236">map.cpp:5236</a></div></div>
+<div class="ttc" id="aclassmap_html_ade82e480520c05f5a4e8917df19cef8c"><div class="ttname"><a href="classmap.html#ade82e480520c05f5a4e8917df19cef8c">map::trap_set</a></div><div class="ttdeci">void trap_set(const tripoint &amp;p, const trap_id &amp;type)</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l05288">map.cpp:5288</a></div></div>
 <div class="ttc" id="astructtrap_html"><div class="ttname"><a href="structtrap.html">trap</a></div><div class="ttdef"><b>Definition:</b> <a href="trap_8h_source.html#l00086">trap.h:86</a></div></div>
 <div class="ttc" id="astructtrap_html_abeb5ff27f9f78475035f22aabdcfe834"><div class="ttname"><a href="structtrap.html#abeb5ff27f9f78475035f22aabdcfe834">trap::can_see</a></div><div class="ttdeci">bool can_see(const tripoint &amp;pos, const Character &amp;p) const</div><div class="ttdoc">Can player/npc p see this kind of trap, either by their memory (they known there is the trap) or by t...</div><div class="ttdef"><b>Definition:</b> <a href="trap_8cpp_source.html#l00223">trap.cpp:223</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l10223">Character::add_known_trap()</a>, <a class="el" href="trap_8cpp_source.html#l00223">trap::can_see()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="character_8cpp_source.html#l00591">Character::pos()</a>, <a class="el" href="map_8cpp_source.html#l05230">map::tr_at()</a>, and <a class="el" href="map_8cpp_source.html#l05282">map::trap_set()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l10254">Character::add_known_trap()</a>, <a class="el" href="trap_8cpp_source.html#l00223">trap::can_see()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, <a class="el" href="character_8cpp_source.html#l00599">Character::pos()</a>, <a class="el" href="map_8cpp_source.html#l05236">map::tr_at()</a>, and <a class="el" href="map_8cpp_source.html#l05288">map::trap_set()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04164">place_trap_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04162">place_trap_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1224,13 +1224,13 @@ Perception slightly increases precision when using first aid on someone else Fir
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>    }</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>    <span class="keywordflow">return</span> <a class="code hl_enumeration" href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>}</div>
-<div class="ttc" id="aclassmap_html_a49630763b899657bfa7c10586df7d360"><div class="ttname"><a href="classmap.html#a49630763b899657bfa7c10586df7d360">map::clear_path</a></div><div class="ttdeci">bool clear_path(const tripoint &amp;f, const tripoint &amp;t, int range, int cost_min, int cost_max) const</div><div class="ttdoc">Check whether there's a direct line of sight between F and T with the additional movecost restraints.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l06500">map.cpp:6500</a></div></div>
-<div class="ttc" id="aclassmap_html_a802cc11379d4be61f4e2b13a50f6390e"><div class="ttname"><a href="classmap.html#a802cc11379d4be61f4e2b13a50f6390e">map::impassable</a></div><div class="ttdeci">bool impassable(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01854">map.cpp:1854</a></div></div>
+<div class="ttc" id="aclassmap_html_a49630763b899657bfa7c10586df7d360"><div class="ttname"><a href="classmap.html#a49630763b899657bfa7c10586df7d360">map::clear_path</a></div><div class="ttdeci">bool clear_path(const tripoint &amp;f, const tripoint &amp;t, int range, int cost_min, int cost_max) const</div><div class="ttdoc">Check whether there's a direct line of sight between F and T with the additional movecost restraints.</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l06506">map.cpp:6506</a></div></div>
+<div class="ttc" id="aclassmap_html_a802cc11379d4be61f4e2b13a50f6390e"><div class="ttname"><a href="classmap.html#a802cc11379d4be61f4e2b13a50f6390e">map::impassable</a></div><div class="ttdeci">bool impassable(const tripoint &amp;p) const</div><div class="ttdef"><b>Definition:</b> <a href="map_8cpp_source.html#l01859">map.cpp:1859</a></div></div>
 <div class="ttc" id="acoordinates_8h_html_a13a12943d34d5f17e6c3b4e730659fc6"><div class="ttname"><a href="coordinates_8h.html#a13a12943d34d5f17e6c3b4e730659fc6">closest_points_first</a></div><div class="ttdeci">std::vector&lt; coords::coord_point&lt; Point, Origin, Scale &gt; &gt; closest_points_first(const coords::coord_point&lt; Point, Origin, Scale &gt; &amp;loc, int min_dist, int max_dist)</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00596">coordinates.h:596</a></div></div>
 <div class="ttc" id="aenums_8h_html_a00763863874f01b868849b27ceee73c9ac6c4bfa285e112c6854a2d820f854e3b"><div class="ttname"><a href="enums_8h.html#a00763863874f01b868849b27ceee73c9ac6c4bfa285e112c6854a2d820f854e3b">center</a></div><div class="ttdeci">@ center</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00323">enums.h:323</a></div></div>
 <div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format-inl_8h_source.html#l01626">fmtlib_format-inl.h:1626</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="enums_8h_source.html#l00323">center</a>, <a class="el" href="map_8cpp_source.html#l06500">map::clear_path()</a>, <a class="el" href="coordinates_8h_source.html#l00596">closest_points_first()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, and <a class="el" href="map_8cpp_source.html#l01854">map::impassable()</a>.</p>
+<p class="reference">References <a class="el" href="enums_8h_source.html#l00323">center</a>, <a class="el" href="map_8cpp_source.html#l06506">map::clear_path()</a>, <a class="el" href="coordinates_8h_source.html#l00596">closest_points_first()</a>, <a class="el" href="map_8cpp_source.html#l00147">get_map()</a>, and <a class="el" href="map_8cpp_source.html#l01859">map::impassable()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l00574">explosion_iuse::trigger_explosion()</a>.</p>
 
@@ -1309,7 +1309,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03664">heal_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03925">heal_actor::use_healing_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03662">heal_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03923">heal_actor::use_healing_item()</a>.</p>
 
 </div>
 </div>
@@ -1365,7 +1365,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02999">ammobelt_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02997">ammobelt_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1393,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03099">repair_item_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03097">repair_item_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1421,7 +1421,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02594">cast_spell_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02592">cast_spell_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1477,7 +1477,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02484">learn_spell_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02482">learn_spell_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1533,7 +1533,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04531">mutagen_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04529">mutagen_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1561,7 +1561,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02335">musical_instrument_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02333">musical_instrument_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1589,7 +1589,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03756">heal_actor::finish_using()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03925">heal_actor::use_healing_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03754">heal_actor::finish_using()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03923">heal_actor::use_healing_item()</a>.</p>
 
 </div>
 </div>
@@ -1617,7 +1617,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l01979">cauterize_actor::can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01918">cauterize_actor::cauterize_effect()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03756">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03876">pick_part_to_heal()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01943">cauterize_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03925">heal_actor::use_healing_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l01979">cauterize_actor::can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01918">cauterize_actor::cauterize_effect()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03754">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03874">pick_part_to_heal()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01943">cauterize_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03923">heal_actor::use_healing_item()</a>.</p>
 
 </div>
 </div>
@@ -1645,7 +1645,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l01979">cauterize_actor::can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03756">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03876">pick_part_to_heal()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01943">cauterize_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03925">heal_actor::use_healing_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l01979">cauterize_actor::can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03754">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03874">pick_part_to_heal()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l01943">cauterize_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03923">heal_actor::use_healing_item()</a>.</p>
 
 </div>
 </div>
@@ -1673,7 +1673,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03756">heal_actor::finish_using()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03925">heal_actor::use_healing_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03754">heal_actor::finish_using()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03923">heal_actor::use_healing_item()</a>.</p>
 
 </div>
 </div>
@@ -1701,7 +1701,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04531">mutagen_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04529">mutagen_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1729,7 +1729,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03756">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03876">pick_part_to_heal()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03925">heal_actor::use_healing_item()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03754">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03874">pick_part_to_heal()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03923">heal_actor::use_healing_item()</a>.</p>
 
 </div>
 </div>
@@ -1757,7 +1757,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02335">musical_instrument_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02333">musical_instrument_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1813,7 +1813,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02335">musical_instrument_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02333">musical_instrument_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1841,7 +1841,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03756">heal_actor::finish_using()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03754">heal_actor::finish_using()</a>.</p>
 
 </div>
 </div>
@@ -1869,7 +1869,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02335">musical_instrument_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02333">musical_instrument_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1897,7 +1897,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02335">musical_instrument_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02333">musical_instrument_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -1925,7 +1925,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04408">install_bionic_actor::can_use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04406">install_bionic_actor::can_use()</a>.</p>
 
 </div>
 </div>
@@ -1981,7 +1981,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04290">saw_barrel_actor::can_use_on()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04288">saw_barrel_actor::can_use_on()</a>.</p>
 
 </div>
 </div>
@@ -2093,7 +2093,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04347">saw_stock_actor::can_use_on()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04345">saw_stock_actor::can_use_on()</a>.</p>
 
 </div>
 </div>
@@ -2231,7 +2231,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02140">enzlave_actor::can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03756">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03736">heal_actor::get_bandaged_level()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03746">heal_actor::get_disinfected_level()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03713">heal_actor::get_heal_value()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03876">pick_part_to_heal()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l02024">enzlave_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03664">heal_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l02140">enzlave_actor::can_use()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03754">heal_actor::finish_using()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03734">heal_actor::get_bandaged_level()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03744">heal_actor::get_disinfected_level()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03711">heal_actor::get_heal_value()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l03874">pick_part_to_heal()</a>, <a class="el" href="iuse__actor_8cpp_source.html#l02024">enzlave_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l03662">heal_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -2315,7 +2315,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04408">install_bionic_actor::can_use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04406">install_bionic_actor::can_use()</a>.</p>
 
 </div>
 </div>
@@ -2343,7 +2343,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04408">install_bionic_actor::can_use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04406">install_bionic_actor::can_use()</a>.</p>
 
 </div>
 </div>
@@ -2455,7 +2455,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04531">mutagen_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l04599">mutagen_iv_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l04529">mutagen_actor::use()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l04597">mutagen_iv_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -2483,7 +2483,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l01918">cauterize_actor::cauterize_effect()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l04599">mutagen_iv_actor::use()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l01918">cauterize_actor::cauterize_effect()</a>, and <a class="el" href="iuse__actor_8cpp_source.html#l04597">mutagen_iv_actor::use()</a>.</p>
 
 </div>
 </div>
@@ -2623,7 +2623,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03876">pick_part_to_heal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="iuse__actor_8cpp_source.html#l03874">pick_part_to_heal()</a>.</p>
 
 </div>
 </div>
@@ -2689,7 +2689,7 @@ Perception slightly increases precision when using first aid on someone else Fir
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="iuse__actor_8cpp.html">iuse_actor.cpp</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:10 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:40 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

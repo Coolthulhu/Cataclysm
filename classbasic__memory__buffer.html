@@ -142,7 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a27f096451ed4e6738d3a33161fda3e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the buffer capacity to <em>new_capacity</em>.  <a href="classbasic__memory__buffer.html#a27f096451ed4e6738d3a33161fda3e90">More...</a><br /></td></tr>
 <tr class="separator:a27f096451ed4e6738d3a33161fda3e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad970f5ca7eda29893fc352b3d3486fc"><td class="memTemplParams" colspan="2">template&lt;typename ContiguousRange &gt; </td></tr>
-<tr class="memitem:aad970f5ca7eda29893fc352b3d3486fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__memory__buffer.html#aad970f5ca7eda29893fc352b3d3486fc">append</a> (const ContiguousRange &amp;range)</td></tr>
+<tr class="memitem:aad970f5ca7eda29893fc352b3d3486fc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classbasic__memory__buffer.html#aad970f5ca7eda29893fc352b3d3486fc">append</a> (const ContiguousRange &amp;<a class="el" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>)</td></tr>
 <tr class="separator:aad970f5ca7eda29893fc352b3d3486fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdetail_1_1buffer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdetail_1_1buffer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdetail_1_1buffer.html">detail::buffer&lt; T &gt;</a></td></tr>
 <tr class="memitem:ab0f4c5730a238421fd375ef0ca20fab1 inherit pub_methods_classdetail_1_1buffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1buffer.html#ab0f4c5730a238421fd375ef0ca20fab1">buffer</a> (const <a class="el" href="classdetail_1_1buffer.html">buffer</a> &amp;)=delete</td></tr>
@@ -412,11 +412,12 @@ template&lt;typename ContiguousRange &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="fmtlib__format_8h_source.html#l00833">833</a> of file <a class="el" href="fmtlib__format_8h_source.html">fmtlib_format.h</a>.</p>
 <div class="fragment"><div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>                                                    {</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>            <a class="code hl_function" href="classbasic__memory__buffer.html#aad970f5ca7eda29893fc352b3d3486fc">append</a>( range.data(), range.data() + range.size() );</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span>            <a class="code hl_function" href="classbasic__memory__buffer.html#aad970f5ca7eda29893fc352b3d3486fc">append</a>( <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>.data(), <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>.data() + <a class="code hl_enumvalue" href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a>.size() );</div>
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>        }</div>
+<div class="ttc" id="acharacter_8h_html_addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb"><div class="ttname"><a href="character_8h.html#addab86bfe6fd0bf8c22ec43df3ec051da1c21724609ac70f1573fd4b755c64ddb">range</a></div><div class="ttdeci">@ range</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l00104">character.h:104</a></div></div>
 <div class="ttc" id="aclassbasic__memory__buffer_html_aad970f5ca7eda29893fc352b3d3486fc"><div class="ttname"><a href="classbasic__memory__buffer.html#aad970f5ca7eda29893fc352b3d3486fc">basic_memory_buffer::append</a></div><div class="ttdeci">void append(const ContiguousRange &amp;range)</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l00833">fmtlib_format.h:833</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l00833">basic_memory_buffer&lt; T, SIZE, Allocator &gt;::append()</a>.</p>
+<p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l00833">basic_memory_buffer&lt; T, SIZE, Allocator &gt;::append()</a>, and <a class="el" href="character_8h_source.html#l00104">range</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="fmtlib__format_8h_source.html#l00833">basic_memory_buffer&lt; T, SIZE, Allocator &gt;::append()</a>.</p>
 
@@ -556,7 +557,7 @@ template&lt;typename T , size_t SIZE, typename Allocator &gt; </div>
 <div class="ttc" id="aclassdetail_1_1buffer_html_ac72e23b3cef99b3e4b6a13f7cf86a421"><div class="ttname"><a href="classdetail_1_1buffer.html#ac72e23b3cef99b3e4b6a13f7cf86a421">detail::buffer::size</a></div><div class="ttdeci">size_t size() const FMT_NOEXCEPT</div><div class="ttdoc">Returns the size of this buffer.</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__core_8h_source.html#l00757">fmtlib_core.h:757</a></div></div>
 <div class="ttc" id="anamespacedetail_html_a3207ea3698d0bffb39947541a13c3f32"><div class="ttname"><a href="namespacedetail.html#a3207ea3698d0bffb39947541a13c3f32">detail::make_checked</a></div><div class="ttdeci">T * make_checked(T *p, size_t)</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l00400">fmtlib_format.h:400</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l00400">detail::make_checked()</a>, and <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>.</p>
+<p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l00400">detail::make_checked()</a>, and <a class="el" href="om__direction_8h_source.html#l00028">om_direction::size</a>.</p>
 
 </div>
 </div>
@@ -800,7 +801,7 @@ template&lt;typename T , size_t SIZE = inline_buffer_size, typename Allocator  =
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classbasic__memory__buffer.html">basic_memory_buffer</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:46 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -289,7 +289,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="faction_8h_source.html#l00116">members</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l00473">npc::set_fac()</a>, and <a class="el" href="npc_8cpp_source.html#l00680">npc::set_known_to_u()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l00478">npc::set_fac()</a>, and <a class="el" href="npc_8cpp_source.html#l00685">npc::set_known_to_u()</a>.</p>
 
 </div>
 </div>
@@ -314,10 +314,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>}</div>
 <div class="ttc" id="aclassfaction__template_html_ab887943b345e6bf61bfea1a5a0737b4f"><div class="ttname"><a href="classfaction__template.html#ab887943b345e6bf61bfea1a5a0737b4f">faction_template::desc</a></div><div class="ttdeci">std::string desc</div><div class="ttdef"><b>Definition:</b> <a href="faction_8h_source.html#l00083">faction.h:83</a></div></div>
-<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
+<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00098">hash_utils.h:98</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="faction_8h_source.html#l00083">faction_template::desc</a>, and <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="faction_8h_source.html#l00083">faction_template::desc</a>, and <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>.</p>
 
 </div>
 </div>
@@ -337,29 +337,29 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02970">2970</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02971" name="l02971"></a><span class="lineno"> 2971</span>{</div>
-<div class="line"><a id="l02972" name="l02972"></a><span class="lineno"> 2972</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l02973" name="l02973"></a><span class="lineno"> 2973</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l02974" name="l02974"></a><span class="lineno"> 2974</span> </div>
-<div class="line"><a id="l02975" name="l02975"></a><span class="lineno"> 2975</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l02976" name="l02976"></a><span class="lineno"> 2976</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a9fa57ac248112fa09f2bbe19826f93fc">name</a> );</div>
-<div class="line"><a id="l02977" name="l02977"></a><span class="lineno"> 2977</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;likes_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a8927427656119c2e4b1046b19c521313">likes_u</a> );</div>
-<div class="line"><a id="l02978" name="l02978"></a><span class="lineno"> 2978</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;respects_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#acf4662d3cabe4bb0e7b2a6693d7abc43">respects_u</a> );</div>
-<div class="line"><a id="l02979" name="l02979"></a><span class="lineno"> 2979</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;known_by_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a5e2a500660f3adf90c6940ecbe78ccee">known_by_u</a> );</div>
-<div class="line"><a id="l02980" name="l02980"></a><span class="lineno"> 2980</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;size&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a46ce16367a6224fc2579540f2561a2fe">size</a> );</div>
-<div class="line"><a id="l02981" name="l02981"></a><span class="lineno"> 2981</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;power&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a7d31d07f4f9cf6d639be77e0a2fa201e">power</a> );</div>
-<div class="line"><a id="l02982" name="l02982"></a><span class="lineno"> 2982</span>    <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;food_supply&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a866ed25b1b04e963795226bf17f6a0be">food_supply</a> ) ) {</div>
-<div class="line"><a id="l02983" name="l02983"></a><span class="lineno"> 2983</span>        <a class="code hl_variable" href="classfaction__template.html#a866ed25b1b04e963795226bf17f6a0be">food_supply</a> = 100;</div>
-<div class="line"><a id="l02984" name="l02984"></a><span class="lineno"> 2984</span>    }</div>
-<div class="line"><a id="l02985" name="l02985"></a><span class="lineno"> 2985</span>    <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;wealth&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#af35b6015c1e2574cc3735d43341215ba">wealth</a> ) ) {</div>
-<div class="line"><a id="l02986" name="l02986"></a><span class="lineno"> 2986</span>        <a class="code hl_variable" href="classfaction__template.html#af35b6015c1e2574cc3735d43341215ba">wealth</a> = 100;</div>
-<div class="line"><a id="l02987" name="l02987"></a><span class="lineno"> 2987</span>    }</div>
-<div class="line"><a id="l02988" name="l02988"></a><span class="lineno"> 2988</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;opinion_of&quot;</span> ) ) {</div>
-<div class="line"><a id="l02989" name="l02989"></a><span class="lineno"> 2989</span>        <a class="code hl_variable" href="classfaction.html#a42a94841b12ee6ef6491897b3d7ba0c2">opinion_of</a> = jo.<a class="code hl_function" href="classJsonObject.html#a03292534acb8eea484df94cf75ff9b19">get_int_array</a>( <span class="stringliteral">&quot;opinion_of&quot;</span> );</div>
-<div class="line"><a id="l02990" name="l02990"></a><span class="lineno"> 2990</span>    }</div>
-<div class="line"><a id="l02991" name="l02991"></a><span class="lineno"> 2991</span>    <a class="code hl_function" href="classfaction__template.html#acc32f15769457cbf5ccfa56939e484de">load_relations</a>( jo );</div>
-<div class="line"><a id="l02992" name="l02992"></a><span class="lineno"> 2992</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02980">2980</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02981" name="l02981"></a><span class="lineno"> 2981</span>{</div>
+<div class="line"><a id="l02982" name="l02982"></a><span class="lineno"> 2982</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l02983" name="l02983"></a><span class="lineno"> 2983</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l02984" name="l02984"></a><span class="lineno"> 2984</span> </div>
+<div class="line"><a id="l02985" name="l02985"></a><span class="lineno"> 2985</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l02986" name="l02986"></a><span class="lineno"> 2986</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a9fa57ac248112fa09f2bbe19826f93fc">name</a> );</div>
+<div class="line"><a id="l02987" name="l02987"></a><span class="lineno"> 2987</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;likes_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a8927427656119c2e4b1046b19c521313">likes_u</a> );</div>
+<div class="line"><a id="l02988" name="l02988"></a><span class="lineno"> 2988</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;respects_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#acf4662d3cabe4bb0e7b2a6693d7abc43">respects_u</a> );</div>
+<div class="line"><a id="l02989" name="l02989"></a><span class="lineno"> 2989</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;known_by_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a5e2a500660f3adf90c6940ecbe78ccee">known_by_u</a> );</div>
+<div class="line"><a id="l02990" name="l02990"></a><span class="lineno"> 2990</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;size&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a46ce16367a6224fc2579540f2561a2fe">size</a> );</div>
+<div class="line"><a id="l02991" name="l02991"></a><span class="lineno"> 2991</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;power&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a7d31d07f4f9cf6d639be77e0a2fa201e">power</a> );</div>
+<div class="line"><a id="l02992" name="l02992"></a><span class="lineno"> 2992</span>    <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;food_supply&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a866ed25b1b04e963795226bf17f6a0be">food_supply</a> ) ) {</div>
+<div class="line"><a id="l02993" name="l02993"></a><span class="lineno"> 2993</span>        <a class="code hl_variable" href="classfaction__template.html#a866ed25b1b04e963795226bf17f6a0be">food_supply</a> = 100;</div>
+<div class="line"><a id="l02994" name="l02994"></a><span class="lineno"> 2994</span>    }</div>
+<div class="line"><a id="l02995" name="l02995"></a><span class="lineno"> 2995</span>    <span class="keywordflow">if</span>( !jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;wealth&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#af35b6015c1e2574cc3735d43341215ba">wealth</a> ) ) {</div>
+<div class="line"><a id="l02996" name="l02996"></a><span class="lineno"> 2996</span>        <a class="code hl_variable" href="classfaction__template.html#af35b6015c1e2574cc3735d43341215ba">wealth</a> = 100;</div>
+<div class="line"><a id="l02997" name="l02997"></a><span class="lineno"> 2997</span>    }</div>
+<div class="line"><a id="l02998" name="l02998"></a><span class="lineno"> 2998</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;opinion_of&quot;</span> ) ) {</div>
+<div class="line"><a id="l02999" name="l02999"></a><span class="lineno"> 2999</span>        <a class="code hl_variable" href="classfaction.html#a42a94841b12ee6ef6491897b3d7ba0c2">opinion_of</a> = jo.<a class="code hl_function" href="classJsonObject.html#a03292534acb8eea484df94cf75ff9b19">get_int_array</a>( <span class="stringliteral">&quot;opinion_of&quot;</span> );</div>
+<div class="line"><a id="l03000" name="l03000"></a><span class="lineno"> 3000</span>    }</div>
+<div class="line"><a id="l03001" name="l03001"></a><span class="lineno"> 3001</span>    <a class="code hl_function" href="classfaction__template.html#acc32f15769457cbf5ccfa56939e484de">load_relations</a>( jo );</div>
+<div class="line"><a id="l03002" name="l03002"></a><span class="lineno"> 3002</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a03292534acb8eea484df94cf75ff9b19"><div class="ttname"><a href="classJsonObject.html#a03292534acb8eea484df94cf75ff9b19">JsonObject::get_int_array</a></div><div class="ttdeci">std::vector&lt; int &gt; get_int_array(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00411">json.cpp:411</a></div></div>
@@ -377,7 +377,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclassfaction__template_html_af35b6015c1e2574cc3735d43341215ba"><div class="ttname"><a href="classfaction__template.html#af35b6015c1e2574cc3735d43341215ba">faction_template::wealth</a></div><div class="ttdeci">int wealth</div><div class="ttdef"><b>Definition:</b> <a href="faction_8h_source.html#l00087">faction.h:87</a></div></div>
 <div class="ttc" id="aclassfaction_html_a42a94841b12ee6ef6491897b3d7ba0c2"><div class="ttname"><a href="classfaction.html#a42a94841b12ee6ef6491897b3d7ba0c2">faction::opinion_of</a></div><div class="ttdeci">std::vector&lt; int &gt; opinion_of</div><div class="ttdef"><b>Definition:</b> <a href="faction_8h_source.html#l00114">faction.h:114</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l00151">JsonObject::allow_omitted_members()</a>, <a class="el" href="json_8cpp_source.html#l00411">JsonObject::get_int_array()</a>, <a class="el" href="json_8cpp_source.html#l01432">JsonIn::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00483">JsonObject::has_array()</a>, <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>, <a class="el" href="json_8h_source.html#l00941">JsonObject::read()</a>, and <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l00151">JsonObject::allow_omitted_members()</a>, <a class="el" href="json_8cpp_source.html#l00411">JsonObject::get_int_array()</a>, <a class="el" href="json_8cpp_source.html#l01432">JsonIn::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00483">JsonObject::has_array()</a>, <a class="el" href="overmap_8cpp_source.html#l04129">om_direction::name()</a>, <a class="el" href="json_8h_source.html#l00941">JsonObject::read()</a>, and <a class="el" href="om__direction_8h_source.html#l00028">om_direction::size</a>.</p>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
 <div class="ttc" id="aclassfaction__template_html_a687953528db4da27e7926b80868e318c"><div class="ttname"><a href="classfaction__template.html#a687953528db4da27e7926b80868e318c">faction_template::epilogue_data</a></div><div class="ttdeci">std::set&lt; std::tuple&lt; int, int, snippet_id &gt; &gt; epilogue_data</div><div class="ttdef"><b>Definition:</b> <a href="faction_8h_source.html#l00092">faction.h:92</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="faction_8h_source.html#l00092">faction_template::epilogue_data</a>, <a class="el" href="faction_8h_source.html#l00085">faction_template::power</a>, and <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>.</p>
+<p class="reference">References <a class="el" href="faction_8h_source.html#l00092">faction_template::epilogue_data</a>, <a class="el" href="faction_8h_source.html#l00085">faction_template::power</a>, and <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>.</p>
 
 </div>
 </div>
@@ -583,7 +583,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="string__id_8h_source.html#l00247">string_id&lt; T &gt;::c_str()</a>, and <a class="el" href="faction_8h_source.html#l00090">faction_template::relations</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l01958">npc::has_faction_relationship()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l01946">npc::has_faction_relationship()</a>.</p>
 
 </div>
 </div>
@@ -623,12 +623,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;faction_manager_ptr-&gt;remove_faction( <span class="keywordtype">id</span> );</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    }</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}</div>
-<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00281">game.cpp:281</a></div></div>
+<div class="ttc" id="agame_8cpp_html_abeb98e93502d73818b4a73fabe191bc1"><div class="ttname"><a href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a></div><div class="ttdeci">std::unique_ptr&lt; game &gt; g</div><div class="ttdef"><b>Definition:</b> <a href="game_8cpp_source.html#l00283">game.cpp:283</a></div></div>
 <div class="ttc" id="anamespacenpc__factions_html_a0cfe595c2dd834c99b01b9b883177f93"><div class="ttname"><a href="namespacenpc__factions.html#a0cfe595c2dd834c99b01b9b883177f93">npc_factions::all_templates</a></div><div class="ttdeci">std::vector&lt; faction_template &gt; all_templates</div><div class="ttdef"><b>Definition:</b> <a href="faction_8cpp_source.html#l00039">faction.cpp:39</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="faction_8cpp_source.html#l00039">npc_factions::all_templates</a>, <a class="el" href="game_8cpp_source.html#l00281">g</a>, and <a class="el" href="faction_8h_source.html#l00116">members</a>.</p>
+<p class="reference">References <a class="el" href="faction_8cpp_source.html#l00039">npc_factions::all_templates</a>, <a class="el" href="game_8cpp_source.html#l00283">g</a>, and <a class="el" href="faction_8h_source.html#l00116">members</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02463">npc::die()</a>, and <a class="el" href="npc_8cpp_source.html#l00473">npc::set_fac()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="npc_8cpp_source.html#l02452">npc::die()</a>, and <a class="el" href="npc_8cpp_source.html#l00478">npc::set_fac()</a>.</p>
 
 </div>
 </div>
@@ -648,40 +648,40 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l02994">2994</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02995" name="l02995"></a><span class="lineno"> 2995</span>{</div>
-<div class="line"><a id="l02996" name="l02996"></a><span class="lineno"> 2996</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l02997" name="l02997"></a><span class="lineno"> 2997</span> </div>
-<div class="line"><a id="l02998" name="l02998"></a><span class="lineno"> 2998</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l02999" name="l02999"></a><span class="lineno"> 2999</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a9fa57ac248112fa09f2bbe19826f93fc">name</a> );</div>
-<div class="line"><a id="l03000" name="l03000"></a><span class="lineno"> 3000</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;likes_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a8927427656119c2e4b1046b19c521313">likes_u</a> );</div>
-<div class="line"><a id="l03001" name="l03001"></a><span class="lineno"> 3001</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;respects_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#acf4662d3cabe4bb0e7b2a6693d7abc43">respects_u</a> );</div>
-<div class="line"><a id="l03002" name="l03002"></a><span class="lineno"> 3002</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;known_by_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a5e2a500660f3adf90c6940ecbe78ccee">known_by_u</a> );</div>
-<div class="line"><a id="l03003" name="l03003"></a><span class="lineno"> 3003</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;size&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a46ce16367a6224fc2579540f2561a2fe">size</a> );</div>
-<div class="line"><a id="l03004" name="l03004"></a><span class="lineno"> 3004</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;power&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a7d31d07f4f9cf6d639be77e0a2fa201e">power</a> );</div>
-<div class="line"><a id="l03005" name="l03005"></a><span class="lineno"> 3005</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;food_supply&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a866ed25b1b04e963795226bf17f6a0be">food_supply</a> );</div>
-<div class="line"><a id="l03006" name="l03006"></a><span class="lineno"> 3006</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;wealth&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#af35b6015c1e2574cc3735d43341215ba">wealth</a> );</div>
-<div class="line"><a id="l03007" name="l03007"></a><span class="lineno"> 3007</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;opinion_of&quot;</span>, <a class="code hl_variable" href="classfaction.html#a42a94841b12ee6ef6491897b3d7ba0c2">opinion_of</a> );</div>
-<div class="line"><a id="l03008" name="l03008"></a><span class="lineno"> 3008</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;relations&quot;</span> );</div>
-<div class="line"><a id="l03009" name="l03009"></a><span class="lineno"> 3009</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l03010" name="l03010"></a><span class="lineno"> 3010</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;rel_data : <a class="code hl_variable" href="classfaction__template.html#a02a49a8831a9393a67713992ba559a26">relations</a> ) {</div>
-<div class="line"><a id="l03011" name="l03011"></a><span class="lineno"> 3011</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( rel_data.first );</div>
-<div class="line"><a id="l03012" name="l03012"></a><span class="lineno"> 3012</span>        json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l03013" name="l03013"></a><span class="lineno"> 3013</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;rel_flag : <a class="code hl_variable" href="namespacenpc__factions.html#abc290a7ac3e44667ef68d4371334b535">npc_factions::relation_strs</a> ) {</div>
-<div class="line"><a id="l03014" name="l03014"></a><span class="lineno"> 3014</span>            json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( rel_flag.first, rel_data.second.test( rel_flag.second ) );</div>
-<div class="line"><a id="l03015" name="l03015"></a><span class="lineno"> 3015</span>        }</div>
-<div class="line"><a id="l03016" name="l03016"></a><span class="lineno"> 3016</span>        json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l03017" name="l03017"></a><span class="lineno"> 3017</span>    }</div>
-<div class="line"><a id="l03018" name="l03018"></a><span class="lineno"> 3018</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l03019" name="l03019"></a><span class="lineno"> 3019</span> </div>
-<div class="line"><a id="l03020" name="l03020"></a><span class="lineno"> 3020</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03004">3004</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03005" name="l03005"></a><span class="lineno"> 3005</span>{</div>
+<div class="line"><a id="l03006" name="l03006"></a><span class="lineno"> 3006</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l03007" name="l03007"></a><span class="lineno"> 3007</span> </div>
+<div class="line"><a id="l03008" name="l03008"></a><span class="lineno"> 3008</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l03009" name="l03009"></a><span class="lineno"> 3009</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;name&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a9fa57ac248112fa09f2bbe19826f93fc">name</a> );</div>
+<div class="line"><a id="l03010" name="l03010"></a><span class="lineno"> 3010</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;likes_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a8927427656119c2e4b1046b19c521313">likes_u</a> );</div>
+<div class="line"><a id="l03011" name="l03011"></a><span class="lineno"> 3011</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;respects_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#acf4662d3cabe4bb0e7b2a6693d7abc43">respects_u</a> );</div>
+<div class="line"><a id="l03012" name="l03012"></a><span class="lineno"> 3012</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;known_by_u&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a5e2a500660f3adf90c6940ecbe78ccee">known_by_u</a> );</div>
+<div class="line"><a id="l03013" name="l03013"></a><span class="lineno"> 3013</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;size&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a46ce16367a6224fc2579540f2561a2fe">size</a> );</div>
+<div class="line"><a id="l03014" name="l03014"></a><span class="lineno"> 3014</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;power&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a7d31d07f4f9cf6d639be77e0a2fa201e">power</a> );</div>
+<div class="line"><a id="l03015" name="l03015"></a><span class="lineno"> 3015</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;food_supply&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#a866ed25b1b04e963795226bf17f6a0be">food_supply</a> );</div>
+<div class="line"><a id="l03016" name="l03016"></a><span class="lineno"> 3016</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;wealth&quot;</span>, <a class="code hl_variable" href="classfaction__template.html#af35b6015c1e2574cc3735d43341215ba">wealth</a> );</div>
+<div class="line"><a id="l03017" name="l03017"></a><span class="lineno"> 3017</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;opinion_of&quot;</span>, <a class="code hl_variable" href="classfaction.html#a42a94841b12ee6ef6491897b3d7ba0c2">opinion_of</a> );</div>
+<div class="line"><a id="l03018" name="l03018"></a><span class="lineno"> 3018</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;relations&quot;</span> );</div>
+<div class="line"><a id="l03019" name="l03019"></a><span class="lineno"> 3019</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l03020" name="l03020"></a><span class="lineno"> 3020</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;rel_data : <a class="code hl_variable" href="classfaction__template.html#a02a49a8831a9393a67713992ba559a26">relations</a> ) {</div>
+<div class="line"><a id="l03021" name="l03021"></a><span class="lineno"> 3021</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( rel_data.first );</div>
+<div class="line"><a id="l03022" name="l03022"></a><span class="lineno"> 3022</span>        json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l03023" name="l03023"></a><span class="lineno"> 3023</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> <span class="keyword">auto</span> &amp;rel_flag : <a class="code hl_variable" href="namespacenpc__factions.html#abc290a7ac3e44667ef68d4371334b535">npc_factions::relation_strs</a> ) {</div>
+<div class="line"><a id="l03024" name="l03024"></a><span class="lineno"> 3024</span>            json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( rel_flag.first, rel_data.second.test( rel_flag.second ) );</div>
+<div class="line"><a id="l03025" name="l03025"></a><span class="lineno"> 3025</span>        }</div>
+<div class="line"><a id="l03026" name="l03026"></a><span class="lineno"> 3026</span>        json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l03027" name="l03027"></a><span class="lineno"> 3027</span>    }</div>
+<div class="line"><a id="l03028" name="l03028"></a><span class="lineno"> 3028</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l03029" name="l03029"></a><span class="lineno"> 3029</span> </div>
+<div class="line"><a id="l03030" name="l03030"></a><span class="lineno"> 3030</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l03031" name="l03031"></a><span class="lineno"> 3031</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
 <div class="ttc" id="anamespacenpc__factions_html_abc290a7ac3e44667ef68d4371334b535"><div class="ttname"><a href="namespacenpc__factions.html#abc290a7ac3e44667ef68d4371334b535">npc_factions::relation_strs</a></div><div class="ttdeci">const std::unordered_map&lt; std::string, relationship &gt; relation_strs</div><div class="ttdef"><b>Definition:</b> <a href="faction_8h_source.html#l00050">faction.h:50</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="overmap_8cpp_source.html#l04127">om_direction::name()</a>, <a class="el" href="faction_8h_source.html#l00050">npc_factions::relation_strs</a>, <a class="el" href="om__direction_8h_source.html#l00027">om_direction::size</a>, and <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>.</p>
+<p class="reference">References <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="overmap_8cpp_source.html#l04129">om_direction::name()</a>, <a class="el" href="faction_8h_source.html#l00050">npc_factions::relation_strs</a>, <a class="el" href="om__direction_8h_source.html#l00028">om_direction::size</a>, and <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>.</p>
 
 </div>
 </div>
@@ -700,7 +700,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="faction_8h_source.html#l00116">116</a> of file <a class="el" href="faction_8h_source.html">faction.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="faction_8cpp_source.html#l00140">add_to_membership()</a>, <a class="el" href="npc_8cpp_source.html#l02463">npc::die()</a>, and <a class="el" href="faction_8cpp_source.html#l00146">remove_member()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="faction_8cpp_source.html#l00140">add_to_membership()</a>, <a class="el" href="npc_8cpp_source.html#l02452">npc::die()</a>, and <a class="el" href="faction_8cpp_source.html#l00146">remove_member()</a>.</p>
 
 </div>
 </div>
@@ -747,7 +747,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classfaction.html">faction</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

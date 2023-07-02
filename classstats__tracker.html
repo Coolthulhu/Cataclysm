@@ -360,7 +360,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="stats__tracker_8h_source.html#l00183">data</a>, <a class="el" href="stats__tracker_8h_source.html#l00190">event_transformation_states</a>, <a class="el" href="stats__tracker_8h_source.html#l00194">initial_scores</a>, <a class="el" href="stats__tracker_8h_source.html#l00192">stat_states</a>, and <a class="el" href="stats__tracker_8cpp_source.html#l00256">unwatch_all()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00475">game::setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00477">game::setup()</a>.</p>
 
 </div>
 </div>
@@ -380,16 +380,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03724">3724</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03725" name="l03725"></a><span class="lineno"> 3725</span>{</div>
-<div class="line"><a id="l03726" name="l03726"></a><span class="lineno"> 3726</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l03727" name="l03727"></a><span class="lineno"> 3727</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l03728" name="l03728"></a><span class="lineno"> 3728</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
-<div class="line"><a id="l03729" name="l03729"></a><span class="lineno"> 3729</span>    <span class="keywordflow">for</span>( std::pair&lt;const event_type, event_multiset&gt; &amp;d : <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> ) {</div>
-<div class="line"><a id="l03730" name="l03730"></a><span class="lineno"> 3730</span>        d.second.set_type( d.first );</div>
-<div class="line"><a id="l03731" name="l03731"></a><span class="lineno"> 3731</span>    }</div>
-<div class="line"><a id="l03732" name="l03732"></a><span class="lineno"> 3732</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
-<div class="line"><a id="l03733" name="l03733"></a><span class="lineno"> 3733</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03734">3734</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03735" name="l03735"></a><span class="lineno"> 3735</span>{</div>
+<div class="line"><a id="l03736" name="l03736"></a><span class="lineno"> 3736</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l03737" name="l03737"></a><span class="lineno"> 3737</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l03738" name="l03738"></a><span class="lineno"> 3738</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
+<div class="line"><a id="l03739" name="l03739"></a><span class="lineno"> 3739</span>    <span class="keywordflow">for</span>( std::pair&lt;const event_type, event_multiset&gt; &amp;d : <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> ) {</div>
+<div class="line"><a id="l03740" name="l03740"></a><span class="lineno"> 3740</span>        d.second.set_type( d.first );</div>
+<div class="line"><a id="l03741" name="l03741"></a><span class="lineno"> 3741</span>    }</div>
+<div class="line"><a id="l03742" name="l03742"></a><span class="lineno"> 3742</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
+<div class="line"><a id="l03743" name="l03743"></a><span class="lineno"> 3743</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00151">json.cpp:151</a></div></div>
@@ -522,13 +522,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03716">3716</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03717" name="l03717"></a><span class="lineno"> 3717</span>{</div>
-<div class="line"><a id="l03718" name="l03718"></a><span class="lineno"> 3718</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l03719" name="l03719"></a><span class="lineno"> 3719</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
-<div class="line"><a id="l03720" name="l03720"></a><span class="lineno"> 3720</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
-<div class="line"><a id="l03721" name="l03721"></a><span class="lineno"> 3721</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l03722" name="l03722"></a><span class="lineno"> 3722</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03726">3726</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03727" name="l03727"></a><span class="lineno"> 3727</span>{</div>
+<div class="line"><a id="l03728" name="l03728"></a><span class="lineno"> 3728</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l03729" name="l03729"></a><span class="lineno"> 3729</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;data&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a3214c17b86bd56f7878e48ae60d414be">data</a> );</div>
+<div class="line"><a id="l03730" name="l03730"></a><span class="lineno"> 3730</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;initial_scores&quot;</span>, <a class="code hl_variable" href="classstats__tracker.html#a6d5e17e3eb52396623472479af436fcc">initial_scores</a> );</div>
+<div class="line"><a id="l03731" name="l03731"></a><span class="lineno"> 3731</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l03732" name="l03732"></a><span class="lineno"> 3732</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
@@ -991,7 +991,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classstats__tracker.html">stats_tracker</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:33 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:05 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

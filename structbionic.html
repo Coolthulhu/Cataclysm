@@ -248,33 +248,33 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02892">2892</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02893" name="l02893"></a><span class="lineno"> 2893</span>{</div>
-<div class="line"><a id="l02894" name="l02894"></a><span class="lineno"> 2894</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l02895" name="l02895"></a><span class="lineno"> 2895</span>    <span class="keywordtype">id</span> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a965ba98fb0eca1e875b86fcf2bc91ab8">bionic_id</a>( jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;id&quot;</span> ) );</div>
-<div class="line"><a id="l02896" name="l02896"></a><span class="lineno"> 2896</span>    <a class="code hl_variable" href="structbionic.html#a4b38420250d3ff4ad9c7eba7e2b25a48">invlet</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;invlet&quot;</span> );</div>
-<div class="line"><a id="l02897" name="l02897"></a><span class="lineno"> 2897</span>    <a class="code hl_variable" href="structbionic.html#addbda67a07e927ca959d4a77ecd5a593">powered</a> = jo.<a class="code hl_function" href="classJsonObject.html#a9e628525564a9e7ef3755c10e0c9fac4">get_bool</a>( <span class="stringliteral">&quot;powered&quot;</span> );</div>
-<div class="line"><a id="l02898" name="l02898"></a><span class="lineno"> 2898</span>    <a class="code hl_variable" href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">charge_timer</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;charge&quot;</span> );</div>
-<div class="line"><a id="l02899" name="l02899"></a><span class="lineno"> 2899</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;energy_stored&quot;</span>, <a class="code hl_variable" href="structbionic.html#a9ffb74340fe471788746f0a0247bf772">energy_stored</a>, <span class="keyword">true</span> );</div>
-<div class="line"><a id="l02900" name="l02900"></a><span class="lineno"> 2900</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;ammo_loaded&quot;</span> ) ) {</div>
-<div class="line"><a id="l02901" name="l02901"></a><span class="lineno"> 2901</span>        jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;ammo_loaded&quot;</span>, <a class="code hl_variable" href="structbionic.html#a2482b51bc0abb3a60102dbbbb354e068">ammo_loaded</a>, <span class="keyword">true</span> );</div>
-<div class="line"><a id="l02902" name="l02902"></a><span class="lineno"> 2902</span>    }</div>
-<div class="line"><a id="l02903" name="l02903"></a><span class="lineno"> 2903</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;ammo_count&quot;</span> ) ) {</div>
-<div class="line"><a id="l02904" name="l02904"></a><span class="lineno"> 2904</span>        <a class="code hl_variable" href="structbionic.html#ac16ebda23bfb0c4be0fd93f80cc9d8f5">ammo_count</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;ammo_count&quot;</span> );</div>
-<div class="line"><a id="l02905" name="l02905"></a><span class="lineno"> 2905</span>    }</div>
-<div class="line"><a id="l02906" name="l02906"></a><span class="lineno"> 2906</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;incapacitated_time&quot;</span> ) ) {</div>
-<div class="line"><a id="l02907" name="l02907"></a><span class="lineno"> 2907</span>        <a class="code hl_variable" href="structbionic.html#af11f65196d14cfeafffc68124ff00f00">incapacitated_time</a> = 1_turns * jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;incapacitated_time&quot;</span> );</div>
-<div class="line"><a id="l02908" name="l02908"></a><span class="lineno"> 2908</span>    }</div>
-<div class="line"><a id="l02909" name="l02909"></a><span class="lineno"> 2909</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a04a6c9fd68acfc6a43d2ec38ccdf6d16">has_float</a>( <span class="stringliteral">&quot;auto_start_threshold&quot;</span> ) ) {</div>
-<div class="line"><a id="l02910" name="l02910"></a><span class="lineno"> 2910</span>        <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a> = jo.<a class="code hl_function" href="classJsonObject.html#a20e3b6cc495cde67e4a178ae6f6e17d7">get_float</a>( <span class="stringliteral">&quot;auto_start_threshold&quot;</span> );</div>
-<div class="line"><a id="l02911" name="l02911"></a><span class="lineno"> 2911</span>    }</div>
-<div class="line"><a id="l02912" name="l02912"></a><span class="lineno"> 2912</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;bionic_tags&quot;</span> ) ) {</div>
-<div class="line"><a id="l02913" name="l02913"></a><span class="lineno"> 2913</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;bionic_tags&quot;</span> ) ) {</div>
-<div class="line"><a id="l02914" name="l02914"></a><span class="lineno"> 2914</span>            <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#ab427ae6af6b4cd328c0000bc197f881b">insert</a>( <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> );</div>
-<div class="line"><a id="l02915" name="l02915"></a><span class="lineno"> 2915</span>        }</div>
-<div class="line"><a id="l02916" name="l02916"></a><span class="lineno"> 2916</span>    }</div>
-<div class="line"><a id="l02917" name="l02917"></a><span class="lineno"> 2917</span> </div>
-<div class="line"><a id="l02918" name="l02918"></a><span class="lineno"> 2918</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02858">2858</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02859" name="l02859"></a><span class="lineno"> 2859</span>{</div>
+<div class="line"><a id="l02860" name="l02860"></a><span class="lineno"> 2860</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l02861" name="l02861"></a><span class="lineno"> 2861</span>    <span class="keywordtype">id</span> = <a class="code hl_enumvalue" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a965ba98fb0eca1e875b86fcf2bc91ab8">bionic_id</a>( jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;id&quot;</span> ) );</div>
+<div class="line"><a id="l02862" name="l02862"></a><span class="lineno"> 2862</span>    <a class="code hl_variable" href="structbionic.html#a4b38420250d3ff4ad9c7eba7e2b25a48">invlet</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;invlet&quot;</span> );</div>
+<div class="line"><a id="l02863" name="l02863"></a><span class="lineno"> 2863</span>    <a class="code hl_variable" href="structbionic.html#addbda67a07e927ca959d4a77ecd5a593">powered</a> = jo.<a class="code hl_function" href="classJsonObject.html#a9e628525564a9e7ef3755c10e0c9fac4">get_bool</a>( <span class="stringliteral">&quot;powered&quot;</span> );</div>
+<div class="line"><a id="l02864" name="l02864"></a><span class="lineno"> 2864</span>    <a class="code hl_variable" href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">charge_timer</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;charge&quot;</span> );</div>
+<div class="line"><a id="l02865" name="l02865"></a><span class="lineno"> 2865</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;energy_stored&quot;</span>, <a class="code hl_variable" href="structbionic.html#a9ffb74340fe471788746f0a0247bf772">energy_stored</a>, <span class="keyword">true</span> );</div>
+<div class="line"><a id="l02866" name="l02866"></a><span class="lineno"> 2866</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a19d83d03e3d5cc6905bcb850d80a1f05">has_string</a>( <span class="stringliteral">&quot;ammo_loaded&quot;</span> ) ) {</div>
+<div class="line"><a id="l02867" name="l02867"></a><span class="lineno"> 2867</span>        jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;ammo_loaded&quot;</span>, <a class="code hl_variable" href="structbionic.html#a2482b51bc0abb3a60102dbbbb354e068">ammo_loaded</a>, <span class="keyword">true</span> );</div>
+<div class="line"><a id="l02868" name="l02868"></a><span class="lineno"> 2868</span>    }</div>
+<div class="line"><a id="l02869" name="l02869"></a><span class="lineno"> 2869</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;ammo_count&quot;</span> ) ) {</div>
+<div class="line"><a id="l02870" name="l02870"></a><span class="lineno"> 2870</span>        <a class="code hl_variable" href="structbionic.html#ac16ebda23bfb0c4be0fd93f80cc9d8f5">ammo_count</a> = jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;ammo_count&quot;</span> );</div>
+<div class="line"><a id="l02871" name="l02871"></a><span class="lineno"> 2871</span>    }</div>
+<div class="line"><a id="l02872" name="l02872"></a><span class="lineno"> 2872</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a6f04277ed5262b016bc4b4642b14d866">has_int</a>( <span class="stringliteral">&quot;incapacitated_time&quot;</span> ) ) {</div>
+<div class="line"><a id="l02873" name="l02873"></a><span class="lineno"> 2873</span>        <a class="code hl_variable" href="structbionic.html#af11f65196d14cfeafffc68124ff00f00">incapacitated_time</a> = 1_turns * jo.<a class="code hl_function" href="classJsonObject.html#a99e64f59bc5e72e7572125064b68da29">get_int</a>( <span class="stringliteral">&quot;incapacitated_time&quot;</span> );</div>
+<div class="line"><a id="l02874" name="l02874"></a><span class="lineno"> 2874</span>    }</div>
+<div class="line"><a id="l02875" name="l02875"></a><span class="lineno"> 2875</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#a04a6c9fd68acfc6a43d2ec38ccdf6d16">has_float</a>( <span class="stringliteral">&quot;auto_start_threshold&quot;</span> ) ) {</div>
+<div class="line"><a id="l02876" name="l02876"></a><span class="lineno"> 2876</span>        <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a> = jo.<a class="code hl_function" href="classJsonObject.html#a20e3b6cc495cde67e4a178ae6f6e17d7">get_float</a>( <span class="stringliteral">&quot;auto_start_threshold&quot;</span> );</div>
+<div class="line"><a id="l02877" name="l02877"></a><span class="lineno"> 2877</span>    }</div>
+<div class="line"><a id="l02878" name="l02878"></a><span class="lineno"> 2878</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;bionic_tags&quot;</span> ) ) {</div>
+<div class="line"><a id="l02879" name="l02879"></a><span class="lineno"> 2879</span>        <span class="keywordflow">for</span>( <span class="keyword">const</span> std::string <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> : jo.<a class="code hl_function" href="classJsonObject.html#a69f62f59b5e39da6059b7c3cf8b12421">get_array</a>( <span class="stringliteral">&quot;bionic_tags&quot;</span> ) ) {</div>
+<div class="line"><a id="l02880" name="l02880"></a><span class="lineno"> 2880</span>            <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#ab427ae6af6b4cd328c0000bc197f881b">insert</a>( <a class="code hl_function" href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a> );</div>
+<div class="line"><a id="l02881" name="l02881"></a><span class="lineno"> 2881</span>        }</div>
+<div class="line"><a id="l02882" name="l02882"></a><span class="lineno"> 2882</span>    }</div>
+<div class="line"><a id="l02883" name="l02883"></a><span class="lineno"> 2883</span> </div>
+<div class="line"><a id="l02884" name="l02884"></a><span class="lineno"> 2884</span>}</div>
 <div class="ttc" id="acata__variant_8h_html_adfe42687fffdd05d233096b4e7dac2f4a965ba98fb0eca1e875b86fcf2bc91ab8"><div class="ttname"><a href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a965ba98fb0eca1e875b86fcf2bc91ab8">cata_variant_type::bionic_id</a></div><div class="ttdeci">@ bionic_id</div></div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
@@ -289,7 +289,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassJsonObject_html_aa92b5eb23f6b39645877d79fbef784a0"><div class="ttname"><a href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">JsonObject::has_array</a></div><div class="ttdeci">bool has_array(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00483">json.cpp:483</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae66d47f9cb4993dfaf79819ec2aff2f8"><div class="ttname"><a href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">JsonObject::read</a></div><div class="ttdeci">bool read(const std::string &amp;name, T &amp;t, bool throw_on_error=true) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00941">json.h:941</a></div></div>
 <div class="ttc" id="aclasscata_1_1flat__set_html_ab427ae6af6b4cd328c0000bc197f881b"><div class="ttname"><a href="classcata_1_1flat__set.html#ab427ae6af6b4cd328c0000bc197f881b">cata::flat_set::insert</a></div><div class="ttdeci">iterator insert(iterator, const value_type &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="flat__set_8h_source.html#l00151">flat_set.h:151</a></div></div>
-<div class="ttc" id="amapgen_8cpp_html_a7a9bb2e98af3268deb7dd8fda06a7d2e"><div class="ttname"><a href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, point p1, point p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06485">mapgen.cpp:6485</a></div></div>
+<div class="ttc" id="amapgen_8cpp_html_a7a9bb2e98af3268deb7dd8fda06a7d2e"><div class="ttname"><a href="mapgen_8cpp.html#a7a9bb2e98af3268deb7dd8fda06a7d2e">line</a></div><div class="ttdeci">void line(map *m, const ter_id &amp;type, point p1, point p2)</div><div class="ttdef"><b>Definition:</b> <a href="mapgen_8cpp_source.html#l06281">mapgen.cpp:6281</a></div></div>
 <div class="ttc" id="astructbionic_html_a1653e341c38d8ced1112b63be102c8f6"><div class="ttname"><a href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">bionic::auto_start_threshold</a></div><div class="ttdeci">float auto_start_threshold</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00198">bionics.h:198</a></div></div>
 <div class="ttc" id="astructbionic_html_a2482b51bc0abb3a60102dbbbb354e068"><div class="ttname"><a href="structbionic.html#a2482b51bc0abb3a60102dbbbb354e068">bionic::ammo_loaded</a></div><div class="ttdeci">itype_id ammo_loaded</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00161">bionics.h:161</a></div></div>
 <div class="ttc" id="astructbionic_html_a9ba6a347620bc748a13a909909effd3e"><div class="ttname"><a href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">bionic::charge_timer</a></div><div class="ttdeci">int charge_timer</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00157">bionics.h:157</a></div></div>
@@ -298,7 +298,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="astructbionic_html_ad584892540f36aa0c358634c41eccd7e"><div class="ttname"><a href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic::bionic_tags</a></div><div class="ttdeci">cata::flat_set&lt; std::string &gt; bionic_tags</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00197">bionics.h:197</a></div></div>
 <div class="ttc" id="astructbionic_html_addbda67a07e927ca959d4a77ecd5a593"><div class="ttname"><a href="structbionic.html#addbda67a07e927ca959d4a77ecd5a593">bionic::powered</a></div><div class="ttdeci">bool powered</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00159">bionics.h:159</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="bionics_8h_source.html#l00163">ammo_count</a>, <a class="el" href="bionics_8h_source.html#l00161">ammo_loaded</a>, <a class="el" href="bionics_8h_source.html#l00198">auto_start_threshold</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a965ba98fb0eca1e875b86fcf2bc91ab8">bionic_id</a>, <a class="el" href="bionics_8h_source.html#l00197">bionic_tags</a>, <a class="el" href="bionics_8h_source.html#l00157">charge_timer</a>, <a class="el" href="bionics_8h_source.html#l00167">energy_stored</a>, <a class="el" href="json_8cpp_source.html#l00400">JsonObject::get_array()</a>, <a class="el" href="json_8cpp_source.html#l00334">JsonObject::get_bool()</a>, <a class="el" href="json_8cpp_source.html#l00366">JsonObject::get_float()</a>, <a class="el" href="json_8cpp_source.html#l00350">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l01432">JsonIn::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00382">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00483">JsonObject::has_array()</a>, <a class="el" href="json_8h_source.html#l00928">JsonObject::has_float()</a>, <a class="el" href="json_8h_source.html#l00925">JsonObject::has_int()</a>, <a class="el" href="json_8cpp_source.html#l00473">JsonObject::has_string()</a>, <a class="el" href="bionics_8h_source.html#l00165">incapacitated_time</a>, <a class="el" href="flat__set_8h_source.html#l00151">cata::flat_set&lt; T, Compare, Data &gt;::insert()</a>, <a class="el" href="bionics_8h_source.html#l00158">invlet</a>, <a class="el" href="mapgen_8cpp_source.html#l06485">line()</a>, <a class="el" href="bionics_8h_source.html#l00159">powered</a>, and <a class="el" href="json_8h_source.html#l00941">JsonObject::read()</a>.</p>
+<p class="reference">References <a class="el" href="bionics_8h_source.html#l00163">ammo_count</a>, <a class="el" href="bionics_8h_source.html#l00161">ammo_loaded</a>, <a class="el" href="bionics_8h_source.html#l00198">auto_start_threshold</a>, <a class="el" href="cata__variant_8h.html#adfe42687fffdd05d233096b4e7dac2f4a965ba98fb0eca1e875b86fcf2bc91ab8">bionic_id</a>, <a class="el" href="bionics_8h_source.html#l00197">bionic_tags</a>, <a class="el" href="bionics_8h_source.html#l00157">charge_timer</a>, <a class="el" href="bionics_8h_source.html#l00167">energy_stored</a>, <a class="el" href="json_8cpp_source.html#l00400">JsonObject::get_array()</a>, <a class="el" href="json_8cpp_source.html#l00334">JsonObject::get_bool()</a>, <a class="el" href="json_8cpp_source.html#l00366">JsonObject::get_float()</a>, <a class="el" href="json_8cpp_source.html#l00350">JsonObject::get_int()</a>, <a class="el" href="json_8cpp_source.html#l01432">JsonIn::get_object()</a>, <a class="el" href="json_8cpp_source.html#l00382">JsonObject::get_string()</a>, <a class="el" href="json_8cpp_source.html#l00483">JsonObject::has_array()</a>, <a class="el" href="json_8h_source.html#l00928">JsonObject::has_float()</a>, <a class="el" href="json_8h_source.html#l00925">JsonObject::has_int()</a>, <a class="el" href="json_8cpp_source.html#l00473">JsonObject::has_string()</a>, <a class="el" href="bionics_8h_source.html#l00165">incapacitated_time</a>, <a class="el" href="flat__set_8h_source.html#l00151">cata::flat_set&lt; T, Compare, Data &gt;::insert()</a>, <a class="el" href="bionics_8h_source.html#l00158">invlet</a>, <a class="el" href="mapgen_8cpp_source.html#l06281">line()</a>, <a class="el" href="bionics_8h_source.html#l00159">powered</a>, and <a class="el" href="json_8h_source.html#l00941">JsonObject::read()</a>.</p>
 
 </div>
 </div>
@@ -317,14 +317,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02854">2854</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02855" name="l02855"></a><span class="lineno"> 2855</span>{</div>
-<div class="line"><a id="l02856" name="l02856"></a><span class="lineno"> 2856</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a>;</div>
-<div class="line"><a id="l02857" name="l02857"></a><span class="lineno"> 2857</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02820">2820</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02821" name="l02821"></a><span class="lineno"> 2821</span>{</div>
+<div class="line"><a id="l02822" name="l02822"></a><span class="lineno"> 2822</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a>;</div>
+<div class="line"><a id="l02823" name="l02823"></a><span class="lineno"> 2823</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00198">auto_start_threshold</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l02864">is_auto_start_keep_full()</a>, <a class="el" href="bionics_8cpp_source.html#l02859">is_auto_start_on()</a>, and <a class="el" href="bionics_8cpp_source.html#l01606">Character::process_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l02830">is_auto_start_keep_full()</a>, <a class="el" href="bionics_8cpp_source.html#l02825">is_auto_start_on()</a>, and <a class="el" href="bionics_8cpp_source.html#l01567">Character::process_bionic()</a>.</p>
 
 </div>
 </div>
@@ -344,21 +344,21 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02782">2782</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02783" name="l02783"></a><span class="lineno"> 2783</span>{</div>
-<div class="line"><a id="l02784" name="l02784"></a><span class="lineno"> 2784</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;i = <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>();</div>
-<div class="line"><a id="l02785" name="l02785"></a><span class="lineno"> 2785</span>    <span class="keywordflow">if</span>( i.fake_item.is_empty() ) {</div>
-<div class="line"><a id="l02786" name="l02786"></a><span class="lineno"> 2786</span>        <span class="keywordflow">return</span> INT_MIN;</div>
-<div class="line"><a id="l02787" name="l02787"></a><span class="lineno"> 2787</span>    }</div>
-<div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span> </div>
-<div class="line"><a id="l02789" name="l02789"></a><span class="lineno"> 2789</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classitem.html">item</a>( i.fake_item ).<a class="code hl_function" href="classitem.html#a4055882f85be37628b8ac9fe1e9e6964">get_quality</a>( <a class="code hl_struct" href="structquality.html">quality</a> );</div>
-<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span>}</div>
-<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00210">item.h:211</a></div></div>
-<div class="ttc" id="aclassitem_html_a4055882f85be37628b8ac9fe1e9e6964"><div class="ttname"><a href="classitem.html#a4055882f85be37628b8ac9fe1e9e6964">item::get_quality</a></div><div class="ttdeci">int get_quality(const quality_id &amp;id) const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05383">item.cpp:5383</a></div></div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02748">2748</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02749" name="l02749"></a><span class="lineno"> 2749</span>{</div>
+<div class="line"><a id="l02750" name="l02750"></a><span class="lineno"> 2750</span>    <span class="keyword">const</span> <span class="keyword">auto</span> &amp;i = <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>();</div>
+<div class="line"><a id="l02751" name="l02751"></a><span class="lineno"> 2751</span>    <span class="keywordflow">if</span>( i.fake_item.is_empty() ) {</div>
+<div class="line"><a id="l02752" name="l02752"></a><span class="lineno"> 2752</span>        <span class="keywordflow">return</span> INT_MIN;</div>
+<div class="line"><a id="l02753" name="l02753"></a><span class="lineno"> 2753</span>    }</div>
+<div class="line"><a id="l02754" name="l02754"></a><span class="lineno"> 2754</span> </div>
+<div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classitem.html">item</a>( i.fake_item ).<a class="code hl_function" href="classitem.html#a4055882f85be37628b8ac9fe1e9e6964">get_quality</a>( <a class="code hl_struct" href="structquality.html">quality</a> );</div>
+<div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>}</div>
+<div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00209">item.h:210</a></div></div>
+<div class="ttc" id="aclassitem_html_a4055882f85be37628b8ac9fe1e9e6964"><div class="ttname"><a href="classitem.html#a4055882f85be37628b8ac9fe1e9e6964">item::get_quality</a></div><div class="ttdeci">int get_quality(const quality_id &amp;id) const</div><div class="ttdef"><b>Definition:</b> <a href="item_8cpp_source.html#l05408">item.cpp:5408</a></div></div>
 <div class="ttc" id="astructbionic_html_a66fc20bc3ee64b64edce99959aedd453"><div class="ttname"><a href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">bionic::info</a></div><div class="ttdeci">const bionic_data &amp; info() const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00174">bionics.h:174</a></div></div>
 <div class="ttc" id="astructquality_html"><div class="ttname"><a href="structquality.html">quality</a></div><div class="ttdef"><b>Definition:</b> <a href="requirements_8h_source.html#l00044">requirements.h:44</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8cpp_source.html#l05383">item::get_quality()</a>, and <a class="el" href="bionics_8h_source.html#l00174">info()</a>.</p>
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l05408">item::get_quality()</a>, and <a class="el" href="bionics_8h_source.html#l00174">info()</a>.</p>
 
 </div>
 </div>
@@ -378,16 +378,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02777">2777</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02778" name="l02778"></a><span class="lineno"> 2778</span>{</div>
-<div class="line"><a id="l02779" name="l02779"></a><span class="lineno"> 2779</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#a40af35237720e81aeef2c76cf56fe430">find</a>( flag ) != <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#ac2cc2580a6f1501d51da9e51a8de2e8c">end</a>();</div>
-<div class="line"><a id="l02780" name="l02780"></a><span class="lineno"> 2780</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02743">2743</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02744" name="l02744"></a><span class="lineno"> 2744</span>{</div>
+<div class="line"><a id="l02745" name="l02745"></a><span class="lineno"> 2745</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#a40af35237720e81aeef2c76cf56fe430">find</a>( flag ) != <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#ac2cc2580a6f1501d51da9e51a8de2e8c">end</a>();</div>
+<div class="line"><a id="l02746" name="l02746"></a><span class="lineno"> 2746</span>}</div>
 <div class="ttc" id="aclasscata_1_1flat__set_html_a40af35237720e81aeef2c76cf56fe430"><div class="ttname"><a href="classcata_1_1flat__set.html#a40af35237720e81aeef2c76cf56fe430">cata::flat_set::find</a></div><div class="ttdeci">const_iterator find(const value_type &amp;value) const</div><div class="ttdef"><b>Definition:</b> <a href="flat__set_8h_source.html#l00126">flat_set.h:126</a></div></div>
 <div class="ttc" id="aclasscata_1_1flat__set_html_ac2cc2580a6f1501d51da9e51a8de2e8c"><div class="ttname"><a href="classcata_1_1flat__set.html#ac2cc2580a6f1501d51da9e51a8de2e8c">cata::flat_set::end</a></div><div class="ttdeci">iterator end() const</div><div class="ttdef"><b>Definition:</b> <a href="flat__set_8h_source.html#l00086">flat_set.h:86</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00197">bionic_tags</a>, <a class="el" href="flat__set_8h_source.html#l00086">cata::flat_set&lt; T, Compare, Data &gt;::end()</a>, and <a class="el" href="flat__set_8h_source.html#l00126">cata::flat_set&lt; T, Compare, Data &gt;::find()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01236">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l02798">toggle_safe_fuel_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01195">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l02764">toggle_safe_fuel_mod()</a>.</p>
 
 </div>
 </div>
@@ -421,7 +421,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00156">id</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l07996">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01586">attempt_recharge()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01236">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l00498">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01148">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00466">deactivate_weapon_cbm()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00187">draw_bionics_titlebar()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, <a class="el" href="consumption_8cpp_source.html#l01335">Character::fuel_bionic_with()</a>, <a class="el" href="bionics_8cpp_source.html#l01555">Character::get_effective_efficiency()</a>, <a class="el" href="bionics_8cpp_source.html#l02782">get_quality()</a>, <a class="el" href="bionics_8cpp_source.html#l01535">Character::heat_emission()</a>, <a class="el" href="bionics_8cpp_source.html#l02792">is_this_fuel_powered()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00075">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, <a class="el" href="bionics_8cpp_source.html#l01394">Character::passive_power_gen()</a>, <a class="el" href="bionics_8cpp_source.html#l01606">Character::process_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>, <a class="el" href="handle__action_8cpp_source.html#l01006">sleep()</a>, <a class="el" href="bionics_8cpp_source.html#l02810">toggle_auto_start_mod()</a>, <a class="el" href="bionics_8cpp_source.html#l02798">toggle_safe_fuel_mod()</a>, and <a class="el" href="bionics_8cpp_source.html#l02088">Character::uninstall_bionic()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08023">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01547">attempt_recharge()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01195">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l00521">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01107">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l00466">deactivate_weapon_cbm()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00187">draw_bionics_titlebar()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, <a class="el" href="consumption_8cpp_source.html#l01352">Character::fuel_bionic_with()</a>, <a class="el" href="bionics_8cpp_source.html#l01516">Character::get_effective_efficiency()</a>, <a class="el" href="bionics_8cpp_source.html#l02748">get_quality()</a>, <a class="el" href="bionics_8cpp_source.html#l01496">Character::heat_emission()</a>, <a class="el" href="bionics_8cpp_source.html#l02758">is_this_fuel_powered()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00075">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, <a class="el" href="bionics_8cpp_source.html#l01355">Character::passive_power_gen()</a>, <a class="el" href="bionics_8cpp_source.html#l01567">Character::process_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>, <a class="el" href="handle__action_8cpp_source.html#l01011">sleep()</a>, <a class="el" href="bionics_8cpp_source.html#l02776">toggle_auto_start_mod()</a>, <a class="el" href="bionics_8cpp_source.html#l02764">toggle_safe_fuel_mod()</a>, and <a class="el" href="bionics_8cpp_source.html#l02054">Character::uninstall_bionic()</a>.</p>
 
 </div>
 </div>
@@ -440,15 +440,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02864">2864</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02865" name="l02865"></a><span class="lineno"> 2865</span>{</div>
-<div class="line"><a id="l02866" name="l02866"></a><span class="lineno"> 2866</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="structbionic.html#a420d79aeeaf7464328bb295d90fac13d">get_auto_start_thresh</a>() &gt; 0.99;</div>
-<div class="line"><a id="l02867" name="l02867"></a><span class="lineno"> 2867</span>}</div>
-<div class="ttc" id="astructbionic_html_a420d79aeeaf7464328bb295d90fac13d"><div class="ttname"><a href="structbionic.html#a420d79aeeaf7464328bb295d90fac13d">bionic::get_auto_start_thresh</a></div><div class="ttdeci">float get_auto_start_thresh() const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02854">bionics.cpp:2854</a></div></div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02830">2830</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span>{</div>
+<div class="line"><a id="l02832" name="l02832"></a><span class="lineno"> 2832</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="structbionic.html#a420d79aeeaf7464328bb295d90fac13d">get_auto_start_thresh</a>() &gt; 0.99;</div>
+<div class="line"><a id="l02833" name="l02833"></a><span class="lineno"> 2833</span>}</div>
+<div class="ttc" id="astructbionic_html_a420d79aeeaf7464328bb295d90fac13d"><div class="ttname"><a href="structbionic.html#a420d79aeeaf7464328bb295d90fac13d">bionic::get_auto_start_thresh</a></div><div class="ttdeci">float get_auto_start_thresh() const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02820">bionics.cpp:2820</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="bionics_8cpp_source.html#l02854">get_auto_start_thresh()</a>.</p>
+<p class="reference">References <a class="el" href="bionics_8cpp_source.html#l02820">get_auto_start_thresh()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01236">Character::burn_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l01195">Character::burn_fuel()</a>.</p>
 
 </div>
 </div>
@@ -467,14 +467,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02859">2859</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02860" name="l02860"></a><span class="lineno"> 2860</span>{</div>
-<div class="line"><a id="l02861" name="l02861"></a><span class="lineno"> 2861</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="structbionic.html#a420d79aeeaf7464328bb295d90fac13d">get_auto_start_thresh</a>() &gt; -1.0;</div>
-<div class="line"><a id="l02862" name="l02862"></a><span class="lineno"> 2862</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02825">2825</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02826" name="l02826"></a><span class="lineno"> 2826</span>{</div>
+<div class="line"><a id="l02827" name="l02827"></a><span class="lineno"> 2827</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="structbionic.html#a420d79aeeaf7464328bb295d90fac13d">get_auto_start_thresh</a>() &gt; -1.0;</div>
+<div class="line"><a id="l02828" name="l02828"></a><span class="lineno"> 2828</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="bionics_8cpp_source.html#l02854">get_auto_start_thresh()</a>.</p>
+<p class="reference">References <a class="el" href="bionics_8cpp_source.html#l02820">get_auto_start_thresh()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01606">Character::process_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02810">toggle_auto_start_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01567">Character::process_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02776">toggle_auto_start_mod()</a>.</p>
 
 </div>
 </div>
@@ -494,17 +494,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02792">2792</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02793" name="l02793"></a><span class="lineno"> 2793</span>{</div>
-<div class="line"><a id="l02794" name="l02794"></a><span class="lineno"> 2794</span>    <span class="keyword">const</span> std::vector&lt;itype_id&gt; fuel_op = <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().<a class="code hl_variable" href="structbionic__data.html#a8138c18ab3e2346f1404295246389393">fuel_opts</a>;</div>
-<div class="line"><a id="l02795" name="l02795"></a><span class="lineno"> 2795</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">std::find</a>( fuel_op.begin(), fuel_op.end(), this_fuel ) != fuel_op.end();</div>
-<div class="line"><a id="l02796" name="l02796"></a><span class="lineno"> 2796</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02758">2758</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02759" name="l02759"></a><span class="lineno"> 2759</span>{</div>
+<div class="line"><a id="l02760" name="l02760"></a><span class="lineno"> 2760</span>    <span class="keyword">const</span> std::vector&lt;itype_id&gt; fuel_op = <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().<a class="code hl_variable" href="structbionic__data.html#a8138c18ab3e2346f1404295246389393">fuel_opts</a>;</div>
+<div class="line"><a id="l02761" name="l02761"></a><span class="lineno"> 2761</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">std::find</a>( fuel_op.begin(), fuel_op.end(), this_fuel ) != fuel_op.end();</div>
+<div class="line"><a id="l02762" name="l02762"></a><span class="lineno"> 2762</span>}</div>
 <div class="ttc" id="anamespacedetail_html_ad06b74f7502b63cbab323bba1ca3f72b"><div class="ttname"><a href="namespacedetail.html#ad06b74f7502b63cbab323bba1ca3f72b">detail::find</a></div><div class="ttdeci">FMT_CONSTEXPR bool find(Ptr first, Ptr last, T value, Ptr &amp;out)</div><div class="ttdef"><b>Definition:</b> <a href="fmtlib__format_8h_source.html#l03355">fmtlib_format.h:3355</a></div></div>
 <div class="ttc" id="astructbionic__data_html_a8138c18ab3e2346f1404295246389393"><div class="ttname"><a href="structbionic__data.html#a8138c18ab3e2346f1404295246389393">bionic_data::fuel_opts</a></div><div class="ttdeci">std::vector&lt; itype_id &gt; fuel_opts</div><div class="ttdoc">Fuel types that can be used by this bionic.</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8h_source.html#l00067">bionics.h:67</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="fmtlib__format_8h_source.html#l03355">detail::find()</a>, <a class="el" href="bionics_8h_source.html#l00067">bionic_data::fuel_opts</a>, and <a class="el" href="bionics_8h_source.html#l00174">info()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01236">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01394">Character::passive_power_gen()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l01195">Character::burn_fuel()</a>, and <a class="el" href="bionics_8cpp_source.html#l01355">Character::passive_power_gen()</a>.</p>
 
 </div>
 </div>
@@ -524,15 +524,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02772">2772</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02773" name="l02773"></a><span class="lineno"> 2773</span>{</div>
-<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span>    <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#a3d7ed3af629c15825cafc9b5a48bda3b">erase</a>( flag );</div>
-<div class="line"><a id="l02775" name="l02775"></a><span class="lineno"> 2775</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02738">2738</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02739" name="l02739"></a><span class="lineno"> 2739</span>{</div>
+<div class="line"><a id="l02740" name="l02740"></a><span class="lineno"> 2740</span>    <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#a3d7ed3af629c15825cafc9b5a48bda3b">erase</a>( flag );</div>
+<div class="line"><a id="l02741" name="l02741"></a><span class="lineno"> 2741</span>}</div>
 <div class="ttc" id="aclasscata_1_1flat__set_html_a3d7ed3af629c15825cafc9b5a48bda3b"><div class="ttname"><a href="classcata_1_1flat__set.html#a3d7ed3af629c15825cafc9b5a48bda3b">cata::flat_set::erase</a></div><div class="ttdeci">size_type erase(const value_type &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="flat__set_8h_source.html#l00183">flat_set.h:183</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00197">bionic_tags</a>, and <a class="el" href="flat__set_8h_source.html#l00183">cata::flat_set&lt; T, Compare, Data &gt;::erase()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02798">toggle_safe_fuel_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02764">toggle_safe_fuel_mod()</a>.</p>
 
 </div>
 </div>
@@ -552,34 +552,34 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02869">2869</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02870" name="l02870"></a><span class="lineno"> 2870</span>{</div>
-<div class="line"><a id="l02871" name="l02871"></a><span class="lineno"> 2871</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l02872" name="l02872"></a><span class="lineno"> 2872</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
-<div class="line"><a id="l02873" name="l02873"></a><span class="lineno"> 2873</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;invlet&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( <a class="code hl_variable" href="structbionic.html#a4b38420250d3ff4ad9c7eba7e2b25a48">invlet</a> ) );</div>
-<div class="line"><a id="l02874" name="l02874"></a><span class="lineno"> 2874</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;powered&quot;</span>, <a class="code hl_variable" href="structbionic.html#addbda67a07e927ca959d4a77ecd5a593">powered</a> );</div>
-<div class="line"><a id="l02875" name="l02875"></a><span class="lineno"> 2875</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;charge&quot;</span>, <a class="code hl_variable" href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">charge_timer</a> );</div>
-<div class="line"><a id="l02876" name="l02876"></a><span class="lineno"> 2876</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;ammo_loaded&quot;</span>, <a class="code hl_variable" href="structbionic.html#a2482b51bc0abb3a60102dbbbb354e068">ammo_loaded</a> );</div>
-<div class="line"><a id="l02877" name="l02877"></a><span class="lineno"> 2877</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;ammo_count&quot;</span>, <a class="code hl_variable" href="structbionic.html#ac16ebda23bfb0c4be0fd93f80cc9d8f5">ammo_count</a> );</div>
-<div class="line"><a id="l02878" name="l02878"></a><span class="lineno"> 2878</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;bionic_tags&quot;</span>, <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a> );</div>
-<div class="line"><a id="l02879" name="l02879"></a><span class="lineno"> 2879</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structbionic.html#af11f65196d14cfeafffc68124ff00f00">incapacitated_time</a> &gt; 0_turns ) {</div>
-<div class="line"><a id="l02880" name="l02880"></a><span class="lineno"> 2880</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;incapacitated_time&quot;</span>, <a class="code hl_variable" href="structbionic.html#af11f65196d14cfeafffc68124ff00f00">incapacitated_time</a> );</div>
-<div class="line"><a id="l02881" name="l02881"></a><span class="lineno"> 2881</span>    }</div>
-<div class="line"><a id="l02882" name="l02882"></a><span class="lineno"> 2882</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structbionic.html#ab8aff3a70571379cf881f33a1f25aa4b">is_auto_start_on</a>() ) {</div>
-<div class="line"><a id="l02883" name="l02883"></a><span class="lineno"> 2883</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;auto_start_threshold&quot;</span>, <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a> );</div>
-<div class="line"><a id="l02884" name="l02884"></a><span class="lineno"> 2884</span>    }</div>
-<div class="line"><a id="l02885" name="l02885"></a><span class="lineno"> 2885</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structbionic.html#a9ffb74340fe471788746f0a0247bf772">energy_stored</a> &gt; 0_kJ ) {</div>
-<div class="line"><a id="l02886" name="l02886"></a><span class="lineno"> 2886</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;energy_stored&quot;</span>, <a class="code hl_variable" href="structbionic.html#a9ffb74340fe471788746f0a0247bf772">energy_stored</a> );</div>
-<div class="line"><a id="l02887" name="l02887"></a><span class="lineno"> 2887</span>    }</div>
-<div class="line"><a id="l02888" name="l02888"></a><span class="lineno"> 2888</span> </div>
-<div class="line"><a id="l02889" name="l02889"></a><span class="lineno"> 2889</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l02890" name="l02890"></a><span class="lineno"> 2890</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02835">2835</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02836" name="l02836"></a><span class="lineno"> 2836</span>{</div>
+<div class="line"><a id="l02837" name="l02837"></a><span class="lineno"> 2837</span>    json.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l02838" name="l02838"></a><span class="lineno"> 2838</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;id&quot;</span>, <span class="keywordtype">id</span> );</div>
+<div class="line"><a id="l02839" name="l02839"></a><span class="lineno"> 2839</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;invlet&quot;</span>, <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( <a class="code hl_variable" href="structbionic.html#a4b38420250d3ff4ad9c7eba7e2b25a48">invlet</a> ) );</div>
+<div class="line"><a id="l02840" name="l02840"></a><span class="lineno"> 2840</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;powered&quot;</span>, <a class="code hl_variable" href="structbionic.html#addbda67a07e927ca959d4a77ecd5a593">powered</a> );</div>
+<div class="line"><a id="l02841" name="l02841"></a><span class="lineno"> 2841</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;charge&quot;</span>, <a class="code hl_variable" href="structbionic.html#a9ba6a347620bc748a13a909909effd3e">charge_timer</a> );</div>
+<div class="line"><a id="l02842" name="l02842"></a><span class="lineno"> 2842</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;ammo_loaded&quot;</span>, <a class="code hl_variable" href="structbionic.html#a2482b51bc0abb3a60102dbbbb354e068">ammo_loaded</a> );</div>
+<div class="line"><a id="l02843" name="l02843"></a><span class="lineno"> 2843</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;ammo_count&quot;</span>, <a class="code hl_variable" href="structbionic.html#ac16ebda23bfb0c4be0fd93f80cc9d8f5">ammo_count</a> );</div>
+<div class="line"><a id="l02844" name="l02844"></a><span class="lineno"> 2844</span>    json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;bionic_tags&quot;</span>, <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a> );</div>
+<div class="line"><a id="l02845" name="l02845"></a><span class="lineno"> 2845</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structbionic.html#af11f65196d14cfeafffc68124ff00f00">incapacitated_time</a> &gt; 0_turns ) {</div>
+<div class="line"><a id="l02846" name="l02846"></a><span class="lineno"> 2846</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;incapacitated_time&quot;</span>, <a class="code hl_variable" href="structbionic.html#af11f65196d14cfeafffc68124ff00f00">incapacitated_time</a> );</div>
+<div class="line"><a id="l02847" name="l02847"></a><span class="lineno"> 2847</span>    }</div>
+<div class="line"><a id="l02848" name="l02848"></a><span class="lineno"> 2848</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structbionic.html#ab8aff3a70571379cf881f33a1f25aa4b">is_auto_start_on</a>() ) {</div>
+<div class="line"><a id="l02849" name="l02849"></a><span class="lineno"> 2849</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;auto_start_threshold&quot;</span>, <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a> );</div>
+<div class="line"><a id="l02850" name="l02850"></a><span class="lineno"> 2850</span>    }</div>
+<div class="line"><a id="l02851" name="l02851"></a><span class="lineno"> 2851</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="structbionic.html#a9ffb74340fe471788746f0a0247bf772">energy_stored</a> &gt; 0_kJ ) {</div>
+<div class="line"><a id="l02852" name="l02852"></a><span class="lineno"> 2852</span>        json.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;energy_stored&quot;</span>, <a class="code hl_variable" href="structbionic.html#a9ffb74340fe471788746f0a0247bf772">energy_stored</a> );</div>
+<div class="line"><a id="l02853" name="l02853"></a><span class="lineno"> 2853</span>    }</div>
+<div class="line"><a id="l02854" name="l02854"></a><span class="lineno"> 2854</span> </div>
+<div class="line"><a id="l02855" name="l02855"></a><span class="lineno"> 2855</span>    json.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l02856" name="l02856"></a><span class="lineno"> 2856</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
-<div class="ttc" id="astructbionic_html_ab8aff3a70571379cf881f33a1f25aa4b"><div class="ttname"><a href="structbionic.html#ab8aff3a70571379cf881f33a1f25aa4b">bionic::is_auto_start_on</a></div><div class="ttdeci">bool is_auto_start_on() const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02859">bionics.cpp:2859</a></div></div>
+<div class="ttc" id="astructbionic_html_ab8aff3a70571379cf881f33a1f25aa4b"><div class="ttname"><a href="structbionic.html#ab8aff3a70571379cf881f33a1f25aa4b">bionic::is_auto_start_on</a></div><div class="ttdeci">bool is_auto_start_on() const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02825">bionics.cpp:2825</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="bionics_8h_source.html#l00163">ammo_count</a>, <a class="el" href="bionics_8h_source.html#l00161">ammo_loaded</a>, <a class="el" href="bionics_8h_source.html#l00198">auto_start_threshold</a>, <a class="el" href="bionics_8h_source.html#l00197">bionic_tags</a>, <a class="el" href="bionics_8h_source.html#l00157">charge_timer</a>, <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="bionics_8h_source.html#l00167">energy_stored</a>, <a class="el" href="bionics_8h_source.html#l00165">incapacitated_time</a>, <a class="el" href="bionics_8h_source.html#l00158">invlet</a>, <a class="el" href="bionics_8cpp_source.html#l02859">is_auto_start_on()</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="bionics_8h_source.html#l00159">powered</a>, and <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>.</p>
+<p class="reference">References <a class="el" href="bionics_8h_source.html#l00163">ammo_count</a>, <a class="el" href="bionics_8h_source.html#l00161">ammo_loaded</a>, <a class="el" href="bionics_8h_source.html#l00198">auto_start_threshold</a>, <a class="el" href="bionics_8h_source.html#l00197">bionic_tags</a>, <a class="el" href="bionics_8h_source.html#l00157">charge_timer</a>, <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="bionics_8h_source.html#l00167">energy_stored</a>, <a class="el" href="bionics_8h_source.html#l00165">incapacitated_time</a>, <a class="el" href="bionics_8h_source.html#l00158">invlet</a>, <a class="el" href="bionics_8cpp_source.html#l02825">is_auto_start_on()</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="bionics_8h_source.html#l00159">powered</a>, and <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>.</p>
 
 </div>
 </div>
@@ -599,14 +599,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02849">2849</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02850" name="l02850"></a><span class="lineno"> 2850</span>{</div>
-<div class="line"><a id="l02851" name="l02851"></a><span class="lineno"> 2851</span>    <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a> = val;</div>
-<div class="line"><a id="l02852" name="l02852"></a><span class="lineno"> 2852</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02815">2815</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02816" name="l02816"></a><span class="lineno"> 2816</span>{</div>
+<div class="line"><a id="l02817" name="l02817"></a><span class="lineno"> 2817</span>    <a class="code hl_variable" href="structbionic.html#a1653e341c38d8ced1112b63be102c8f6">auto_start_threshold</a> = val;</div>
+<div class="line"><a id="l02818" name="l02818"></a><span class="lineno"> 2818</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00198">auto_start_threshold</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02810">toggle_auto_start_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02776">toggle_auto_start_mod()</a>.</p>
 
 </div>
 </div>
@@ -626,14 +626,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02767">2767</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span>{</div>
-<div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span>    <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#ab427ae6af6b4cd328c0000bc197f881b">insert</a>( flag );</div>
-<div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02733">2733</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02734" name="l02734"></a><span class="lineno"> 2734</span>{</div>
+<div class="line"><a id="l02735" name="l02735"></a><span class="lineno"> 2735</span>    <a class="code hl_variable" href="structbionic.html#ad584892540f36aa0c358634c41eccd7e">bionic_tags</a>.<a class="code hl_function" href="classcata_1_1flat__set.html#ab427ae6af6b4cd328c0000bc197f881b">insert</a>( flag );</div>
+<div class="line"><a id="l02736" name="l02736"></a><span class="lineno"> 2736</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="bionics_8h_source.html#l00197">bionic_tags</a>, and <a class="el" href="flat__set_8h_source.html#l00151">cata::flat_set&lt; T, Compare, Data &gt;::insert()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02798">toggle_safe_fuel_mod()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02764">toggle_safe_fuel_mod()</a>.</p>
 
 </div>
 </div>
@@ -652,53 +652,53 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02810">2810</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02811" name="l02811"></a><span class="lineno"> 2811</span>{</div>
-<div class="line"><a id="l02812" name="l02812"></a><span class="lineno"> 2812</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().fuel_opts.empty() &amp;&amp; !<a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().is_remote_fueled ) {</div>
-<div class="line"><a id="l02813" name="l02813"></a><span class="lineno"> 2813</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l02814" name="l02814"></a><span class="lineno"> 2814</span>    }</div>
-<div class="line"><a id="l02815" name="l02815"></a><span class="lineno"> 2815</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="structbionic.html#ab8aff3a70571379cf881f33a1f25aa4b">is_auto_start_on</a>() ) {</div>
-<div class="line"><a id="l02816" name="l02816"></a><span class="lineno"> 2816</span>        <a class="code hl_class" href="classuilist.html">uilist</a> tmenu;</div>
-<div class="line"><a id="l02817" name="l02817"></a><span class="lineno"> 2817</span>        tmenu.<a class="code hl_variable" href="classuilist.html#af59dd3fdde04746dbc5cb52b355577ce">text</a> = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Chose Start Power Level Threshold&quot;</span> );</div>
-<div class="line"><a id="l02818" name="l02818"></a><span class="lineno"> 2818</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 1, <span class="keyword">true</span>, <span class="charliteral">&#39;o&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;No Power Left&quot;</span> ) );</div>
-<div class="line"><a id="l02819" name="l02819"></a><span class="lineno"> 2819</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 2, <span class="keyword">true</span>, <span class="charliteral">&#39;t&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 25 %%&quot;</span> ) );</div>
-<div class="line"><a id="l02820" name="l02820"></a><span class="lineno"> 2820</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 3, <span class="keyword">true</span>, <span class="charliteral">&#39;f&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 50 %%&quot;</span> ) );</div>
-<div class="line"><a id="l02821" name="l02821"></a><span class="lineno"> 2821</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 4, <span class="keyword">true</span>, <span class="charliteral">&#39;s&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 75 %%&quot;</span> ) );</div>
-<div class="line"><a id="l02822" name="l02822"></a><span class="lineno"> 2822</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 5, <span class="keyword">true</span>, <span class="charliteral">&#39;a&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 99 %%&quot;</span> ) );</div>
-<div class="line"><a id="l02823" name="l02823"></a><span class="lineno"> 2823</span>        tmenu.<a class="code hl_function" href="group__UI.html#ga7604af7545244003f0a52ac87ce37979">query</a>();</div>
-<div class="line"><a id="l02824" name="l02824"></a><span class="lineno"> 2824</span> </div>
-<div class="line"><a id="l02825" name="l02825"></a><span class="lineno"> 2825</span>        <span class="keywordflow">switch</span>( tmenu.<a class="code hl_variable" href="classuilist.html#a0baa34622db6972a59d47d478bfd21d6">ret</a> ) {</div>
-<div class="line"><a id="l02826" name="l02826"></a><span class="lineno"> 2826</span>            <span class="keywordflow">case</span> 1:</div>
-<div class="line"><a id="l02827" name="l02827"></a><span class="lineno"> 2827</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.0 );</div>
-<div class="line"><a id="l02828" name="l02828"></a><span class="lineno"> 2828</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l02829" name="l02829"></a><span class="lineno"> 2829</span>            <span class="keywordflow">case</span> 2:</div>
-<div class="line"><a id="l02830" name="l02830"></a><span class="lineno"> 2830</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.25 );</div>
-<div class="line"><a id="l02831" name="l02831"></a><span class="lineno"> 2831</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l02832" name="l02832"></a><span class="lineno"> 2832</span>            <span class="keywordflow">case</span> 3:</div>
-<div class="line"><a id="l02833" name="l02833"></a><span class="lineno"> 2833</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.5 );</div>
-<div class="line"><a id="l02834" name="l02834"></a><span class="lineno"> 2834</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l02835" name="l02835"></a><span class="lineno"> 2835</span>            <span class="keywordflow">case</span> 4:</div>
-<div class="line"><a id="l02836" name="l02836"></a><span class="lineno"> 2836</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.75 );</div>
-<div class="line"><a id="l02837" name="l02837"></a><span class="lineno"> 2837</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l02838" name="l02838"></a><span class="lineno"> 2838</span>            <span class="keywordflow">case</span> 5:</div>
-<div class="line"><a id="l02839" name="l02839"></a><span class="lineno"> 2839</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.99 );</div>
-<div class="line"><a id="l02840" name="l02840"></a><span class="lineno"> 2840</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l02841" name="l02841"></a><span class="lineno"> 2841</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l02842" name="l02842"></a><span class="lineno"> 2842</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l02843" name="l02843"></a><span class="lineno"> 2843</span>        }</div>
-<div class="line"><a id="l02844" name="l02844"></a><span class="lineno"> 2844</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02845" name="l02845"></a><span class="lineno"> 2845</span>        <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( -1.0 );</div>
-<div class="line"><a id="l02846" name="l02846"></a><span class="lineno"> 2846</span>    }</div>
-<div class="line"><a id="l02847" name="l02847"></a><span class="lineno"> 2847</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02776">2776</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02777" name="l02777"></a><span class="lineno"> 2777</span>{</div>
+<div class="line"><a id="l02778" name="l02778"></a><span class="lineno"> 2778</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().fuel_opts.empty() &amp;&amp; !<a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().is_remote_fueled ) {</div>
+<div class="line"><a id="l02779" name="l02779"></a><span class="lineno"> 2779</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l02780" name="l02780"></a><span class="lineno"> 2780</span>    }</div>
+<div class="line"><a id="l02781" name="l02781"></a><span class="lineno"> 2781</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="structbionic.html#ab8aff3a70571379cf881f33a1f25aa4b">is_auto_start_on</a>() ) {</div>
+<div class="line"><a id="l02782" name="l02782"></a><span class="lineno"> 2782</span>        <a class="code hl_class" href="classuilist.html">uilist</a> tmenu;</div>
+<div class="line"><a id="l02783" name="l02783"></a><span class="lineno"> 2783</span>        tmenu.<a class="code hl_variable" href="classuilist.html#af59dd3fdde04746dbc5cb52b355577ce">text</a> = <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Chose Start Power Level Threshold&quot;</span> );</div>
+<div class="line"><a id="l02784" name="l02784"></a><span class="lineno"> 2784</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 1, <span class="keyword">true</span>, <span class="charliteral">&#39;o&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;No Power Left&quot;</span> ) );</div>
+<div class="line"><a id="l02785" name="l02785"></a><span class="lineno"> 2785</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 2, <span class="keyword">true</span>, <span class="charliteral">&#39;t&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 25 %%&quot;</span> ) );</div>
+<div class="line"><a id="l02786" name="l02786"></a><span class="lineno"> 2786</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 3, <span class="keyword">true</span>, <span class="charliteral">&#39;f&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 50 %%&quot;</span> ) );</div>
+<div class="line"><a id="l02787" name="l02787"></a><span class="lineno"> 2787</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 4, <span class="keyword">true</span>, <span class="charliteral">&#39;s&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 75 %%&quot;</span> ) );</div>
+<div class="line"><a id="l02788" name="l02788"></a><span class="lineno"> 2788</span>        tmenu.<a class="code hl_function" href="classuilist.html#af99f28334902af64487e2d0758df2ab9">addentry</a>( 5, <span class="keyword">true</span>, <span class="charliteral">&#39;a&#39;</span>, <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;Below 99 %%&quot;</span> ) );</div>
+<div class="line"><a id="l02789" name="l02789"></a><span class="lineno"> 2789</span>        tmenu.<a class="code hl_function" href="group__UI.html#ga7604af7545244003f0a52ac87ce37979">query</a>();</div>
+<div class="line"><a id="l02790" name="l02790"></a><span class="lineno"> 2790</span> </div>
+<div class="line"><a id="l02791" name="l02791"></a><span class="lineno"> 2791</span>        <span class="keywordflow">switch</span>( tmenu.<a class="code hl_variable" href="classuilist.html#a0baa34622db6972a59d47d478bfd21d6">ret</a> ) {</div>
+<div class="line"><a id="l02792" name="l02792"></a><span class="lineno"> 2792</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l02793" name="l02793"></a><span class="lineno"> 2793</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.0 );</div>
+<div class="line"><a id="l02794" name="l02794"></a><span class="lineno"> 2794</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l02795" name="l02795"></a><span class="lineno"> 2795</span>            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l02796" name="l02796"></a><span class="lineno"> 2796</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.25 );</div>
+<div class="line"><a id="l02797" name="l02797"></a><span class="lineno"> 2797</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l02798" name="l02798"></a><span class="lineno"> 2798</span>            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l02799" name="l02799"></a><span class="lineno"> 2799</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.5 );</div>
+<div class="line"><a id="l02800" name="l02800"></a><span class="lineno"> 2800</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l02801" name="l02801"></a><span class="lineno"> 2801</span>            <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a id="l02802" name="l02802"></a><span class="lineno"> 2802</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.75 );</div>
+<div class="line"><a id="l02803" name="l02803"></a><span class="lineno"> 2803</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l02804" name="l02804"></a><span class="lineno"> 2804</span>            <span class="keywordflow">case</span> 5:</div>
+<div class="line"><a id="l02805" name="l02805"></a><span class="lineno"> 2805</span>                <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( 0.99 );</div>
+<div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l02808" name="l02808"></a><span class="lineno"> 2808</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l02809" name="l02809"></a><span class="lineno"> 2809</span>        }</div>
+<div class="line"><a id="l02810" name="l02810"></a><span class="lineno"> 2810</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02811" name="l02811"></a><span class="lineno"> 2811</span>        <a class="code hl_function" href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">set_auto_start_thresh</a>( -1.0 );</div>
+<div class="line"><a id="l02812" name="l02812"></a><span class="lineno"> 2812</span>    }</div>
+<div class="line"><a id="l02813" name="l02813"></a><span class="lineno"> 2813</span>}</div>
 <div class="ttc" id="aclassuilist_html"><div class="ttname"><a href="classuilist.html">uilist</a></div><div class="ttdoc">uilist: scrolling vertical list menu</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00186">ui.h:187</a></div></div>
 <div class="ttc" id="aclassuilist_html_a0baa34622db6972a59d47d478bfd21d6"><div class="ttname"><a href="classuilist.html#a0baa34622db6972a59d47d478bfd21d6">uilist::ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00412">ui.h:412</a></div></div>
 <div class="ttc" id="aclassuilist_html_af59dd3fdde04746dbc5cb52b355577ce"><div class="ttname"><a href="classuilist.html#af59dd3fdde04746dbc5cb52b355577ce">uilist::text</a></div><div class="ttdeci">std::string text</div><div class="ttdef"><b>Definition:</b> <a href="ui_8h_source.html#l00320">ui.h:320</a></div></div>
 <div class="ttc" id="aclassuilist_html_af99f28334902af64487e2d0758df2ab9"><div class="ttname"><a href="classuilist.html#af99f28334902af64487e2d0758df2ab9">uilist::addentry</a></div><div class="ttdeci">void addentry(const std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="ui_8cpp_source.html#l00942">ui.cpp:942</a></div></div>
 <div class="ttc" id="agroup__UI_html_ga7604af7545244003f0a52ac87ce37979"><div class="ttname"><a href="group__UI.html#ga7604af7545244003f0a52ac87ce37979">uilist::query</a></div><div class="ttdeci">void query(bool loop=true, int timeout=-1)</div><div class="ttdoc">Handle input and update display.</div><div class="ttdef"><b>Definition:</b> <a href="ui_8cpp_source.html#l00838">ui.cpp:838</a></div></div>
-<div class="ttc" id="astructbionic_html_aab0d53302cf6f304a210a51b59a41ef6"><div class="ttname"><a href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">bionic::set_auto_start_thresh</a></div><div class="ttdeci">void set_auto_start_thresh(float val)</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02849">bionics.cpp:2849</a></div></div>
+<div class="ttc" id="astructbionic_html_aab0d53302cf6f304a210a51b59a41ef6"><div class="ttname"><a href="structbionic.html#aab0d53302cf6f304a210a51b59a41ef6">bionic::set_auto_start_thresh</a></div><div class="ttdeci">void set_auto_start_thresh(float val)</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02815">bionics.cpp:2815</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="ui_8cpp_source.html#l00942">uilist::addentry()</a>, <a class="el" href="bionics_8h_source.html#l00174">info()</a>, <a class="el" href="bionics_8cpp_source.html#l02859">is_auto_start_on()</a>, <a class="el" href="ui_8cpp_source.html#l00838">uilist::query()</a>, <a class="el" href="ui_8h_source.html#l00412">uilist::ret</a>, <a class="el" href="bionics_8cpp_source.html#l02849">set_auto_start_thresh()</a>, and <a class="el" href="ui_8h_source.html#l00320">uilist::text</a>.</p>
+<p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="ui_8cpp_source.html#l00942">uilist::addentry()</a>, <a class="el" href="bionics_8h_source.html#l00174">info()</a>, <a class="el" href="bionics_8cpp_source.html#l02825">is_auto_start_on()</a>, <a class="el" href="ui_8cpp_source.html#l00838">uilist::query()</a>, <a class="el" href="ui_8h_source.html#l00412">uilist::ret</a>, <a class="el" href="bionics_8cpp_source.html#l02815">set_auto_start_thresh()</a>, and <a class="el" href="ui_8h_source.html#l00320">uilist::text</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>.</p>
 
@@ -719,23 +719,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02798">2798</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l02799" name="l02799"></a><span class="lineno"> 2799</span>{</div>
-<div class="line"><a id="l02800" name="l02800"></a><span class="lineno"> 2800</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().fuel_opts.empty() &amp;&amp; !<a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().is_remote_fueled ) {</div>
-<div class="line"><a id="l02801" name="l02801"></a><span class="lineno"> 2801</span>        <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l02802" name="l02802"></a><span class="lineno"> 2802</span>    }</div>
-<div class="line"><a id="l02803" name="l02803"></a><span class="lineno"> 2803</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="structbionic.html#aaa23ac1a042d1a4380449d483d57d249">has_flag</a>( <a class="code hl_function" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF</a> ) ) {</div>
-<div class="line"><a id="l02804" name="l02804"></a><span class="lineno"> 2804</span>        <a class="code hl_function" href="structbionic.html#ab903e7b63a63feb20b70b61997c28644">set_flag</a>( <a class="code hl_function" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF</a> );</div>
-<div class="line"><a id="l02805" name="l02805"></a><span class="lineno"> 2805</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l02806" name="l02806"></a><span class="lineno"> 2806</span>        <a class="code hl_function" href="structbionic.html#a11ccbcabb8fcf2cbaddc48b9a9095751">remove_flag</a>( <a class="code hl_function" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF</a> );</div>
-<div class="line"><a id="l02807" name="l02807"></a><span class="lineno"> 2807</span>    }</div>
-<div class="line"><a id="l02808" name="l02808"></a><span class="lineno"> 2808</span>}</div>
+<p class="definition">Definition at line <a class="el" href="bionics_8cpp_source.html#l02764">2764</a> of file <a class="el" href="bionics_8cpp_source.html">bionics.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span>{</div>
+<div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().fuel_opts.empty() &amp;&amp; !<a class="code hl_function" href="structbionic.html#a66fc20bc3ee64b64edce99959aedd453">info</a>().is_remote_fueled ) {</div>
+<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span>    }</div>
+<div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span>    <span class="keywordflow">if</span>( !<a class="code hl_function" href="structbionic.html#aaa23ac1a042d1a4380449d483d57d249">has_flag</a>( <a class="code hl_function" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF</a> ) ) {</div>
+<div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>        <a class="code hl_function" href="structbionic.html#ab903e7b63a63feb20b70b61997c28644">set_flag</a>( <a class="code hl_function" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF</a> );</div>
+<div class="line"><a id="l02771" name="l02771"></a><span class="lineno"> 2771</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l02772" name="l02772"></a><span class="lineno"> 2772</span>        <a class="code hl_function" href="structbionic.html#a11ccbcabb8fcf2cbaddc48b9a9095751">remove_flag</a>( <a class="code hl_function" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF</a> );</div>
+<div class="line"><a id="l02773" name="l02773"></a><span class="lineno"> 2773</span>    }</div>
+<div class="line"><a id="l02774" name="l02774"></a><span class="lineno"> 2774</span>}</div>
 <div class="ttc" id="abionics_8cpp_html_a21f137e9f8be14651aae029d7de07f1d"><div class="ttname"><a href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF</a></div><div class="ttdeci">static const std::string flag_SAFE_FUEL_OFF(&quot;SAFE_FUEL_OFF&quot;)</div></div>
-<div class="ttc" id="astructbionic_html_a11ccbcabb8fcf2cbaddc48b9a9095751"><div class="ttname"><a href="structbionic.html#a11ccbcabb8fcf2cbaddc48b9a9095751">bionic::remove_flag</a></div><div class="ttdeci">void remove_flag(const std::string &amp;flag)</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02772">bionics.cpp:2772</a></div></div>
-<div class="ttc" id="astructbionic_html_aaa23ac1a042d1a4380449d483d57d249"><div class="ttname"><a href="structbionic.html#aaa23ac1a042d1a4380449d483d57d249">bionic::has_flag</a></div><div class="ttdeci">bool has_flag(const std::string &amp;flag) const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02777">bionics.cpp:2777</a></div></div>
-<div class="ttc" id="astructbionic_html_ab903e7b63a63feb20b70b61997c28644"><div class="ttname"><a href="structbionic.html#ab903e7b63a63feb20b70b61997c28644">bionic::set_flag</a></div><div class="ttdeci">void set_flag(const std::string &amp;flag)</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02767">bionics.cpp:2767</a></div></div>
+<div class="ttc" id="astructbionic_html_a11ccbcabb8fcf2cbaddc48b9a9095751"><div class="ttname"><a href="structbionic.html#a11ccbcabb8fcf2cbaddc48b9a9095751">bionic::remove_flag</a></div><div class="ttdeci">void remove_flag(const std::string &amp;flag)</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02738">bionics.cpp:2738</a></div></div>
+<div class="ttc" id="astructbionic_html_aaa23ac1a042d1a4380449d483d57d249"><div class="ttname"><a href="structbionic.html#aaa23ac1a042d1a4380449d483d57d249">bionic::has_flag</a></div><div class="ttdeci">bool has_flag(const std::string &amp;flag) const</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02743">bionics.cpp:2743</a></div></div>
+<div class="ttc" id="astructbionic_html_ab903e7b63a63feb20b70b61997c28644"><div class="ttname"><a href="structbionic.html#ab903e7b63a63feb20b70b61997c28644">bionic::set_flag</a></div><div class="ttdeci">void set_flag(const std::string &amp;flag)</div><div class="ttdef"><b>Definition:</b> <a href="bionics_8cpp_source.html#l02733">bionics.cpp:2733</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF()</a>, <a class="el" href="bionics_8cpp_source.html#l02777">has_flag()</a>, <a class="el" href="bionics_8h_source.html#l00174">info()</a>, <a class="el" href="bionics_8cpp_source.html#l02772">remove_flag()</a>, and <a class="el" href="bionics_8cpp_source.html#l02767">set_flag()</a>.</p>
+<p class="reference">References <a class="el" href="bionics_8cpp.html#a21f137e9f8be14651aae029d7de07f1d">flag_SAFE_FUEL_OFF()</a>, <a class="el" href="bionics_8cpp_source.html#l02743">has_flag()</a>, <a class="el" href="bionics_8h_source.html#l00174">info()</a>, <a class="el" href="bionics_8cpp_source.html#l02738">remove_flag()</a>, and <a class="el" href="bionics_8cpp_source.html#l02733">set_flag()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>.</p>
 
@@ -756,7 +756,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00163">163</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01480">npc::check_or_reload_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00498">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01148">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01465">npc::check_or_reload_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01107">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>.</p>
 
 </div>
 </div>
@@ -774,7 +774,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00161">161</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01480">npc::check_or_reload_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l00498">npc::check_or_use_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01148">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, and <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01465">npc::check_or_reload_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l01107">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, and <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>.</p>
 
 </div>
 </div>
@@ -800,7 +800,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00198">198</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l02854">get_auto_start_thresh()</a>, <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02849">set_auto_start_thresh()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l02820">get_auto_start_thresh()</a>, <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02815">set_auto_start_thresh()</a>.</p>
 
 </div>
 </div>
@@ -826,7 +826,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00197">197</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l02777">has_flag()</a>, <a class="el" href="bionics_8cpp_source.html#l02772">remove_flag()</a>, <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02767">set_flag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l02743">has_flag()</a>, <a class="el" href="bionics_8cpp_source.html#l02738">remove_flag()</a>, <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02733">set_flag()</a>.</p>
 
 </div>
 </div>
@@ -844,7 +844,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00157">157</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l07996">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01586">attempt_recharge()</a>, <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l01606">Character::process_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08023">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l01547">attempt_recharge()</a>, <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l01567">Character::process_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>.</p>
 
 </div>
 </div>
@@ -862,7 +862,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00167">167</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l07996">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l01148">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l01606">Character::process_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08023">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l01107">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics_8cpp_source.html#l01567">Character::process_bionic()</a>, and <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>.</p>
 
 </div>
 </div>
@@ -880,7 +880,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00156">156</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00333">build_bionic_powerdesc_string()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01236">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01148">Character::deactivate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00187">draw_bionics_titlebar()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00372">draw_description()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00493">get_bionic_text_color()</a>, <a class="el" href="bionics_8h_source.html#l00174">info()</a>, <a class="el" href="bionics_8cpp_source.html#l01394">Character::passive_power_gen()</a>, <a class="el" href="bionics_8cpp_source.html#l01606">Character::process_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>, <a class="el" href="bionics_8cpp_source.html#l02192">Character::uninstall_bionic()</a>, and <a class="el" href="wish_8cpp_source.html#l00322">debug_menu::wishbionics()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00333">build_bionic_powerdesc_string()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01195">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01107">Character::deactivate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00187">draw_bionics_titlebar()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00372">draw_description()</a>, <a class="el" href="bionics_8cpp_source.html#l00476">find_reloadable_cbms()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00493">get_bionic_text_color()</a>, <a class="el" href="bionics_8h_source.html#l00174">info()</a>, <a class="el" href="bionics_8cpp_source.html#l01355">Character::passive_power_gen()</a>, <a class="el" href="bionics_8cpp_source.html#l01567">Character::process_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>, <a class="el" href="bionics_8cpp_source.html#l02158">Character::uninstall_bionic()</a>, and <a class="el" href="wish_8cpp_source.html#l00322">debug_menu::wishbionics()</a>.</p>
 
 </div>
 </div>
@@ -898,7 +898,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00165">165</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l07996">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01148">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l08023">Character::absorb_hit()</a>, <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01107">Character::deactivate_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, and <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>.</p>
 
 </div>
 </div>
@@ -916,7 +916,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00158">158</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00075">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00075">anonymous_namespace{bionics_ui.cpp}::bionic_sort_less::operator()()</a>, <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>, and <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>.</p>
 
 </div>
 </div>
@@ -934,7 +934,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="bionics_8h_source.html#l00159">159</a> of file <a class="el" href="bionics_8h_source.html">bionics.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00630">Character::activate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01606">npc::activate_bionic_by_id()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01236">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01148">Character::deactivate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01630">npc::deactivate_bionic_by_id()</a>, <a class="el" href="bionics_8cpp_source.html#l00466">deactivate_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l02892">deserialize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00493">get_bionic_text_color()</a>, <a class="el" href="bionics_8cpp_source.html#l01606">Character::process_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02869">serialize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>, <a class="el" href="handle__action_8cpp_source.html#l01006">sleep()</a>, <a class="el" href="bionics_8cpp_source.html#l02088">Character::uninstall_bionic()</a>, and <a class="el" href="npcmove_8cpp_source.html#l01617">npc::use_bionic_by_id()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="bionics_8cpp_source.html#l00588">Character::activate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01592">npc::activate_bionic_by_id()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00286">build_bionic_poweronly_string()</a>, <a class="el" href="bionics_8cpp_source.html#l01195">Character::burn_fuel()</a>, <a class="el" href="bionics_8cpp_source.html#l01107">Character::deactivate_bionic()</a>, <a class="el" href="npcmove_8cpp_source.html#l01616">npc::deactivate_bionic_by_id()</a>, <a class="el" href="bionics_8cpp_source.html#l00466">deactivate_weapon_cbm()</a>, <a class="el" href="bionics_8cpp_source.html#l02858">deserialize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00493">get_bionic_text_color()</a>, <a class="el" href="bionics_8cpp_source.html#l01567">Character::process_bionic()</a>, <a class="el" href="bionics_8cpp_source.html#l02835">serialize()</a>, <a class="el" href="bionics__ui_8cpp_source.html#l00537">show_bionics_ui()</a>, <a class="el" href="handle__action_8cpp_source.html#l01011">sleep()</a>, <a class="el" href="bionics_8cpp_source.html#l02054">Character::uninstall_bionic()</a>, and <a class="el" href="npcmove_8cpp_source.html#l01603">npc::use_bionic_by_id()</a>.</p>
 
 </div>
 </div>
@@ -948,7 +948,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structbionic.html">bionic</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:46 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

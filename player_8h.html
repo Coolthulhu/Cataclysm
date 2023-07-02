@@ -208,7 +208,7 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="crafting_8cpp_source.html#l01158">player::can_continue_craft()</a>, <a class="el" href="craft__command_8cpp_source.html#l00097">craft_command::execute()</a>, <a class="el" href="ui_8cpp_source.html#l00152">uilist::init()</a>, and <a class="el" href="crafting_8cpp_source.html#l01742">crafting::select_tool_component()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="crafting_8cpp_source.html#l01161">player::can_continue_craft()</a>, <a class="el" href="craft__command_8cpp_source.html#l00097">craft_command::execute()</a>, <a class="el" href="ui_8cpp_source.html#l00152">uilist::init()</a>, and <a class="el" href="crafting_8cpp_source.html#l01745">crafting::select_tool_component()</a>.</p>
 
 </div>
 </div>
@@ -228,22 +228,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="player_8cpp_source.html#l00362">362</a> of file <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>{</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>    <span class="keywordflow">if</span>( level &lt; 0 ) {</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#a1cb87e74156596960610fd0a9ace766d">c_green</a>;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    }</div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keywordflow">if</span>( level &lt; 10 ) {</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a>;</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>    }</div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>    <span class="keywordflow">if</span>( level &lt; 40 ) {</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#a81e80ab9142609903b4788a6bb31ae45">c_yellow</a>;</div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    }</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>    <span class="keywordflow">if</span>( level &lt; 70 ) {</div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#aab11865a3631a7ce78da82b7fb386b71">c_light_red</a>;</div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>    }</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#af0a87eaef36305269f4506dfa34d94c0">c_red</a>;</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>}</div>
+<p class="definition">Definition at line <a class="el" href="player_8cpp_source.html#l00348">348</a> of file <a class="el" href="player_8cpp_source.html">player.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>{</div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    <span class="keywordflow">if</span>( level &lt; 0 ) {</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#a1cb87e74156596960610fd0a9ace766d">c_green</a>;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>    }</div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>    <span class="keywordflow">if</span>( level &lt; 10 ) {</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a>;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    }</div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>    <span class="keywordflow">if</span>( level &lt; 40 ) {</div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#a81e80ab9142609903b4788a6bb31ae45">c_yellow</a>;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>    }</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keywordflow">if</span>( level &lt; 70 ) {</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#aab11865a3631a7ce78da82b7fb386b71">c_light_red</a>;</div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    }</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keywordflow">return</span> <a class="code hl_define" href="color_8h.html#af0a87eaef36305269f4506dfa34d94c0">c_red</a>;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>}</div>
 <div class="ttc" id="acolor_8h_html_a1b1e3c0bef566a83c3535e38a93ad733"><div class="ttname"><a href="color_8h.html#a1b1e3c0bef566a83c3535e38a93ad733">c_light_gray</a></div><div class="ttdeci">#define c_light_gray</div><div class="ttdef"><b>Definition:</b> <a href="color_8h_source.html#l00019">color.h:19</a></div></div>
 <div class="ttc" id="acolor_8h_html_a1cb87e74156596960610fd0a9ace766d"><div class="ttname"><a href="color_8h.html#a1cb87e74156596960610fd0a9ace766d">c_green</a></div><div class="ttdeci">#define c_green</div><div class="ttdef"><b>Definition:</b> <a href="color_8h_source.html#l00022">color.h:22</a></div></div>
 <div class="ttc" id="acolor_8h_html_a81e80ab9142609903b4788a6bb31ae45"><div class="ttname"><a href="color_8h.html#a81e80ab9142609903b4788a6bb31ae45">c_yellow</a></div><div class="ttdeci">#define c_yellow</div><div class="ttdef"><b>Definition:</b> <a href="color_8h_source.html#l00032">color.h:32</a></div></div>
@@ -262,7 +262,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="player_8h.html">player.h</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:12 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:43 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

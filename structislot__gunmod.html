@@ -107,9 +107,11 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a20f62eb4d6e250814ad0e51249ce9a86"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgunmod__location.html">gunmod_location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__gunmod.html#a20f62eb4d6e250814ad0e51249ce9a86">location</a></td></tr>
 <tr class="memdesc:a20f62eb4d6e250814ad0e51249ce9a86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where is this gunmod installed (e.g.  <a href="structislot__gunmod.html#a20f62eb4d6e250814ad0e51249ce9a86">More...</a><br /></td></tr>
 <tr class="separator:a20f62eb4d6e250814ad0e51249ce9a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26912068d3e61f67c23ed9fa4a59b18a"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="classgun__type__type.html">gun_type_type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__gunmod.html#a26912068d3e61f67c23ed9fa4a59b18a">usable</a></td></tr>
-<tr class="memdesc:a26912068d3e61f67c23ed9fa4a59b18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">What kind of weapons can this gunmod be used with (e.g.  <a href="structislot__gunmod.html#a26912068d3e61f67c23ed9fa4a59b18a">More...</a><br /></td></tr>
-<tr class="separator:a26912068d3e61f67c23ed9fa4a59b18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b40e2072492788176aa77b728bd10fc"><td class="memItemLeft" align="right" valign="top">std::unordered_set&lt; <a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__gunmod.html#a2b40e2072492788176aa77b728bd10fc">usable</a></td></tr>
+<tr class="memdesc:a2b40e2072492788176aa77b728bd10fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">What kind of weapons can this gunmod be used with (e.g.  <a href="structislot__gunmod.html#a2b40e2072492788176aa77b728bd10fc">More...</a><br /></td></tr>
+<tr class="separator:a2b40e2072492788176aa77b728bd10fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2428db8d0e6f9c4692b5fca478c47661"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unordered_set&lt; <a class="el" href="type__id_8h.html#a43d17565ed408d81743469840019a73f">weapon_category_id</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__gunmod.html#a2428db8d0e6f9c4692b5fca478c47661">usable_category</a></td></tr>
+<tr class="separator:a2428db8d0e6f9c4692b5fca478c47661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e25ba70cbdc4cd7b5dcc674af50d4a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structislot__gunmod.html#a68e25ba70cbdc4cd7b5dcc674af50d4a">sight_dispersion</a> = -1</td></tr>
 <tr class="memdesc:a68e25ba70cbdc4cd7b5dcc674af50d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this value is set (non-negative), this gunmod functions as a sight.  <a href="structislot__gunmod.html#a68e25ba70cbdc4cd7b5dcc674af50d4a">More...</a><br /></td></tr>
 <tr class="separator:a68e25ba70cbdc4cd7b5dcc674af50d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +172,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00579">579</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00546">546</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="aed14da382a38340ce6f1c792a81be5fd" name="aed14da382a38340ce6f1c792a81be5fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aed14da382a38340ce6f1c792a81be5fd">&#9670;&nbsp;</a></span>add_mod</h2>
@@ -186,9 +188,9 @@ Public Attributes</h2></td></tr>
 
 <p>Additional gunmod slots to add to the gun. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00632">632</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00600">600</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -207,9 +209,9 @@ Public Attributes</h2></td></tr>
 <p>For sights (see <a class="el" href="structislot__gunmod.html#a68e25ba70cbdc4cd7b5dcc674af50d4a">sight_dispersion</a>), this value affects time cost of aiming. </p>
 <p >Higher is better. In case of multiple usable sights, the one with highest aim speed is used. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00594">594</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00562">562</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -225,9 +227,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00614">614</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00582">582</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -245,9 +247,9 @@ Public Attributes</h2></td></tr>
 
 <p>Not compatable on weapons that have this mod slot. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00635">635</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00603">603</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -266,9 +268,9 @@ Public Attributes</h2></td></tr>
 <p>Percentage value change to the gun's loading time. </p>
 <p >Higher is less likely </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00623">623</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00591">591</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -287,9 +289,9 @@ Public Attributes</h2></td></tr>
 <p>Divsor to scale back gunmod consumption damage. </p>
 <p >lower is more damaging. Affected by ammo loudness and recoil, see <a class="el" href="ranged_8cpp.html">ranged.cpp</a> for how much. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00626">626</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00594">594</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -307,9 +309,9 @@ Public Attributes</h2></td></tr>
 
 <p>Relative adjustment to base gun handling. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00617">617</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00585">585</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -327,9 +329,9 @@ Public Attributes</h2></td></tr>
 
 <p>How many moves does this gunmod take to install? </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00600">600</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00568">568</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -348,9 +350,9 @@ Public Attributes</h2></td></tr>
 <p>Where is this gunmod installed (e.g. </p>
 <p >"stock", "rail")? </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00581">581</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00548">548</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l07776">item::is_gunmod_compatible()</a>, and <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -368,9 +370,9 @@ Public Attributes</h2></td></tr>
 
 <p>Modifies base loudness as provided by the currently loaded ammo. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00597">597</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00565">565</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -388,9 +390,9 @@ Public Attributes</h2></td></tr>
 
 <p>Modifies base strength required. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00629">629</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00597">597</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -408,9 +410,9 @@ Public Attributes</h2></td></tr>
 
 <p>Firing modes added to or replacing those of the base gun. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00612">612</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00580">580</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -429,9 +431,9 @@ Public Attributes</h2></td></tr>
 <p>Percentage value change to the gun's loading time. </p>
 <p >Higher is slower </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00620">620</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00588">588</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -450,9 +452,9 @@ Public Attributes</h2></td></tr>
 <p>If this value is set (non-negative), this gunmod functions as a sight. </p>
 <p >A sight is only usable to aim by a character whose current <a class="el" href="classCharacter.html#a057d68671b298012a18f4e289b39935d">Character::recoil</a> is at or below this value. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00587">587</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00555">555</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -470,9 +472,9 @@ Public Attributes</h2></td></tr>
 
 <p>Increases base gun UPS consumption by this value per shot. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00606">606</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00574">574</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -490,20 +492,20 @@ Public Attributes</h2></td></tr>
 
 <p>Increases base gun UPS consumption by this many times per shot. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00603">603</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00571">571</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
-<a id="a26912068d3e61f67c23ed9fa4a59b18a" name="a26912068d3e61f67c23ed9fa4a59b18a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26912068d3e61f67c23ed9fa4a59b18a">&#9670;&nbsp;</a></span>usable</h2>
+<a id="a2b40e2072492788176aa77b728bd10fc" name="a2b40e2072492788176aa77b728bd10fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b40e2072492788176aa77b728bd10fc">&#9670;&nbsp;</a></span>usable</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_set&lt;<a class="el" href="classgun__type__type.html">gun_type_type</a>&gt; islot_gunmod::usable</td>
+          <td class="memname">std::unordered_set&lt;<a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a>&gt; islot_gunmod::usable</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -511,9 +513,27 @@ Public Attributes</h2></td></tr>
 <p>What kind of weapons can this gunmod be used with (e.g. </p>
 <p >"rifle", "crossbow")? </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00584">584</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00551">551</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l07776">item::is_gunmod_compatible()</a>, and <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
+
+</div>
+</div>
+<a id="a2428db8d0e6f9c4692b5fca478c47661" name="a2428db8d0e6f9c4692b5fca478c47661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2428db8d0e6f9c4692b5fca478c47661">&#9670;&nbsp;</a></span>usable_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unordered_set&lt;<a class="el" href="type__id_8h.html#a43d17565ed408d81743469840019a73f">weapon_category_id</a>&gt; &gt; islot_gunmod::usable_category</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00552">552</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="item_8cpp_source.html#l07776">item::is_gunmod_compatible()</a>, and <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -531,9 +551,9 @@ Public Attributes</h2></td></tr>
 
 <p>Increases gun weight by this many times. </p>
 
-<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00609">609</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="itype_8h_source.html#l00577">577</a> of file <a class="el" href="itype_8h_source.html">itype.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02188">Item_factory::load()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="item__factory_8cpp_source.html#l02183">Item_factory::load()</a>.</p>
 
 </div>
 </div>
@@ -546,7 +566,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structislot__gunmod.html">islot_gunmod</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:22 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:54 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

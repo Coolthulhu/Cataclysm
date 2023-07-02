@@ -786,7 +786,6 @@ var hierarchy =
     ] ],
     [ "gun_mode", "classgun__mode.html", null ],
     [ "gun_modifier_data", "classgun__modifier__data.html", null ],
-    [ "gun_type_type", "classgun__type__type.html", null ],
     [ "gunmod_location", "classgunmod__location.html", null ],
     [ "basic_format_arg< Context >::handle", "classbasic__format__arg_1_1handle.html", null ],
     [ "Handler", null, [
@@ -810,7 +809,6 @@ var hierarchy =
     [ "std::hash< coords::coord_point< Point, Origin, Scale > >", "structstd_1_1hash_3_01coords_1_1coord__point_3_01Point_00_01Origin_00_01Scale_01_4_01_4.html", null ],
     [ "std::hash< description_affix >", "structstd_1_1hash_3_01description__affix_01_4.html", null ],
     [ "std::hash< event_type >", "structstd_1_1hash_3_01event__type_01_4.html", null ],
-    [ "std::hash< gun_type_type >", "structstd_1_1hash_3_01gun__type__type_01_4.html", null ],
     [ "std::hash< int_id< T > >", "structstd_1_1hash_3_01int__id_3_01T_01_4_01_4.html", null ],
     [ "std::hash< map_key >", "structstd_1_1hash_3_01map__key_01_4.html", null ],
     [ "std::hash< nc_color >", "structstd_1_1hash_3_01nc__color_01_4.html", null ],
@@ -1882,6 +1880,7 @@ var hierarchy =
     [ "weighted_object< W, T >", "structweighted__object.html", null ],
     [ "detail::width_adapter< SpecHandler, Char >", "structdetail_1_1width__adapter.html", null ],
     [ "detail::width_checker< ErrorHandler >", "classdetail_1_1width__checker.html", null ],
+    [ "wield_status", "classwield__status.html", null ],
     [ "catacurses::window", "classcatacurses_1_1window.html", null ],
     [ "window_panel", "classwindow__panel.html", null ],
     [ "wisheffect_state", "structwisheffect__state.html", null ],

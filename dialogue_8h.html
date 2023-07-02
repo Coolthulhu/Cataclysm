@@ -334,17 +334,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l03222">3222</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03223" name="l03223"></a><span class="lineno"> 3223</span>{</div>
-<div class="line"><a id="l03224" name="l03224"></a><span class="lineno"> 3224</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;id&quot;</span> ) ) {</div>
-<div class="line"><a id="l03225" name="l03225"></a><span class="lineno"> 3225</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;<span class="keywordtype">id</span> : jo.<a class="code hl_function" href="classJsonObject.html#a82c84e4f6eb744e24a0a60cb0ed88491">get_string_array</a>( <span class="stringliteral">&quot;id&quot;</span> ) ) {</div>
-<div class="line"><a id="l03226" name="l03226"></a><span class="lineno"> 3226</span>            <a class="code hl_variable" href="npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306">json_talk_topics</a>[<a class="code hl_function" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>].load( jo );</div>
-<div class="line"><a id="l03227" name="l03227"></a><span class="lineno"> 3227</span>        }</div>
-<div class="line"><a id="l03228" name="l03228"></a><span class="lineno"> 3228</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03229" name="l03229"></a><span class="lineno"> 3229</span>        <span class="keyword">const</span> std::string <span class="keywordtype">id</span> = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;id&quot;</span> );</div>
-<div class="line"><a id="l03230" name="l03230"></a><span class="lineno"> 3230</span>        <a class="code hl_variable" href="npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306">json_talk_topics</a>[<a class="code hl_function" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>].load( jo );</div>
-<div class="line"><a id="l03231" name="l03231"></a><span class="lineno"> 3231</span>    }</div>
-<div class="line"><a id="l03232" name="l03232"></a><span class="lineno"> 3232</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l03257">3257</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03258" name="l03258"></a><span class="lineno"> 3258</span>{</div>
+<div class="line"><a id="l03259" name="l03259"></a><span class="lineno"> 3259</span>    <span class="keywordflow">if</span>( jo.<a class="code hl_function" href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">has_array</a>( <span class="stringliteral">&quot;id&quot;</span> ) ) {</div>
+<div class="line"><a id="l03260" name="l03260"></a><span class="lineno"> 3260</span>        <span class="keywordflow">for</span>( <span class="keyword">auto</span> &amp;<span class="keywordtype">id</span> : jo.<a class="code hl_function" href="classJsonObject.html#a82c84e4f6eb744e24a0a60cb0ed88491">get_string_array</a>( <span class="stringliteral">&quot;id&quot;</span> ) ) {</div>
+<div class="line"><a id="l03261" name="l03261"></a><span class="lineno"> 3261</span>            <a class="code hl_variable" href="npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306">json_talk_topics</a>[<a class="code hl_function" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>].load( jo );</div>
+<div class="line"><a id="l03262" name="l03262"></a><span class="lineno"> 3262</span>        }</div>
+<div class="line"><a id="l03263" name="l03263"></a><span class="lineno"> 3263</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03264" name="l03264"></a><span class="lineno"> 3264</span>        <span class="keyword">const</span> std::string <span class="keywordtype">id</span> = jo.<a class="code hl_function" href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">get_string</a>( <span class="stringliteral">&quot;id&quot;</span> );</div>
+<div class="line"><a id="l03265" name="l03265"></a><span class="lineno"> 3265</span>        <a class="code hl_variable" href="npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306">json_talk_topics</a>[<a class="code hl_function" href="classint__id.html#a09d4f824b2540da7e682d10cdf324081">id</a>].load( jo );</div>
+<div class="line"><a id="l03266" name="l03266"></a><span class="lineno"> 3266</span>    }</div>
+<div class="line"><a id="l03267" name="l03267"></a><span class="lineno"> 3267</span>}</div>
 <div class="ttc" id="aclassJsonObject_html_a82c84e4f6eb744e24a0a60cb0ed88491"><div class="ttname"><a href="classJsonObject.html#a82c84e4f6eb744e24a0a60cb0ed88491">JsonObject::get_string_array</a></div><div class="ttdeci">std::vector&lt; std::string &gt; get_string_array(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00420">json.cpp:420</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_a96b6d1b9cf7bda4fc9cd177a99e0631c"><div class="ttname"><a href="classJsonObject.html#a96b6d1b9cf7bda4fc9cd177a99e0631c">JsonObject::get_string</a></div><div class="ttdeci">std::string get_string(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00382">json.cpp:382</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_aa92b5eb23f6b39645877d79fbef784a0"><div class="ttname"><a href="classJsonObject.html#aa92b5eb23f6b39645877d79fbef784a0">JsonObject::has_array</a></div><div class="ttdeci">bool has_array(const std::string &amp;name) const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00483">json.cpp:483</a></div></div>
@@ -372,10 +372,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l03217">3217</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03218" name="l03218"></a><span class="lineno"> 3218</span>{</div>
-<div class="line"><a id="l03219" name="l03219"></a><span class="lineno"> 3219</span>    <a class="code hl_variable" href="npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306">json_talk_topics</a>.clear();</div>
-<div class="line"><a id="l03220" name="l03220"></a><span class="lineno"> 3220</span>}</div>
+<p class="definition">Definition at line <a class="el" href="npctalk_8cpp_source.html#l03252">3252</a> of file <a class="el" href="npctalk_8cpp_source.html">npctalk.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03253" name="l03253"></a><span class="lineno"> 3253</span>{</div>
+<div class="line"><a id="l03254" name="l03254"></a><span class="lineno"> 3254</span>    <a class="code hl_variable" href="npctalk_8cpp.html#a9d58f009a148e9132fad232a12f96306">json_talk_topics</a>.clear();</div>
+<div class="line"><a id="l03255" name="l03255"></a><span class="lineno"> 3255</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="npctalk_8cpp_source.html#l00114">json_talk_topics</a>.</p>
 
@@ -389,7 +389,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dialogue_8h.html">dialogue.h</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:08 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:39 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

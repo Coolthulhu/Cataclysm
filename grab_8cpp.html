@@ -85,17 +85,23 @@ $(document).ready(function(){initNavTree('grab_8cpp.html',''); initResizable(); 
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">grab.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="enums_8h_source.html">enums.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="game_8h_source.html">game.h</a>&quot;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;numeric&gt;</code><br />
 <code>#include &quot;<a class="el" href="avatar_8h_source.html">avatar.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="character_8h_source.html">character.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map_8h_source.html">map.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="messages_8h_source.html">messages.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="monster_8h_source.html">monster.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="point_8h_source.html">point.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sounds_8h_source.html">sounds.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vehicle_8h_source.html">vehicle.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vpart__position_8h_source.html">vpart_position.h</a>&quot;</code><br />
@@ -107,6 +113,26 @@ $(document).ready(function(){initNavTree('grab_8cpp.html',''); initResizable(); 
 </div>
 <p><a href="grab_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceanonymous__namespace_02grab_8cpp_03"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02grab_8cpp_03.html">anonymous_namespace{grab.cpp}</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad70d62f6a74dcedb50a8d77cdcd3ad08"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02grab_8cpp_03.html#ad70d62f6a74dcedb50a8d77cdcd3ad08">anonymous_namespace{grab.cpp}::make_scraping_noise</a> (const <a class="el" href="structtripoint.html">tripoint</a> &amp;pos, const int volume) -&gt; void</td></tr>
+<tr class="separator:ad70d62f6a74dcedb50a8d77cdcd3ad08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d6d34fc7964eadb7cf756dea36cb65"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02grab_8cpp_03.html#a02d6d34fc7964eadb7cf756dea36cb65">anonymous_namespace{grab.cpp}::base_str_req</a> (<a class="el" href="classvehicle.html">vehicle</a> *veh) -&gt; int</td></tr>
+<tr class="separator:a02d6d34fc7964eadb7cf756dea36cb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ffee7ffe58226b58a1f284ec3f6a856"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02grab_8cpp_03.html#a9ffee7ffe58226b58a1f284ec3f6a856">anonymous_namespace{grab.cpp}::offroad_str_req_cap</a> (<a class="el" href="classvehicle.html">vehicle</a> *veh) -&gt; int</td></tr>
+<tr class="separator:a9ffee7ffe58226b58a1f284ec3f6a856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bff6e6ccc49620f17943476f63de2cd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02grab_8cpp_03.html#a3bff6e6ccc49620f17943476f63de2cd">anonymous_namespace{grab.cpp}::get_grabbed_vehicle_movecost</a> (<a class="el" href="classvehicle.html">vehicle</a> *veh) -&gt; int</td></tr>
+<tr class="separator:a3bff6e6ccc49620f17943476f63de2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35dd5b4feeeb22a3b4a987aa2c21843"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02grab_8cpp_03.html#ad35dd5b4feeeb22a3b4a987aa2c21843">anonymous_namespace{grab.cpp}::get_effective_wheels</a> (<a class="el" href="classvehicle.html">vehicle</a> *veh) -&gt; int</td></tr>
+<tr class="separator:ad35dd5b4feeeb22a3b4a987aa2c21843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d7deac48d30d89041438a436a6377c"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02grab_8cpp_03.html#aa5d7deac48d30d89041438a436a6377c">anonymous_namespace{grab.cpp}::get_vehicle_str_requirement</a> (<a class="el" href="classvehicle.html">vehicle</a> *veh) -&gt; int</td></tr>
+<tr class="separator:aa5d7deac48d30d89041438a436a6377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a7697771dc47ecaeff36785ff20c9aa33"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#acc8305d21e9a186d196c8ff88ba2cf19">efftype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grab_8cpp.html#a7697771dc47ecaeff36785ff20c9aa33">effect_harnessed</a> (&quot;harnessed&quot;)</td></tr>
@@ -137,7 +163,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="grab_8cpp_source.html#l00021">game::grabbed_veh_move()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="grab_8cpp_source.html#l00093">game::grabbed_veh_move()</a>.</p>
 
 </div>
 </div>
@@ -147,7 +173,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="grab_8cpp.html">grab.cpp</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:09 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:40 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -17,6 +17,8 @@ var monster_8cpp =
     [ "effect_docile", "monster_8cpp.html#a924fe96bf3dd9ac954c9925fdd5b6901", null ],
     [ "effect_downed", "monster_8cpp.html#a08481f62adb6937636ea44b855311037", null ],
     [ "effect_emp", "monster_8cpp.html#a92d95019a8d6d822439d2358b9614f4d", null ],
+    [ "effect_feral_infighting_punishment", "monster_8cpp.html#aae3eed37f8a549fe927c5e1ecbc5ecb0", null ],
+    [ "effect_feral_killed_recently", "monster_8cpp.html#ad40d0488713b6d2a14b3501b978493c9", null ],
     [ "effect_grabbed", "monster_8cpp.html#ae326c5e4da7f23bc429d04d215dd7c9d", null ],
     [ "effect_grabbing", "monster_8cpp.html#a66f79823ab25161f7aabf43445a580a4", null ],
     [ "effect_heavysnare", "monster_8cpp.html#ae940cd81463820c5f0fc145179c7c386", null ],
@@ -56,6 +58,7 @@ var monster_8cpp =
     [ "trait_PACIFIST", "monster_8cpp.html#a53f40b992f1ab4a66785f12dbaae64ec", null ],
     [ "trait_PHEROMONE_INSECT", "monster_8cpp.html#adc9256a8239cdb71c406fc31369d80dc", null ],
     [ "trait_PHEROMONE_MAMMAL", "monster_8cpp.html#a4201fa103581564376b7aff7182edd68", null ],
+    [ "trait_PROF_FERAL", "monster_8cpp.html#a5d306b6d12363ab6be78977038dee4dd", null ],
     [ "trait_TERRIFYING", "monster_8cpp.html#a59c6fe37743ad99e5f79f578f598cf33", null ],
     [ "trait_THRESH_MYCUS", "monster_8cpp.html#a40331e22a139e13b3b70f387c9fdd390", null ],
     [ "ZOMBIE", "monster_8cpp.html#a4e2730248c54d4d07fa7e215efb35d1a", null ]

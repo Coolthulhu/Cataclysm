@@ -48,6 +48,7 @@ var classmonster =
     [ "bash_skill", "classmonster.html#aff16c74243c66f69e74c1e1f893c04d6", null ],
     [ "basic_symbol_color", "classmonster.html#a8bce8bde3c0ee3824c875264f30c47cf", null ],
     [ "block_hit", "classmonster.html#a918611ed3f15584f6e4734e1b249ad98", null ],
+    [ "block_ranged_hit", "classmonster.html#ae24aad22c227b83b5ca3830e87b98a96", null ],
     [ "bloodType", "classmonster.html#a19f8524caa7fa7b0156d4262fb33a341", null ],
     [ "calc_climb_cost", "classmonster.html#ab370bb6801a47533c44b28894f910702", null ],
     [ "calc_movecost", "classmonster.html#a98cfa6c825f373b60a0a4021a8dbf750", null ],

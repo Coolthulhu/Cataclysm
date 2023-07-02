@@ -16,6 +16,7 @@ var structislot__gunmod =
     [ "sight_dispersion", "structislot__gunmod.html#a68e25ba70cbdc4cd7b5dcc674af50d4a", null ],
     [ "ups_charges_modifier", "structislot__gunmod.html#a2c64a6cd256743ea8dc6df58e3c4f1fa", null ],
     [ "ups_charges_multiplier", "structislot__gunmod.html#ad6491ebaf19ac4876b97d0fdcb04d745", null ],
-    [ "usable", "structislot__gunmod.html#a26912068d3e61f67c23ed9fa4a59b18a", null ],
+    [ "usable", "structislot__gunmod.html#a2b40e2072492788176aa77b728bd10fc", null ],
+    [ "usable_category", "structislot__gunmod.html#a2428db8d0e6f9c4692b5fca478c47661", null ],
     [ "weight_multiplier", "structislot__gunmod.html#ac02f50551ca036e61e2b2000288f17e5", null ]
 ];

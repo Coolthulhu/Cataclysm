@@ -145,7 +145,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="explosion__queue_8h_source.html#l00055">elems</a>, and <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l01096">explosion_handler::explosion()</a>, <a class="el" href="explosion_8cpp_source.html#l01552">explosion_handler::flashbang()</a>, <a class="el" href="explosion_8cpp_source.html#l01798">explosion_handler::resonance_cascade()</a>, and <a class="el" href="explosion_8cpp_source.html#l01612">explosion_handler::shockwave()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="explosion_8cpp_source.html#l01096">explosion_handler::explosion()</a>, <a class="el" href="explosion_8cpp_source.html#l01552">explosion_handler::flashbang()</a>, <a class="el" href="explosion_8cpp_source.html#l01799">explosion_handler::resonance_cascade()</a>, and <a class="el" href="explosion_8cpp_source.html#l01612">explosion_handler::shockwave()</a>.</p>
 
 </div>
 </div>
@@ -179,7 +179,7 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="explosion__queue_8h_source.html#l00055">elems</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00475">game::setup()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l00477">game::setup()</a>.</p>
 
 </div>
 </div>
@@ -198,44 +198,44 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01925">1925</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l01926" name="l01926"></a><span class="lineno"> 1926</span>{</div>
-<div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span>    <span class="keywordflow">while</span>( !<a class="code hl_variable" href="classexplosion__handler_1_1explosion__queue.html#a66a046dd6be9e1611d6707db7f200079">elems</a>.empty() ) {</div>
-<div class="line"><a id="l01928" name="l01928"></a><span class="lineno"> 1928</span>        queued_explosion <a class="code hl_enumvalue" href="namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9ab0ab0254bd58eb87eaee3172ba49fefb">exp</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( <a class="code hl_variable" href="classexplosion__handler_1_1explosion__queue.html#a66a046dd6be9e1611d6707db7f200079">elems</a>.front() );</div>
-<div class="line"><a id="l01929" name="l01929"></a><span class="lineno"> 1929</span>        <a class="code hl_variable" href="classexplosion__handler_1_1explosion__queue.html#a66a046dd6be9e1611d6707db7f200079">elems</a>.pop_front();</div>
-<div class="line"><a id="l01930" name="l01930"></a><span class="lineno"> 1930</span>        <span class="keywordflow">switch</span>( <a class="code hl_enumvalue" href="namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9ab0ab0254bd58eb87eaee3172ba49fefb">exp</a>.type ) {</div>
-<div class="line"><a id="l01931" name="l01931"></a><span class="lineno"> 1931</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8ad2203cb1237cb6460cbad94564e39345">ExplosionType::Regular</a>:</div>
-<div class="line"><a id="l01932" name="l01932"></a><span class="lineno"> 1932</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#a7f6d2741c3decf6e4b5c88834d8abdd6">explosion_funcs::regular</a>( exp );</div>
-<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a599c4a30b95932d4f27078f9f30974b0">ExplosionType::Flashbang</a>:</div>
-<div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#ac73678c081ffd686ec8ed3979fb2ca3a">explosion_funcs::flashbang</a>( exp );</div>
-<div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a3652612846bb6e78beb52c56a7e1d3a2">ExplosionType::ResonanceCascade</a>:</div>
-<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#a9129ad32fb4d1ba1840356beb4496518">explosion_funcs::resonance_cascade</a>( exp );</div>
-<div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a822b02e1b751097d290eaad55252eb81">ExplosionType::Shockwave</a>:</div>
-<div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#a3b0f728d0ddee8ac1391dd98a2814b94">explosion_funcs::shockwave</a>( exp );</div>
-<div class="line"><a id="l01942" name="l01942"></a><span class="lineno"> 1942</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01943" name="l01943"></a><span class="lineno"> 1943</span>            <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l01944" name="l01944"></a><span class="lineno"> 1944</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Explosion type not implemented.&quot;</span> );</div>
-<div class="line"><a id="l01945" name="l01945"></a><span class="lineno"> 1945</span>                <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l01946" name="l01946"></a><span class="lineno"> 1946</span>        }</div>
-<div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>    }</div>
-<div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>}</div>
+<p class="definition">Definition at line <a class="el" href="explosion_8cpp_source.html#l01926">1926</a> of file <a class="el" href="explosion_8cpp_source.html">explosion.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l01927" name="l01927"></a><span class="lineno"> 1927</span>{</div>
+<div class="line"><a id="l01928" name="l01928"></a><span class="lineno"> 1928</span>    <span class="keywordflow">while</span>( !<a class="code hl_variable" href="classexplosion__handler_1_1explosion__queue.html#a66a046dd6be9e1611d6707db7f200079">elems</a>.empty() ) {</div>
+<div class="line"><a id="l01929" name="l01929"></a><span class="lineno"> 1929</span>        queued_explosion <a class="code hl_enumvalue" href="namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9ab0ab0254bd58eb87eaee3172ba49fefb">exp</a> = <a class="code hl_function" href="namespaceavatar__action.html#a76ba74774376a08222b8cdcce08f7304">std::move</a>( <a class="code hl_variable" href="classexplosion__handler_1_1explosion__queue.html#a66a046dd6be9e1611d6707db7f200079">elems</a>.front() );</div>
+<div class="line"><a id="l01930" name="l01930"></a><span class="lineno"> 1930</span>        <a class="code hl_variable" href="classexplosion__handler_1_1explosion__queue.html#a66a046dd6be9e1611d6707db7f200079">elems</a>.pop_front();</div>
+<div class="line"><a id="l01931" name="l01931"></a><span class="lineno"> 1931</span>        <span class="keywordflow">switch</span>( <a class="code hl_enumvalue" href="namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9ab0ab0254bd58eb87eaee3172ba49fefb">exp</a>.type ) {</div>
+<div class="line"><a id="l01932" name="l01932"></a><span class="lineno"> 1932</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8ad2203cb1237cb6460cbad94564e39345">ExplosionType::Regular</a>:</div>
+<div class="line"><a id="l01933" name="l01933"></a><span class="lineno"> 1933</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#a7f6d2741c3decf6e4b5c88834d8abdd6">explosion_funcs::regular</a>( exp );</div>
+<div class="line"><a id="l01934" name="l01934"></a><span class="lineno"> 1934</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01935" name="l01935"></a><span class="lineno"> 1935</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a599c4a30b95932d4f27078f9f30974b0">ExplosionType::Flashbang</a>:</div>
+<div class="line"><a id="l01936" name="l01936"></a><span class="lineno"> 1936</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#ac73678c081ffd686ec8ed3979fb2ca3a">explosion_funcs::flashbang</a>( exp );</div>
+<div class="line"><a id="l01937" name="l01937"></a><span class="lineno"> 1937</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01938" name="l01938"></a><span class="lineno"> 1938</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a3652612846bb6e78beb52c56a7e1d3a2">ExplosionType::ResonanceCascade</a>:</div>
+<div class="line"><a id="l01939" name="l01939"></a><span class="lineno"> 1939</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#a9129ad32fb4d1ba1840356beb4496518">explosion_funcs::resonance_cascade</a>( exp );</div>
+<div class="line"><a id="l01940" name="l01940"></a><span class="lineno"> 1940</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01941" name="l01941"></a><span class="lineno"> 1941</span>            <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a822b02e1b751097d290eaad55252eb81">ExplosionType::Shockwave</a>:</div>
+<div class="line"><a id="l01942" name="l01942"></a><span class="lineno"> 1942</span>                <a class="code hl_function" href="namespaceexplosion__handler_1_1explosion__funcs.html#a3b0f728d0ddee8ac1391dd98a2814b94">explosion_funcs::shockwave</a>( exp );</div>
+<div class="line"><a id="l01943" name="l01943"></a><span class="lineno"> 1943</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01944" name="l01944"></a><span class="lineno"> 1944</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l01945" name="l01945"></a><span class="lineno"> 1945</span>                <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;Explosion type not implemented.&quot;</span> );</div>
+<div class="line"><a id="l01946" name="l01946"></a><span class="lineno"> 1946</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l01947" name="l01947"></a><span class="lineno"> 1947</span>        }</div>
+<div class="line"><a id="l01948" name="l01948"></a><span class="lineno"> 1948</span>    }</div>
+<div class="line"><a id="l01949" name="l01949"></a><span class="lineno"> 1949</span>}</div>
 <div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
 <div class="ttc" id="anamespacedetail_html_a6d3fb50aed591a58636fa8e2b39222f9ab0ab0254bd58eb87eaee3172ba49fefb"><div class="ttname"><a href="namespacedetail.html#a6d3fb50aed591a58636fa8e2b39222f9ab0ab0254bd58eb87eaee3172ba49fefb">detail::float_format::exp</a></div><div class="ttdeci">@ exp</div></div>
 <div class="ttc" id="anamespaceexplosion__handler_1_1explosion__funcs_html_a3b0f728d0ddee8ac1391dd98a2814b94"><div class="ttname"><a href="namespaceexplosion__handler_1_1explosion__funcs.html#a3b0f728d0ddee8ac1391dd98a2814b94">explosion_handler::explosion_funcs::shockwave</a></div><div class="ttdeci">void shockwave(const queued_explosion &amp;qe)</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8cpp_source.html#l01621">explosion.cpp:1621</a></div></div>
 <div class="ttc" id="anamespaceexplosion__handler_1_1explosion__funcs_html_a7f6d2741c3decf6e4b5c88834d8abdd6"><div class="ttname"><a href="namespaceexplosion__handler_1_1explosion__funcs.html#a7f6d2741c3decf6e4b5c88834d8abdd6">explosion_handler::explosion_funcs::regular</a></div><div class="ttdeci">void regular(const queued_explosion &amp;qe)</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8cpp_source.html#l01466">explosion.cpp:1466</a></div></div>
-<div class="ttc" id="anamespaceexplosion__handler_1_1explosion__funcs_html_a9129ad32fb4d1ba1840356beb4496518"><div class="ttname"><a href="namespaceexplosion__handler_1_1explosion__funcs.html#a9129ad32fb4d1ba1840356beb4496518">explosion_handler::explosion_funcs::resonance_cascade</a></div><div class="ttdeci">void resonance_cascade(const queued_explosion &amp;qe)</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8cpp_source.html#l01803">explosion.cpp:1803</a></div></div>
+<div class="ttc" id="anamespaceexplosion__handler_1_1explosion__funcs_html_a9129ad32fb4d1ba1840356beb4496518"><div class="ttname"><a href="namespaceexplosion__handler_1_1explosion__funcs.html#a9129ad32fb4d1ba1840356beb4496518">explosion_handler::explosion_funcs::resonance_cascade</a></div><div class="ttdeci">void resonance_cascade(const queued_explosion &amp;qe)</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8cpp_source.html#l01804">explosion.cpp:1804</a></div></div>
 <div class="ttc" id="anamespaceexplosion__handler_1_1explosion__funcs_html_ac73678c081ffd686ec8ed3979fb2ca3a"><div class="ttname"><a href="namespaceexplosion__handler_1_1explosion__funcs.html#ac73678c081ffd686ec8ed3979fb2ca3a">explosion_handler::explosion_funcs::flashbang</a></div><div class="ttdeci">void flashbang(const queued_explosion &amp;qe)</div><div class="ttdef"><b>Definition:</b> <a href="explosion_8cpp_source.html#l01561">explosion.cpp:1561</a></div></div>
 <div class="ttc" id="anamespaceexplosion__handler_html_aa7272a756393a7ef2b2cdf330b1855d8a3652612846bb6e78beb52c56a7e1d3a2"><div class="ttname"><a href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a3652612846bb6e78beb52c56a7e1d3a2">explosion_handler::ExplosionType::ResonanceCascade</a></div><div class="ttdeci">@ ResonanceCascade</div></div>
 <div class="ttc" id="anamespaceexplosion__handler_html_aa7272a756393a7ef2b2cdf330b1855d8a599c4a30b95932d4f27078f9f30974b0"><div class="ttname"><a href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a599c4a30b95932d4f27078f9f30974b0">explosion_handler::ExplosionType::Flashbang</a></div><div class="ttdeci">@ Flashbang</div></div>
 <div class="ttc" id="anamespaceexplosion__handler_html_aa7272a756393a7ef2b2cdf330b1855d8a822b02e1b751097d290eaad55252eb81"><div class="ttname"><a href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8a822b02e1b751097d290eaad55252eb81">explosion_handler::ExplosionType::Shockwave</a></div><div class="ttdeci">@ Shockwave</div></div>
 <div class="ttc" id="anamespaceexplosion__handler_html_aa7272a756393a7ef2b2cdf330b1855d8ad2203cb1237cb6460cbad94564e39345"><div class="ttname"><a href="namespaceexplosion__handler.html#aa7272a756393a7ef2b2cdf330b1855d8ad2203cb1237cb6460cbad94564e39345">explosion_handler::ExplosionType::Regular</a></div><div class="ttdeci">@ Regular</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="explosion_8cpp_source.html#l01552">explosion_handler::flashbang()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="explosion_8cpp_source.html#l01466">explosion_handler::explosion_funcs::regular()</a>, <a class="el" href="explosion_8cpp_source.html#l01798">explosion_handler::resonance_cascade()</a>, and <a class="el" href="explosion_8cpp_source.html#l01612">explosion_handler::shockwave()</a>.</p>
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="explosion_8cpp_source.html#l01552">explosion_handler::flashbang()</a>, <a class="el" href="avatar__action_8cpp_source.html#l00096">avatar_action::move()</a>, <a class="el" href="explosion_8cpp_source.html#l01466">explosion_handler::explosion_funcs::regular()</a>, <a class="el" href="explosion_8cpp_source.html#l01799">explosion_handler::resonance_cascade()</a>, and <a class="el" href="explosion_8cpp_source.html#l01612">explosion_handler::shockwave()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01348">game::do_turn()</a>, <a class="el" href="mondeath_8cpp_source.html#l00579">mdeath::explode()</a>, and <a class="el" href="mondeath_8cpp_source.html#l00606">mdeath::focused_beam()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="game_8cpp_source.html#l01353">game::do_turn()</a>, <a class="el" href="mondeath_8cpp_source.html#l00579">mdeath::explode()</a>, and <a class="el" href="mondeath_8cpp_source.html#l00606">mdeath::focused_beam()</a>.</p>
 
 </div>
 </div>
@@ -276,7 +276,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceexplosion__handler.html">explosion_handler</a></li><li class="navelem"><a class="el" href="classexplosion__handler_1_1explosion__queue.html">explosion_queue</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:41 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:12 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

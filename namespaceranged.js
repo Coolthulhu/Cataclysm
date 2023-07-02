@@ -42,5 +42,6 @@ var namespaceranged =
     [ "throw_cost", "namespaceranged.html#aeadf3905fda7ac9f7e6e13d78d6beadb", null ],
     [ "throw_dispersion_per_dodge", "namespaceranged.html#afd6b1338d47e5ecd34de75b921c11113", null ],
     [ "throw_item", "namespaceranged.html#aaaa4e309fe9b7ad615954c9f7524ddce", null ],
-    [ "throwing_dispersion", "namespaceranged.html#a54895869f69a00b4a74df15057a9a780", null ]
+    [ "throwing_dispersion", "namespaceranged.html#a54895869f69a00b4a74df15057a9a780", null ],
+    [ "time_to_attack", "namespaceranged.html#ad3183129b44ab2775b50bb90da5c5333", null ]
 ];

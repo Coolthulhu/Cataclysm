@@ -33,7 +33,6 @@ var searchData=
   ['gun_5factor_30',['gun_actor',['../classgun__actor.html',1,'']]],
   ['gun_5fmode_31',['gun_mode',['../classgun__mode.html',1,'']]],
   ['gun_5fmodifier_5fdata_32',['gun_modifier_data',['../classgun__modifier__data.html',1,'']]],
-  ['gun_5ftype_5ftype_33',['gun_type_type',['../classgun__type__type.html',1,'']]],
-  ['gunmod_5finventory_5fpreset_34',['gunmod_inventory_preset',['../classgunmod__inventory__preset.html',1,'']]],
-  ['gunmod_5flocation_35',['gunmod_location',['../classgunmod__location.html',1,'']]]
+  ['gunmod_5finventory_5fpreset_33',['gunmod_inventory_preset',['../classgunmod__inventory__preset.html',1,'']]],
+  ['gunmod_5flocation_34',['gunmod_location',['../classgunmod__location.html',1,'']]]
 ];

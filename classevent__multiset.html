@@ -385,14 +385,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03707">3707</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03708" name="l03708"></a><span class="lineno"> 3708</span>{</div>
-<div class="line"><a id="l03709" name="l03709"></a><span class="lineno"> 3709</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
-<div class="line"><a id="l03710" name="l03710"></a><span class="lineno"> 3710</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
-<div class="line"><a id="l03711" name="l03711"></a><span class="lineno"> 3711</span>    std::vector&lt;std::pair&lt;cata::event::data_type, int&gt;&gt; copy;</div>
-<div class="line"><a id="l03712" name="l03712"></a><span class="lineno"> 3712</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;event_counts&quot;</span>, copy );</div>
-<div class="line"><a id="l03713" name="l03713"></a><span class="lineno"> 3713</span>    <a class="code hl_variable" href="classevent__multiset.html#ae0d1406e8e9fb0cfd06677576c09e025">counts_</a> = { copy.begin(), copy.end() };</div>
-<div class="line"><a id="l03714" name="l03714"></a><span class="lineno"> 3714</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03717">3717</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03718" name="l03718"></a><span class="lineno"> 3718</span>{</div>
+<div class="line"><a id="l03719" name="l03719"></a><span class="lineno"> 3719</span>    <a class="code hl_class" href="classJsonObject.html">JsonObject</a> jo = jsin.<a class="code hl_function" href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">get_object</a>();</div>
+<div class="line"><a id="l03720" name="l03720"></a><span class="lineno"> 3720</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">allow_omitted_members</a>();</div>
+<div class="line"><a id="l03721" name="l03721"></a><span class="lineno"> 3721</span>    std::vector&lt;std::pair&lt;cata::event::data_type, int&gt;&gt; copy;</div>
+<div class="line"><a id="l03722" name="l03722"></a><span class="lineno"> 3722</span>    jo.<a class="code hl_function" href="classJsonObject.html#ae66d47f9cb4993dfaf79819ec2aff2f8">read</a>( <span class="stringliteral">&quot;event_counts&quot;</span>, copy );</div>
+<div class="line"><a id="l03723" name="l03723"></a><span class="lineno"> 3723</span>    <a class="code hl_variable" href="classevent__multiset.html#ae0d1406e8e9fb0cfd06677576c09e025">counts_</a> = { copy.begin(), copy.end() };</div>
+<div class="line"><a id="l03724" name="l03724"></a><span class="lineno"> 3724</span>}</div>
 <div class="ttc" id="aclassJsonIn_html_af988f122efed0696d9d05f649e57c9b2"><div class="ttname"><a href="classJsonIn.html#af988f122efed0696d9d05f649e57c9b2">JsonIn::get_object</a></div><div class="ttdeci">JsonObject get_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l01432">json.cpp:1432</a></div></div>
 <div class="ttc" id="aclassJsonObject_html"><div class="ttname"><a href="classJsonObject.html">JsonObject</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00826">json.h:827</a></div></div>
 <div class="ttc" id="aclassJsonObject_html_ae00f195360e3783cf50527cf07344202"><div class="ttname"><a href="classJsonObject.html#ae00f195360e3783cf50527cf07344202">JsonObject::allow_omitted_members</a></div><div class="ttdeci">void allow_omitted_members() const</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l00151">json.cpp:151</a></div></div>
@@ -498,13 +498,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03699">3699</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03700" name="l03700"></a><span class="lineno"> 3700</span>{</div>
-<div class="line"><a id="l03701" name="l03701"></a><span class="lineno"> 3701</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
-<div class="line"><a id="l03702" name="l03702"></a><span class="lineno"> 3702</span>    std::vector&lt;counts_type::value_type&gt; copy( <a class="code hl_variable" href="classevent__multiset.html#ae0d1406e8e9fb0cfd06677576c09e025">counts_</a>.begin(), <a class="code hl_variable" href="classevent__multiset.html#ae0d1406e8e9fb0cfd06677576c09e025">counts_</a>.end() );</div>
-<div class="line"><a id="l03703" name="l03703"></a><span class="lineno"> 3703</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;event_counts&quot;</span>, copy );</div>
-<div class="line"><a id="l03704" name="l03704"></a><span class="lineno"> 3704</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
-<div class="line"><a id="l03705" name="l03705"></a><span class="lineno"> 3705</span>}</div>
+<p class="definition">Definition at line <a class="el" href="savegame__json_8cpp_source.html#l03709">3709</a> of file <a class="el" href="savegame__json_8cpp_source.html">savegame_json.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03710" name="l03710"></a><span class="lineno"> 3710</span>{</div>
+<div class="line"><a id="l03711" name="l03711"></a><span class="lineno"> 3711</span>    jsout.<a class="code hl_function" href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">start_object</a>();</div>
+<div class="line"><a id="l03712" name="l03712"></a><span class="lineno"> 3712</span>    std::vector&lt;counts_type::value_type&gt; copy( <a class="code hl_variable" href="classevent__multiset.html#ae0d1406e8e9fb0cfd06677576c09e025">counts_</a>.begin(), <a class="code hl_variable" href="classevent__multiset.html#ae0d1406e8e9fb0cfd06677576c09e025">counts_</a>.end() );</div>
+<div class="line"><a id="l03713" name="l03713"></a><span class="lineno"> 3713</span>    jsout.<a class="code hl_function" href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">member</a>( <span class="stringliteral">&quot;event_counts&quot;</span>, copy );</div>
+<div class="line"><a id="l03714" name="l03714"></a><span class="lineno"> 3714</span>    jsout.<a class="code hl_function" href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">end_object</a>();</div>
+<div class="line"><a id="l03715" name="l03715"></a><span class="lineno"> 3715</span>}</div>
 <div class="ttc" id="aclassJsonOut_html_a4756f9a569adbfc60de127f7c335d82f"><div class="ttname"><a href="classJsonOut.html#a4756f9a569adbfc60de127f7c335d82f">JsonOut::start_object</a></div><div class="ttdeci">void start_object(bool wrap=false)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02120">json.cpp:2120</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_aa38d37840ed6ba168b78a43570e98681"><div class="ttname"><a href="classJsonOut.html#aa38d37840ed6ba168b78a43570e98681">JsonOut::end_object</a></div><div class="ttdeci">void end_object()</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02131">json.cpp:2131</a></div></div>
 <div class="ttc" id="aclassJsonOut_html_adb3c899f0ad7fc4f25cd3357c51a2c42"><div class="ttname"><a href="classJsonOut.html#adb3c899f0ad7fc4f25cd3357c51a2c42">JsonOut::member</a></div><div class="ttdeci">void member(const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> <a href="json_8cpp_source.html#l02235">json.cpp:2235</a></div></div>
@@ -678,7 +678,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classevent__multiset.html">event_multiset</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:20 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:18:51 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

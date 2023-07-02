@@ -13,6 +13,7 @@ var classworldfactory =
     [ "edit_active_world_mods", "classworldfactory.html#a2c6b8ecf07c0f49b0c84740e5884459c", null ],
     [ "get_mod_manager", "classworldfactory.html#a981d284f99eea3ba0b20ba2913c0fc66", null ],
     [ "get_world", "classworldfactory.html#ae00746c9b2bccad67783b82882ecd8f8", null ],
+    [ "get_world_index", "classworldfactory.html#aa0732c7a615352ea314a07e1404fc5ff", null ],
     [ "has_world", "classworldfactory.html#a9faf088d29c3c360652b3b109519fd41", null ],
     [ "init", "classworldfactory.html#aa1a6e87c8dd9a9b3c928291fb129fde4", null ],
     [ "load_last_world_info", "classworldfactory.html#a653c672e00a270fe5fd2820d42b660ab", null ],

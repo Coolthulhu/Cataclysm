@@ -24,8 +24,9 @@ var searchData=
   ['computer_5ffailure_5ftype_21',['computer_failure_type',['../computer_8h.html#a3509dba5a05e2d4dcf56fee3abd392d5',1,'computer.h']]],
   ['condition_22',['condition',['../classenchantment.html#a137b2a7be9c54ff0aa3dfaf1b1353d08',1,'enchantment']]],
   ['condition_5ftype_23',['condition_type',['../itype_8h.html#afc401f615ea14e8e1ee24cf7068b7716',1,'itype.h']]],
-  ['consumption_5fresult_24',['consumption_result',['../npctalk_8cpp.html#a68f95547ff1e189b2415a84baf46b4e3',1,'npctalk.cpp']]],
-  ['copt_5fhide_5ft_25',['copt_hide_t',['../classoptions__manager.html#a14a1398c58695c80d37b3d4bf366653d',1,'options_manager']]],
-  ['copt_5fvalue_5ftype_26',['COPT_VALUE_TYPE',['../classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6',1,'options_manager::cOpt']]],
-  ['cost_5fadjustment_27',['cost_adjustment',['../requirements_8h.html#a29bc522104aee22ea5cf6e7d3c629131',1,'requirements.h']]]
+  ['consume_5ftype_24',['consume_type',['../activity__handlers_8h.html#a51eb067383b3e2bf0c0a898564a4053e',1,'activity_handlers.h']]],
+  ['consumption_5fresult_25',['consumption_result',['../npctalk_8cpp.html#a68f95547ff1e189b2415a84baf46b4e3',1,'npctalk.cpp']]],
+  ['copt_5fhide_5ft_26',['copt_hide_t',['../classoptions__manager.html#a14a1398c58695c80d37b3d4bf366653d',1,'options_manager']]],
+  ['copt_5fvalue_5ftype_27',['COPT_VALUE_TYPE',['../classoptions__manager_1_1cOpt.html#aabaf5e6ae3fea113b4059cb2853586d6',1,'options_manager::cOpt']]],
+  ['cost_5fadjustment_28',['cost_adjustment',['../requirements_8h.html#a29bc522104aee22ea5cf6e7d3c629131',1,'requirements.h']]]
 ];

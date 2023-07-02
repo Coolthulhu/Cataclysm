@@ -247,11 +247,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>            <span class="keywordflow">return</span> std::string();</div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>        }</div>
-<div class="ttc" id="aclassCharacter_html_add7c18c1ff4186fa02862a1fef9cdbe1"><div class="ttname"><a href="classCharacter.html#add7c18c1ff4186fa02862a1fef9cdbe1">Character::can_wear</a></div><div class="ttdeci">ret_val&lt; bool &gt; can_wear(const item &amp;it, bool with_equip_change=false) const</div><div class="ttdoc">Check character capable of wearing an item.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02744">character.cpp:2744</a></div></div>
-<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00097">hash_utils.h:97</a></div></div>
-<div class="ttc" id="astring__utils_8cpp_html_aa0ffa4eb7b80a73bc602e049a82ab445"><div class="ttname"><a href="string__utils_8cpp.html#aa0ffa4eb7b80a73bc602e049a82ab445">trim_punctuation_marks</a></div><div class="ttdeci">std::string trim_punctuation_marks(const std::string &amp;s)</div><div class="ttdoc">Removes punctuation marks from the start and the end of a string.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00218">string_utils.cpp:218</a></div></div>
+<div class="ttc" id="aclassCharacter_html_add7c18c1ff4186fa02862a1fef9cdbe1"><div class="ttname"><a href="classCharacter.html#add7c18c1ff4186fa02862a1fef9cdbe1">Character::can_wear</a></div><div class="ttdeci">ret_val&lt; bool &gt; can_wear(const item &amp;it, bool with_equip_change=false) const</div><div class="ttdoc">Check character capable of wearing an item.</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l02759">character.cpp:2759</a></div></div>
+<div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00098">hash_utils.h:98</a></div></div>
+<div class="ttc" id="astring__utils_8cpp_html_aa0ffa4eb7b80a73bc602e049a82ab445"><div class="ttname"><a href="string__utils_8cpp.html#aa0ffa4eb7b80a73bc602e049a82ab445">trim_punctuation_marks</a></div><div class="ttdeci">std::string trim_punctuation_marks(const std::string &amp;s)</div><div class="ttdoc">Removes punctuation marks from the start and the end of a string.</div><div class="ttdef"><b>Definition:</b> <a href="string__utils_8cpp_source.html#l00219">string_utils.cpp:219</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l02744">Character::can_wear()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>, <a class="el" href="hash__utils_8h_source.html#l00097">cata::hash64_detail::ret</a>, and <a class="el" href="string__utils_8cpp_source.html#l00218">trim_punctuation_marks()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l02759">Character::can_wear()</a>, <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>, <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>, and <a class="el" href="string__utils_8cpp_source.html#l00219">trim_punctuation_marks()</a>.</p>
 
 </div>
 </div>
@@ -287,9 +287,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>                                                                 {</div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>            <span class="keywordflow">return</span> loc-&gt;is_armor() &amp;&amp; !<a class="code hl_variable" href="classarmor__inventory__preset.html#ad4a56e543bb12e5491e6a93959d99701">p</a>.<a class="code hl_function" href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">is_worn</a>( *loc );</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>        }</div>
-<div class="ttc" id="aclassCharacter_html_a4d8d747c469431f530acb05c5f7a7f45"><div class="ttname"><a href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">Character::is_worn</a></div><div class="ttdeci">bool is_worn(const item &amp;thing) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01095">character.h:1095</a></div></div>
+<div class="ttc" id="aclassCharacter_html_a4d8d747c469431f530acb05c5f7a7f45"><div class="ttname"><a href="classCharacter.html#a4d8d747c469431f530acb05c5f7a7f45">Character::is_worn</a></div><div class="ttdeci">bool is_worn(const item &amp;thing) const</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01099">character.h:1099</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="item_8cpp_source.html#l06704">item::is_armor()</a>, <a class="el" href="character_8h_source.html#l01095">Character::is_worn()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>.</p>
+<p class="reference">References <a class="el" href="item_8cpp_source.html#l06729">item::is_armor()</a>, <a class="el" href="character_8h_source.html#l01099">Character::is_worn()</a>, and <a class="el" href="game__inventory_8cpp_source.html#l00335">armor_inventory_preset::p</a>.</p>
 
 </div>
 </div>
@@ -302,7 +302,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classwear__inventory__preset.html">wear_inventory_preset</a></li>
-    <li class="footer">Generated on Tue May 2 2023 12:56:36 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Jul 2 2023 12:19:08 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

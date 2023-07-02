@@ -16,7 +16,7 @@ var activity__item__handling_8cpp =
     [ "debug_tokens", "activity__item__handling_8cpp.html#afac0f9deaf686789e8135c892e968ff3", null ],
     [ "drop_on_map", "activity__item__handling_8cpp.html#a7a8187a46223fffe87a69ae5c289b1c5", null ],
     [ "fetch_activity", "activity__item__handling_8cpp.html#a01d438a0c52fea5fe63d03065ff32805", null ],
-    [ "find_auto_consume", "activity__item__handling_8cpp.html#a866b26575f11f2854720de5fffbd63ed", null ],
+    [ "find_auto_consume", "activity__item__handling_8cpp.html#a3fc36cae9716a6de94fef6e5d6a106aa", null ],
     [ "find_base_construction", "activity__item__handling_8cpp.html#a341d1611ac0ab9f09545f476a25297cc", null ],
     [ "find_best_fire", "activity__item__handling_8cpp.html#a13dee0da7e00a755d9b060a08905acd2", null ],
     [ "find_refuel_spot_trap", "activity__item__handling_8cpp.html#ad5f4ae2a07bc15dda98e18d8bf8dd8a7", null ],
