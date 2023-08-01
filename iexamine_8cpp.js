@@ -166,5 +166,5 @@ var iexamine_8cpp =
     [ "trait_PROBOSCIS", "iexamine_8cpp.html#a7b1c110dc6b9d344d32e00ae9f70d070", null ],
     [ "trait_THRESH_MARLOSS", "iexamine_8cpp.html#a0d7873e243723a1ba7390f11e934f61f", null ],
     [ "trait_THRESH_MYCUS", "iexamine_8cpp.html#a40331e22a139e13b3b70f387c9fdd390", null ],
-    [ "trait_WEB_BRDIGE", "iexamine_8cpp.html#aaac8530dd0d3ee2ff0d1ac8040d14970", null ]
+    [ "trait_WEB_BRIDGE", "iexamine_8cpp.html#a8ee77896548a00569c87774d7b765b6f", null ]
 ];

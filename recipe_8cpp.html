@@ -145,6 +145,10 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a6341843b361543b335aaf869a0e7bb7d"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="recipe_8cpp.html#a6341843b361543b335aaf869a0e7bb7d">itype_hotplate</a> (&quot;hotplate&quot;)</td></tr>
 <tr class="separator:a6341843b361543b335aaf869a0e7bb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf28cbb1937f8d45d771cf2b04773327"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="recipe_8cpp.html#acf28cbb1937f8d45d771cf2b04773327">itype_dehydrator</a> (&quot;dehydrator&quot;)</td></tr>
+<tr class="separator:acf28cbb1937f8d45d771cf2b04773327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7f507ab36a908d229ead684bab1961"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="recipe_8cpp.html#a6b7f507ab36a908d229ead684bab1961">itype_char_smoker</a> (&quot;char_smoker&quot;)</td></tr>
+<tr class="separator:a6b7f507ab36a908d229ead684bab1961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae4dc2f5928ac342a6214bcea3980415f" name="ae4dc2f5928ac342a6214bcea3980415f"></a>
@@ -187,39 +191,39 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe_8cpp_source.html#l00718">718</a> of file <a class="el" href="recipe_8cpp_source.html">recipe.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>{</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    std::ostringstream os;</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    <a class="code hl_class" href="classJsonOut.html">JsonOut</a> jsout( os, <span class="comment">/*pretty_print=*/</span><span class="keyword">true</span> );</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span> </div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    jsout.start_object();</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span> </div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    jsout.member( <span class="stringliteral">&quot;time&quot;</span> );</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a> % 100 == 0 ) {</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>        <a class="code hl_function" href="units__serde_8h.html#ae683b34d11038e5cb5e8af875b106fd6">dump_to_json_string</a>( <a class="code hl_function" href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a>( <a class="code hl_function" href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a> / 100 ),</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>                             jsout, <a class="code hl_variable" href="classtime__duration.html#a4694c27b90feb607344d0605cfa50db8">time_duration::units</a> );</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>        <span class="comment">// cannot precisely represent the value using time_duration format,</span></div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>        <span class="comment">// write integer instead.</span></div>
-<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>        jsout.write( <a class="code hl_function" href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a> );</div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>    }</div>
-<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>    jsout.member( <span class="stringliteral">&quot;skills&quot;</span> );</div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    jsout.start_array( <span class="comment">/*wrap=*/</span>!<a class="code hl_enumvalue" href="namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09aa658279f9b983958149f31e4d8487673">skills</a>.empty() );</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const skill_id, int&gt; &amp;p : skills ) {</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        jsout.start_array();</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>        jsout.write( p.first );</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>        jsout.write( p.second );</div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        jsout.end_array();</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>    }</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>    jsout.end_array();</div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span> </div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    jsout.member( <span class="stringliteral">&quot;inline&quot;</span> );</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    reqs.<a class="code hl_function" href="structrequirement__data.html#a8aad340720d64703c6646af321455d3d">dump</a>( jsout );</div>
+<p class="definition">Definition at line <a class="el" href="recipe_8cpp_source.html#l00721">721</a> of file <a class="el" href="recipe_8cpp_source.html">recipe.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>{</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    std::ostringstream os;</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    <a class="code hl_class" href="classJsonOut.html">JsonOut</a> jsout( os, <span class="comment">/*pretty_print=*/</span><span class="keyword">true</span> );</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span> </div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    jsout.start_object();</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>    jsout.member( <span class="stringliteral">&quot;time&quot;</span> );</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    <span class="keywordflow">if</span>( <a class="code hl_function" href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a> % 100 == 0 ) {</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>        <a class="code hl_function" href="units__serde_8h.html#ae683b34d11038e5cb5e8af875b106fd6">dump_to_json_string</a>( <a class="code hl_function" href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a>( <a class="code hl_function" href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a> / 100 ),</div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span>                             jsout, <a class="code hl_variable" href="classtime__duration.html#a4694c27b90feb607344d0605cfa50db8">time_duration::units</a> );</div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span>        <span class="comment">// cannot precisely represent the value using time_duration format,</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span>        <span class="comment">// write integer instead.</span></div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span>        jsout.write( <a class="code hl_function" href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a> );</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>    }</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span> </div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    jsout.member( <span class="stringliteral">&quot;skills&quot;</span> );</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    jsout.start_array( <span class="comment">/*wrap=*/</span>!<a class="code hl_enumvalue" href="namespaceanonymous__namespace_02character__display_8cpp_03.html#a5960c87973f8859f2e6997206a97fb09aa658279f9b983958149f31e4d8487673">skills</a>.empty() );</div>
+<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;const skill_id, int&gt; &amp;p : skills ) {</div>
+<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>        jsout.start_array();</div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span>        jsout.write( p.first );</div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span>        jsout.write( p.second );</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>        jsout.end_array();</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>    }</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    jsout.end_array();</div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    jsout.end_object();</div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    <span class="keywordflow">return</span> os.str();</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>}</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span>    jsout.member( <span class="stringliteral">&quot;inline&quot;</span> );</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>    reqs.<a class="code hl_function" href="structrequirement__data.html#a8aad340720d64703c6646af321455d3d">dump</a>( jsout );</div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span> </div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>    jsout.end_object();</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>    <span class="keywordflow">return</span> os.str();</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>}</div>
 <div class="ttc" id="aactivity__item__handling_8cpp_html_a0572000ec0976f2d095ae0cd9d20e78b"><div class="ttname"><a href="activity__item__handling_8cpp.html#a0572000ec0976f2d095ae0cd9d20e78b">move_cost</a></div><div class="ttdeci">static int move_cost(const item &amp;it, const tripoint &amp;src, const tripoint &amp;dest)</div><div class="ttdef"><b>Definition:</b> <a href="activity__item__handling_8cpp_source.html#l00899">activity_item_handling.cpp:899</a></div></div>
 <div class="ttc" id="aclassJsonOut_html"><div class="ttname"><a href="classJsonOut.html">JsonOut</a></div><div class="ttdef"><b>Definition:</b> <a href="json_8h_source.html#l00574">json.h:575</a></div></div>
 <div class="ttc" id="aclasstime__duration_html_a0f7145f4fc4c09defbaf25f468e4e54a"><div class="ttname"><a href="classtime__duration.html#a0f7145f4fc4c09defbaf25f468e4e54a">time_duration::from_turns</a></div><div class="ttdeci">static constexpr time_duration from_turns(const T t)</div><div class="ttdoc">Named constructors to get a duration representing a multiple of the named time units.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8h_source.html#l00204">calendar.h:204</a></div></div>
@@ -230,7 +234,7 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="requirements_8cpp_source.html#l01313">requirement_data::dump()</a>, <a class="el" href="units__serde_8h_source.html#l00071">dump_to_json_string()</a>, <a class="el" href="json_8cpp_source.html#l02150">JsonOut::end_array()</a>, <a class="el" href="json_8cpp_source.html#l02131">JsonOut::end_object()</a>, <a class="el" href="calendar_8h_source.html#l00204">time_duration::from_turns()</a>, <a class="el" href="json_8cpp_source.html#l02235">JsonOut::member()</a>, <a class="el" href="activity__item__handling_8cpp_source.html#l00899">move_cost()</a>, <a class="el" href="json_8cpp_source.html#l02139">JsonOut::start_array()</a>, <a class="el" href="json_8cpp_source.html#l02120">JsonOut::start_object()</a>, <a class="el" href="calendar_8h_source.html#l00335">time_duration::units</a>, and <a class="el" href="json_8h_source.html#l00615">JsonOut::write()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00755">recipe::check_blueprint_requirements()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00758">recipe::check_blueprint_requirements()</a>.</p>
 
 </div>
 </div>
@@ -258,7 +262,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00639">recipe::get_component_filter()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00642">recipe::get_component_filter()</a>.</p>
 
 </div>
 </div>
@@ -286,7 +290,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00456">recipe::create_result()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00459">recipe::create_result()</a>.</p>
 
 </div>
 </div>
@@ -314,7 +318,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00456">recipe::create_result()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00459">recipe::create_result()</a>.</p>
 
 </div>
 </div>
@@ -346,18 +350,18 @@ template&lt;typename Iter &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe_8cpp_source.html#l00559">559</a> of file <a class="el" href="recipe_8cpp_source.html">recipe.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>{</div>
-<div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>    <span class="keywordflow">if</span>( first == <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a> ) {</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_cyan&gt;none&lt;/color&gt;&quot;</span> );</div>
-<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>    }</div>
-<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span> </div>
-<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a>( first, <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a>,</div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    [&amp;]( <span class="keyword">const</span> std::pair&lt;skill_id, int&gt; &amp;skill ) {</div>
-<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;&lt;color_white&gt;%s (%d)&lt;/color&gt;&quot;</span>, skill.first.obj().name(),</div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>                              skill.second );</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    } );</div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe_8cpp_source.html#l00562">562</a> of file <a class="el" href="recipe_8cpp_source.html">recipe.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span>{</div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span>    <span class="keywordflow">if</span>( first == <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a> ) {</div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_cyan&gt;none&lt;/color&gt;&quot;</span> );</div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>    }</div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a>( first, <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a>,</div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span>    [&amp;]( <span class="keyword">const</span> std::pair&lt;skill_id, int&gt; &amp;skill ) {</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;&lt;color_white&gt;%s (%d)&lt;/color&gt;&quot;</span>, skill.first.obj().name(),</div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>                              skill.second );</div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span>    } );</div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>}</div>
 <div class="ttc" id="aoutput_8h_html_abc4022ff920f936d2ee400cedc458733"><div class="ttname"><a href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a></div><div class="ttdeci">std::string enumerate_as_string(const _Container &amp;values, enumeration_conjunction conj=enumeration_conjunction::and_)</div><div class="ttdef"><b>Definition:</b> <a href="output_8h_source.html#l00637">output.h:637</a></div></div>
 <div class="ttc" id="astring__formatter_8h_html_a8964099387da2f95396c67566bafce3d"><div class="ttname"><a href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a></div><div class="ttdeci">std::string string_format(std::string_view format, Args &amp;&amp;...args)</div><div class="ttdoc">Simple wrapper over string_formatter::parse.</div><div class="ttdef"><b>Definition:</b> <a href="string__formatter_8h_source.html#l00430">string_formatter.h:430</a></div></div>
 <div class="ttc" id="atranslations_8h_html_aa829053017e23ef22d44dccecba63a34"><div class="ttname"><a href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a></div><div class="ttdeci">#define _(msg)</div><div class="ttdef"><b>Definition:</b> <a href="translations_8h_source.html#l00116">translations.h:116</a></div></div>
@@ -407,32 +411,88 @@ template&lt;typename Iter &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="recipe_8cpp_source.html#l00538">538</a> of file <a class="el" href="recipe_8cpp_source.html">recipe.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>{</div>
-<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>    <span class="keywordflow">if</span>( first == <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a> ) {</div>
-<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_cyan&gt;none&lt;/color&gt;&quot;</span> );</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>    }</div>
-<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span> </div>
-<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a>( first, <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a>,</div>
-<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    [&amp;]( <span class="keyword">const</span> std::pair&lt;skill_id, int&gt; &amp;skill ) {</div>
-<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> player_skill = <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> ? <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>-&gt;get_skill_level( skill.first ) : 0;</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>        std::string difficulty_color = skill.second &gt; player_skill ? <span class="stringliteral">&quot;yellow&quot;</span> : <span class="stringliteral">&quot;green&quot;</span>;</div>
-<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>        std::string skill_level_string = print_skill_level ? <span class="stringliteral">&quot;&quot;</span> : ( <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( player_skill ) + <span class="stringliteral">&quot;/&quot;</span> );</div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        skill_level_string += <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( skill.second );</div>
-<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;&lt;color_cyan&gt;%s&lt;/color&gt; &lt;color_%s&gt;(%s)&lt;/color&gt;&quot;</span>,</div>
-<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>                              skill.first.obj().name(), difficulty_color, skill_level_string );</div>
-<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>    } );</div>
-<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>}</div>
+<p class="definition">Definition at line <a class="el" href="recipe_8cpp_source.html#l00541">541</a> of file <a class="el" href="recipe_8cpp_source.html">recipe.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>{</div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span>    <span class="keywordflow">if</span>( first == <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a> ) {</div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="translations_8h.html#aa829053017e23ef22d44dccecba63a34">_</a>( <span class="stringliteral">&quot;&lt;color_cyan&gt;none&lt;/color&gt;&quot;</span> );</div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>    }</div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span> </div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="output_8h.html#abc4022ff920f936d2ee400cedc458733">enumerate_as_string</a>( first, <a class="code hl_enumvalue" href="weather__type_8h.html#a72d839b22172d982273f161206458e25aa1a074a72eb46dfdde53e589d946ab98">last</a>,</div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    [&amp;]( <span class="keyword">const</span> std::pair&lt;skill_id, int&gt; &amp;skill ) {</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>        <span class="keyword">const</span> <span class="keywordtype">int</span> player_skill = <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a> ? <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>-&gt;get_skill_level( skill.first ) : 0;</div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span>        std::string difficulty_color = skill.second &gt; player_skill ? <span class="stringliteral">&quot;yellow&quot;</span> : <span class="stringliteral">&quot;green&quot;</span>;</div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span>        std::string skill_level_string = print_skill_level ? <span class="stringliteral">&quot;&quot;</span> : ( <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( player_skill ) + <span class="stringliteral">&quot;/&quot;</span> );</div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span>        skill_level_string += <a class="code hl_function" href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">std::to_string</a>( skill.second );</div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="string__formatter_8h.html#a8964099387da2f95396c67566bafce3d">string_format</a>( <span class="stringliteral">&quot;&lt;color_cyan&gt;%s&lt;/color&gt; &lt;color_%s&gt;(%s)&lt;/color&gt;&quot;</span>,</div>
+<div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>                              skill.first.obj().name(), difficulty_color, skill_level_string );</div>
+<div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>    } );</div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span>}</div>
 <div class="ttc" id="acalendar_8cpp_html_aeb989652ea2bf7fd03b07a74fd30bd7a"><div class="ttname"><a href="calendar_8cpp.html#aeb989652ea2bf7fd03b07a74fd30bd7a">to_string</a></div><div class="ttdeci">std::string to_string(const time_duration &amp;d)</div><div class="ttdoc">Returns a string showing a duration.</div><div class="ttdef"><b>Definition:</b> <a href="calendar_8cpp_source.html#l00327">calendar.cpp:327</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="translations_8h_source.html#l00116">_</a>, <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="output_8h_source.html#l00637">enumerate_as_string()</a>, <a class="el" href="weather__type_8h_source.html#l00063">last</a>, <a class="el" href="string__formatter_8h_source.html#l00430">string_format()</a>, and <a class="el" href="calendar_8cpp_source.html#l00327">to_string()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00572">recipe::primary_skill_string()</a>, <a class="el" href="recipe_8cpp_source.html#l00595">recipe::required_all_skills_string()</a>, and <a class="el" href="recipe_8cpp_source.html#l00583">recipe::required_skills_string()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00575">recipe::primary_skill_string()</a>, <a class="el" href="recipe_8cpp_source.html#l00598">recipe::required_all_skills_string()</a>, and <a class="el" href="recipe_8cpp_source.html#l00586">recipe::required_skills_string()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a6b7f507ab36a908d229ead684bab1961" name="a6b7f507ab36a908d229ead684bab1961"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7f507ab36a908d229ead684bab1961">&#9670;&nbsp;</a></span>itype_char_smoker</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a> itype_char_smoker(&quot;char_smoker&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;char_smoker&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00837">recipe::dehydrate_result()</a>.</p>
+
+</div>
+</div>
+<a id="acf28cbb1937f8d45d771cf2b04773327" name="acf28cbb1937f8d45d771cf2b04773327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf28cbb1937f8d45d771cf2b04773327">&#9670;&nbsp;</a></span>itype_dehydrator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="type__id_8h.html#ac2f82f863d4e9e8f267a77a73910ebbf">itype_id</a> itype_dehydrator(&quot;dehydrator&quot;) </td>
+          <td>(</td>
+          <td class="paramtype">&quot;dehydrator&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00837">recipe::dehydrate_result()</a>.</p>
+
+</div>
+</div>
 <a id="a6341843b361543b335aaf869a0e7bb7d" name="a6341843b361543b335aaf869a0e7bb7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6341843b361543b335aaf869a0e7bb7d">&#9670;&nbsp;</a></span>itype_hotplate</h2>
 
@@ -457,7 +517,7 @@ template&lt;typename Iter &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00807">recipe::hot_result()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="recipe_8cpp_source.html#l00810">recipe::hot_result()</a>.</p>
 
 </div>
 </div>
@@ -467,7 +527,7 @@ template&lt;typename Iter &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="recipe_8cpp.html">recipe.cpp</a></li>
-    <li class="footer">Generated on Sun Jul 2 2023 12:18:43 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 1 2023 18:39:55 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

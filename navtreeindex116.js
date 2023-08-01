@@ -1,5 +1,7 @@
 var NAVTREEINDEX116 =
 {
+"namespacedetail.html#a19fe0523a95f2e571745ce3acf05f9b9":[35,0,99,201],
+"namespacedetail.html#a1a780acb0dc2858109fcb85cc7ec6e06":[35,0,99,207],
 "namespacedetail.html#a1c8c2218e4c822aa8f743fb9c573717f":[35,0,99,320],
 "namespacedetail.html#a1ce5844a002c0c15253b91f7ffae5729":[35,0,99,269],
 "namespacedetail.html#a1d61b8b681bfea9c6949651be0f34c3c":[35,0,99,317],
@@ -247,7 +249,5 @@ var NAVTREEINDEX116 =
 "namespacedetail_1_1dragonbox.html#a12286781195aa157eabfe1437ee271fa":[35,0,99,1,25],
 "namespacedetail_1_1dragonbox.html#a233f206f3f73d9c426e5fb0c69df38c1":[35,0,99,1,15],
 "namespacedetail_1_1dragonbox.html#a2a0d2f83211befbd1925abdc65e5a2c8":[35,0,99,1,11],
-"namespacedetail_1_1dragonbox.html#a39bbe321b3f84632f470ba10ed90bc61":[35,0,99,1,9],
-"namespacedetail_1_1dragonbox.html#a434d21d93c2448552d90eb3381f301f1":[35,0,99,1,16],
-"namespacedetail_1_1dragonbox.html#a4bf57aeb5f229f5d6cd53bea7ff02901":[35,0,99,1,26]
+"namespacedetail_1_1dragonbox.html#a39bbe321b3f84632f470ba10ed90bc61":[35,0,99,1,9]
 };

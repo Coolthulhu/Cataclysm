@@ -128,15 +128,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l12052">12052</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l12053" name="l12053"></a><span class="lineno">12053</span>{</div>
-<div class="line"><a id="l12054" name="l12054"></a><span class="lineno">12054</span>    <a class="code hl_class" href="classstring__id.html">mtype_id</a> mount_type;</div>
-<div class="line"><a id="l12055" name="l12055"></a><span class="lineno">12055</span>    <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a67b51491c2529df09755e07bc633cc55">is_mounted</a>() ) {</div>
-<div class="line"><a id="l12056" name="l12056"></a><span class="lineno">12056</span>        mount_type = u.<a class="code hl_variable" href="classCharacter.html#ac3d46549b7cdaac1f98991167ad5f1b3">mounted_creature</a>-&gt;type-&gt;id;</div>
-<div class="line"><a id="l12057" name="l12057"></a><span class="lineno">12057</span>    }</div>
-<div class="line"><a id="l12058" name="l12058"></a><span class="lineno">12058</span>    <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;events().send&lt;<a class="code hl_enumvalue" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1cea828d341d133077b5a9655dec239e4758">event_type::avatar_moves</a>&gt;( mount_type, m.<a class="code hl_function" href="classmap.html#aba8f330c2cc25be0652489b42d8dd530">ter</a>( p ).<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>(),</div>
-<div class="line"><a id="l12059" name="l12059"></a><span class="lineno">12059</span>            u.<a class="code hl_function" href="classCharacter.html#a1fd4fd21e3e0f7957001d695a909c23a">get_movement_mode</a>(), u.<a class="code hl_function" href="classCreature.html#a5a2346f549de9c87e8f2afeec1e71366">is_underwater</a>(), p.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
-<div class="line"><a id="l12060" name="l12060"></a><span class="lineno">12060</span>}</div>
+<p class="definition">Definition at line <a class="el" href="game_8cpp_source.html#l12075">12075</a> of file <a class="el" href="game_8cpp_source.html">game.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l12076" name="l12076"></a><span class="lineno">12076</span>{</div>
+<div class="line"><a id="l12077" name="l12077"></a><span class="lineno">12077</span>    <a class="code hl_class" href="classstring__id.html">mtype_id</a> mount_type;</div>
+<div class="line"><a id="l12078" name="l12078"></a><span class="lineno">12078</span>    <span class="keywordflow">if</span>( u.<a class="code hl_function" href="classCharacter.html#a67b51491c2529df09755e07bc633cc55">is_mounted</a>() ) {</div>
+<div class="line"><a id="l12079" name="l12079"></a><span class="lineno">12079</span>        mount_type = u.<a class="code hl_variable" href="classCharacter.html#ac3d46549b7cdaac1f98991167ad5f1b3">mounted_creature</a>-&gt;type-&gt;id;</div>
+<div class="line"><a id="l12080" name="l12080"></a><span class="lineno">12080</span>    }</div>
+<div class="line"><a id="l12081" name="l12081"></a><span class="lineno">12081</span>    <a class="code hl_variable" href="game_8cpp.html#abeb98e93502d73818b4a73fabe191bc1">g</a>-&gt;events().send&lt;<a class="code hl_enumvalue" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1cea828d341d133077b5a9655dec239e4758">event_type::avatar_moves</a>&gt;( mount_type, m.<a class="code hl_function" href="classmap.html#aba8f330c2cc25be0652489b42d8dd530">ter</a>( p ).<a class="code hl_function" href="classint__id.html#a88b1e0c550f4d6f36cac7a73feca7f01">id</a>(),</div>
+<div class="line"><a id="l12082" name="l12082"></a><span class="lineno">12082</span>            u.<a class="code hl_function" href="classCharacter.html#a1fd4fd21e3e0f7957001d695a909c23a">get_movement_mode</a>(), u.<a class="code hl_function" href="classCreature.html#a5a2346f549de9c87e8f2afeec1e71366">is_underwater</a>(), p.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
+<div class="line"><a id="l12083" name="l12083"></a><span class="lineno">12083</span>}</div>
 <div class="ttc" id="aclassCharacter_html_a1fd4fd21e3e0f7957001d695a909c23a"><div class="ttname"><a href="classCharacter.html#a1fd4fd21e3e0f7957001d695a909c23a">Character::get_movement_mode</a></div><div class="ttdeci">character_movemode get_movement_mode() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01552">character.cpp:1552</a></div></div>
 <div class="ttc" id="aclassCharacter_html_a67b51491c2529df09755e07bc633cc55"><div class="ttname"><a href="classCharacter.html#a67b51491c2529df09755e07bc633cc55">Character::is_mounted</a></div><div class="ttdeci">bool is_mounted() const</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l01080">character.cpp:1080</a></div></div>
 <div class="ttc" id="aclassCharacter_html_ac3d46549b7cdaac1f98991167ad5f1b3"><div class="ttname"><a href="classCharacter.html#ac3d46549b7cdaac1f98991167ad5f1b3">Character::mounted_creature</a></div><div class="ttdeci">shared_ptr_fast&lt; monster &gt; mounted_creature</div><div class="ttdef"><b>Definition:</b> <a href="character_8h_source.html#l01617">character.h:1617</a></div></div>
@@ -150,7 +150,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="event_8h.html#a430b444c74dd3fd1472a31714ec5f1cea828d341d133077b5a9655dec239e4758">avatar_moves</a>, <a class="el" href="game_8cpp_source.html#l00283">g</a>, <a class="el" href="character_8cpp_source.html#l01552">Character::get_movement_mode()</a>, <a class="el" href="ammo__effect_8cpp_source.html#l00033">int_id&lt; T &gt;::id()</a>, <a class="el" href="character_8cpp_source.html#l01080">Character::is_mounted()</a>, <a class="el" href="creature_8cpp_source.html#l00171">Creature::is_underwater()</a>, <a class="el" href="game_8h_source.html#l00962">game::m</a>, <a class="el" href="character_8h_source.html#l01617">Character::mounted_creature</a>, <a class="el" href="map_8cpp_source.html#l01562">map::ter()</a>, <a class="el" href="game_8h_source.html#l00963">game::u</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00500">avatar_action::swim()</a>, <a class="el" href="game_8cpp_source.html#l09967">game::vertical_move()</a>, and <a class="el" href="game_8cpp_source.html#l08758">game::walk_move()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="avatar__action_8cpp_source.html#l00509">avatar_action::swim()</a>, <a class="el" href="game_8cpp_source.html#l09989">game::vertical_move()</a>, and <a class="el" href="game_8cpp_source.html#l08773">game::walk_move()</a>.</p>
 
 </div>
 </div>
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecata__event__dispatch.html">cata_event_dispatch</a></li>
-    <li class="footer">Generated on Sun Jul 2 2023 12:19:10 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 1 2023 18:40:19 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

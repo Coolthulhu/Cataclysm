@@ -6,5 +6,7 @@ var recipe_8cpp =
     [ "flag_VARSIZE", "recipe_8cpp.html#ad66d76d379c8d5dcdbb69ceac398607b", null ],
     [ "required_skills_as_string", "recipe_8cpp.html#a750ecbff9d1e050833124e9729f4172f", null ],
     [ "required_skills_as_string", "recipe_8cpp.html#a42a7e9ad7c91cf20c2e19b2f2ea1588c", null ],
+    [ "itype_char_smoker", "recipe_8cpp.html#a6b7f507ab36a908d229ead684bab1961", null ],
+    [ "itype_dehydrator", "recipe_8cpp.html#acf28cbb1937f8d45d771cf2b04773327", null ],
     [ "itype_hotplate", "recipe_8cpp.html#a6341843b361543b335aaf869a0e7bb7d", null ]
 ];

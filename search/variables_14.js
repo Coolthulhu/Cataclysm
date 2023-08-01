@@ -853,7 +853,7 @@ var searchData=
   ['trait_5fwayfarer_850',['trait_WAYFARER',['../game_8cpp.html#ada331e1a1d76dfffbc04f921862c78ca',1,'trait_WAYFARER():&#160;game.cpp'],['../iuse_8cpp.html#ada331e1a1d76dfffbc04f921862c78ca',1,'trait_WAYFARER():&#160;iuse.cpp']]],
   ['trait_5fweakscent_851',['trait_WEAKSCENT',['../newcharacter_8cpp.html#aea7397f467bae23425a9737646492b0b',1,'newcharacter.cpp']]],
   ['trait_5fweakstomach_852',['trait_WEAKSTOMACH',['../character__effects_8cpp.html#a959d4c791c4b43d445bffa31557fbaba',1,'character_effects.cpp']]],
-  ['trait_5fweb_5fbrdige_853',['trait_WEB_BRDIGE',['../iexamine_8cpp.html#aaac8530dd0d3ee2ff0d1ac8040d14970',1,'iexamine.cpp']]],
+  ['trait_5fweb_5fbridge_853',['trait_WEB_BRIDGE',['../iexamine_8cpp.html#a8ee77896548a00569c87774d7b765b6f',1,'iexamine.cpp']]],
   ['trait_5fweb_5frappel_854',['trait_WEB_RAPPEL',['../trapfunc_8cpp.html#adbf7cdaadf649c152f238dba3a43d3b4',1,'trapfunc.cpp']]],
   ['trait_5fweb_5frope_855',['trait_WEB_ROPE',['../game_8cpp.html#ae473d48ef9d7dcdbeaa9b8f56e4a984d',1,'game.cpp']]],
   ['trait_5fweb_5fspinner_856',['trait_WEB_SPINNER',['../suffer_8cpp.html#a81b633e679725d3a23cfed0548dd0a17',1,'trait_WEB_SPINNER():&#160;suffer.cpp'],['../avatar__functions_8cpp.html#a81b633e679725d3a23cfed0548dd0a17',1,'trait_WEB_SPINNER():&#160;avatar_functions.cpp'],['../character__functions_8cpp.html#a81b633e679725d3a23cfed0548dd0a17',1,'trait_WEB_SPINNER():&#160;character_functions.cpp']]],

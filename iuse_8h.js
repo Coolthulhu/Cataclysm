@@ -91,6 +91,7 @@ var iuse_8h =
     [ "granade", "iuse_8h.html#a2060aa4647487f823f8e42e88fc214ea", null ],
     [ "granade_act", "iuse_8h.html#a4945736059f06b41ffce6c4070f8f5e1", null ],
     [ "grenade_inc_act", "iuse_8h.html#aead9366f186a44fcd9b0966c0d13a86a", null ],
+    [ "gun_clean", "iuse_8h.html#a66d97835bafa6d159d4469e07c89c8fd", null ],
     [ "gun_repair", "iuse_8h.html#a7018b6487f94b8e782bd6523f24da9da", null ],
     [ "gunmod_attach", "iuse_8h.html#aee6388125347281819df5c608e1e2008", null ],
     [ "hacksaw", "iuse_8h.html#a1ed26c836be484fe8abed447dd276260", null ],

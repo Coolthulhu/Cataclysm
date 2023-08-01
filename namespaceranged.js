@@ -21,6 +21,7 @@ var namespaceranged =
     [ "get_aim_types", "namespaceranged.html#a751a40c271349c3ea821c5badd49e42f", null ],
     [ "get_fastest_sight", "namespaceranged.html#a3dbef919e3efee8967ddbcba998a55f3", null ],
     [ "get_most_accurate_sight", "namespaceranged.html#ad70a4328dc4c6c69d45b40f23d90195d", null ],
+    [ "get_shape_factory", "namespaceranged.html#ae6187116a03c20b18135711490b2e961", null ],
     [ "get_str_draw_penalty", "namespaceranged.html#a4c8c85e0249f67213d9994612315aa3e", null ],
     [ "get_weapon_dispersion", "namespaceranged.html#a8b31304e61913a0072ad6df6e16bc932", null ],
     [ "gun_engagement_moves", "namespaceranged.html#a1091f2ff573108fbf6d9f56f0c1d2187", null ],

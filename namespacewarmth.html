@@ -142,25 +142,25 @@ template&lt;typename Acc  = int const&amp;( int const &amp;, int const &amp; )&g
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09404">9404</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l09407" name="l09407"></a><span class="lineno"> 9407</span>{</div>
-<div class="line"><a id="l09408" name="l09408"></a><span class="lineno"> 9408</span>    std::map&lt;bodypart_id, int&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l09409" name="l09409"></a><span class="lineno"> 9409</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;<span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a>, std::vector&lt;const item *&gt;&gt; &amp;pr : clothing_map ) {</div>
-<div class="line"><a id="l09410" name="l09410"></a><span class="lineno"> 9410</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>[pr.first] = std::accumulate( pr.second.begin(), pr.second.end(), 0,</div>
-<div class="line"><a id="l09411" name="l09411"></a><span class="lineno"> 9411</span>        [accumulation_function]( <span class="keywordtype">int</span> acc, <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> * it ) {</div>
-<div class="line"><a id="l09412" name="l09412"></a><span class="lineno"> 9412</span>            return accumulation_function( acc, it-&gt;get_warmth() );</div>
-<div class="line"><a id="l09413" name="l09413"></a><span class="lineno"> 9413</span>        } );</div>
-<div class="line"><a id="l09414" name="l09414"></a><span class="lineno"> 9414</span>    }</div>
-<div class="line"><a id="l09415" name="l09415"></a><span class="lineno"> 9415</span> </div>
-<div class="line"><a id="l09416" name="l09416"></a><span class="lineno"> 9416</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l09417" name="l09417"></a><span class="lineno"> 9417</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09400">9400</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l09403" name="l09403"></a><span class="lineno"> 9403</span>{</div>
+<div class="line"><a id="l09404" name="l09404"></a><span class="lineno"> 9404</span>    std::map&lt;bodypart_id, int&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l09405" name="l09405"></a><span class="lineno"> 9405</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;<span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a>, std::vector&lt;const item *&gt;&gt; &amp;pr : clothing_map ) {</div>
+<div class="line"><a id="l09406" name="l09406"></a><span class="lineno"> 9406</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>[pr.first] = std::accumulate( pr.second.begin(), pr.second.end(), 0,</div>
+<div class="line"><a id="l09407" name="l09407"></a><span class="lineno"> 9407</span>        [accumulation_function]( <span class="keywordtype">int</span> acc, <span class="keyword">const</span> <a class="code hl_class" href="classitem.html">item</a> * it ) {</div>
+<div class="line"><a id="l09408" name="l09408"></a><span class="lineno"> 9408</span>            return accumulation_function( acc, it-&gt;get_warmth() );</div>
+<div class="line"><a id="l09409" name="l09409"></a><span class="lineno"> 9409</span>        } );</div>
+<div class="line"><a id="l09410" name="l09410"></a><span class="lineno"> 9410</span>    }</div>
+<div class="line"><a id="l09411" name="l09411"></a><span class="lineno"> 9411</span> </div>
+<div class="line"><a id="l09412" name="l09412"></a><span class="lineno"> 9412</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l09413" name="l09413"></a><span class="lineno"> 9413</span>}</div>
 <div class="ttc" id="aclassint__id_html"><div class="ttname"><a href="classint__id.html">int_id</a></div><div class="ttdoc">Just like the string_id, this is a wrapper for int based identifiers.</div><div class="ttdef"><b>Definition:</b> <a href="int__id_8h_source.html#l00019">int_id.h:20</a></div></div>
 <div class="ttc" id="aclassitem_html"><div class="ttname"><a href="classitem.html">item</a></div><div class="ttdef"><b>Definition:</b> <a href="item_8h_source.html#l00209">item.h:210</a></div></div>
 <div class="ttc" id="anamespacecata_1_1hash64__detail_html_a5ca825db6fd06946302c60daa97333e4"><div class="ttname"><a href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">cata::hash64_detail::ret</a></div><div class="ttdeci">T ret</div><div class="ttdef"><b>Definition:</b> <a href="hash__utils_8h_source.html#l00098">hash_utils.h:98</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09425">bonus_from_clothing()</a>, and <a class="el" href="character_8cpp_source.html#l09419">from_clothing()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l09421">bonus_from_clothing()</a>, and <a class="el" href="character_8cpp_source.html#l09415">from_clothing()</a>.</p>
 
 </div>
 </div>
@@ -180,15 +180,15 @@ template&lt;typename Acc  = int const&amp;( int const &amp;, int const &amp; )&g
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09425">9425</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l09427" name="l09427"></a><span class="lineno"> 9427</span>{</div>
-<div class="line"><a id="l09428" name="l09428"></a><span class="lineno"> 9428</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewarmth.html#ae11deea526b1f8389fa6a1b002bcc193">acc_clothing_warmth</a>( clothing_map, std::max&lt;int&gt; );</div>
-<div class="line"><a id="l09429" name="l09429"></a><span class="lineno"> 9429</span>}</div>
-<div class="ttc" id="anamespacewarmth_html_ae11deea526b1f8389fa6a1b002bcc193"><div class="ttname"><a href="namespacewarmth.html#ae11deea526b1f8389fa6a1b002bcc193">warmth::acc_clothing_warmth</a></div><div class="ttdeci">static std::map&lt; bodypart_id, int &gt; acc_clothing_warmth(const std::map&lt; bodypart_id, std::vector&lt; const item * &gt; &gt; &amp;clothing_map, Acc accumulation_function)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l09404">character.cpp:9404</a></div></div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09421">9421</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l09423" name="l09423"></a><span class="lineno"> 9423</span>{</div>
+<div class="line"><a id="l09424" name="l09424"></a><span class="lineno"> 9424</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewarmth.html#ae11deea526b1f8389fa6a1b002bcc193">acc_clothing_warmth</a>( clothing_map, std::max&lt;int&gt; );</div>
+<div class="line"><a id="l09425" name="l09425"></a><span class="lineno"> 9425</span>}</div>
+<div class="ttc" id="anamespacewarmth_html_ae11deea526b1f8389fa6a1b002bcc193"><div class="ttname"><a href="namespacewarmth.html#ae11deea526b1f8389fa6a1b002bcc193">warmth::acc_clothing_warmth</a></div><div class="ttdeci">static std::map&lt; bodypart_id, int &gt; acc_clothing_warmth(const std::map&lt; bodypart_id, std::vector&lt; const item * &gt; &gt; &amp;clothing_map, Acc accumulation_function)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l09400">character.cpp:9400</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l09404">acc_clothing_warmth()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l09400">acc_clothing_warmth()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05219">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05215">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -208,14 +208,14 @@ template&lt;typename Acc  = int const&amp;( int const &amp;, int const &amp; )&g
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09419">9419</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l09421" name="l09421"></a><span class="lineno"> 9421</span>{</div>
-<div class="line"><a id="l09422" name="l09422"></a><span class="lineno"> 9422</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewarmth.html#ae11deea526b1f8389fa6a1b002bcc193">acc_clothing_warmth</a>( clothing_map, std::plus&lt;int&gt;() );</div>
-<div class="line"><a id="l09423" name="l09423"></a><span class="lineno"> 9423</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09415">9415</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l09417" name="l09417"></a><span class="lineno"> 9417</span>{</div>
+<div class="line"><a id="l09418" name="l09418"></a><span class="lineno"> 9418</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewarmth.html#ae11deea526b1f8389fa6a1b002bcc193">acc_clothing_warmth</a>( clothing_map, std::plus&lt;int&gt;() );</div>
+<div class="line"><a id="l09419" name="l09419"></a><span class="lineno"> 9419</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="character_8cpp_source.html#l09404">acc_clothing_warmth()</a>.</p>
+<p class="reference">References <a class="el" href="character_8cpp_source.html#l09400">acc_clothing_warmth()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05219">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05215">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -235,21 +235,21 @@ template&lt;typename Acc  = int const&amp;( int const &amp;, int const &amp; )&g
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09431">9431</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l09432" name="l09432"></a><span class="lineno"> 9432</span>{</div>
-<div class="line"><a id="l09433" name="l09433"></a><span class="lineno"> 9433</span>    std::map&lt;bodypart_id, int&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l09434" name="l09434"></a><span class="lineno"> 9434</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classeffect.html">effect</a> *e : <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.get_all_effects_of_type( <a class="code hl_variable" href="character_8cpp.html#a549621fd3269acc5854484909ebd19c0">effect_heating_bionic</a> ) ) {</div>
-<div class="line"><a id="l09435" name="l09435"></a><span class="lineno"> 9435</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>[e-&gt;get_bp()] += e-&gt;get_intensity();</div>
-<div class="line"><a id="l09436" name="l09436"></a><span class="lineno"> 9436</span>    }</div>
-<div class="line"><a id="l09437" name="l09437"></a><span class="lineno"> 9437</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l09438" name="l09438"></a><span class="lineno"> 9438</span>}</div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l09427">9427</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l09428" name="l09428"></a><span class="lineno"> 9428</span>{</div>
+<div class="line"><a id="l09429" name="l09429"></a><span class="lineno"> 9429</span>    std::map&lt;bodypart_id, int&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l09430" name="l09430"></a><span class="lineno"> 9430</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> <a class="code hl_class" href="classeffect.html">effect</a> *e : <a class="code hl_variable" href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a>.get_all_effects_of_type( <a class="code hl_variable" href="character_8cpp.html#a549621fd3269acc5854484909ebd19c0">effect_heating_bionic</a> ) ) {</div>
+<div class="line"><a id="l09431" name="l09431"></a><span class="lineno"> 9431</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>[e-&gt;get_bp()] += e-&gt;get_intensity();</div>
+<div class="line"><a id="l09432" name="l09432"></a><span class="lineno"> 9432</span>    }</div>
+<div class="line"><a id="l09433" name="l09433"></a><span class="lineno"> 9433</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l09434" name="l09434"></a><span class="lineno"> 9434</span>}</div>
 <div class="ttc" id="acharacter_8cpp_html_a549621fd3269acc5854484909ebd19c0"><div class="ttname"><a href="character_8cpp.html#a549621fd3269acc5854484909ebd19c0">effect_heating_bionic</a></div><div class="ttdeci">static const efftype_id effect_heating_bionic(&quot;heating_bionic&quot;)</div></div>
 <div class="ttc" id="aclasseffect_html"><div class="ttname"><a href="classeffect.html">effect</a></div><div class="ttdef"><b>Definition:</b> <a href="effect_8h_source.html#l00160">effect.h:161</a></div></div>
 <div class="ttc" id="amagic_8cpp_html_a6753ecfe87da659675b18c2f81d6ec12"><div class="ttname"><a href="magic_8cpp.html#a6753ecfe87da659675b18c2f81d6ec12">c</a></div><div class="ttdeci">constexpr double c</div><div class="ttdef"><b>Definition:</b> <a href="magic_8cpp_source.html#l01032">magic.cpp:1032</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="magic_8cpp_source.html#l01032">c</a>, <a class="el" href="character_8cpp.html#a549621fd3269acc5854484909ebd19c0">effect_heating_bionic</a>, and <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05219">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05215">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -271,20 +271,20 @@ template&lt;typename Acc  = int const&amp;( int const &amp;, int const &amp; )&g
 
 <p>Returns wind resistance provided by armor, etc. </p>
 
-<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l03912">3912</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03914" name="l03914"></a><span class="lineno"> 3914</span>{</div>
-<div class="line"><a id="l03915" name="l03915"></a><span class="lineno"> 3915</span>    std::map&lt;bodypart_id, int&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l03916" name="l03916"></a><span class="lineno"> 3916</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;<span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a>, std::vector&lt;const item *&gt;&gt; &amp;on_bp : clothing_map ) {</div>
-<div class="line"><a id="l03917" name="l03917"></a><span class="lineno"> 3917</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>[on_bp.first] = <a class="code hl_function" href="character_8cpp.html#a078d541745db0530e2a154e753054521">wind_resistance_from_item_list</a>( on_bp.second );</div>
-<div class="line"><a id="l03918" name="l03918"></a><span class="lineno"> 3918</span>    }</div>
-<div class="line"><a id="l03919" name="l03919"></a><span class="lineno"> 3919</span> </div>
-<div class="line"><a id="l03920" name="l03920"></a><span class="lineno"> 3920</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
-<div class="line"><a id="l03921" name="l03921"></a><span class="lineno"> 3921</span>}</div>
-<div class="ttc" id="acharacter_8cpp_html_a078d541745db0530e2a154e753054521"><div class="ttname"><a href="character_8cpp.html#a078d541745db0530e2a154e753054521">wind_resistance_from_item_list</a></div><div class="ttdeci">static int wind_resistance_from_item_list(const std::vector&lt; const item * &gt; &amp;items)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03895">character.cpp:3895</a></div></div>
+<p class="definition">Definition at line <a class="el" href="character_8cpp_source.html#l03908">3908</a> of file <a class="el" href="character_8cpp_source.html">character.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03910" name="l03910"></a><span class="lineno"> 3910</span>{</div>
+<div class="line"><a id="l03911" name="l03911"></a><span class="lineno"> 3911</span>    std::map&lt;bodypart_id, int&gt; <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l03912" name="l03912"></a><span class="lineno"> 3912</span>    <span class="keywordflow">for</span>( <span class="keyword">const</span> std::pair&lt;<span class="keyword">const</span> <a class="code hl_class" href="classint__id.html">bodypart_id</a>, std::vector&lt;const item *&gt;&gt; &amp;on_bp : clothing_map ) {</div>
+<div class="line"><a id="l03913" name="l03913"></a><span class="lineno"> 3913</span>        <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>[on_bp.first] = <a class="code hl_function" href="character_8cpp.html#a078d541745db0530e2a154e753054521">wind_resistance_from_item_list</a>( on_bp.second );</div>
+<div class="line"><a id="l03914" name="l03914"></a><span class="lineno"> 3914</span>    }</div>
+<div class="line"><a id="l03915" name="l03915"></a><span class="lineno"> 3915</span> </div>
+<div class="line"><a id="l03916" name="l03916"></a><span class="lineno"> 3916</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="namespacecata_1_1hash64__detail.html#a5ca825db6fd06946302c60daa97333e4">ret</a>;</div>
+<div class="line"><a id="l03917" name="l03917"></a><span class="lineno"> 3917</span>}</div>
+<div class="ttc" id="acharacter_8cpp_html_a078d541745db0530e2a154e753054521"><div class="ttname"><a href="character_8cpp.html#a078d541745db0530e2a154e753054521">wind_resistance_from_item_list</a></div><div class="ttdeci">static int wind_resistance_from_item_list(const std::vector&lt; const item * &gt; &amp;items)</div><div class="ttdef"><b>Definition:</b> <a href="character_8cpp_source.html#l03891">character.cpp:3891</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>, and <a class="el" href="character_8cpp_source.html#l03895">wind_resistance_from_item_list()</a>.</p>
+<p class="reference">References <a class="el" href="hash__utils_8h_source.html#l00098">cata::hash64_detail::ret</a>, and <a class="el" href="character_8cpp_source.html#l03891">wind_resistance_from_item_list()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05219">Character::update_bodytemp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="character_8cpp_source.html#l05215">Character::update_bodytemp()</a>.</p>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ template&lt;typename Acc  = int const&amp;( int const &amp;, int const &amp; )&g
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewarmth.html">warmth</a></li>
-    <li class="footer">Generated on Sun Jul 2 2023 12:19:15 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 1 2023 18:40:24 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

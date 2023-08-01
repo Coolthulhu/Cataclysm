@@ -495,7 +495,7 @@ var searchData=
   ['clearmonstergroups_492',['ClearMonsterGroups',['../classMonsterGroupManager.html#a71fdfd19233e4ce2eb531ac7ba2c7dbb',1,'MonsterGroupManager']]],
   ['cleartmpmap_493',['cleartmpmap',['../classeditmap.html#a733fca241cc14846104d1e69030eb1b9',1,'editmap']]],
   ['climb_5fdifficulty_494',['climb_difficulty',['../classmap.html#aa0e6e89f8f4989c540fefe7bbacfd8ce',1,'map']]],
-  ['climbing_5fcost_495',['climbing_cost',['../namespacemap__funcs.html#a3d04b9be6f6d41f70f82070ae568e7b2',1,'map_funcs']]],
+  ['climbing_5fcost_495',['climbing_cost',['../namespacemap__funcs.html#a8f22c4f8a377d195788aa0fa4d315491',1,'map_funcs']]],
   ['climbs_496',['climbs',['../classmonster.html#ab9288bd726bcf264e3626dfbb7a01e25',1,'monster']]],
   ['clip_5fby_5ftemperature_5fflag_497',['clip_by_temperature_flag',['../item_8cpp.html#a2287b5f4664650d19627269afce2b4cd',1,'item.cpp']]],
   ['clip_5fto_5fbounds_498',['clip_to_bounds',['../classmap.html#af9d444e61d0343ba471f2d3715403166',1,'map::clip_to_bounds(int &amp;x, int &amp;y, int &amp;z) const'],['../classmap.html#afdb9896a5e91d36691226f51bb9c22b2',1,'map::clip_to_bounds(int &amp;x, int &amp;y) const'],['../classmap.html#a6de7bd08f979537c8dcda8ebdc7e6d1e',1,'map::clip_to_bounds(tripoint &amp;p) const']]],

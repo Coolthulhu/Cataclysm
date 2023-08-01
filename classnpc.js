@@ -214,7 +214,7 @@ var classnpc =
     [ "saw_player_recently", "classnpc.html#a740bf52a4bcfa3308abb1d236685bbbb", null ],
     [ "say", "classnpc.html#a077962bdd033d5a96974c8ddf3e26a59", null ],
     [ "say", "classnpc.html#ab6fc5f26b77a0d4f0d86a0eab568d030", null ],
-    [ "scan_new_items", "classnpc.html#aafe8341e41f59321adba206531c6b862", null ],
+    [ "scan_new_items", "classnpc.html#a9616d81b2be6554b15c11c2aba1b59fe", null ],
     [ "see_item_say_smth", "classnpc.html#ae29d9e9d3d4be388beb789d8019d03ce", null ],
     [ "sees_dangerous_field", "classnpc.html#a60564ac83c4b15970af09d70ede219fc", null ],
     [ "serialize", "classnpc.html#acaa01ca40165aed3a7f31b9b3c365d7c", null ],

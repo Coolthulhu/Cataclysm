@@ -831,6 +831,7 @@ var namespaces_dup =
       [ "granade", "namespaceiuse.html#a2060aa4647487f823f8e42e88fc214ea", null ],
       [ "granade_act", "namespaceiuse.html#a4945736059f06b41ffce6c4070f8f5e1", null ],
       [ "grenade_inc_act", "namespaceiuse.html#aead9366f186a44fcd9b0966c0d13a86a", null ],
+      [ "gun_clean", "namespaceiuse.html#a66d97835bafa6d159d4469e07c89c8fd", null ],
       [ "gun_repair", "namespaceiuse.html#a7018b6487f94b8e782bd6523f24da9da", null ],
       [ "gunmod_attach", "namespaceiuse.html#aee6388125347281819df5c608e1e2008", null ],
       [ "hacksaw", "namespaceiuse.html#a1ed26c836be484fe8abed447dd276260", null ],
@@ -962,7 +963,7 @@ var namespaces_dup =
       [ "perform_liquid_transfer", "namespaceliquid__handler.html#a8c1765bcc2eb292f1a8cc24f0ca2b8b9", null ]
     ] ],
     [ "map_funcs", "namespacemap__funcs.html", [
-      [ "climbing_cost", "namespacemap__funcs.html#a3d04b9be6f6d41f70f82070ae568e7b2", null ],
+      [ "climbing_cost", "namespacemap__funcs.html#a8f22c4f8a377d195788aa0fa4d315491", null ],
       [ "migo_nerve_cage_removal", "namespacemap__funcs.html#a60f9a4c25252a0b8cffa456f6bc25887", null ]
     ] ],
     [ "MAP_SHARING", "namespaceMAP__SHARING.html", [

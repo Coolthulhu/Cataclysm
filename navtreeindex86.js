@@ -1,5 +1,6 @@
 var NAVTREEINDEX86 =
 {
+"fmtlib__format_8h.html#a453559ec1413fa2b4b07b320662d6c99":[37,0,1,229,147],
 "fmtlib__format_8h.html#a4996ef0bebf4ddb00e35c3ea2b2d7150":[37,0,1,229,126],
 "fmtlib__format_8h.html#a4aa79926398ee27fe7d6db8b0dd54edf":[37,0,1,229,82],
 "fmtlib__format_8h.html#a4b7270fa462cb1ba6622e686847fc7ea":[37,0,1,229,69],
@@ -248,6 +249,5 @@ var NAVTREEINDEX86 =
 "functions_func_q.html":[36,3,1,16],
 "functions_func_r.html":[36,3,1,17],
 "functions_func_s.html":[36,3,1,18],
-"functions_func_t.html":[36,3,1,19],
-"functions_func_u.html":[36,3,1,20]
+"functions_func_t.html":[36,3,1,19]
 };

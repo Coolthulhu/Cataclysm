@@ -293,7 +293,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04801">vehicle::power_parts()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04821">vehicle::power_parts()</a>.</p>
 
 </div>
 </div>
@@ -366,7 +366,7 @@ Variables</h2></td></tr>
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span>}</div>
 <div class="ttc" id="anamespaceunits_html_a2c7fe916bf04655f9fb4f2abdc5d28ed"><div class="ttname"><a href="namespaceunits.html#a2c7fe916bf04655f9fb4f2abdc5d28ed">units::angle</a></div><div class="ttdeci">quantity&lt; double, angle_in_radians_tag &gt; angle</div><div class="ttdef"><b>Definition:</b> <a href="units__angle_8h_source.html#l00017">units_angle.h:17</a></div></div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05937">vehicle::do_towing_move()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00817">vehicle::drive_to_local_target()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05957">vehicle::do_towing_move()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00817">vehicle::drive_to_local_target()</a>.</p>
 
 </div>
 </div>
@@ -381,6 +381,70 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">static bool is_sm_tile_outside </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structtripoint.html">tripoint</a> &amp;&#160;</td>
+          <td class="paramname"><em>real_global_pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06851">6851</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l06852" name="l06852"></a><span class="lineno"> 6852</span>{</div>
+<div class="line"><a id="l06853" name="l06853"></a><span class="lineno"> 6853</span> </div>
+<div class="line"><a id="l06854" name="l06854"></a><span class="lineno"> 6854</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> smp = <a class="code hl_function" href="coordinate__conversions_8cpp.html#a037672d14e64edf9e2908f5d1e13b31e">ms_to_sm_copy</a>( real_global_pos );</div>
+<div class="line"><a id="l06855" name="l06855"></a><span class="lineno"> 6855</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> p( <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> ), <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) );</div>
+<div class="line"><a id="l06856" name="l06856"></a><span class="lineno"> 6856</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a>.<a class="code hl_function" href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">lookup_submap</a>( smp );</div>
+<div class="line"><a id="l06857" name="l06857"></a><span class="lineno"> 6857</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> == <span class="keyword">nullptr</span> ) {</div>
+<div class="line"><a id="l06858" name="l06858"></a><span class="lineno"> 6858</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;is_sm_tile_outside(): couldn&#39;t find submap %d,%d,%d&quot;</span>, smp.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, smp.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, smp.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
+<div class="line"><a id="l06859" name="l06859"></a><span class="lineno"> 6859</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l06860" name="l06860"></a><span class="lineno"> 6860</span>    }</div>
+<div class="line"><a id="l06861" name="l06861"></a><span class="lineno"> 6861</span> </div>
+<div class="line"><a id="l06862" name="l06862"></a><span class="lineno"> 6862</span>    <span class="keywordflow">if</span>( p.x &lt; 0 || p.x &gt;= <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> || p.y &lt; 0 || p.y &gt;= <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) {</div>
+<div class="line"><a id="l06863" name="l06863"></a><span class="lineno"> 6863</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;err %d,%d&quot;</span>, p.x, p.y );</div>
+<div class="line"><a id="l06864" name="l06864"></a><span class="lineno"> 6864</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l06865" name="l06865"></a><span class="lineno"> 6865</span>    }</div>
+<div class="line"><a id="l06866" name="l06866"></a><span class="lineno"> 6866</span> </div>
+<div class="line"><a id="l06867" name="l06867"></a><span class="lineno"> 6867</span>    <span class="keywordflow">return</span> !( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) ||</div>
+<div class="line"><a id="l06868" name="l06868"></a><span class="lineno"> 6868</span>              <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) );</div>
+<div class="line"><a id="l06869" name="l06869"></a><span class="lineno"> 6869</span>}</div>
+<div class="ttc" id="acata__utility_8cpp_html_aa6f470a02d08b2537d7ac06d3cabaf45"><div class="ttname"><a href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a></div><div class="ttdeci">int modulo(int v, int m)</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8cpp_source.html#l00051">cata_utility.cpp:51</a></div></div>
+<div class="ttc" id="aclassmapbuffer_html_a84df91661b328060eb44b4e4eaba0dcd"><div class="ttname"><a href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">mapbuffer::lookup_submap</a></div><div class="ttdeci">submap * lookup_submap(const tripoint &amp;p)</div><div class="ttdoc">Get a submap stored in this buffer.</div><div class="ttdef"><b>Definition:</b> <a href="mapbuffer_8cpp_source.html#l00083">mapbuffer.cpp:83</a></div></div>
+<div class="ttc" id="acoordinate__conversions_8cpp_html_a037672d14e64edf9e2908f5d1e13b31e"><div class="ttname"><a href="coordinate__conversions_8cpp.html#a037672d14e64edf9e2908f5d1e13b31e">ms_to_sm_copy</a></div><div class="ttdeci">point ms_to_sm_copy(point p)</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8cpp_source.html#l00125">coordinate_conversions.cpp:125</a></div></div>
+<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
+<div class="ttc" id="agame__constants_8h_html_a39fd8a829e3dc412646663066dbdb54c"><div class="ttname"><a href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a></div><div class="ttdeci">static constexpr int SEEX</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00035">game_constants.h:35</a></div></div>
+<div class="ttc" id="agame__constants_8h_html_a4cfa35de359af17f7bc6c2a424339eb5"><div class="ttname"><a href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a></div><div class="ttdeci">static constexpr int SEEY</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00036">game_constants.h:36</a></div></div>
+<div class="ttc" id="amapbuffer_8cpp_html_abc900a0fe17d282e0e4717540106e608"><div class="ttname"><a href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a></div><div class="ttdeci">mapbuffer MAPBUFFER</div><div class="ttdef"><b>Definition:</b> <a href="mapbuffer_8cpp_source.html#l00040">mapbuffer.cpp:40</a></div></div>
+<div class="ttc" id="amapdata_8h_html_aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e"><div class="ttname"><a href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a></div><div class="ttdeci">@ TFLAG_INDOORS</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8h_source.html#l00291">mapdata.h:291</a></div></div>
+<div class="ttc" id="anamespacecoords_html_a7457d0a4e8c8e6407a2c0ee89d275962"><div class="ttname"><a href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">coords::sm</a></div><div class="ttdeci">constexpr scale sm</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00031">coordinates.h:31</a></div></div>
+<div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00035">point.h:35</a></div></div>
+<div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
+<div class="ttc" id="astructtripoint_html_a89f6c0a16e2bfd7ce4f1f1d20404c4d7"><div class="ttname"><a href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">tripoint::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00137">point.h:137</a></div></div>
+<div class="ttc" id="astructtripoint_html_ac944c0e329b5eba2602f7a52f66bbbb9"><div class="ttname"><a href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">tripoint::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00138">point.h:138</a></div></div>
+<div class="ttc" id="astructtripoint_html_affdc0d5b75024cbfacd208a495def3dc"><div class="ttname"><a href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">tripoint::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00136">point.h:136</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00083">mapbuffer::lookup_submap()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00040">MAPBUFFER</a>, <a class="el" href="cata__utility_8cpp_source.html#l00051">modulo()</a>, <a class="el" href="coordinate__conversions_8cpp_source.html#l00125">ms_to_sm_copy()</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, <a class="el" href="coordinates_8h_source.html#l00031">coords::sm</a>, <a class="el" href="mapdata_8h_source.html#l00291">TFLAG_INDOORS</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, <a class="el" href="point_8h_source.html#l00136">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00039">point::y</a>, <a class="el" href="point_8h_source.html#l00137">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04716">vehicle::total_solar_epower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l04738">vehicle::total_wind_epower_w()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06871">vehicle::update_time()</a>.</p>
+
+</div>
+</div>
+<a id="a90151ad87e2e076c5ac35442963f5fe1" name="a90151ad87e2e076c5ac35442963f5fe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90151ad87e2e076c5ac35442963f5fe1">&#9670;&nbsp;</a></span>is_sm_tile_over_water()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool is_sm_tile_over_water </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structtripoint.html">tripoint</a> &amp;&#160;</td>
           <td class="paramname"><em>real_global_pos</em></td><td>)</td>
@@ -410,78 +474,14 @@ Variables</h2></td></tr>
 <div class="line"><a id="l06844" name="l06844"></a><span class="lineno"> 6844</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l06845" name="l06845"></a><span class="lineno"> 6845</span>    }</div>
 <div class="line"><a id="l06846" name="l06846"></a><span class="lineno"> 6846</span> </div>
-<div class="line"><a id="l06847" name="l06847"></a><span class="lineno"> 6847</span>    <span class="keywordflow">return</span> !( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) ||</div>
-<div class="line"><a id="l06848" name="l06848"></a><span class="lineno"> 6848</span>              <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a> ) );</div>
+<div class="line"><a id="l06847" name="l06847"></a><span class="lineno"> 6847</span>    <span class="keywordflow">return</span> ( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) ||</div>
+<div class="line"><a id="l06848" name="l06848"></a><span class="lineno"> 6848</span>             <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) );</div>
 <div class="line"><a id="l06849" name="l06849"></a><span class="lineno"> 6849</span>}</div>
-<div class="ttc" id="acata__utility_8cpp_html_aa6f470a02d08b2537d7ac06d3cabaf45"><div class="ttname"><a href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a></div><div class="ttdeci">int modulo(int v, int m)</div><div class="ttdef"><b>Definition:</b> <a href="cata__utility_8cpp_source.html#l00051">cata_utility.cpp:51</a></div></div>
-<div class="ttc" id="aclassmapbuffer_html_a84df91661b328060eb44b4e4eaba0dcd"><div class="ttname"><a href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">mapbuffer::lookup_submap</a></div><div class="ttdeci">submap * lookup_submap(const tripoint &amp;p)</div><div class="ttdoc">Get a submap stored in this buffer.</div><div class="ttdef"><b>Definition:</b> <a href="mapbuffer_8cpp_source.html#l00083">mapbuffer.cpp:83</a></div></div>
-<div class="ttc" id="acoordinate__conversions_8cpp_html_a037672d14e64edf9e2908f5d1e13b31e"><div class="ttname"><a href="coordinate__conversions_8cpp.html#a037672d14e64edf9e2908f5d1e13b31e">ms_to_sm_copy</a></div><div class="ttdeci">point ms_to_sm_copy(point p)</div><div class="ttdef"><b>Definition:</b> <a href="coordinate__conversions_8cpp_source.html#l00125">coordinate_conversions.cpp:125</a></div></div>
-<div class="ttc" id="adebug_8h_html_a87e509562277a7ada3a75330d00cb445"><div class="ttname"><a href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a></div><div class="ttdeci">#define debugmsg(...)</div><div class="ttdoc">Debug message of level DL::Error and class DC::DebugMsg, also includes the source file name and line,...</div><div class="ttdef"><b>Definition:</b> <a href="debug_8h_source.html#l00074">debug.h:74</a></div></div>
-<div class="ttc" id="agame__constants_8h_html_a39fd8a829e3dc412646663066dbdb54c"><div class="ttname"><a href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a></div><div class="ttdeci">static constexpr int SEEX</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00035">game_constants.h:35</a></div></div>
-<div class="ttc" id="agame__constants_8h_html_a4cfa35de359af17f7bc6c2a424339eb5"><div class="ttname"><a href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a></div><div class="ttdeci">static constexpr int SEEY</div><div class="ttdef"><b>Definition:</b> <a href="game__constants_8h_source.html#l00036">game_constants.h:36</a></div></div>
-<div class="ttc" id="amapbuffer_8cpp_html_abc900a0fe17d282e0e4717540106e608"><div class="ttname"><a href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a></div><div class="ttdeci">mapbuffer MAPBUFFER</div><div class="ttdef"><b>Definition:</b> <a href="mapbuffer_8cpp_source.html#l00040">mapbuffer.cpp:40</a></div></div>
-<div class="ttc" id="amapdata_8h_html_aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e"><div class="ttname"><a href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a526400ab16c5537e7cbbe1a1a400ae6e">TFLAG_INDOORS</a></div><div class="ttdeci">@ TFLAG_INDOORS</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8h_source.html#l00291">mapdata.h:291</a></div></div>
-<div class="ttc" id="anamespacecoords_html_a7457d0a4e8c8e6407a2c0ee89d275962"><div class="ttname"><a href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">coords::sm</a></div><div class="ttdeci">constexpr scale sm</div><div class="ttdef"><b>Definition:</b> <a href="coordinates_8h_source.html#l00031">coordinates.h:31</a></div></div>
-<div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00035">point.h:35</a></div></div>
-<div class="ttc" id="astructtripoint_html"><div class="ttname"><a href="structtripoint.html">tripoint</a></div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00133">point.h:133</a></div></div>
-<div class="ttc" id="astructtripoint_html_a89f6c0a16e2bfd7ce4f1f1d20404c4d7"><div class="ttname"><a href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">tripoint::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00137">point.h:137</a></div></div>
-<div class="ttc" id="astructtripoint_html_ac944c0e329b5eba2602f7a52f66bbbb9"><div class="ttname"><a href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">tripoint::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00138">point.h:138</a></div></div>
-<div class="ttc" id="astructtripoint_html_affdc0d5b75024cbfacd208a495def3dc"><div class="ttname"><a href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">tripoint::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="point_8h_source.html#l00136">point.h:136</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00083">mapbuffer::lookup_submap()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00040">MAPBUFFER</a>, <a class="el" href="cata__utility_8cpp_source.html#l00051">modulo()</a>, <a class="el" href="coordinate__conversions_8cpp_source.html#l00125">ms_to_sm_copy()</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, <a class="el" href="coordinates_8h_source.html#l00031">coords::sm</a>, <a class="el" href="mapdata_8h_source.html#l00291">TFLAG_INDOORS</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, <a class="el" href="point_8h_source.html#l00136">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00039">point::y</a>, <a class="el" href="point_8h_source.html#l00137">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04696">vehicle::total_solar_epower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l04718">vehicle::total_wind_epower_w()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06851">vehicle::update_time()</a>.</p>
-
-</div>
-</div>
-<a id="a90151ad87e2e076c5ac35442963f5fe1" name="a90151ad87e2e076c5ac35442963f5fe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90151ad87e2e076c5ac35442963f5fe1">&#9670;&nbsp;</a></span>is_sm_tile_over_water()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool is_sm_tile_over_water </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="structtripoint.html">tripoint</a> &amp;&#160;</td>
-          <td class="paramname"><em>real_global_pos</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l06811">6811</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l06812" name="l06812"></a><span class="lineno"> 6812</span>{</div>
-<div class="line"><a id="l06813" name="l06813"></a><span class="lineno"> 6813</span> </div>
-<div class="line"><a id="l06814" name="l06814"></a><span class="lineno"> 6814</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structtripoint.html">tripoint</a> smp = <a class="code hl_function" href="coordinate__conversions_8cpp.html#a037672d14e64edf9e2908f5d1e13b31e">ms_to_sm_copy</a>( real_global_pos );</div>
-<div class="line"><a id="l06815" name="l06815"></a><span class="lineno"> 6815</span>    <span class="keyword">const</span> <a class="code hl_struct" href="structpoint.html">point</a> p( <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> ), <a class="code hl_function" href="cata__utility_8cpp.html#aa6f470a02d08b2537d7ac06d3cabaf45">modulo</a>( real_global_pos.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) );</div>
-<div class="line"><a id="l06816" name="l06816"></a><span class="lineno"> 6816</span>    <span class="keyword">auto</span> <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> = <a class="code hl_variable" href="mapbuffer_8cpp.html#abc900a0fe17d282e0e4717540106e608">MAPBUFFER</a>.<a class="code hl_function" href="classmapbuffer.html#a84df91661b328060eb44b4e4eaba0dcd">lookup_submap</a>( smp );</div>
-<div class="line"><a id="l06817" name="l06817"></a><span class="lineno"> 6817</span>    <span class="keywordflow">if</span>( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a> == <span class="keyword">nullptr</span> ) {</div>
-<div class="line"><a id="l06818" name="l06818"></a><span class="lineno"> 6818</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;is_sm_tile_outside(): couldn&#39;t find submap %d,%d,%d&quot;</span>, smp.<a class="code hl_variable" href="structtripoint.html#affdc0d5b75024cbfacd208a495def3dc">x</a>, smp.<a class="code hl_variable" href="structtripoint.html#a89f6c0a16e2bfd7ce4f1f1d20404c4d7">y</a>, smp.<a class="code hl_variable" href="structtripoint.html#ac944c0e329b5eba2602f7a52f66bbbb9">z</a> );</div>
-<div class="line"><a id="l06819" name="l06819"></a><span class="lineno"> 6819</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l06820" name="l06820"></a><span class="lineno"> 6820</span>    }</div>
-<div class="line"><a id="l06821" name="l06821"></a><span class="lineno"> 6821</span> </div>
-<div class="line"><a id="l06822" name="l06822"></a><span class="lineno"> 6822</span>    <span class="keywordflow">if</span>( p.x &lt; 0 || p.x &gt;= <a class="code hl_variable" href="game__constants_8h.html#a39fd8a829e3dc412646663066dbdb54c">SEEX</a> || p.y &lt; 0 || p.y &gt;= <a class="code hl_variable" href="game__constants_8h.html#a4cfa35de359af17f7bc6c2a424339eb5">SEEY</a> ) {</div>
-<div class="line"><a id="l06823" name="l06823"></a><span class="lineno"> 6823</span>        <a class="code hl_define" href="debug_8h.html#a87e509562277a7ada3a75330d00cb445">debugmsg</a>( <span class="stringliteral">&quot;err %d,%d&quot;</span>, p.x, p.y );</div>
-<div class="line"><a id="l06824" name="l06824"></a><span class="lineno"> 6824</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l06825" name="l06825"></a><span class="lineno"> 6825</span>    }</div>
-<div class="line"><a id="l06826" name="l06826"></a><span class="lineno"> 6826</span> </div>
-<div class="line"><a id="l06827" name="l06827"></a><span class="lineno"> 6827</span>    <span class="keywordflow">return</span> ( <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_ter( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) ||</div>
-<div class="line"><a id="l06828" name="l06828"></a><span class="lineno"> 6828</span>             <a class="code hl_variable" href="namespacecoords.html#a7457d0a4e8c8e6407a2c0ee89d275962">sm</a>-&gt;get_furn( p ).obj().has_flag( <a class="code hl_enumvalue" href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a> ) );</div>
-<div class="line"><a id="l06829" name="l06829"></a><span class="lineno"> 6829</span>}</div>
 <div class="ttc" id="amapdata_8h_html_aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b"><div class="ttname"><a href="mapdata_8h.html#aa04d037303ea30193f7cf0cd82304258a4abde628233e47d94c647c43f939df1b">TFLAG_CURRENT</a></div><div class="ttdeci">@ TFLAG_CURRENT</div><div class="ttdef"><b>Definition:</b> <a href="mapdata_8h_source.html#l00302">mapdata.h:302</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="debug_8h_source.html#l00074">debugmsg</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00083">mapbuffer::lookup_submap()</a>, <a class="el" href="mapbuffer_8cpp_source.html#l00040">MAPBUFFER</a>, <a class="el" href="cata__utility_8cpp_source.html#l00051">modulo()</a>, <a class="el" href="coordinate__conversions_8cpp_source.html#l00125">ms_to_sm_copy()</a>, <a class="el" href="game__constants_8h_source.html#l00035">SEEX</a>, <a class="el" href="game__constants_8h_source.html#l00036">SEEY</a>, <a class="el" href="coordinates_8h_source.html#l00031">coords::sm</a>, <a class="el" href="mapdata_8h_source.html#l00302">TFLAG_CURRENT</a>, <a class="el" href="point_8h_source.html#l00038">point::x</a>, <a class="el" href="point_8h_source.html#l00136">tripoint::x</a>, <a class="el" href="point_8h_source.html#l00039">point::y</a>, <a class="el" href="point_8h_source.html#l00137">tripoint::y</a>, and <a class="el" href="point_8h_source.html#l00138">tripoint::z</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04743">vehicle::total_water_wheel_epower_w()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04763">vehicle::total_water_wheel_epower_w()</a>.</p>
 
 </div>
 </div>
@@ -509,7 +509,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03990">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -537,7 +537,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03990">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -565,7 +565,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00318">vehicle::add_missing_frames()</a>, <a class="el" href="vehicle_8cpp_source.html#l06530">vehicle::break_off()</a>, <a class="el" href="vehicle_8cpp_source.html#l01272">vehicle::can_mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l01389">vehicle::can_unmount()</a>, <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l04230">vehicle::coeff_water_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l06444">vehicle::damage_all()</a>, <a class="el" href="vehicle_8cpp_source.html#l02118">vehicle::find_and_split_vehicles()</a>, <a class="el" href="vehicle_8cpp_source.html#l01240">vehicle::has_structural_part()</a>, <a class="el" href="vehicle_8cpp_source.html#l01255">vehicle::is_structural_part_removed()</a>, <a class="el" href="vehicle_8cpp_source.html#l01655">vehicle::merge_rackable_vehicle()</a>, <a class="el" href="vehicle_8cpp_source.html#l00937">vehicle::smash()</a>, <a class="el" href="vehicle_8cpp_source.html#l02223">vehicle::split_vehicles()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04331">vehicle::sufficient_wheel_config()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00318">vehicle::add_missing_frames()</a>, <a class="el" href="vehicle_8cpp_source.html#l06550">vehicle::break_off()</a>, <a class="el" href="vehicle_8cpp_source.html#l01272">vehicle::can_mount()</a>, <a class="el" href="vehicle_8cpp_source.html#l01389">vehicle::can_unmount()</a>, <a class="el" href="vehicle_8cpp_source.html#l03990">vehicle::coeff_air_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l04250">vehicle::coeff_water_drag()</a>, <a class="el" href="vehicle_8cpp_source.html#l06464">vehicle::damage_all()</a>, <a class="el" href="vehicle_8cpp_source.html#l02118">vehicle::find_and_split_vehicles()</a>, <a class="el" href="vehicle_8cpp_source.html#l01240">vehicle::has_structural_part()</a>, <a class="el" href="vehicle_8cpp_source.html#l01255">vehicle::is_structural_part_removed()</a>, <a class="el" href="vehicle_8cpp_source.html#l01655">vehicle::merge_rackable_vehicle()</a>, <a class="el" href="vehicle_8cpp_source.html#l00937">vehicle::smash()</a>, <a class="el" href="vehicle_8cpp_source.html#l02223">vehicle::split_vehicles()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04351">vehicle::sufficient_wheel_config()</a>.</p>
 
 </div>
 </div>
@@ -679,18 +679,18 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03940">3940</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
-<div class="fragment"><div class="line"><a id="l03941" name="l03941"></a><span class="lineno"> 3941</span>{</div>
-<div class="line"><a id="l03942" name="l03942"></a><span class="lineno"> 3942</span>    <span class="keywordflow">if</span>( tiles &lt; 1 ) {</div>
-<div class="line"><a id="l03943" name="l03943"></a><span class="lineno"> 3943</span>        <span class="keywordflow">return</span> 0.1;</div>
-<div class="line"><a id="l03944" name="l03944"></a><span class="lineno"> 3944</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( tiles &lt; 6 ) {</div>
-<div class="line"><a id="l03945" name="l03945"></a><span class="lineno"> 3945</span>        <span class="keywordflow">return</span> 0.5 + 0.4 * tiles;</div>
-<div class="line"><a id="l03946" name="l03946"></a><span class="lineno"> 3946</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l03947" name="l03947"></a><span class="lineno"> 3947</span>        <span class="keywordflow">return</span> 2.5 + 0.15 * ( tiles - 5 );</div>
-<div class="line"><a id="l03948" name="l03948"></a><span class="lineno"> 3948</span>    }</div>
-<div class="line"><a id="l03949" name="l03949"></a><span class="lineno"> 3949</span>}</div>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03960">3960</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<div class="fragment"><div class="line"><a id="l03961" name="l03961"></a><span class="lineno"> 3961</span>{</div>
+<div class="line"><a id="l03962" name="l03962"></a><span class="lineno"> 3962</span>    <span class="keywordflow">if</span>( tiles &lt; 1 ) {</div>
+<div class="line"><a id="l03963" name="l03963"></a><span class="lineno"> 3963</span>        <span class="keywordflow">return</span> 0.1;</div>
+<div class="line"><a id="l03964" name="l03964"></a><span class="lineno"> 3964</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>( tiles &lt; 6 ) {</div>
+<div class="line"><a id="l03965" name="l03965"></a><span class="lineno"> 3965</span>        <span class="keywordflow">return</span> 0.5 + 0.4 * tiles;</div>
+<div class="line"><a id="l03966" name="l03966"></a><span class="lineno"> 3966</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l03967" name="l03967"></a><span class="lineno"> 3967</span>        <span class="keywordflow">return</span> 2.5 + 0.15 * ( tiles - 5 );</div>
+<div class="line"><a id="l03968" name="l03968"></a><span class="lineno"> 3968</span>    }</div>
+<div class="line"><a id="l03969" name="l03969"></a><span class="lineno"> 3969</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04230">vehicle::coeff_water_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03990">vehicle::coeff_air_drag()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04250">vehicle::coeff_water_drag()</a>.</p>
 
 </div>
 </div>
@@ -765,7 +765,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04582">vehicle::consume_fuel()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04602">vehicle::consume_fuel()</a>.</p>
 
 </div>
 </div>
@@ -793,7 +793,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00684">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l06629">vehicle::damage_direct()</a>, <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04466">vehicle::steering_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00684">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l06649">vehicle::damage_direct()</a>, <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l03748">vehicle::safe_ground_velocity()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04486">vehicle::steering_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -847,7 +847,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03478">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l04522">vehicle::fuel_usage()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03825">vehicle::noise_and_smoke()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03478">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l04542">vehicle::fuel_usage()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03845">vehicle::noise_and_smoke()</a>.</p>
 
 </div>
 </div>
@@ -875,7 +875,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03825">vehicle::noise_and_smoke()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03514">vehicle::total_power_w()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03845">vehicle::noise_and_smoke()</a>, and <a class="el" href="vehicle_8cpp_source.html#l03514">vehicle::total_power_w()</a>.</p>
 
 </div>
 </div>
@@ -967,7 +967,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00684">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l05215">vehicle::idle()</a>, <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l00278">vehicle::player_in_control()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04466">vehicle::steering_effectiveness()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00684">vehicle::activate_animal_follow()</a>, <a class="el" href="vehicle_8cpp_source.html#l05235">vehicle::idle()</a>, <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>, <a class="el" href="vehicle_8cpp_source.html#l00278">vehicle::player_in_control()</a>, <a class="el" href="vehicle_8cpp_source.html#l03748">vehicle::safe_ground_velocity()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04486">vehicle::steering_effectiveness()</a>.</p>
 
 </div>
 </div>
@@ -995,7 +995,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03478">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l05108">vehicle::charge_battery()</a>, <a class="el" href="vehicle_8cpp_source.html#l04582">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03427">vehicle::drain()</a>, <a class="el" href="vehicle_8cpp_source.html#l04553">vehicle::drain_energy()</a>, <a class="el" href="vehicle_8cpp_source.html#l03360">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l01113">vehicle::has_security_working()</a>, <a class="el" href="vehicle_8cpp_source.html#l03735">vehicle::max_reverse_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l04801">vehicle::power_parts()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05296">vehicle::slow_leak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03478">vehicle::basic_consumption()</a>, <a class="el" href="vehicle_8cpp_source.html#l05128">vehicle::charge_battery()</a>, <a class="el" href="vehicle_8cpp_source.html#l04602">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03427">vehicle::drain()</a>, <a class="el" href="vehicle_8cpp_source.html#l04573">vehicle::drain_energy()</a>, <a class="el" href="vehicle_8cpp_source.html#l03360">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l01113">vehicle::has_security_working()</a>, <a class="el" href="vehicle_8cpp_source.html#l03735">vehicle::max_reverse_velocity()</a>, <a class="el" href="vehicle_8cpp_source.html#l04821">vehicle::power_parts()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05316">vehicle::slow_leak()</a>.</p>
 
 </div>
 </div>
@@ -1023,7 +1023,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00670">vehicle::activate_magical_follow()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05215">vehicle::idle()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00670">vehicle::activate_magical_follow()</a>, and <a class="el" href="vehicle_8cpp_source.html#l05235">vehicle::idle()</a>.</p>
 
 </div>
 </div>
@@ -1051,7 +1051,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04582">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03360">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l05215">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04602">vehicle::consume_fuel()</a>, <a class="el" href="vehicle_8cpp_source.html#l03360">vehicle::fuel_left()</a>, <a class="el" href="vehicle_8cpp_source.html#l05235">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>.</p>
 
 </div>
 </div>
@@ -1079,7 +1079,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05296">vehicle::slow_leak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05316">vehicle::slow_leak()</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1107,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05215">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l05235">vehicle::idle()</a>, and <a class="el" href="vehicle_8cpp_source.html#l01150">vehicle::part_vpower_w()</a>.</p>
 
 </div>
 </div>
@@ -1151,7 +1151,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06851">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l00387">vehicle::init_state()</a>, and <a class="el" href="vehicle_8cpp_source.html#l06871">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1207,7 +1207,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06851">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06871">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1235,7 +1235,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06851">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06871">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1263,7 +1263,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06851">vehicle::update_time()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l06871">vehicle::update_time()</a>.</p>
 
 </div>
 </div>
@@ -1287,9 +1287,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03952">3952</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03972">3972</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03990">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -1313,9 +1313,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03951">3951</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l03971">3971</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03970">vehicle::coeff_air_drag()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l03990">vehicle::coeff_air_drag()</a>.</p>
 
 </div>
 </div>
@@ -1401,9 +1401,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l04228">4228</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vehicle_8cpp_source.html#l04248">4248</a> of file <a class="el" href="vehicle_8cpp_source.html">vehicle.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04230">vehicle::coeff_water_drag()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04279">vehicle::max_buoyancy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="vehicle_8cpp_source.html#l04250">vehicle::coeff_water_drag()</a>, and <a class="el" href="vehicle_8cpp_source.html#l04299">vehicle::max_buoyancy()</a>.</p>
 
 </div>
 </div>
@@ -1413,7 +1413,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="vehicle_8cpp.html">vehicle.cpp</a></li>
-    <li class="footer">Generated on Sun Jul 2 2023 12:18:44 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Aug 1 2023 18:39:56 for Cataclysm BN by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
