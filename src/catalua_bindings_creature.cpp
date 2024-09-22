@@ -153,7 +153,7 @@ void cata::detail::reg_creature( sol::state &lua )
 
         luna::set_fx( ut, "remove_effect", []( Creature & cr, const efftype_id & eff,
         sol::optional<const bodypart_str_id &> bpid ) -> bool {
-            body_part bp = bpid ? ( *bpid ) -> token : num_bp;
+            const bodypart_str_id &bp = bpid ? *bpid : bodypart_str_id::NULL_ID();
             return cr.remove_effect( eff, bp );
         } );
 

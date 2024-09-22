@@ -5229,7 +5229,7 @@ void iexamine::autodoc( player &p, const tripoint &examp )
             for( int i = 0; i < num_hp_parts; i++ ) {
                 const bodypart_id &bp_healed = convert_bp( player::hp_to_bp( static_cast<hp_part>( i ) ) ).id();
                 if( patient.has_effect( effect_bleed, bp_healed.id() ) ) {
-                    patient.remove_effect( effect_bleed, bp_healed->token );
+                    patient.remove_effect( effect_bleed, bp_healed.id() );
                     patient.add_msg_player_or_npc( m_good,
                                                    _( "The autodoc detected a bleeding on your %s and applied a hemostatic drug to stop it." ),
                                                    _( "The autodoc detected a bleeding on <npcname>'s %s and applied a hemostatic drug to stop it." ),
@@ -5237,7 +5237,7 @@ void iexamine::autodoc( player &p, const tripoint &examp )
                 }
 
                 if( patient.has_effect( effect_bite, bp_healed.id() ) ) {
-                    patient.remove_effect( effect_bite, bp_healed->token );
+                    patient.remove_effect( effect_bite, bp_healed.id() );
                     patient.add_msg_player_or_npc( m_good,
                                                    _( "The autodoc detected an open wound on your %s and applied a disinfectant to clean it." ),
                                                    _( "The autodoc detected an open wound on <npcname>'s %s and applied a disinfectant to clean it." ),
@@ -5246,7 +5246,7 @@ void iexamine::autodoc( player &p, const tripoint &examp )
                     // Fixed disinfectant intensity of 4 disinfectant_power + 10 first aid skill level of autodoc.
                     const int disinfectant_intensity = 14;
                     patient.add_effect( effect_disinfected, 1_turns, bp_healed.id() );
-                    effect &e = patient.get_effect( effect_disinfected, bp_healed->token );
+                    effect &e = patient.get_effect( effect_disinfected, bp_healed.id() );
                     e.set_duration( e.get_int_dur_factor() * disinfectant_intensity );
                     hp_part target_part = player::bp_to_hp( bp_healed->token );
                     patient.damage_disinfected[target_part] =

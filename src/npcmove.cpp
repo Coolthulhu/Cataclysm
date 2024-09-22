@@ -1727,15 +1727,15 @@ healing_options npc::patient_assessment( const Character &c )
 
     for( const std::pair<const bodypart_str_id, bodypart> &elem : c.get_body() ) {
 
-        if( c.has_effect( effect_bleed, elem.first->token ) ) {
+        if( c.has_effect( effect_bleed, elem.first ) ) {
             try_to_fix.bleed = true;
         }
 
-        if( c.has_effect( effect_bite, elem.first->token ) ) {
+        if( c.has_effect( effect_bite, elem.first ) ) {
             try_to_fix.bite = true;
         }
 
-        if( c.has_effect( effect_infected, elem.first->token ) ) {
+        if( c.has_effect( effect_infected, elem.first ) ) {
             try_to_fix.infect = true;
         }
         int part_threshold = 75;
@@ -1748,10 +1748,10 @@ healing_options npc::patient_assessment( const Character &c )
         part_threshold = part_threshold * elem.second.get_hp_max() / 100;
 
         if( elem.second.get_hp_cur() <= part_threshold ) {
-            if( !c.has_effect( effect_bandaged, elem.first->token ) ) {
+            if( !c.has_effect( effect_bandaged, elem.first ) ) {
                 try_to_fix.bandage = true;
             }
-            if( !c.has_effect( effect_disinfected, elem.first->token ) ) {
+            if( !c.has_effect( effect_disinfected, elem.first ) ) {
                 try_to_fix.disinfect = true;
             }
         }
@@ -4329,7 +4329,7 @@ static body_part bp_affected( npc &who, const efftype_id &effect_type )
     body_part ret = num_bp;
     int highest_intensity = INT_MIN;
     for( const body_part bp : all_body_parts ) {
-        const auto &eff = who.get_effect( effect_type, bp );
+        const auto &eff = who.get_effect( effect_type, convert_bp( bp ) );
         if( !eff.is_null() && eff.get_intensity() > highest_intensity ) {
             ret = bp;
             highest_intensity = eff.get_intensity();
@@ -4454,7 +4454,7 @@ bool npc::complain()
     // At intensity 3, ignore player wanting us to shut up
     if( has_effect( effect_infected ) ) {
         body_part bp = bp_affected( *this, effect_infected );
-        const auto &eff = get_effect( effect_infected, bp );
+        const auto &eff = get_effect( effect_infected, convert_bp( bp ) );
         int intensity = eff.get_intensity();
         const std::string speech = string_format( _( "My %s wound is infected…" ),
                                    body_part_name( bp ) );
